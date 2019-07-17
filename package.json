@@ -82,7 +82,7 @@
     "test": "node scripts/test.js",
     "cypress:run": "cypress run",
     "cypress:open": "cypress open",
-    "cypress:ci": "cypress run --record --key 93b160cf-0a47-4dd2-922c-26b83884f8bf",
+    "cypress:ci": "cypress run --record --key c78b01ce-059e-403b-ac2e-e32095992593",
     "typecheck": "tsc --noEmit"
   },
   "browserslist": {
