@@ -9,12 +9,22 @@
 [![Edit react-typescript-todo-example-2019](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/ryota-murakami/react-typescript-todo-example-2019/tree/master/?fontsize=14)
 
 ## Introduction
-This is [Create React App](https://facebook.github.io/create-react-app/) based todo example 
+This is [Create React App](https://facebook.github.io/create-react-app/) based todo app example.
 
 - create-react-app
 
 
-## Mo
+## Motivation
+TBD...
+
+## Installation to Local
+
+```
+git clone git@github.com:ryota-murakami/react-typescript-todo-example-2019.git
+cd react-typescript-todo-example-2019
+yarn install
+yarn start // launch dev-server
+```
 
 ## Tests
 ### Cypress
