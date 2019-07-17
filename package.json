@@ -83,7 +83,9 @@
     "cypress:run": "cypress run",
     "cypress:open": "cypress open",
     "cypress:ci": "cypress run --record --key c78b01ce-059e-403b-ac2e-e32095992593",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "contributors:add": "all-contributors add",
+    "contributors:generate": "all-contributors generate"
   },
   "browserslist": {
     "production": [
@@ -149,6 +151,7 @@
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^4.0.0",
-    "@testing-library/react": "^8.0.4"
+    "@testing-library/react": "^8.0.4",
+    "all-contributors-cli": "^6.8.0"
   }
 }
