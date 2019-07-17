@@ -1,0 +1,54 @@
+version: 2.1
+orbs:
+    cypress: cypress-io/cypress@1
+jobs:
+    typecheck:
+        docker:
+            - image: circleci/node:10.15.3
+        working_directory: ~/repo
+        steps:
+            - checkout
+            - run: yarn install
+            - run: yarn typecheck
+    build:
+        docker:
+            - image: circleci/node:10.15.3
+        working_directory: ~/repo
+        steps:
+            - checkout
+            - run: yarn install
+            - run: yarn build
+    test:
+        docker:
+            - image: circleci/node:10.15.3
+        working_directory: ~/repo
+        steps:
+            - checkout
+            - run: yarn install
+            - run: yarn test
+    lint:
+        docker:
+            - image: circleci/node:10.15.3
+        working_directory: ~/repo
+        steps:
+            - checkout
+            - run: yarn install
+            - run: yarn lint
+workflows:
+    automatic:
+        jobs:
+            - typecheck
+            - build
+            - test
+            - lint
+            - cypress/install:
+                  yarn: true
+            - cypress/run:
+                  requires:
+                      - cypress/install
+                  yarn: true
+                  record: true        # record results on Cypress Dashboard
+                  parallel: false      # split all specs across machines
+                  parallelism: 1      # use 4 CircleCI machines to finish quickly
+                  group: 'all tests'  # name this group "all tests" on the dashboard
+                  start: 'yarn start'  # start server before running tests
