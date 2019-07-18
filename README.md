@@ -1,4 +1,4 @@
-# React Typescript Todo Example 2019
+# React TypeScript Todo Example 2019
 
 [![CircleCI](https://circleci.com/gh/ryota-murakami/react-typescript-todo-example-2019.svg?style=svg)](https://circleci.com/gh/ryota-murakami/react-typescript-todo-example-2019) [![tested with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://github.com/facebook/jest) [![jest](https://jestjs.io/img/jest-badge.svg)](https://github.com/facebook/jest) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier) 
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
@@ -8,16 +8,22 @@
 
 [![Edit react-typescript-todo-example-2019](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/ryota-murakami/react-typescript-todo-example-2019/tree/master/?fontsize=14)
 
-## Introduction
-This is [Create React App](https://facebook.github.io/create-react-app/) based todo app example.
+## What's this?
+This is a [Create React App](https://facebook.github.io/create-react-app/) based [React](https://reactjs.org/) + [TypeScript](https://www.typescriptlang.org/) todo app example.  
+That was added TypeScript at install CRA. [Adding TypeScript Doc](https://facebook.github.io/create-react-app/docs/adding-typescript#docsNav)
 
-- create-react-app
+
+## Stack
+- [Create React App](https://facebook.github.io/create-react-app/)
+- [React](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [TODO-CSS-Template](https://github.com/Klerith/TODO-CSS-Template)(Brrowing HTML & CSS Thanks! 👍 )
 
 
 ## Motivation
 TBD...
 
-## Installation to Local
+## Install on your Local
 
 ```
 git clone git@github.com:ryota-murakami/react-typescript-todo-example-2019.git
@@ -25,6 +31,9 @@ cd react-typescript-todo-example-2019
 yarn install
 yarn start // launch dev-server
 ```
+
+## Where part of
+TBD...
 
 ## Tests
 ### Cypress
