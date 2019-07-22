@@ -18,10 +18,10 @@ That was added TypeScript at install CRA. [Adding TypeScript Doc](https://facebo
 - [React](https://reactjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [TODO-CSS-Template](https://github.com/Klerith/TODO-CSS-Template)(Brrowing HTML & CSS Thanks! 👍 )
-
-
-## Motivation
-TBD...
+- [muriatic](https://github.com/ryota-murakami/muriatic)
+- [emotion](https://github.com/emotion-js/emotion)
+- [Cypress](https://www.cypress.io/)
+- [react-testing-library](https://github.com/testing-library/react-testing-library)
 
 ## Install on your Local
 
@@ -31,9 +31,6 @@ cd react-typescript-todo-example-2019
 yarn install
 yarn start // launch dev-server
 ```
-
-## Where part of
-TBD...
 
 ## Tests
 ### Cypress
@@ -54,7 +51,6 @@ yarn cypress:open
 
 ## Jest
 
-
 ```
 yarn test
 ```
@@ -64,6 +60,9 @@ or
 ```
 yarn test --silent
 ```
+
+If you run `yarn test`, you'll see console.error message on termianl because `ErrorBoundary.test.js` contain invalid react component on purpose.  
+`--silent` option hide that error.
 
 ## LICENSE
 
