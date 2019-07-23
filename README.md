@@ -23,8 +23,13 @@ That was added TypeScript at install CRA. [Adding TypeScript Doc](https://facebo
 - [Cypress](https://www.cypress.io/)
 - [react-testing-library](https://github.com/testing-library/react-testing-library)
 
-## Install on your Local
+## Motivation
+Aftter React Conf 2018, It comming v16.8.0 with [Hooks](https://reactjs.org/docs/hooks-intro.html) that's apparently brand new way of Code Design 📝  
+Additionally, TypeScript adopt so much easier into a `babel` + 'webpack' build system by [Create React App v2.1 TypeScript support](https://github.com/facebook/create-react-app/releases/tag/v2.1.0) official released.
 
+So I was interested in what kind of code design and configure the application development with Hooks and TypeScript is. 😀
+
+## Install on your Local
 ```
 git clone git@github.com:ryota-murakami/react-typescript-todo-example-2019.git
 cd react-typescript-todo-example-2019
