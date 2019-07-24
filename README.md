@@ -28,7 +28,7 @@ App Code is putiing in [**src**](https://github.com/ryota-murakami/react-typescr
 Aftter React Conf 2018, It comming v16.8.0 with [Hooks](https://reactjs.org/docs/hooks-intro.html) that's apparently brand new way of Code Design 📝  
 Additionally, TypeScript adopt so much easier into a `babel` + 'webpack' build system by [Create React App v2.1 TypeScript support](https://github.com/facebook/create-react-app/releases/tag/v2.1.0) official released.
 
-So I was interested in what kind of code design and configure the application development with Hooks and TypeScript is. 😀
+So I was interested what kind of code design and configuration is. if I build todo with a Hooks and TypeScript. 😀
 
 ## Install on your Local
 ```
