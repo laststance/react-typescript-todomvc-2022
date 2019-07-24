@@ -40,7 +40,6 @@ yarn start // launch dev-server
 
 ## Tests
 ### Cypress
-
 Before run Cypress in local, dev-server has to be running.
 
 ```
@@ -56,7 +55,6 @@ yarn cypress:open
 ```
 
 ## Jest
-
 ```
 yarn test
 ```
@@ -70,12 +68,22 @@ yarn test --silent
 If you run `yarn test`, you'll see console.error message on termianl because `ErrorBoundary.test.js` contain invalid react component on purpose.  
 `--silent` option hide that error.
 
-## LICENSE
+## Issues
+Please feel free to post [New Issue](https://github.com/ryota-murakami/react-typescript-todo-example-2019/issues/new) or Pull Request 🤗
 
+## ❓ Questions
+Please feel free to post [New Issue](https://github.com/ryota-murakami/react-typescript-todo-example-2019/issues/new) or reply on [Twitter](https://twitter.com/malloc007) 🐦  
+
+If you want to get more generally answers, these community are might be helpful 🍻
+
+- [Spectrum](https://spectrum.chat/react?tab=posts)
+- [Reactiflux on Discord](https://www.reactiflux.com/)
+- [Stack Overflow](https://stackoverflow.com/questions/tagged/reactjs)
+
+## LICENSE
 MIT
 
 ## Contributors ✨
-
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
