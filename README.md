@@ -9,15 +9,16 @@
 [![Edit react-typescript-todo-example-2019](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/ryota-murakami/react-typescript-todo-example-2019/tree/master/?fontsize=14)
 
 ## What's this?
-This is a [Create React App](https://facebook.github.io/create-react-app/) based [React](https://reactjs.org/) + [TypeScript](https://www.typescriptlang.org/) todo app example. [DEMO](https://react-typescript-todo-example.netlify.com)  
-That was added TypeScript at install CRA. [Adding TypeScript Doc](https://facebook.github.io/create-react-app/docs/adding-typescript#docsNav)
+This is a [Create React App](https://facebook.github.io/create-react-app/) based [React](https://reactjs.org/) + [TypeScript](https://www.typescriptlang.org/) todo app example.  👉 [**DEMO**](https://react-typescript-todo-example.netlify.com)  
+That was added TypeScript at install CRA.  📝[Adding TypeScript Doc](https://facebook.github.io/create-react-app/docs/adding-typescript#docsNav)  
 
+App Code is putiing in [**src**](https://github.com/ryota-murakami/react-typescript-todo-example-2019/tree/master/src) dir.
 
 ## Stack
-- [Create React App](https://facebook.github.io/create-react-app/)
+- [Create React App](https://facebook.github.io/create-react-app/)(ejected for remove eslint-lordar from webpack)
 - [React](https://reactjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
-- [TODO-CSS-Template](https://github.com/Klerith/TODO-CSS-Template)(Brrowing HTML & CSS Thanks! 👍 )
+- [TODO-CSS-Template](https://github.com/Klerith/TODO-CSS-Template)(Borrowing HTML & CSS Thanks! 👍 )
 - [muriatic](https://github.com/ryota-murakami/muriatic)
 - [emotion](https://github.com/emotion-js/emotion)
 - [Cypress](https://www.cypress.io/)
