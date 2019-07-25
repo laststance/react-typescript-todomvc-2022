@@ -34,4 +34,20 @@ context('Edit Todo', () => {
       .find('[data-cy=todo-body-text]')
       .should('contain', 'one more')
   })
+
+  it('can not enter blank input', () => {
+    cy.get('[data-cy=todo-item]:nth-of-type(3)')
+      .find('[data-cy=todo-body-text]')
+      .should('contain', 'one')
+      .dblclick()
+    cy.get('[data-cy=todo-item]:nth-of-type(3)')
+      .find('[data-cy=todo-edit-input]')
+      .type('{leftarrow}{leftarrow}{leftarrow}{del}{del}{del}')
+      .type('{enter}')
+
+    cy.get('[data-cy=todo-item]:nth-of-type(3)')
+      .find('[data-cy=todo-edit-input]')
+      .should('to.be.focused')
+
+  })
 })
