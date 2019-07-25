@@ -71,7 +71,7 @@ If you run `yarn test`, you'll see console.error message on termianl because `Er
 ## Issues
 Please feel free to post [New Issue](https://github.com/ryota-murakami/react-typescript-todo-example-2019/issues/new) or Pull Request 🤗
 
-## ❓ Questions
+## Questions
 Please feel free to post [New Issue](https://github.com/ryota-murakami/react-typescript-todo-example-2019/issues/new) or reply on [Twitter](https://twitter.com/malloc007) 🐦  
 
 If you want to get more generally answers, these community are might be helpful 🍻
