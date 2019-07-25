@@ -16,6 +16,7 @@ interface Props {
 
 const App = ({ path }: Props & RouteComponentProps) => {
   const [store] = useStore<Store>()
+  // preserve every store changes.
   window.localStorage.setItem(LocalStorageKey.Store, JSON.stringify(store))
 
   return (
