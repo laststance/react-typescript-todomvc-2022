@@ -22,7 +22,7 @@ const Item = ({ todo }: Props) => {
     setState({ onEdit: false })
   }
 
-  const onKeyPress = (e: React.KeyboardEvent<HTMLInputElement>): void => {
+  const submitEditText = (e: React.KeyboardEvent<HTMLInputElement>): void => {
     if (e.key === 'Enter' || e.key === 'Escape') {
       if (e.currentTarget.value.length > 0) {
         setOnEditFalse()
@@ -107,7 +107,7 @@ const Item = ({ todo }: Props) => {
         autoFocus={state.onEdit ? true : false}
         value={todo.bodyText}
         onChange={e => handleTextInput(e, todo.id)}
-        onKeyPress={e => onKeyPress(e)}
+        onKeyPress={e => submitEditText(e)}
         data-cy="todo-edit-input"
       />
     </li>
