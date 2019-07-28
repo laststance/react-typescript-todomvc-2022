@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Store, Todo } from '../../index'
 import { useStore } from 'muriatic'
+import { Layout } from './style'
 
 interface Props {
   todo: Todo
@@ -30,7 +31,7 @@ const Item = ({ todo }: Props) => {
     }
   }
 
-  const UIClassSelectorTransform = (t: Todo, onEdit: boolean): string => {
+  const SwitchUIEffect = (t: Todo, onEdit: boolean): string => {
     switch (true) {
       case onEdit && t.completed:
         return 'completed editing'
@@ -80,10 +81,7 @@ const Item = ({ todo }: Props) => {
   }
 
   return (
-    <li
-      className={UIClassSelectorTransform(todo, state.onEdit)}
-      data-cy="todo-item"
-    >
+    <Layout className={SwitchUIEffect(todo, state.onEdit)} data-cy="todo-item">
       <div className="view">
         <input
           className="toggle"
@@ -110,7 +108,7 @@ const Item = ({ todo }: Props) => {
         onKeyPress={e => submitEditText(e)}
         data-cy="todo-edit-input"
       />
-    </li>
+    </Layout>
   )
 }
 

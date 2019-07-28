@@ -2,6 +2,7 @@ import React, { createRef } from 'react'
 import { UUID } from '../../functions'
 import { Todo, Store } from '../../index'
 import { useStore } from 'muriatic'
+import { Layout } from './style'
 
 function Header() {
   const [store, setStore] = useStore<Store>()
@@ -24,18 +25,20 @@ function Header() {
   }
 
   return (
-    <header className="header">
-      <h1>todos</h1>
-      <input
-        type="text"
-        className="new-todo"
-        placeholder="What needs to be done?"
-        ref={textInput}
-        onKeyPress={e => addTodo(e)}
-        autoFocus
-        data-cy="new-todo-input-text"
-      />
-    </header>
+    <Layout>
+      <header className="header">
+        <h1>todos</h1>
+        <input
+          type="text"
+          className="new-todo"
+          placeholder="What needs to be done?"
+          ref={textInput}
+          onKeyPress={e => addTodo(e)}
+          autoFocus
+          data-cy="new-todo-input-text"
+        />
+      </header>
+    </Layout>
   )
 }
 

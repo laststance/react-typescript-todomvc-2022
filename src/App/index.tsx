@@ -5,6 +5,7 @@ import TodoList from './TodoList'
 import Footer from './Footer'
 import { Routes, Store } from '../index'
 import { RouteComponentProps } from '@reach/router'
+import { Layout } from './style'
 
 export const LocalStorageKey = {
   Store: 'Store'
@@ -20,7 +21,7 @@ const App = ({ path }: Props & RouteComponentProps) => {
   window.localStorage.setItem(LocalStorageKey.Store, JSON.stringify(store))
 
   return (
-    <Fragment>
+    <Layout>
       <section className="todoapp">
         <Header />
         {store.todoList.length ? (
@@ -39,7 +40,7 @@ const App = ({ path }: Props & RouteComponentProps) => {
           Part of <a href="http://todomvc.com">TodoMVC</a>
         </p>
       </footer>
-    </Fragment>
+    </Layout>
   )
 }
 

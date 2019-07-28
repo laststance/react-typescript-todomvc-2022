@@ -2,6 +2,7 @@ import React from 'react'
 import FilterLink from './FilterLink'
 import { Routes, Todo, Store } from '../../index'
 import { useStore } from 'muriatic'
+import { Layout } from './style'
 
 interface Props {
   path: Routes
@@ -17,23 +18,25 @@ const Footer = ({ path }: Props) => {
   }
 
   return (
-    <footer className="footer">
-      <span className="todo-count">
-        <strong data-cy="remaining-uncompleted-todo-count">{yetCount}</strong>{' '}
-        item left
-      </span>
-      <FilterLink path={path} />
+    <Layout>
+      <footer className="footer">
+        <span className="todo-count">
+          <strong data-cy="remaining-uncompleted-todo-count">{yetCount}</strong>{' '}
+          item left
+        </span>
+        <FilterLink path={path} />
 
-      {doneCount > 0 && (
-        <button
-          onClick={clearComoleted}
-          className="clear-completed"
-          data-cy="clear-completed-button"
-        >
-          Clear completed
-        </button>
-      )}
-    </footer>
+        {doneCount > 0 && (
+          <button
+            onClick={clearComoleted}
+            className="clear-completed"
+            data-cy="clear-completed-button"
+          >
+            Clear completed
+          </button>
+        )}
+      </footer>
+    </Layout>
   )
 }
 
