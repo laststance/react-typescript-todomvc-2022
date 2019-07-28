@@ -31,7 +31,7 @@ const Item = ({ todo }: Props) => {
     }
   }
 
-  const SwitchUIEffect = (t: Todo, onEdit: boolean): string => {
+  const SwitchStyle = (t: Todo, onEdit: boolean): string => {
     switch (true) {
       case onEdit && t.completed:
         return 'completed editing'
@@ -81,7 +81,7 @@ const Item = ({ todo }: Props) => {
   }
 
   return (
-    <Layout className={SwitchUIEffect(todo, state.onEdit)} data-cy="todo-item">
+    <Layout className={SwitchStyle(todo, state.onEdit)} data-cy="todo-item">
       <div className="view">
         <input
           className="toggle"
