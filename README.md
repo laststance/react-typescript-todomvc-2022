@@ -10,23 +10,32 @@
 
 ## What's this?
 This is a [Create React App](https://facebook.github.io/create-react-app/) based [React](https://reactjs.org/) + [TypeScript](https://www.typescriptlang.org/) todo app example.  👉 [**DEMO**](https://react-typescript-todo-example.netlify.com)  
-That was added TypeScript at install CRA.  📝[Adding TypeScript Doc](https://facebook.github.io/create-react-app/docs/adding-typescript#docsNav)  
+[TypeScript](https://www.typescriptlang.org/) coming from babel, set upped at [Create React App](https://facebook.github.io/create-react-app/) install option. 📝[Adding TypeScript Doc](https://facebook.github.io/create-react-app/docs/adding-typescript#docsNav)  
 
-App Code is putiing in [**src**](https://github.com/ryota-murakami/react-typescript-todo-example-2019/tree/master/src) dir.
+**This is not a Best Practice introduction.  
+There are tons of effective way to create solid software in JavaScript World, you have a lot of other option based on your preference for approaching where, The Repo is just a style of my favorite.**  
+
+"*How to combining TypeScript with massive Babel or JavaScript tools ecosystem?*"
+
+**I hope this helps you know like that from what I've Published!**
 
 ## Stack
-- [Create React App](https://facebook.github.io/create-react-app/)(ejected for remove eslint-lordar from webpack)
-- [React](https://reactjs.org/)
-- [TypeScript](https://www.typescriptlang.org/)
 - [TODO-CSS-Template](https://github.com/Klerith/TODO-CSS-Template)(Borrowing HTML & CSS Thanks! 👍 )
-- [muriatic](https://github.com/ryota-murakami/muriatic)
+- [Create React App](https://facebook.github.io/create-react-app/)(ejected for remove eslint-lordar from webpack)
+- [TypeScript(Babel)](https://babeljs.io/docs/en/babel-plugin-transform-typescript)
+- [ReachRouter](https://github.com/reach/router)
 - [emotion](https://github.com/emotion-js/emotion)
-- [Cypress](https://www.cypress.io/)
+- [muriatic](https://github.com/ryota-murakami/muriatic)
+- [cypress](https://www.cypress.io/)
 - [react-testing-library](https://github.com/testing-library/react-testing-library)
+- [ESLint](https://eslint.org/)
+  - [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier)
+  - [@typescript-eslint/eslint-plugin](https://github.com/typescript-eslint/typescript-eslint#readme)
+  - [eslint-plugin-react-hooks](https://reactjs.org/)
 
 ## Motivation
-Aftter React Conf 2018, It comming v16.8.0 with [Hooks](https://reactjs.org/docs/hooks-intro.html) that's apparently brand new way of Code Design 📝  
-Additionally, TypeScript adopt so much easier into a `babel` + 'webpack' build system by [Create React App v2.1 TypeScript support](https://github.com/facebook/create-react-app/releases/tag/v2.1.0) official released.
+Aftter React Conf 2018, It comming v16.8.0 with [Hooks](https://reactjs.org/docs/hooks-intro.html) that's apparently brand new way of Code Design contrast with class base 📝  
+In addition, TypeScript adopt so much easier into a `babel` + 'webpack' build system by [Create React App v2.1 TypeScript support](https://github.com/facebook/create-react-app/releases/tag/v2.1.0) official released.
 
 So I was interested what kind of code design and configuration is. if I build todo with a Hooks and TypeScript. 😀
 
@@ -35,33 +44,45 @@ So I was interested what kind of code design and configuration is. if I build to
 git clone git@github.com:ryota-murakami/react-typescript-todo-example-2019.git
 cd react-typescript-todo-example-2019
 yarn install
-yarn start // launch dev-server
 ```
 
-## Tests
-### Cypress
-Before run Cypress in local, dev-server has to be running.
-
+## Launch DevServer
 ```
 yarn start
+```
+
+## Build
+```
+yarn build
+```
+
+After that You'll get bundled stuff in `build` directory.
+
+## cypress
+[cypress](https://www.cypress.io/) is all-in-one E2E Testing tool which can deal real browser testing.  
+
+#### Runs Cypress tests from the CLI without the GUI
+```
+yarn start // Launch DevServer
 yarn cypress:run
 ```
 
-or
+#### Opens Cypress in the interactive GUI.
 
 ```
-yarn start
+yarn start // Launch DevServer
 yarn cypress:open
 ```
 
 ## Jest
+[Jest](https://jestjs.io/) is all-in-one test-runner built in [Create React App](https://facebook.github.io/create-react-app/) and covers function-level unit testing to component-behavior-level integration testing.  
+The Repo use to [react-testing-library](https://github.com/testing-library/react-testing-library) for component integration testing.
+
 ```
 yarn test
-```
 
 or
 
-```
 yarn test --silent
 ```
 
