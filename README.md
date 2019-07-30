@@ -47,12 +47,12 @@ yarn install
 ```
 
 ## Launch DevServer
-```
+```bash
 yarn start
 ```
 
 ## Build
-```
+```bash
 yarn build
 ```
 
@@ -62,15 +62,15 @@ After that You'll get bundled stuff in `build` directory.
 [cypress](https://www.cypress.io/) is all-in-one E2E Testing tool which can deal real browser testing.  
 
 #### Runs Cypress tests from the CLI without the GUI
-```
-yarn start // Launch DevServer
+```baash
+yarn start # Launch DevServer
 yarn cypress:run
 ```
 
 #### Opens Cypress in the interactive GUI.
 
-```
-yarn start // Launch DevServer
+```bash
+yarn start # Launch DevServer
 yarn cypress:open
 ```
 
@@ -78,16 +78,32 @@ yarn cypress:open
 [Jest](https://jestjs.io/) is all-in-one test-runner built in [Create React App](https://facebook.github.io/create-react-app/) and covers function-level unit testing to component-behavior-level integration testing.  
 The Repo use to [react-testing-library](https://github.com/testing-library/react-testing-library) for component integration testing.
 
-```
+```bash
 yarn test
+```
 
-or
+*or*
 
+```bash
 yarn test --silent
 ```
 
 If you run `yarn test`, you'll see console.error message on termianl because `ErrorBoundary.test.js` contain invalid react component on purpose.  
 `--silent` option hide that error.
+
+## Linting
+[ESLint](https://eslint.org/) is at the top.  
+And setup [TypeScript ESLint](https://github.com/typescript-eslint/typescript-eslint), mixing [Prettier](https://prettier.io/) as a [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier).
+
+```bash
+yarn lint
+```
+
+*or*
+
+``` bash
+yarn lint:fix # run wtih eslint --fix option
+```
 
 ## Issues
 Please feel free to post [New Issue](https://github.com/ryota-murakami/react-typescript-todo-example-2019/issues/new) or Pull Request 🤗
