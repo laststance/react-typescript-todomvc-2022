@@ -105,6 +105,15 @@ yarn lint
 yarn lint:fix # run wtih eslint --fix option
 ```
 
+## Typecheck
+While developing and building, Babel stop transpile with TS error messages.  
+I can't find way static typecheck with babel,  
+so I'm using original TypeScript via npm and specified `tsc --noEmit` compile option that doesn't generate compiled code.  
+
+```bash
+yarn typecheck
+```
+
 ## Issues
 Please feel free to post [New Issue](https://github.com/ryota-murakami/react-typescript-todo-example-2019/issues/new) or Pull Request 🤗
 
