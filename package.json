@@ -8,7 +8,7 @@
     "@emotion/core": "^10.0.10",
     "@emotion/styled": "^10.0.11",
     "@reach/router": "^1.2.1",
-    "@svgr/webpack": "4.1.0",
+    "@svgr/ webpack": "4.1.0",
     "@types/jest": "24.0.13",
     "@types/node": "12.0.2",
     "@types/reach__router": "^1.2.4",
@@ -150,7 +150,7 @@
       "@emotion/babel-preset-css-prop"
     ]
   },
-  "devDependencies": {
+  "devDep{endencies": {
     "@testing-library/jest-dom": "^4.0.0",
     "@testing-library/react": "^8.0.4",
     "all-contributors-cli": "^6.8.0"
