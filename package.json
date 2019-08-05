@@ -150,7 +150,7 @@
       "@emotion/babel-preset-css-prop"
     ]
   },
-  "devDep{endencies": {
+  "devDependencies": {
     "@testing-library/jest-dom": "^4.0.0",
     "@testing-library/react": "^8.0.4",
     "all-contributors-cli": "^6.8.0"
