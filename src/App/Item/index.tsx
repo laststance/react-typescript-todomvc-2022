@@ -81,7 +81,11 @@ const Item = ({ todo }: Props) => {
   }
 
   return (
-    <Layout className={SwitchStyle(todo, state.onEdit)} data-cy="todo-item">
+    <Layout
+      className={SwitchStyle(todo, state.onEdit)}
+      data-cy="todo-item"
+      data-testid="todo-item"
+    >
       <div className="view">
         <input
           className="toggle"
@@ -89,14 +93,20 @@ const Item = ({ todo }: Props) => {
           checked={todo.completed}
           onChange={() => toggleCompleted(todo.id)}
           data-cy="todo-item-complete-check"
+          data-testid="todo-item-complete-check"
         />
-        <label onDoubleClick={setOnEditTrue} data-cy="todo-body-text">
+        <label
+          onDoubleClick={setOnEditTrue}
+          data-cy="todo-body-text"
+          data-testid="todo-body-text"
+        >
           {todo.bodyText}
         </label>
         <button
           className="destroy"
           onClick={() => removeItem(todo.id)}
           data-cy="delete-todo-btn"
+          data-testid="delete-todo-btn"
         />
       </div>
       <input
@@ -107,6 +117,7 @@ const Item = ({ todo }: Props) => {
         onChange={e => handleTextInput(e, todo.id)}
         onKeyPress={e => submitEditText(e)}
         data-cy="todo-edit-input"
+        data-testid="todo-edit-input"
       />
     </Layout>
   )
