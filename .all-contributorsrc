@@ -2,7 +2,7 @@
   "projectName": "react-typescript-todo-example-2019",
   "projectOwner": "ryota-murakami",
   "repoType": "github",
-  "repoHost": "https://github.com/ryota-murakami/react-typescript-todo-example-2019",
+  "repoHost": "https://github.com",
   "files": [
     "README.md"
   ],
@@ -10,16 +10,26 @@
   "commit": true,
   "commitConvention": "none",
   "contributors": [
-      {
-           "login":"ryota-murakami",
-           "name":"ryota-murakami",
-           "avatar_url":"https://avatars1.githubusercontent.com/u/5501268?s=400&u=7bf6b1580b95930980af2588ef0057f3e9ec1ff8&v=4",
-           "profile":"http://ryota-murakami.github.io/",
-           "contributions":[
-              "code",
-              "doc",
-              "test"
-           ]
-        }],
+    {
+      "login": "ryota-murakami",
+      "name": "ryota-murakami",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/5501268?s=400&u=7bf6b1580b95930980af2588ef0057f3e9ec1ff8&v=4",
+      "profile": "http://ryota-murakami.github.io/",
+      "contributions": [
+        "code",
+        "doc",
+        "test"
+      ]
+    },
+    {
+      "login": "wroscoe",
+      "name": "Will Roscoe",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/147582?v=4",
+      "profile": "http://donkeycar.com",
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
   "contributorsPerLine": 7
 }
