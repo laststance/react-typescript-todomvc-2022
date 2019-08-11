@@ -66,14 +66,21 @@ test('should work "check" complete toggle button', () => {
   expect(container.querySelector('[class*="completed"]')).toBe(null)
   expect(container.querySelector('[class*="editting"]')).toBe(null)
 
+  // click complete checkbox then should appear completed class
   act(() => {
-    // click complete checkbox
     fireEvent.click(getByTestId('todo-item-complete-check'))
   })
-
   expect(
     (getByTestId('todo-item-complete-check') as HTMLInputElement).checked
   ).toBe(true)
-
   expect(container.querySelector('[class*="completed"]')).toBeTruthy()
+
+  // should working as toggle
+  act(() => {
+    fireEvent.click(getByTestId('todo-item-complete-check'))
+  })
+  expect(
+    (getByTestId('todo-item-complete-check') as HTMLInputElement).checked
+  ).toBe(false)
+  expect(container.querySelector('[class*="completed"]')).toBe(null)
 })
