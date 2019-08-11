@@ -62,7 +62,6 @@ test('should work "check" complete toggle button', () => {
     </Provider>
   )
 
-  // @TODO Extract SwitchStyle concorn?
   // when not.completed & not.onEdit, SwitchStyle doesn't show .completed .editting selectors
   expect(container.querySelector('[class*="completed"]')).toBe(null)
   expect(container.querySelector('[class*="editting"]')).toBe(null)
@@ -75,4 +74,6 @@ test('should work "check" complete toggle button', () => {
   expect(
     (getByTestId('todo-item-complete-check') as HTMLInputElement).checked
   ).toBe(true)
+
+  expect(container.querySelector('[class*="completed"]')).toBeTruthy()
 })
