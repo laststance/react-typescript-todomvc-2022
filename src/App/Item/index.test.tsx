@@ -24,7 +24,7 @@ test('should each todo object value is set to Item element', () => {
     </Provider>
   )
 
-  expect(getByTestId('todo-item')).toBeTruthy()
+  expect(getByTestId('todo-item')).toBeInTheDocument()
 
   expect(
     (getByTestId('todo-item-complete-check') as HTMLInputElement).checked
@@ -77,11 +77,10 @@ test('should work "check" complete toggle button', () => {
   expect(
     (getByTestId('todo-item-complete-check') as HTMLInputElement).checked
   ).toBe(true)
-  expect(container.querySelector('[class*="completed"]')).toBeTruthy()
+  expect(container.querySelector('[class*="completed"]')).toBeInTheDocument()
 
   // should working as toggle
   fireEvent.click(getByTestId('todo-item-complete-check'))
-
   expect(
     (getByTestId('todo-item-complete-check') as HTMLInputElement).checked
   ).toBe(false)
@@ -110,7 +109,7 @@ test('should work edit mode toggle', () => {
   // double click todo text label, then enable todo text edit code
 
   fireEvent.doubleClick(getByTestId('todo-body-text'))
-  expect(container.querySelector('[class*="editing"]')).toBeTruthy()
+  expect(container.querySelector('[class*="editing"]')).toBeInTheDocument()
   // @TODO in jsdom, dynamic .editing classCSSSelector doesn't apply. So tipically show/hide UI test are difficult.
   // @ref https://spectrum.chat/testing-library/general/testing-an-accordion~b004a9b1-b104-4eb1-a73b-43c60b1a3630?m=MTU1NDQ4NDIzMTQ5Ng==
   //expect(getByTestId('todo-edit-input')).toBeVisible()
