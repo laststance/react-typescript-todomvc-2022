@@ -11,16 +11,6 @@ const initialStore: Store = {
       id: '8btxpD9kDBlo',
       bodyText: 'cut tomato',
       completed: false
-    },
-    {
-      id: 'jCgRR0W1avey',
-      bodyText: 'sleep',
-      completed: false
-    },
-    {
-      id: '7zkdYTYu9xqn',
-      bodyText: 'chill',
-      completed: false
     }
   ]
 }
@@ -48,6 +38,7 @@ test('should each todo object value is set to Item element', () => {
 test('should correct render default class state', () => {
   const App = () => {
     const [store] = useStore<Store>()
+    if (store.todoList.length === 0) return null
     return (
       <div>
         <Item todo={store.todoList[0]} />
@@ -68,6 +59,7 @@ test('should correct render default class state', () => {
 test('should work "check" complete toggle button', () => {
   const App = () => {
     const [store] = useStore<Store>()
+    if (store.todoList.length === 0) return null
     return (
       <div>
         <Item todo={store.todoList[0]} />
@@ -99,6 +91,7 @@ test('should work "check" complete toggle button', () => {
 test('should work edit mode toggle', () => {
   const App = () => {
     const [store] = useStore<Store>()
+    if (store.todoList.length === 0) return null
     return (
       <div>
         <Item todo={store.todoList[0]} />
@@ -137,4 +130,26 @@ test('should work edit mode toggle', () => {
   // @TODO in jsdom, dynamic .editing classCSSSelector doesn't apply. So tipically show/hide UI test are difficult.
   // @ref https://spectrum.chat/testing-library/general/testing-an-accordion~b004a9b1-b104-4eb1-a73b-43c60b1a3630?m=MTU1NDQ4NDIzMTQ5Ng==
   //expect(getByTestId('todo-edit-input')).not.toBeVisible()
+})
+
+test('delete todo item', () => {
+  const App = () => {
+    const [store] = useStore<Store>()
+    if (store.todoList.length === 0) return null
+    return (
+      <div>
+        <Item todo={store.todoList[0]} />
+      </div>
+    )
+  }
+  const { getByTestId, queryByTestId } = render(
+    <Provider store={initialStore}>
+      <App />
+    </Provider>
+  )
+
+  // click delete button, then todo item is removed
+  expect(getByTestId('todo-item')).toBeInTheDocument()
+  fireEvent.click(getByTestId('delete-todo-btn'))
+  expect(queryByTestId('todo-item')).toBe(null)
 })
