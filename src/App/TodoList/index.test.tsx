@@ -1,5 +1,5 @@
 import React from 'react'
-import { render, cleanup } from '@testing-library/react'
+import { render, cleanup, fireEvent } from '@testing-library/react'
 import Provider from 'muriatic'
 import '@testing-library/jest-dom/extend-expect'
 import TodoList from './index'
@@ -36,4 +36,19 @@ test('should render stored todo values', () => {
   expect(getAllByTestId('todo-item')[0]).toHaveTextContent('monster')
   expect(getAllByTestId('todo-item')[1]).toHaveTextContent('boss black')
   expect(getAllByTestId('todo-item')[2]).toHaveTextContent('caffe latte')
+})
+
+test('should reflect store value change to render elements', () => {
+  const { getByTestId, getAllByTestId } = render(
+    <Provider store={initialStore}>
+      <TodoList path="/" />
+    </Provider>
+  )
+
+  // delete first todo
+  fireEvent.click(getAllByTestId('delete-todo-btn')[0])
+  expect(getByTestId('todo-list').children.length).toBe(2)
+  expect(Array.isArray(getAllByTestId('todo-item'))).toBe(true)
+  expect(getAllByTestId('todo-item')[0]).toHaveTextContent('boss black')
+  expect(getAllByTestId('todo-item')[1]).toHaveTextContent('caffe latte')
 })
