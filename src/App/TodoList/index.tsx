@@ -33,7 +33,7 @@ function TodoList({ path }: Props) {
           data-cy="toggle-all-btn"
         />
         <label htmlFor="toggle-all">Mark all as complete</label>
-        <ul className="todo-list">
+        <ul className="todo-list" data-testid="todo-list">
           {store.todoList
             .filter((t: Todo) => {
               switch (path) {
