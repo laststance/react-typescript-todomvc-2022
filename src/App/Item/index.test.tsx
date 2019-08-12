@@ -1,5 +1,4 @@
 import React from 'react'
-import { act } from 'react-dom/test-utils'
 import { render, cleanup, fireEvent } from '@testing-library/react'
 import Provider, { useStore } from 'muriatic'
 import '@testing-library/jest-dom/extend-expect'
@@ -82,18 +81,15 @@ test('should work "check" complete toggle button', () => {
   )
 
   // click complete checkbox then should appear completed class
-  act(() => {
-    fireEvent.click(getByTestId('todo-item-complete-check'))
-  })
+  fireEvent.click(getByTestId('todo-item-complete-check'))
   expect(
     (getByTestId('todo-item-complete-check') as HTMLInputElement).checked
   ).toBe(true)
   expect(container.querySelector('[class*="completed"]')).toBeTruthy()
 
   // should working as toggle
-  act(() => {
-    fireEvent.click(getByTestId('todo-item-complete-check'))
-  })
+  fireEvent.click(getByTestId('todo-item-complete-check'))
+
   expect(
     (getByTestId('todo-item-complete-check') as HTMLInputElement).checked
   ).toBe(false)
@@ -119,24 +115,21 @@ test('should work edit mode toggle', () => {
   expect(getByTestId('todo-edit-input')).not.toBeVisible()
 
   // double click todo text label, then enable todo text edit code
-  act(() => {
-    fireEvent.doubleClick(getByTestId('todo-body-text'))
-  })
+
+  fireEvent.doubleClick(getByTestId('todo-body-text'))
   expect(container.querySelector('[class*="editing"]')).toBeTruthy()
   // @TODO in jsdom, dynamic .editing classCSSSelector doesn't apply. So tipically show/hide UI test are difficult.
   // @ref https://spectrum.chat/testing-library/general/testing-an-accordion~b004a9b1-b104-4eb1-a73b-43c60b1a3630?m=MTU1NDQ4NDIzMTQ5Ng==
   //expect(getByTestId('todo-edit-input')).toBeVisible()
 
-  act(() => {
-    fireEvent.change(getByTestId('todo-edit-input'), {
-      target: { value: 'cut tomato plus' }
-    })
-    //@TODO why fireEvent.keyPress() didn't work?
-    // fireEvent.keyPress(getByTestId('todo-edit-input'), {
-    //   key: 'Enter',
-    //   code: 13
-    // })
+  fireEvent.change(getByTestId('todo-edit-input'), {
+    target: { value: 'cut tomato plus' }
   })
+  //@TODO why fireEvent.keyPress() didn't work?
+  // fireEvent.keyPress(getByTestId('todo-edit-input'), {
+  //   key: 'Enter',
+  //   code: 13
+  // })
 
   expect(getByTestId('todo-body-text')).toHaveTextContent('cut tomato plus')
   // @TODO why fireEvent.keyPress() didn't work?
