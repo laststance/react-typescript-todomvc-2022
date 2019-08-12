@@ -15,6 +15,16 @@ const initialStore: Store = {
   ]
 }
 
+const App = () => {
+  const [store] = useStore<Store>()
+  if (store.todoList.length === 0) return null
+  return (
+    <div>
+      <Item todo={store.todoList[0]} />
+    </div>
+  )
+}
+
 afterEach(cleanup)
 
 test('should each todo object value is set to Item element', () => {
@@ -36,15 +46,6 @@ test('should each todo object value is set to Item element', () => {
 })
 
 test('should correct render default class state', () => {
-  const App = () => {
-    const [store] = useStore<Store>()
-    if (store.todoList.length === 0) return null
-    return (
-      <div>
-        <Item todo={store.todoList[0]} />
-      </div>
-    )
-  }
   const { container } = render(
     <Provider store={initialStore}>
       <App />
@@ -57,15 +58,6 @@ test('should correct render default class state', () => {
 })
 
 test('should work "check" complete toggle button', () => {
-  const App = () => {
-    const [store] = useStore<Store>()
-    if (store.todoList.length === 0) return null
-    return (
-      <div>
-        <Item todo={store.todoList[0]} />
-      </div>
-    )
-  }
   const { getByTestId, container } = render(
     <Provider store={initialStore}>
       <App />
@@ -88,15 +80,6 @@ test('should work "check" complete toggle button', () => {
 })
 
 test('should work edit mode toggle', () => {
-  const App = () => {
-    const [store] = useStore<Store>()
-    if (store.todoList.length === 0) return null
-    return (
-      <div>
-        <Item todo={store.todoList[0]} />
-      </div>
-    )
-  }
   const { getByTestId, container } = render(
     <Provider store={initialStore}>
       <App />
@@ -132,15 +115,6 @@ test('should work edit mode toggle', () => {
 })
 
 test('delete todo item', () => {
-  const App = () => {
-    const [store] = useStore<Store>()
-    if (store.todoList.length === 0) return null
-    return (
-      <div>
-        <Item todo={store.todoList[0]} />
-      </div>
-    )
-  }
   const { getByTestId, queryByTestId } = render(
     <Provider store={initialStore}>
       <App />
