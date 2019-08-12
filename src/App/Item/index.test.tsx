@@ -92,10 +92,9 @@ test('should work edit mode toggle', () => {
   // double click todo text label, then enable todo text edit code
   fireEvent.doubleClick(getByTestId('todo-body-text'))
   expect(getByTestId('todo-item')).toHaveClass('editing')
-  // @TODO in jsdom, dynamic .editing classCSSSelector doesn't apply. So tipically show/hide UI test are difficult.
+  // @TODO in jsdom, dynamic .editing css class doesn't apply. So tipically show/hide UI test are difficult.
   // @ref https://spectrum.chat/testing-library/general/testing-an-accordion~b004a9b1-b104-4eb1-a73b-43c60b1a3630?m=MTU1NDQ4NDIzMTQ5Ng==
   //expect(getByTestId('todo-edit-input')).toBeVisible()
-
   fireEvent.change(getByTestId('todo-edit-input'), {
     target: { value: 'cut tomato plus' }
   })
@@ -108,7 +107,7 @@ test('should work edit mode toggle', () => {
   expect(getByTestId('todo-body-text')).toHaveTextContent('cut tomato plus')
   // @TODO why fireEvent.keyPress() didn't work?
   //expect(container.querySelector('[class*="editing"]')).toBe(null)
-  // @TODO in jsdom, dynamic .editing classCSSSelector doesn't apply. So tipically show/hide UI test are difficult.
+  // @TODO in jsdom, dynamic .editing css class doesn't apply. So tipically show/hide UI test are difficult.
   // @ref https://spectrum.chat/testing-library/general/testing-an-accordion~b004a9b1-b104-4eb1-a73b-43c60b1a3630?m=MTU1NDQ4NDIzMTQ5Ng==
   //expect(getByTestId('todo-edit-input')).not.toBeVisible()
 })
