@@ -17,7 +17,11 @@ const initialStore: Store = {
       bodyText: 'boss black',
       completed: false
     },
-    { id: 'QwejYipEf5nk', bodyText: 'caffe latte', completed: false }
+    {
+      id: 'QwejYipEf5nk',
+      bodyText: 'caffe latte',
+      completed: false
+    }
   ]
 }
 
@@ -51,4 +55,23 @@ test('should reflect store value change to render elements', () => {
   expect(Array.isArray(getAllByTestId('todo-item'))).toBe(true)
   expect(getAllByTestId('todo-item')[0]).toHaveTextContent('boss black')
   expect(getAllByTestId('todo-item')[1]).toHaveTextContent('caffe latte')
+})
+
+test('should click toggle-all-button, then all item being comlete checked true and vice versa', () => {
+  const { getByTestId, getAllByTestId } = render(
+    <Provider store={initialStore}>
+      <TodoList path="/" />
+    </Provider>
+  )
+
+  fireEvent.click(getByTestId('toggle-all-btn'))
+  expect((getAllByTestId('todo-item-complete-check')[0] as HTMLInputElement).checked).toBe(true) /* eslint-disable-line prettier/prettier */
+  expect((getAllByTestId('todo-item-complete-check')[1] as HTMLInputElement).checked).toBe(true) /* eslint-disable-line prettier/prettier */
+  expect((getAllByTestId('todo-item-complete-check')[2] as HTMLInputElement).checked).toBe(true) /* eslint-disable-line prettier/prettier */
+
+
+  fireEvent.click(getByTestId('toggle-all-btn'))
+  expect((getAllByTestId('todo-item-complete-check')[0] as HTMLInputElement).checked).toBe(false) /* eslint-disable-line prettier/prettier */
+  expect((getAllByTestId('todo-item-complete-check')[1] as HTMLInputElement).checked).toBe(false) /* eslint-disable-line prettier/prettier */
+  expect((getAllByTestId('todo-item-complete-check')[2] as HTMLInputElement).checked).toBe(false) /* eslint-disable-line prettier/prettier */
 })

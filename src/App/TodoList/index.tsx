@@ -31,6 +31,7 @@ function TodoList({ path }: Props) {
           type="checkbox"
           onChange={toggleAll}
           data-cy="toggle-all-btn"
+          data-testid="toggle-all-btn"
         />
         <label htmlFor="toggle-all">Mark all as complete</label>
         <ul className="todo-list" data-testid="todo-list">
