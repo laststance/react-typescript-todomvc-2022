@@ -46,6 +46,26 @@ test('should each todo object value is set to Item element', () => {
   )
 })
 
+test('should correct render default class state', () => {
+  const App = () => {
+    const [store] = useStore<Store>()
+    return (
+      <div>
+        <Item todo={store.todoList[0]} />
+      </div>
+    )
+  }
+  const { container } = render(
+    <Provider store={initialStore}>
+      <App />
+    </Provider>
+  )
+
+  // when not.completed & not.onEdit, SwitchStyle doesn't show .completed .editting selectors
+  expect(container.querySelector('[class*="completed"]')).toBe(null)
+  expect(container.querySelector('[class*="editing"]')).toBe(null)
+})
+
 test('should work "check" complete toggle button', () => {
   const App = () => {
     const [store] = useStore<Store>()
@@ -55,16 +75,11 @@ test('should work "check" complete toggle button', () => {
       </div>
     )
   }
-
   const { getByTestId, container } = render(
     <Provider store={initialStore}>
       <App />
     </Provider>
   )
-
-  // when not.completed & not.onEdit, SwitchStyle doesn't show .completed .editting selectors
-  expect(container.querySelector('[class*="completed"]')).toBe(null)
-  expect(container.querySelector('[class*="editting"]')).toBe(null)
 
   // click complete checkbox then should appear completed class
   act(() => {
@@ -83,4 +98,50 @@ test('should work "check" complete toggle button', () => {
     (getByTestId('todo-item-complete-check') as HTMLInputElement).checked
   ).toBe(false)
   expect(container.querySelector('[class*="completed"]')).toBe(null)
+})
+
+test('should work edit mode toggle', () => {
+  const App = () => {
+    const [store] = useStore<Store>()
+    return (
+      <div>
+        <Item todo={store.todoList[0]} />
+      </div>
+    )
+  }
+  const { getByTestId, container } = render(
+    <Provider store={initialStore}>
+      <App />
+    </Provider>
+  )
+
+  // by default, edit input form is not visible
+  expect(getByTestId('todo-edit-input')).not.toBeVisible()
+
+  // double click todo text label, then enable todo text edit code
+  act(() => {
+    fireEvent.doubleClick(getByTestId('todo-body-text'))
+  })
+  expect(container.querySelector('[class*="editing"]')).toBeTruthy()
+  // @TODO in jsdom, dynamic .editing classCSSSelector doesn't apply. So tipically show/hide UI test are difficult.
+  // @ref https://spectrum.chat/testing-library/general/testing-an-accordion~b004a9b1-b104-4eb1-a73b-43c60b1a3630?m=MTU1NDQ4NDIzMTQ5Ng==
+  //expect(getByTestId('todo-edit-input')).toBeVisible()
+
+  act(() => {
+    fireEvent.change(getByTestId('todo-edit-input'), {
+      target: { value: 'cut tomato plus' }
+    })
+    //@TODO why fireEvent.keyPress() didn't work?
+    // fireEvent.keyPress(getByTestId('todo-edit-input'), {
+    //   key: 'Enter',
+    //   code: 13
+    // })
+  })
+
+  expect(getByTestId('todo-body-text')).toHaveTextContent('cut tomato plus')
+  // @TODO why fireEvent.keyPress() didn't work?
+  //expect(container.querySelector('[class*="editing"]')).toBe(null)
+  // @TODO in jsdom, dynamic .editing classCSSSelector doesn't apply. So tipically show/hide UI test are difficult.
+  // @ref https://spectrum.chat/testing-library/general/testing-an-accordion~b004a9b1-b104-4eb1-a73b-43c60b1a3630?m=MTU1NDQ4NDIzMTQ5Ng==
+  //expect(getByTestId('todo-edit-input')).not.toBeVisible()
 })
