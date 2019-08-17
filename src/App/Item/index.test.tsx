@@ -80,7 +80,7 @@ test('should work "check" complete toggle button', () => {
 })
 
 test('should work edit mode toggle', () => {
-  const { getByTestId, container } = render(
+  const { getByTestId } = render(
     <Provider store={initialStore}>
       <App />
     </Provider>
@@ -105,7 +105,7 @@ test('should work edit mode toggle', () => {
   })
 
   expect(getByTestId('todo-body-text')).toHaveTextContent('cut tomato plus')
-  expect(container.querySelector('[class*="editing"]')).toBe(null)
+  expect(getByTestId('todo-item')).not.toHaveClass('editing')
   // @TODO in jsdom, dynamic .editing css class doesn't apply. So tipically show/hide UI test are difficult.
   // @ref https://spectrum.chat/testing-library/general/testing-an-accordion~b004a9b1-b104-4eb1-a73b-43c60b1a3630?m=MTU1NDQ4NDIzMTQ5Ng==
   //expect(getByTestId('todo-edit-input')).not.toBeVisible()
