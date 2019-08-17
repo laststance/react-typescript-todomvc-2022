@@ -101,7 +101,7 @@ test('should work edit mode toggle', () => {
   fireEvent.keyPress(getByTestId('todo-edit-input'), {
     key: 'Enter',
     code: 13,
-    charCode: 13
+    charCode: 13 // I had issue that doesn't trigger keyPress event relevant charCode. https://github.com/testing-library/react-testing-library/issues/269
   })
 
   expect(getByTestId('todo-body-text')).toHaveTextContent('cut tomato plus')
