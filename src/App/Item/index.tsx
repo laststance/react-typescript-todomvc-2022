@@ -24,7 +24,6 @@ const Item = ({ todo }: Props) => {
   }
 
   const submitEditText = (e: React.KeyboardEvent<HTMLInputElement>): void => {
-    console.log('foifjweofjweijfioweji')
     if (e.key === 'Enter' || e.key === 'Escape') {
       if (e.currentTarget.value.length > 0) {
         setOnEditFalse()
