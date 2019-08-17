@@ -81,44 +81,42 @@ const Item = ({ todo }: Props) => {
   }
 
   return (
-    <Layout
-      className={SwitchStyle(todo, state.onEdit)}
-      data-cy="todo-item"
-      data-testid="todo-item"
-    >
-      <div className="view">
+    <Layout data-cy="todo-item">
+      <li className={SwitchStyle(todo, state.onEdit)} data-testid="todo-item">
+        <div className="view" data-testid="view">
+          <input
+            className="toggle"
+            type="checkbox"
+            checked={todo.completed}
+            onChange={() => toggleCompleted(todo.id)}
+            data-cy="todo-item-complete-check"
+            data-testid="todo-item-complete-check"
+          />
+          <label
+            onDoubleClick={setOnEditTrue}
+            data-cy="todo-body-text"
+            data-testid="todo-body-text"
+          >
+            {todo.bodyText}
+          </label>
+          <button
+            className="destroy"
+            onClick={() => removeItem(todo.id)}
+            data-cy="delete-todo-btn"
+            data-testid="delete-todo-btn"
+          />
+        </div>
         <input
-          className="toggle"
-          type="checkbox"
-          checked={todo.completed}
-          onChange={() => toggleCompleted(todo.id)}
-          data-cy="todo-item-complete-check"
-          data-testid="todo-item-complete-check"
+          onBlur={setOnEditFalse}
+          className="edit"
+          autoFocus={state.onEdit ? true : false}
+          value={todo.bodyText}
+          onChange={e => handleTextInput(e, todo.id)}
+          onKeyPress={e => submitEditText(e)}
+          data-cy="todo-edit-input"
+          data-testid="todo-edit-input"
         />
-        <label
-          onDoubleClick={setOnEditTrue}
-          data-cy="todo-body-text"
-          data-testid="todo-body-text"
-        >
-          {todo.bodyText}
-        </label>
-        <button
-          className="destroy"
-          onClick={() => removeItem(todo.id)}
-          data-cy="delete-todo-btn"
-          data-testid="delete-todo-btn"
-        />
-      </div>
-      <input
-        onBlur={setOnEditFalse}
-        className="edit"
-        autoFocus={state.onEdit ? true : false}
-        value={todo.bodyText}
-        onChange={e => handleTextInput(e, todo.id)}
-        onKeyPress={e => submitEditText(e)}
-        data-cy="todo-edit-input"
-        data-testid="todo-edit-input"
-      />
+      </li>
     </Layout>
   )
 }

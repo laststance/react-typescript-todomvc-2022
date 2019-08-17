@@ -5,7 +5,7 @@
 import styled from '@emotion/styled'
 import { base } from '../style'
 
-export const Layout = styled.li`
+export const Layout = styled.div`
   position: relative;
   font-size: 24px;
   border-bottom: 1px solid #ededed;
@@ -14,23 +14,27 @@ export const Layout = styled.li`
     ${base.textInput};
   }
 
+  .edit {
+    display: none;
+  }
+
   &:last-child {
     border-bottom: none;
   }
 
-  &.editing {
+  .editing {
     border-bottom: none;
     padding: 0;
   }
 
-  &.editing .edit {
-    display: block;
+  .editing .edit {
+    display: block !important;
     width: calc(100% - 43px);
     padding: 12px 16px;
     margin: 0 0 0 43px;
   }
 
-  &.editing .view {
+  .editing .view {
     display: none;
   }
 
@@ -71,7 +75,7 @@ export const Layout = styled.li`
     transition: color 0.4s;
   }
 
-  &.completed label {
+  .completed label {
     color: #d9d9d9;
     text-decoration: line-through;
   }
@@ -103,11 +107,7 @@ export const Layout = styled.li`
     display: block;
   }
 
-  .edit {
-    display: none;
-  }
-
-  &.editing:last-child {
+  .editing:last-child {
     margin-bottom: -1px;
   }
 `

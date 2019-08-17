@@ -79,7 +79,7 @@ test('should work "check" complete toggle button', () => {
   expect(getByTestId('todo-item')).not.toHaveClass('completed')
 })
 
-test('should work edit mode toggle', () => {
+test('should work edit mode and toggle show/hide', () => {
   const { getByTestId } = render(
     <Provider store={initialStore}>
       <App />
@@ -88,13 +88,10 @@ test('should work edit mode toggle', () => {
 
   // by default, edit input form is not visible
   expect(getByTestId('todo-edit-input')).not.toBeVisible()
-
   // double click todo text label, then enable todo text edit code
   fireEvent.doubleClick(getByTestId('todo-body-text'))
   expect(getByTestId('todo-item')).toHaveClass('editing')
-  // @TODO in jsdom, dynamic .editing css class doesn't apply. So tipically show/hide UI test are difficult.
-  // @ref https://spectrum.chat/testing-library/general/testing-an-accordion~b004a9b1-b104-4eb1-a73b-43c60b1a3630?m=MTU1NDQ4NDIzMTQ5Ng==
-  //expect(getByTestId('todo-edit-input')).toBeVisible()
+  expect(getByTestId('todo-edit-input')).toBeVisible()
   fireEvent.change(getByTestId('todo-edit-input'), {
     target: { value: 'cut tomato plus' }
   })
@@ -106,9 +103,7 @@ test('should work edit mode toggle', () => {
 
   expect(getByTestId('todo-body-text')).toHaveTextContent('cut tomato plus')
   expect(getByTestId('todo-item')).not.toHaveClass('editing')
-  // @TODO in jsdom, dynamic .editing css class doesn't apply. So tipically show/hide UI test are difficult.
-  // @ref https://spectrum.chat/testing-library/general/testing-an-accordion~b004a9b1-b104-4eb1-a73b-43c60b1a3630?m=MTU1NDQ4NDIzMTQ5Ng==
-  //expect(getByTestId('todo-edit-input')).not.toBeVisible()
+  expect(getByTestId('todo-edit-input')).not.toBeVisible()
 })
 
 test('delete todo item', () => {
