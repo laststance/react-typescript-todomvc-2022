@@ -64,12 +64,13 @@ test('should click toggle-all-button, then all item being comlete checked true a
     </Provider>
   )
 
+  // toggle on
   fireEvent.click(getByTestId('toggle-all-btn'))
   expect((getAllByTestId('todo-item-complete-check')[0] as HTMLInputElement).checked).toBe(true) /* eslint-disable-line prettier/prettier */
   expect((getAllByTestId('todo-item-complete-check')[1] as HTMLInputElement).checked).toBe(true) /* eslint-disable-line prettier/prettier */
   expect((getAllByTestId('todo-item-complete-check')[2] as HTMLInputElement).checked).toBe(true) /* eslint-disable-line prettier/prettier */
 
-
+  // toggle off
   fireEvent.click(getByTestId('toggle-all-btn'))
   expect((getAllByTestId('todo-item-complete-check')[0] as HTMLInputElement).checked).toBe(false) /* eslint-disable-line prettier/prettier */
   expect((getAllByTestId('todo-item-complete-check')[1] as HTMLInputElement).checked).toBe(false) /* eslint-disable-line prettier/prettier */
