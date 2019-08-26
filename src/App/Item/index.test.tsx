@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { render, cleanup, fireEvent } from '@testing-library/react'
 import Provider, { useStore } from 'muriatic'
 import '@testing-library/jest-dom/extend-expect'
 import Item from './index'
 import { Store } from '../../index'
+import ReactDOM from 'react-dom'
 
 const initialStore: Store = {
   todoList: [
@@ -117,4 +118,18 @@ test('delete todo item', () => {
   expect(getByTestId('todo-item')).toBeInTheDocument()
   fireEvent.click(getByTestId('delete-todo-btn'))
   expect(queryByTestId('todo-item')).toBe(null)
+})
+
+function Apps() {
+  let [ctr, setCtr] = useState(0)
+  useEffect(() => {
+    setCtr(1)
+  }, [])
+  return ctr
+}
+
+it('should render 1', () => {
+  const el = document.createElement('div')
+  ReactDOM.render(<Apps />, el)
+  expect(el.innerHTML).toBe('1') // this fails!
 })
