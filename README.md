@@ -24,7 +24,7 @@ There are tons of effective way to create solid software in JavaScript World, yo
 - [Create React App](https://facebook.github.io/create-react-app/)(ejected for remove eslint-lordar from webpack)
 - [TypeScript(Babel)](https://babeljs.io/docs/en/babel-plugin-transform-typescript)
 - [ReachRouter](https://github.com/reach/router)
-- [emotion](https://github.com/emotion-js/emotion)
+- [emotion](https://github.com/emotion-js/emotion): CSS-in-JS
 - [muriatic](https://github.com/ryota-murakami/muriatic)
 - [cypress](https://www.cypress.io/)
 - [react-testing-library](https://github.com/testing-library/react-testing-library)
