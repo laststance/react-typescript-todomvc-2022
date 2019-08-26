@@ -26,7 +26,7 @@ There are tons of effective way to create solid software in JavaScript World, yo
 - [ReachRouter](https://github.com/reach/router)
 - [emotion](https://github.com/emotion-js/emotion): CSS-in-JS
 - [muriatic](https://github.com/ryota-murakami/muriatic)
-- [cypress](https://www.cypress.io/)
+- [Cypress](https://www.cypress.io/): E2E Testing
 - [react-testing-library](https://github.com/testing-library/react-testing-library)
 - [ESLint](https://eslint.org/)
   - [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier)
@@ -58,8 +58,8 @@ yarn build
 
 After that You'll get bundled stuff in `build` directory.
 
-## cypress
-[cypress](https://www.cypress.io/) is all-in-one E2E Testing tool which can deal real browser testing.  
+## Cypress
+[Cypress](https://www.cypress.io/) is all-in-one E2E Testing tool which can deal real browser testing.  
 
 #### Runs Cypress tests from the CLI without the GUI
 ```baash
