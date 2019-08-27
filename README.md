@@ -41,7 +41,7 @@ In addition, TypeScript adopt so much easier into a `babel` + 'webpack' build sy
 
 So I was interested what kind of code design and configuration was built. if I build todo with a Hooks and TypeScript. 😀
 
-## Install on your Local
+## Installation
 ```
 git clone git@github.com:ryota-murakami/react-typescript-todo-example-2019.git
 cd react-typescript-todo-example-2019
