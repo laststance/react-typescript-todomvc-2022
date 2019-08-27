@@ -32,6 +32,7 @@ There are tons of effective way to create solid software in JavaScript World, yo
   - [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier)
   - [@typescript-eslint/eslint-plugin](https://github.com/typescript-eslint/typescript-eslint#readme)
   - [eslint-plugin-react-hooks](https://reactjs.org/)
+- [Netlify](https://www.netlify.com/): Deploy & Hosting
 
 ## Motivation
 Aftter React Conf 2018, It comming v16.8.0 with [Hooks](https://reactjs.org/docs/hooks-intro.html) that's apparently brand new way of Code Design contrast with class base 📝  
