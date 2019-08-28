@@ -1,5 +1,5 @@
 import React from 'react'
-import { render, cleanup, fireEvent } from '@testing-library/react'
+import { render, fireEvent } from '@testing-library/react'
 import Provider from 'muriatic'
 import '@testing-library/jest-dom/extend-expect'
 import TodoList from './index'
@@ -24,8 +24,6 @@ const initialStore: Store = {
     }
   ]
 }
-
-afterEach(cleanup)
 
 test('should render stored todo values', () => {
   const { getByTestId, getAllByTestId } = render(

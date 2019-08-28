@@ -1,5 +1,5 @@
 import React from 'react'
-import { render, cleanup, fireEvent } from '@testing-library/react'
+import { render, fireEvent } from '@testing-library/react'
 import Provider, { useStore } from 'muriatic'
 import '@testing-library/jest-dom/extend-expect'
 import Item from './index'
@@ -24,8 +24,6 @@ const App = () => {
     </div>
   )
 }
-
-afterEach(cleanup)
 
 test('should each todo object value is set to Item element', () => {
   const { getByTestId } = render(
