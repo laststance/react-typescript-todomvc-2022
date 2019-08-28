@@ -21,25 +21,27 @@ There are tons of effective way to create solid software in JavaScript World, yo
 
 ## Stack
 - [TODO-CSS-Template](https://github.com/Klerith/TODO-CSS-Template)(Borrowing HTML & CSS Thanks! 👍 )
-- [Create React App](https://facebook.github.io/create-react-app/)(ejected for remove eslint-lordar from webpack)
+- [Create React App](https://facebook.github.io/create-react-app/)(ejected for remove eslint-lordar from webpack / [React@16.9.0](https://reactjs.org/blog/2019/08/08/react-v16.9.0.html))
 - [TypeScript(Babel)](https://babeljs.io/docs/en/babel-plugin-transform-typescript)
 - [ReachRouter](https://github.com/reach/router)
-- [emotion](https://github.com/emotion-js/emotion)
-- [muriatic](https://github.com/ryota-murakami/muriatic)
-- [cypress](https://www.cypress.io/)
+- [emotion](https://github.com/emotion-js/emotion): CSS-in-JS
+- [muriatic](https://github.com/ryota-murakami/muriatic): Data Sharing Library
+- [Cypress](https://www.cypress.io/): E2E Testing
 - [react-testing-library](https://github.com/testing-library/react-testing-library)
 - [ESLint](https://eslint.org/)
   - [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier)
   - [@typescript-eslint/eslint-plugin](https://github.com/typescript-eslint/typescript-eslint#readme)
   - [eslint-plugin-react-hooks](https://reactjs.org/)
+- [Netlify](https://www.netlify.com/): Deploy & Hosting
+- [CircleCI](https://circleci.com/): Automation run tests, lint, typecheck, build, deploy
 
 ## Motivation
 Aftter React Conf 2018, It comming v16.8.0 with [Hooks](https://reactjs.org/docs/hooks-intro.html) that's apparently brand new way of Code Design contrast with class base 📝  
 In addition, TypeScript adopt so much easier into a `babel` + 'webpack' build system by [Create React App v2.1 TypeScript support](https://github.com/facebook/create-react-app/releases/tag/v2.1.0) official released.
 
-So I was interested what kind of code design and configuration is. if I build todo with a Hooks and TypeScript. 😀
+So I was interested what kind of code design and configuration was built. if I build todo with a Hooks and TypeScript. 😀
 
-## Install on your Local
+## Installation
 ```
 git clone git@github.com:ryota-murakami/react-typescript-todo-example-2019.git
 cd react-typescript-todo-example-2019
@@ -58,8 +60,8 @@ yarn build
 
 After that You'll get bundled stuff in `build` directory.
 
-## cypress
-[cypress](https://www.cypress.io/) is all-in-one E2E Testing tool which can deal real browser testing.  
+## Cypress
+[Cypress](https://www.cypress.io/) is all-in-one E2E Testing tool which can deal real browser testing.  
 
 #### Runs Cypress tests from the CLI without the GUI
 ```baash
