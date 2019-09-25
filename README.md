@@ -108,13 +108,11 @@ If you run `yarn test`, you'll see console.error message on termianl because `Er
 And setup [TypeScript ESLint](https://github.com/typescript-eslint/typescript-eslint), mixing [Prettier](https://prettier.io/) as a [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier).
 
 ```bash
+# run lint only
 yarn lint
-```
 
-*or*
-
-``` bash
-yarn lint:fix # run wtih eslint --fix option
+# run wtih eslint --fix option
+yarn lint:fix
 ```
 
 ## Typecheck
