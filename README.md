@@ -63,7 +63,7 @@ yarn start
 
 ```
 
-After that you'll seen the console which are server processes messages.
+After that you'll seen the console which are server processes messages.  
 Let follow the message, You put in URL that `http://localhost:3000/`, You'll got todo app as same as Demo and let feel free to modify code innter `src/`!!
 
 ![console](images/launch_dev_server.png)
