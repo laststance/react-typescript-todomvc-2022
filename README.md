@@ -10,8 +10,16 @@
 [![Edit react-typescript-todo-example-2019](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/ryota-murakami/react-typescript-todo-example-2019/tree/master/?fontsize=14)
 
 ## What's this?
-This is a [Create React App](https://facebook.github.io/create-react-app/) based [React](https://reactjs.org/) + [TypeScript](https://www.typescriptlang.org/) todo app example.  👉 [**DEMO**](https://react-typescript-todo-example.netlify.com)  
+This is a [Create React App](https://facebook.github.io/create-react-app/) based [React](https://reactjs.org/) + [TypeScript](https://www.typescriptlang.org/) todo app example.  👉 [**DEMO**](https://react-typescript-todo-example.netlify.com)
 [TypeScript](https://www.typescriptlang.org/) coming from babel, set upped at [Create React App](https://facebook.github.io/create-react-app/) install option. [Adding TypeScript Doc](https://facebook.github.io/create-react-app/docs/adding-typescript#docsNav)📝  
+
+### Motivation
+Aftter React Conf 2018, It comming v16.8.0 with [Hooks](https://reactjs.org/docs/hooks-intro.html) that's apparently brand new way of Code Design contrast with class base 📝
+In addition, TypeScript adopt so much easier into a `babel` + 'webpack' build system by [Create React App v2.1 TypeScript support](https://github.com/facebook/create-react-app/releases/tag/v2.1.0) official released.
+
+So I was interested what kind of code design and configuration was built. if I build todo with a Hooks and TypeScript. 😀
+
+### Note 🗒
 
 **This is not a Best Practice introduction.  
 There are tons of effective way to create solid software in JavaScript World, you have a lot of other option based on your preference for approaching where, The Repo is just a style of my favorite.**  
@@ -19,6 +27,7 @@ There are tons of effective way to create solid software in JavaScript World, yo
 "*How to combining TypeScript with massive Babel or JavaScript tools ecosystem?*"
 
 **I hope this helps you know like that from what I've Published!**
+
 
 ## Stack
 - [TODO-CSS-Template](https://github.com/Klerith/TODO-CSS-Template)(Borrowing HTML & CSS Thanks! 👍 )
@@ -36,11 +45,6 @@ There are tons of effective way to create solid software in JavaScript World, yo
 - [Netlify](https://www.netlify.com/): Deploy & Hosting
 - [CircleCI](https://circleci.com/): Automation run tests, lint, typecheck, build, deploy
 
-## Motivation
-Aftter React Conf 2018, It comming v16.8.0 with [Hooks](https://reactjs.org/docs/hooks-intro.html) that's apparently brand new way of Code Design contrast with class base 📝  
-In addition, TypeScript adopt so much easier into a `babel` + 'webpack' build system by [Create React App v2.1 TypeScript support](https://github.com/facebook/create-react-app/releases/tag/v2.1.0) official released.
-
-So I was interested what kind of code design and configuration was built. if I build todo with a Hooks and TypeScript. 😀
 
 ## Installation
 ```
@@ -49,17 +53,22 @@ cd react-typescript-todo-example-2019
 yarn install
 ```
 
-## Launch DevServer
+## Run Webpack Dev Server
 ```bash
 yarn start
+
 ```
 
-## Build
+## Production Build
 ```bash
 yarn build
 ```
 
 After that You'll get bundled stuff in `build` directory.
+
+## Run Production Build
+
+TBD...
 
 ## Cypress
 [Cypress](https://www.cypress.io/) is all-in-one E2E Testing tool which can deal real browser testing.  
