@@ -1,3 +1,31 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [React TypeScript Todo Example 2019 Mid](#react-typescript-todo-example-2019-mid)
+  - [Play 👇](#play-)
+  - [What's this?](#whats-this)
+    - [Motivation](#motivation)
+    - [Note 🗒](#note-%F0%9F%97%92)
+  - [Stack](#stack)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Run Webpack Dev Server](#run-webpack-dev-server)
+  - [Production Build](#production-build)
+  - [Run Production Build](#run-production-build)
+  - [Cypress](#cypress)
+      - [Runs Cypress tests from the CLI without the GUI](#runs-cypress-tests-from-the-cli-without-the-gui)
+      - [Opens Cypress in the interactive GUI.](#opens-cypress-in-the-interactive-gui)
+  - [Jest](#jest)
+  - [Linting](#linting)
+  - [Typecheck](#typecheck)
+  - [Issues](#issues)
+  - [Questions](#questions)
+  - [LICENSE](#license)
+  - [Contributors ✨](#contributors-)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # React TypeScript Todo Example 2019 Mid
 
 [![CircleCI](https://circleci.com/gh/ryota-murakami/react-typescript-todo-example-2019.svg?style=svg)](https://circleci.com/gh/ryota-murakami/react-typescript-todo-example-2019) [![Cypress.io tests](https://img.shields.io/badge/cypress.io-tests-green.svg?style=flat-square)](https://cypress.io) [![tested with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://github.com/facebook/jest) [![jest](https://jestjs.io/img/jest-badge.svg)](https://github.com/facebook/jest) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier) 
@@ -46,7 +74,7 @@ There are tons of effective way to create solid software in JavaScript World, yo
 - [CircleCI](https://circleci.com/): Automation run tests, lint, typecheck, build, deploy
 
 
-## prerequisites
+## Prerequisites
 
 TBD...
 
