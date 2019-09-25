@@ -91,12 +91,9 @@ yarn cypress:open
 The Repo use to [react-testing-library](https://github.com/testing-library/react-testing-library) for component integration testing.
 
 ```bash
+# run jest
 yarn test
-```
-
-*or*
-
-```bash
+# run jest with hide console message except jest infomation
 yarn test --silent
 ```
 
