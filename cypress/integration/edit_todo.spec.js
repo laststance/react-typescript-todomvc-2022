@@ -45,9 +45,19 @@ context('Edit Todo', () => {
       .type('{leftarrow}{leftarrow}{leftarrow}{del}{del}{del}')
       .type('{enter}')
 
+    // press enter key when input tag is blank, don't finish edit mode and still typing todo text
     cy.get('[data-cy=todo-item]:nth-of-type(3)')
       .find('[data-cy=todo-edit-input]')
       .should('to.be.focused')
 
+    // don't accept only space charcter input. should behave as same as above blank case.(don't finish edit mode and still typing todo text)
+    cy.get('[data-cy=todo-item]:nth-of-type(3)')
+      .find('[data-cy=todo-edit-input]')
+      .type('       ')
+      .type('{enter}')
+
+    cy.get('[data-cy=todo-item]:nth-of-type(3)')
+      .find('[data-cy=todo-edit-input]')
+      .should('to.be.focused')
   })
 })
