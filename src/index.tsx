@@ -26,7 +26,9 @@ let initialStore: Store = {
   todoList: []
 }
 
-const preserved = window.localStorage.getItem(LocalStorageKey.Store)
+const preserved: string | null = window.localStorage.getItem(
+  LocalStorageKey.Store
+)
 if (preserved !== null) {
   const decorded: Store = JSON.parse(preserved)
   initialStore = decorded
