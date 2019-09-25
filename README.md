@@ -46,6 +46,10 @@ There are tons of effective way to create solid software in JavaScript World, yo
 - [CircleCI](https://circleci.com/): Automation run tests, lint, typecheck, build, deploy
 
 
+## prerequisites
+
+TBD...
+
 ## Installation
 ```
 git clone git@github.com:ryota-murakami/react-typescript-todo-example-2019.git
