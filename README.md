@@ -93,7 +93,8 @@ yarn start
 ```
 
 After that you'll seen the console which are server processes messages.  
-Let follow the message, You put in URL that `http://localhost:3000/`, You'll got todo app as same as Demo and let feel free to modify code innter `src/`!!
+Let's follow the message and put in URL `http://localhost:3000/` your browsers adressbar,   
+and then you'll got todo app as same as Demo. let's modify under the `src/` code feel free!!
 
 ![console](images/launch_dev_server.png)
 
