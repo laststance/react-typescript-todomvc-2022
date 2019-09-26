@@ -113,6 +113,8 @@ TBD...
 ## Cypress
 [Cypress](https://www.cypress.io/) is all-in-one E2E Testing tool which can deal real browser testing.  
 
+![cypress_open](images/cypress_open.gif)
+
 #### Runs Cypress tests from the CLI without the GUI
 ```baash
 yarn start # Launch DevServer
