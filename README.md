@@ -76,13 +76,14 @@ There are tons of effective way to create solid software in JavaScript World, yo
 
 ## Prerequisites
 
-TBD...
+The app assumed installed Node.js newer than `10.16.3 LTS`.  
+If you have not it yet, follow the official [Node.js Doc](https://nodejs.org/en/) to install it.
 
 ## Installation
 ```
 git clone git@github.com:ryota-murakami/react-typescript-todo-example-2019.git
 cd react-typescript-todo-example-2019
-yarn install
+yarn install # or npm install
 ```
 
 ## Run Webpack Dev Server
