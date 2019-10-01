@@ -59,7 +59,7 @@
     "prettier": "^1.17.1",
     "react": "^16.9.0",
     "react-app-polyfill": "^1.0.1",
-    "react-dev-utils": "^9.0.1",
+    "react-dev-utils": "^9.0.4",
     "react-dom": "^16.9.0",
     "resolve": "1.10.0",
     "sass-loader": "7.1.0",
