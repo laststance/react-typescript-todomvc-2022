@@ -11,7 +11,6 @@
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
   - [Run Webpack Dev Server](#run-webpack-dev-server)
-  - [Production Build](#production-build)
   - [Run Production Build](#run-production-build)
   - [Cypress](#cypress)
       - [Runs Cypress tests from the CLI without the GUI](#runs-cypress-tests-from-the-cli-without-the-gui)
@@ -80,6 +79,7 @@ The app assumed installed Node.js newer than `10.16.3 LTS`.
 If you have not it yet, follow the official [Node.js Doc](https://nodejs.org/en/) to install it.
 
 ## Installation
+
 ```
 git clone git@github.com:ryota-murakami/react-typescript-todo-example-2019.git
 cd react-typescript-todo-example-2019
@@ -87,28 +87,34 @@ yarn install # or npm install
 ```
 
 ## Run Webpack Dev Server
+
 ```bash
 yarn start
-
 ```
 
 After that you'll seen the console which are server processes messages.  
 Let's follow the message and put in URL `http://localhost:3000/` your browsers adressbar,   
 and then you'll got todo app as same as Demo. let's modify under the `src/` code feel free!!
 
+Official Docs: https://create-react-app.dev/docs/getting-started#npm-start-or-yarn-start
+
 ![console](images/launch_dev_server.png)
 
+## Run Production Build
 
-## Production Build
 ```bash
 yarn build
 ```
 
-After that You'll get bundled stuff in `build` directory.
+After that You'll get bundled and optimization stuff in `build` directory.  
+Also you can run production build with `serve` local webserver modules.  
 
-## Run Production Build
+```bash
+  yarn global add serve
+  serve -s build
+```
 
-TBD...
+Official Docs: https://create-react-app.dev/docs/getting-started#npm-run-build-or-yarn-build
 
 ## Cypress
 [Cypress](https://www.cypress.io/) is all-in-one E2E Testing tool which can deal real browser testing.  
