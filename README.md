@@ -14,7 +14,7 @@
   - [Run Production Build](#run-production-build)
   - [Cypress](#cypress)
       - [Runs Cypress tests from the CLI without the GUI](#runs-cypress-tests-from-the-cli-without-the-gui)
-      - [Opens Cypress in the interactive GUI.](#opens-cypress-in-the-interactive-gui)
+      - [Opens Cypress in the interactive GUI](#opens-cypress-in-the-interactive-gui)
   - [Jest](#jest)
   - [Linting](#linting)
   - [Typecheck](#typecheck)
@@ -127,7 +127,7 @@ yarn start # Launch DevServer
 yarn cypress:run
 ```
 
-#### Opens Cypress in the interactive GUI.
+#### Opens Cypress in the interactive GUI
 
 ```bash
 yarn start # Launch DevServer
