@@ -58,7 +58,7 @@ There are tons of effective way to create solid software in JavaScript World, yo
 
 ## Stack
 - [TODO-CSS-Template](https://github.com/Klerith/TODO-CSS-Template)(Borrowing HTML & CSS Thanks! 👍 )
-- [Create React App](https://facebook.github.io/create-react-app/)(ejected for remove eslint-lordar from webpack / [React@16.9.0](https://reactjs.org/blog/2019/08/08/react-v16.9.0.html))
+- [Create React App](https://facebook.github.io/create-react-app/)(ejected for remove eslint-lordar from webpack / later than [React@16.9.0](https://reactjs.org/blog/2019/08/08/react-v16.9.0.html))
 - [TypeScript(Babel)](https://babeljs.io/docs/en/babel-plugin-transform-typescript)
 - [ReachRouter](https://github.com/reach/router)
 - [emotion](https://github.com/emotion-js/emotion): CSS-in-JS
