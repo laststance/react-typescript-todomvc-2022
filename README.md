@@ -122,7 +122,7 @@ Official Docs: https://create-react-app.dev/docs/getting-started#npm-run-build-o
 ![cypress_open](images/cypress_open.gif)
 
 #### Runs Cypress tests from the CLI without the GUI
-```baash
+```bash
 yarn start # Launch DevServer
 yarn cypress:run
 ```
