@@ -150,7 +150,7 @@
     ]
   },
   "devDependencies": {
-    "@testing-library/jest-dom": "^4.1.0",
+    "@testing-library/jest-dom": "^4.1.1",
     "@testing-library/react": "^9.3.0",
     "@typescript-eslint/parser": "^2.3.3",
     "all-contributors-cli": "^6.9.1",
