@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import { Store, Todo } from '../../index'
-import { useStore } from 'muriatic'
+import { AppState, Todo } from '../../index'
+import { useAppState } from '@ryotamurakami/react-appstate'
 import { Layout } from './style'
 
 interface Props {
@@ -12,7 +12,7 @@ interface State {
 }
 
 const Item = ({ todo }: Props) => {
-  const [store, setStore] = useStore<Store>()
+  const [appState, setAppState] = useAppState<AppState>()
   const init: State = { onEdit: false }
   const [state, setState] = useState(init)
 
@@ -48,8 +48,8 @@ const Item = ({ todo }: Props) => {
   }
 
   const toggleCompleted = (clicked: Todo['id']): void => {
-    setStore({
-      todoList: store.todoList.map((t: Todo) => {
+    setAppState({
+      todoList: appState.todoList.map((t: Todo) => {
         if (t.id === clicked) {
           return { ...t, completed: !t.completed }
         } else {
@@ -60,8 +60,8 @@ const Item = ({ todo }: Props) => {
   }
 
   const removeItem = (terminate: Todo['id']): void => {
-    setStore({
-      todoList: store.todoList.filter((t: Todo) => t.id !== terminate)
+    setAppState({
+      todoList: appState.todoList.filter((t: Todo) => t.id !== terminate)
     })
   }
 
@@ -69,8 +69,8 @@ const Item = ({ todo }: Props) => {
     e: React.ChangeEvent<HTMLInputElement>,
     onEdit: Todo['id']
   ): void => {
-    setStore({
-      todoList: store.todoList.map((t: Todo) => {
+    setAppState({
+      todoList: appState.todoList.map((t: Todo) => {
         if (t.id === onEdit) {
           return { ...t, bodyText: e.target.value }
         } else {

@@ -1,11 +1,11 @@
 import React from 'react'
 import { render, fireEvent } from '@testing-library/react'
-import Provider, { useStore } from 'muriatic'
+import Provider, { useAppState } from '@ryotamurakami/react-appstate'
 import '@testing-library/jest-dom/extend-expect'
 import Item from './index'
-import { Store } from '../../index'
+import { AppState } from '../../index'
 
-const initialStore: Store = {
+const initialAppState: AppState = {
   todoList: [
     {
       id: '8btxpD9kDBlo',
@@ -16,19 +16,19 @@ const initialStore: Store = {
 }
 
 const App = () => {
-  const [store] = useStore<Store>()
-  if (store.todoList.length === 0) return null
+  const [appState] = useAppState<AppState>()
+  if (appState.todoList.length === 0) return null
   return (
     <div>
-      <Item todo={store.todoList[0]} />
+      <Item todo={appState.todoList[0]} />
     </div>
   )
 }
 
 test('should each todo object value is set to Item element', () => {
   const { getByTestId } = render(
-    <Provider store={initialStore}>
-      <Item todo={initialStore.todoList[0]} />
+    <Provider appState={initialAppState}>
+      <Item todo={initialAppState.todoList[0]} />
     </Provider>
   )
 
@@ -45,7 +45,7 @@ test('should each todo object value is set to Item element', () => {
 
 test('should correct render default class state', () => {
   const { getByTestId } = render(
-    <Provider store={initialStore}>
+    <Provider appState={initialAppState}>
       <App />
     </Provider>
   )
@@ -57,7 +57,7 @@ test('should correct render default class state', () => {
 
 test('should work "check" complete toggle button', () => {
   const { getByTestId } = render(
-    <Provider store={initialStore}>
+    <Provider appState={initialAppState}>
       <App />
     </Provider>
   )
@@ -79,7 +79,7 @@ test('should work "check" complete toggle button', () => {
 
 test('should work edit mode and toggle show/hide', () => {
   const { getByTestId } = render(
-    <Provider store={initialStore}>
+    <Provider appState={initialAppState}>
       <App />
     </Provider>
   )
@@ -106,7 +106,7 @@ test('should work edit mode and toggle show/hide', () => {
 
 test('delete todo item', () => {
   const { getByTestId, queryByTestId } = render(
-    <Provider store={initialStore}>
+    <Provider appState={initialAppState}>
       <App />
     </Provider>
   )

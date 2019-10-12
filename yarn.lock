@@ -1517,6 +1517,13 @@
     react-lifecycles-compat "^3.0.4"
     warning "^3.0.0"
 
+"@ryotamurakami/react-appstate@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@ryotamurakami/react-appstate/-/react-appstate-1.0.0.tgz#3b1da74fdcaf80e1075f19227a7bf18ef5ce6d8f"
+  integrity sha512-KBEftjVxEfwU6RXS18lFkD28bhn7/6GdXFxiETQAaj5l7StyQRJeYRr3Zp9V0FUltpK2pl3rKM+Qepr9E49U0g==
+  dependencies:
+    "@types/react" "^16.8.22"
+
 "@sheerun/mutationobserver-shim@^0.3.2":
   version "0.3.2"
   resolved "https://registry.yarnpkg.com/@sheerun/mutationobserver-shim/-/mutationobserver-shim-0.3.2.tgz#8013f2af54a2b7d735f71560ff360d3a8176a87b"
@@ -1799,9 +1806,9 @@
     csstype "^2.2.0"
 
 "@types/react@^16.8.22":
-  version "16.8.22"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.8.22.tgz#7f18bf5ea0c1cad73c46b6b1c804a3ce0eec6d54"
-  integrity sha512-C3O1yVqk4sUXqWyx0wlys76eQfhrQhiDhDlHBrjER76lR2S2Agiid/KpOU9oCqj1dISStscz7xXz1Cg8+sCQeA==
+  version "16.9.5"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.9.5.tgz#079dabd918b19b32118c25fd00a786bb6d0d5e51"
+  integrity sha512-jQ12VMiFOWYlp+j66dghOWcmDDwhca0bnlcTxS4Qz/fh5gi6wpaZDthPEu/Gc/YlAuO87vbiUXL8qKstFvuOaA==
   dependencies:
     "@types/prop-types" "*"
     csstype "^2.2.0"
@@ -8332,13 +8339,6 @@ multicast-dns@^6.0.1:
   dependencies:
     dns-packet "^1.3.1"
     thunky "^1.0.2"
-
-muriatic@^3.0.5:
-  version "3.0.5"
-  resolved "https://registry.yarnpkg.com/muriatic/-/muriatic-3.0.5.tgz#2557d928e36834ceed3fdabd91d780289c1fa7c6"
-  integrity sha512-wO93x3rBVccBDsHncf1sum/Dr5SAMmODKWHw4eKOWWsRYmkyoVrj2RnZt0FlvZ3EZHUKubMV/0DdmRP3pt7djQ==
-  dependencies:
-    "@types/react" "^16.8.22"
 
 mute-stream@0.0.7:
   version "0.0.7"

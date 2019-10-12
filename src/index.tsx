@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { Router } from '@reach/router'
-import Provider from 'muriatic'
+import Provider from '@ryotamurakami/react-appstate'
 import './index.css'
 import * as serviceWorker from './serviceWorker'
 import App, { LocalStorageKey } from './App'
@@ -18,25 +18,25 @@ export interface Todo {
 
 export type TodoListType = Todo[]
 
-export interface Store {
+export interface AppState {
   todoList: TodoListType
 }
 
-let initialStore: Store = {
+let initialAppState: AppState = {
   todoList: []
 }
 
 const preserved: string | null = window.localStorage.getItem(
-  LocalStorageKey.Store
+  LocalStorageKey.AppState
 )
 if (preserved !== null) {
-  const decorded: Store = JSON.parse(preserved)
-  initialStore = decorded
+  const decorded: AppState = JSON.parse(preserved)
+  initialAppState = decorded
 }
 
 ReactDOM.render(
   <ErrorBoundary>
-    <Provider store={initialStore}>
+    <Provider appState={initialAppState}>
       <Router>
         <App path="/" />
         <App path="/active" />

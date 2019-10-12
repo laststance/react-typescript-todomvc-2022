@@ -1,7 +1,7 @@
 import React from 'react'
 import FilterLink from './FilterLink'
-import { Routes, Todo, Store } from '../../index'
-import { useStore } from 'muriatic'
+import { Routes, Todo, AppState } from '../../index'
+import { useAppState } from '@ryotamurakami/react-appstate'
 import { Layout } from './style'
 
 interface Props {
@@ -9,12 +9,14 @@ interface Props {
 }
 
 const Footer = ({ path }: Props) => {
-  const [store, setStore] = useStore<Store>()
-  const doneCount: number = store.todoList.filter(t => t.completed === true).length /* eslint-disable-line prettier/prettier */
-  const yetCount: number = store.todoList.filter(t => t.completed === false).length /* eslint-disable-line prettier/prettier */
+  const [appState, setAppState] = useAppState<AppState>()
+  const doneCount: number = appState.todoList.filter(t => t.completed === true).length /* eslint-disable-line prettier/prettier */
+  const yetCount: number = appState.todoList.filter(t => t.completed === false).length /* eslint-disable-line prettier/prettier */
 
   const clearComoleted = (): void => {
-    setStore({ todoList: store.todoList.filter((t: Todo) => !t.completed) })
+    setAppState({
+      todoList: appState.todoList.filter((t: Todo) => !t.completed)
+    })
   }
 
   return (

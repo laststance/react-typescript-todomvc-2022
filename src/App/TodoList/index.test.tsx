@@ -1,11 +1,11 @@
 import React from 'react'
 import { render, fireEvent } from '@testing-library/react'
-import Provider from 'muriatic'
+import Provider from '@ryotamurakami/react-appstate'
 import '@testing-library/jest-dom/extend-expect'
 import TodoList from './index'
-import { Store } from '../../index'
+import { AppState } from '../../index'
 
-const initialStore: Store = {
+const initialAppState: AppState = {
   todoList: [
     {
       id: 'TsHx9eEN5Y4A',
@@ -25,9 +25,9 @@ const initialStore: Store = {
   ]
 }
 
-test('should render stored todo values', () => {
+test('should render appStated todo values', () => {
   const { getByTestId, getAllByTestId } = render(
-    <Provider store={initialStore}>
+    <Provider appState={initialAppState}>
       <TodoList path="/" />
     </Provider>
   )
@@ -40,9 +40,9 @@ test('should render stored todo values', () => {
   expect(getAllByTestId('todo-item')[2]).toHaveTextContent('caffe latte')
 })
 
-test('should reflect store value change to render elements', () => {
+test('should reflect appState value change to render elements', () => {
   const { getByTestId, getAllByTestId } = render(
-    <Provider store={initialStore}>
+    <Provider appState={initialAppState}>
       <TodoList path="/" />
     </Provider>
   )
@@ -57,7 +57,7 @@ test('should reflect store value change to render elements', () => {
 
 test('should click toggle-all-button, then all item being comlete checked true and vice versa', () => {
   const { getByTestId, getAllByTestId } = render(
-    <Provider store={initialStore}>
+    <Provider appState={initialAppState}>
       <TodoList path="/" />
     </Provider>
   )

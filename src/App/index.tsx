@@ -1,14 +1,14 @@
 import React, { Fragment } from 'react'
-import { useStore } from 'muriatic'
+import { useAppState } from '@ryotamurakami/react-appstate'
 import Header from './Header'
 import TodoList from './TodoList'
 import Footer from './Footer'
-import { Routes, Store } from '../index'
+import { Routes, AppState } from '../index'
 import { RouteComponentProps } from '@reach/router'
 import { Layout } from './style'
 
 export const LocalStorageKey = {
-  Store: 'Store'
+  AppState: 'AppState'
 }
 
 interface Props {
@@ -16,15 +16,18 @@ interface Props {
 }
 
 const App = ({ path }: Props & RouteComponentProps) => {
-  const [store] = useStore<Store>()
-  // preserve every store changes.
-  window.localStorage.setItem(LocalStorageKey.Store, JSON.stringify(store))
+  const [appState] = useAppState<AppState>()
+  // preserve every appState changes.
+  window.localStorage.setItem(
+    LocalStorageKey.AppState,
+    JSON.stringify(appState)
+  )
 
   return (
     <Layout>
       <section className="todoapp">
         <Header />
-        {store.todoList.length ? (
+        {appState.todoList.length ? (
           <Fragment>
             <TodoList path={path} />
             <Footer path={path} />

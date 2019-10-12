@@ -1,7 +1,7 @@
 import React from 'react'
-import { Routes, Todo, Store } from '../../index'
+import { Routes, Todo, AppState } from '../../index'
 import Item from '../Item'
-import { useStore } from 'muriatic'
+import { useAppState } from '@ryotamurakami/react-appstate'
 import { Layout } from './style'
 
 interface Props {
@@ -13,11 +13,11 @@ interface Props {
 }
 
 function TodoList({ path }: Props) {
-  const [store, setStore] = useStore<Store>()
+  const [appState, setAppState] = useAppState<AppState>()
 
   const toggleAll = (e: React.ChangeEvent<HTMLInputElement>) =>
-    setStore({
-      todoList: store.todoList.map((t: Todo) => {
+    setAppState({
+      todoList: appState.todoList.map((t: Todo) => {
         return { ...t, completed: e.target.checked }
       })
     })
@@ -35,7 +35,7 @@ function TodoList({ path }: Props) {
         />
         <label htmlFor="toggle-all">Mark all as complete</label>
         <ul className="todo-list" data-testid="todo-list">
-          {store.todoList
+          {appState.todoList
             .filter((t: Todo) => {
               switch (path) {
                 case '/':

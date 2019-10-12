@@ -39,129 +39,110 @@ export function register(config?: Config): void {
       return
     }
 
-    window.addEventListener(
-      'load',
-      (): void => {
-        const swUrl = `${process.env.PUBLIC_URL}/service-worker.js`
+    window.addEventListener('load', (): void => {
+      const swUrl = `${process.env.PUBLIC_URL}/service-worker.js`
 
-        if (isLocalhost) {
-          // This is running on localhost. Let's check if a service worker still exists or not.
-          checkValidServiceWorker(swUrl, config)
+      if (isLocalhost) {
+        // This is running on localhost. Let's check if a service worker still exists or not.
+        checkValidServiceWorker(swUrl, config)
 
-          // Add some additional logging to localhost, pointing developers to the
-          // service worker/PWA documentation.
-          navigator.serviceWorker.ready.then(
-            (): void => {
-              // eslint-disable-next-line no-console
-              console.log(
-                'This web app is being served cache-first by a service ' +
-                  'worker. To learn more, visit https://bit.ly/CRA-PWA'
-              )
-            }
+        // Add some additional logging to localhost, pointing developers to the
+        // service worker/PWA documentation.
+        navigator.serviceWorker.ready.then((): void => {
+          // eslint-disable-next-line no-console
+          console.log(
+            'This web app is being served cache-first by a service ' +
+              'worker. To learn more, visit https://bit.ly/CRA-PWA'
           )
-        } else {
-          // Is not localhost. Just register service worker
-          registerValidSW(swUrl, config)
-        }
+        })
+      } else {
+        // Is not localhost. Just register service worker
+        registerValidSW(swUrl, config)
       }
-    )
+    })
   }
 }
 
 function registerValidSW(swUrl: string, config?: Config): void {
   navigator.serviceWorker
     .register(swUrl)
-    .then(
-      (registration): void => {
-        registration.onupdatefound = (): void => {
-          const installingWorker = registration.installing
-          if (installingWorker == null) {
-            return
-          }
-          installingWorker.onstatechange = (): void => {
-            if (installingWorker.state === 'installed') {
-              if (navigator.serviceWorker.controller) {
-                // At this point, the updated precached content has been fetched,
-                // but the previous service worker will still serve the older
-                // content until all client tabs are closed.
-                // eslint-disable-next-line no-console
-                console.log(
-                  'New content is available and will be used when all ' +
-                    'tabs for this page are closed. See https://bit.ly/CRA-PWA.'
-                )
+    .then((registration): void => {
+      registration.onupdatefound = (): void => {
+        const installingWorker = registration.installing
+        if (installingWorker == null) {
+          return
+        }
+        installingWorker.onstatechange = (): void => {
+          if (installingWorker.state === 'installed') {
+            if (navigator.serviceWorker.controller) {
+              // At this point, the updated precached content has been fetched,
+              // but the previous service worker will still serve the older
+              // content until all client tabs are closed.
+              // eslint-disable-next-line no-console
+              console.log(
+                'New content is available and will be used when all ' +
+                  'tabs for this page are closed. See https://bit.ly/CRA-PWA.'
+              )
 
-                // Execute callback
-                if (config && config.onUpdate) {
-                  config.onUpdate(registration)
-                }
-              } else {
-                // At this point, everything has been precached.
-                // It's the perfect time to display a
-                // "Content is cached for offline use." message.
-                // eslint-disable-next-line no-console
-                console.log('Content is cached for offline use.')
+              // Execute callback
+              if (config && config.onUpdate) {
+                config.onUpdate(registration)
+              }
+            } else {
+              // At this point, everything has been precached.
+              // It's the perfect time to display a
+              // "Content is cached for offline use." message.
+              // eslint-disable-next-line no-console
+              console.log('Content is cached for offline use.')
 
-                // Execute callback
-                if (config && config.onSuccess) {
-                  config.onSuccess(registration)
-                }
+              // Execute callback
+              if (config && config.onSuccess) {
+                config.onSuccess(registration)
               }
             }
           }
         }
       }
-    )
-    .catch(
-      (error): void => {
-        // eslint-disable-next-line no-console
-        console.error('Error during service worker registration:', error)
-      }
-    )
+    })
+    .catch((error): void => {
+      // eslint-disable-next-line no-console
+      console.error('Error during service worker registration:', error)
+    })
 }
 
 function checkValidServiceWorker(swUrl: string, config?: Config): void {
   // Check if the service worker can be found. If it can't reload the page.
   fetch(swUrl)
-    .then(
-      (response): void => {
-        // Ensure service worker exists, and that we really are getting a JS file.
-        const contentType = response.headers.get('content-type')
-        if (
-          response.status === 404 ||
-          (contentType != null && contentType.indexOf('javascript') === -1)
-        ) {
-          // No service worker found. Probably a different app. Reload the page.
-          navigator.serviceWorker.ready.then(
-            (registration): void => {
-              registration.unregister().then(
-                (): void => {
-                  window.location.reload()
-                }
-              )
-            }
-          )
-        } else {
-          // Service worker found. Proceed as normal.
-          registerValidSW(swUrl, config)
-        }
+    .then((response): void => {
+      // Ensure service worker exists, and that we really are getting a JS file.
+      const contentType = response.headers.get('content-type')
+      if (
+        response.status === 404 ||
+        (contentType != null && contentType.indexOf('javascript') === -1)
+      ) {
+        // No service worker found. Probably a different app. Reload the page.
+        navigator.serviceWorker.ready.then((registration): void => {
+          registration.unregister().then((): void => {
+            window.location.reload()
+          })
+        })
+      } else {
+        // Service worker found. Proceed as normal.
+        registerValidSW(swUrl, config)
       }
-    )
-    .catch(
-      (): void => {
-        // eslint-disable-next-line no-console
-        console.log(
-          'No internet connection found. App is running in offline mode.'
-        )
-      }
-    )
+    })
+    .catch((): void => {
+      // eslint-disable-next-line no-console
+      console.log(
+        'No internet connection found. App is running in offline mode.'
+      )
+    })
 }
 
 export function unregister(): void {
   if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.ready.then(
-      (registration): void => {
-        registration.unregister()
-      }
-    )
+    navigator.serviceWorker.ready.then((registration): void => {
+      registration.unregister()
+    })
   }
 }

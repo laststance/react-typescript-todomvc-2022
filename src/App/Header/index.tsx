@@ -1,11 +1,11 @@
 import React, { createRef } from 'react'
 import { UUID } from '../../functions'
-import { Todo, Store } from '../../index'
-import { useStore } from 'muriatic'
+import { Todo, AppState } from '../../index'
+import { useAppState } from '@ryotamurakami/react-appstate'
 import { Layout } from './style'
 
 function Header() {
-  const [store, setStore] = useStore<Store>()
+  const [appState, setAppState] = useAppState<AppState>()
   const textInput = createRef<HTMLInputElement>()
 
   const addTodo = (e: React.KeyboardEvent<HTMLInputElement>) => {
@@ -18,7 +18,7 @@ function Header() {
         completed: false
       }
 
-      setStore({ todoList: [todo, ...store.todoList] })
+      setAppState({ todoList: [todo, ...appState.todoList] })
 
       textInput.current.value = ''
     }

@@ -1,16 +1,16 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import App from './App'
-import Provider from 'muriatic'
+import Provider from '@ryotamurakami/react-appstate'
 
-const initialStore = {
+const initialAppState = {
   todoList: []
 }
 
 it('renders without crashing', () => {
   const div = document.createElement('div')
   ReactDOM.render(
-    <Provider store={initialStore}>
+    <Provider appState={initialAppState}>
       <App path="/" />
     </Provider>,
     div
