@@ -10,7 +10,7 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
-- [React TypeScript Todo Example 2019 Mid](#react-typescript-todo-example-2019-mid)
+- [React TypeScript Todo Example 2019](#react-typescript-todo-example-2019)
   - [Play 👇](#play-)
   - [What's this?](#whats-this)
     - [Motivation](#motivation)
