@@ -1,7 +1,5 @@
 {
   "name": "react-typescript-todo-example-2019",
-  "version": "0.1.0",
-  "private": true,
   "dependencies": {
     "@emotion/core": "^10.0.22",
     "@emotion/styled": "^10.0.22",
