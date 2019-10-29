@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, FC } from 'react'
 import { useAppState } from '@ryotamurakami/react-appstate'
 import Header from './Header'
 import TodoList from './TodoList'
@@ -15,7 +15,7 @@ interface Props {
   path: Routes
 }
 
-const App = ({ path }: Props & RouteComponentProps) => {
+const App: FC<Props & RouteComponentProps> = ({ path }) => {
   const [appState] = useAppState<AppState>()
   // preserve every appState changes.
   window.localStorage.setItem(
