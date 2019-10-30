@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, useEffect } from 'react'
 import { useAppState } from '@ryotamurakami/react-appstate'
 import Header from './Header'
 import TodoList from './TodoList'
@@ -17,11 +17,14 @@ interface Props {
 
 const App: React.FC<Props & RouteComponentProps> = ({ path }) => {
   const [appState] = useAppState<AppState>()
+
   // preserve every appState changes.
-  window.localStorage.setItem(
-    LocalStorageKey.AppState,
-    JSON.stringify(appState)
-  )
+  useEffect((): void => {
+    window.localStorage.setItem(
+      LocalStorageKey.AppState,
+      JSON.stringify(appState)
+    )
+  }, [appState])
 
   return (
     <Layout>
