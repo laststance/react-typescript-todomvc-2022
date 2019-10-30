@@ -4,7 +4,7 @@
     "@emotion/core": "^10.0.22",
     "@emotion/styled": "^10.0.22",
     "@reach/router": "^1.2.1",
-    "@ryotamurakami/react-appstate": "^1.0.0",
+    "@ryotamurakami/react-appstate": "^1.1.0",
     "@types/jest": "24.0.19",
     "@types/node": "12.11.7",
     "@types/reach__router": "^1.2.6",

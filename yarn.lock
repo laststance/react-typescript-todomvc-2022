@@ -1239,12 +1239,12 @@
     react-lifecycles-compat "^3.0.4"
     warning "^3.0.0"
 
-"@ryotamurakami/react-appstate@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@ryotamurakami/react-appstate/-/react-appstate-1.0.0.tgz#3b1da74fdcaf80e1075f19227a7bf18ef5ce6d8f"
-  integrity sha512-KBEftjVxEfwU6RXS18lFkD28bhn7/6GdXFxiETQAaj5l7StyQRJeYRr3Zp9V0FUltpK2pl3rKM+Qepr9E49U0g==
+"@ryotamurakami/react-appstate@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@ryotamurakami/react-appstate/-/react-appstate-1.1.0.tgz#7767f6805086847ec53ff736d327d3fc42ecfc52"
+  integrity sha512-wiVH+Jwn6jUy4OBPGtpRpJgi6fkAOlLz0ts4fd8ttvkLZ35Qzjwa5J3vu8NsZFMaBGzBCSB70EzV3uZoPZAFhg==
   dependencies:
-    "@types/react" "^16.8.22"
+    typescript "^3.6.4"
 
 "@sheerun/mutationobserver-shim@^0.3.2":
   version "0.3.2"
@@ -1500,7 +1500,7 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react@*", "@types/react@16.9.11", "@types/react@^16.8.22":
+"@types/react@*", "@types/react@16.9.11":
   version "16.9.11"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-16.9.11.tgz#70e0b7ad79058a7842f25ccf2999807076ada120"
   integrity sha512-UBT4GZ3PokTXSWmdgC/GeCGEJXE5ofWyibCcecRLUVN2ZBpXQGVgQGtG2foS7CrTKFKlQVVswLvf7Js6XA/CVQ==
@@ -10328,7 +10328,7 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-typescript@3.6.4:
+typescript@3.6.4, typescript@^3.6.4:
   version "3.6.4"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.6.4.tgz#b18752bb3792bc1a0281335f7f6ebf1bbfc5b91d"
   integrity sha512-unoCll1+l+YK4i4F8f22TaNVPRHcD9PA3yCuZ8g5e0qGqlVlJ/8FSateOLLSagn+Yg5+ZwuPkL8LFUc0Jcvksg==
