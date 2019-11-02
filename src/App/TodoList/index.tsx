@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { ReactElement } from 'react'
 import { Routes, Todo, AppState } from '../../index'
 import Item from '../Item'
 import { useAppState } from '@ryotamurakami/react-appstate'
@@ -32,7 +32,7 @@ const TodoList: React.FC<Props> = ({ path }) => {
         <label htmlFor="toggle-all">Mark all as complete</label>
         <ul className="todo-list" data-testid="todo-list">
           {appState.todoList
-            .filter((t: Todo) => {
+            .filter((t: Todo): boolean => {
               switch (path) {
                 case '/':
                   return true
@@ -44,9 +44,11 @@ const TodoList: React.FC<Props> = ({ path }) => {
                   return true
               }
             })
-            .map((t: Todo) => {
-              return <Item key={t.id} todo={t} />
-            })}
+            .map(
+              (t: Todo): ReactElement => {
+                return <Item key={t.id} todo={t} />
+              }
+            )}
         </ul>
       </section>
     </Layout>
