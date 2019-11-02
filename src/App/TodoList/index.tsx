@@ -12,7 +12,7 @@ interface Props {
   path: Routes
 }
 
-function TodoList({ path }: Props) {
+const TodoList: React.FC<Props> = ({ path }) => {
   const [appState, setAppState] = useAppState<AppState>()
 
   const toggleAll = (e: React.ChangeEvent<HTMLInputElement>) =>
