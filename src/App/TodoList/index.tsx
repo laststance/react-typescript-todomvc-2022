@@ -11,7 +11,7 @@ interface Props {
 const TodoList: React.FC<Props> = ({ path }) => {
   const [appState, setAppState] = useAppState<AppState>()
 
-  const toggleAll = (e: React.ChangeEvent<HTMLInputElement>) =>
+  const toggleAllCompletedCheck = (e: React.ChangeEvent<HTMLInputElement>) =>
     setAppState({
       todoList: appState.todoList.map((t: Todo) => {
         return { ...t, completed: e.target.checked }
@@ -25,7 +25,7 @@ const TodoList: React.FC<Props> = ({ path }) => {
           id="toggle-all"
           className="toggle-all"
           type="checkbox"
-          onChange={toggleAll}
+          onChange={toggleAllCompletedCheck}
           data-cy="toggle-all-btn"
           data-testid="toggle-all-btn"
         />
