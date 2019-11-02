@@ -8,10 +8,6 @@ interface Props {
   path: Routes
 }
 
-interface Props {
-  path: Routes
-}
-
 const TodoList: React.FC<Props> = ({ path }) => {
   const [appState, setAppState] = useAppState<AppState>()
 
