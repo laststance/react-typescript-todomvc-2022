@@ -29,9 +29,6 @@
     "contributors:add": "all-contributors add",
     "contributors:generate": "all-contributors generate"
   },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
   "browserslist": {
     "production": [
       ">0.2%",
