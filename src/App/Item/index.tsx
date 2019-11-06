@@ -11,15 +11,15 @@ interface State {
   onEdit: boolean
 }
 
-const Item = ({ todo }: Props) => {
+const Item: React.FC<Props> = ({ todo }) => {
   const [appState, setAppState] = useAppState<AppState>()
   const init: State = { onEdit: false }
   const [state, setState] = useState(init)
 
-  const setOnEditTrue = () => {
+  const setOnEditTrue = (): void => {
     setState({ onEdit: true })
   }
-  const setOnEditFalse = () => {
+  const setOnEditFalse = (): void => {
     setState({ onEdit: false })
   }
 
@@ -49,19 +49,23 @@ const Item = ({ todo }: Props) => {
 
   const toggleCompleted = (clicked: Todo['id']): void => {
     setAppState({
-      todoList: appState.todoList.map((t: Todo) => {
-        if (t.id === clicked) {
-          return { ...t, completed: !t.completed }
-        } else {
-          return t
+      todoList: appState.todoList.map(
+        (t: Todo): Todo => {
+          if (t.id === clicked) {
+            return { ...t, completed: !t.completed }
+          } else {
+            return t
+          }
         }
-      })
+      )
     })
   }
 
   const removeItem = (terminate: Todo['id']): void => {
     setAppState({
-      todoList: appState.todoList.filter((t: Todo) => t.id !== terminate)
+      todoList: appState.todoList.filter(
+        (t: Todo): boolean => t.id !== terminate
+      )
     })
   }
 
@@ -70,13 +74,15 @@ const Item = ({ todo }: Props) => {
     onEdit: Todo['id']
   ): void => {
     setAppState({
-      todoList: appState.todoList.map((t: Todo) => {
-        if (t.id === onEdit) {
-          return { ...t, bodyText: e.target.value }
-        } else {
-          return t
+      todoList: appState.todoList.map(
+        (t: Todo): Todo => {
+          if (t.id === onEdit) {
+            return { ...t, bodyText: e.target.value }
+          } else {
+            return t
+          }
         }
-      })
+      )
     })
   }
 
