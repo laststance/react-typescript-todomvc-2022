@@ -80,7 +80,7 @@ If you have not it yet, follow the official [Node.js Doc](https://nodejs.org/en/
 
 ## Installation
 
-```
+```bash
 git clone git@github.com:ryota-murakami/react-typescript-todo-example-2019.git
 cd react-typescript-todo-example-2019
 yarn install # or npm install
@@ -110,8 +110,8 @@ After that You'll get bundled and optimization stuff in `build` directory.
 Also you can run production build with `serve` local webserver modules.  
 
 ```bash
-  yarn global add serve
-  serve -s build
+yarn global add serve
+serve -s build
 ```
 
 Official Docs: https://create-react-app.dev/docs/getting-started#npm-run-build-or-yarn-build
