@@ -18,7 +18,7 @@
     "eject": "react-scripts eject",
     "lint": "eslint . --ext .ts,.tsx",
     "lint:fix": "eslint . --ext .ts,.tsx --fix",
-    "cypress:run": "cypress run",
+    "cypress:run": "cypress run  --record --key c78b01ce-059e-403b-ac2e-e32095992593",
     "cypress:open": "cypress open",
     "typecheck": "tsc --noEmit",
     "contributors:add": "all-contributors add",
