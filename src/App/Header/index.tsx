@@ -4,7 +4,7 @@ import { Todo, AppState } from '../../index'
 import { useAppState } from '@ryotamurakami/react-appstate'
 import { Layout } from './style'
 
-function Header() {
+const Header: React.FC = () => {
   const [appState, setAppState] = useAppState<AppState>()
   const textInput = createRef<HTMLInputElement>()
 
