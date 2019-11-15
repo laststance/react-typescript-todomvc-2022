@@ -23,6 +23,8 @@
 //
 // -- This is will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
+// for adding cy.percySnapshot() command. https://docs.percy.io/docs/cypress
+import '@percy/cypress'
 
 Cypress.Commands.add('submitTripleTodos', () => {
   cy.visit('http://localhost:3000/')

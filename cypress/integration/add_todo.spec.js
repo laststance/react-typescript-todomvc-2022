@@ -32,5 +32,6 @@ context('Add Todo', () => {
     cy.get('[data-cy=todo-item]')
       .should('exist')
       .should('contain', 'three')
+    cy.percySnapshot()
   })
 })

@@ -84,5 +84,6 @@ context('Real World Usecase', () => {
     // @see https://docs.cypress.io/api/commands/hover.html#Workarounds
 
     cy.get('[data-cy=remaining-uncompleted-todo-count]').should('contain', '2')
+    cy.percySnapshot()
   })
 })
