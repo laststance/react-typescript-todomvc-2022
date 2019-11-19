@@ -6,7 +6,7 @@ interface Props {
   path: Routes
 }
 
-export default function FilterLink({ path }: Props) {
+const FilterLink: React.FC<Props> = ({ path }) => {
   return (
     <ul className="filters">
       <li>
@@ -39,3 +39,5 @@ export default function FilterLink({ path }: Props) {
     </ul>
   )
 }
+
+export default FilterLink
