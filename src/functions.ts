@@ -8,3 +8,7 @@ export const UUID = (): string => {
   }
   return result
 }
+
+export const isOnlySpaceCharText = (value: string): boolean => {
+  return value.length === value.split('').filter(c => c === ' ').length
+}
