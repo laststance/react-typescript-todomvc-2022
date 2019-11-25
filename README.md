@@ -64,6 +64,7 @@ There are tons of effective way to create solid software in JavaScript World, yo
 - [emotion](https://github.com/emotion-js/emotion): CSS-in-JS
 - [React AppState](https://github.com/ryota-murakami/react-appstate): Data Sharing Library
 - [Cypress](https://www.cypress.io/): E2E Testing
+- [Percy](https://percy.io/): Visual Testing
 - [react-testing-library](https://github.com/testing-library/react-testing-library)
 - [ESLint](https://eslint.org/)
   - [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier)
