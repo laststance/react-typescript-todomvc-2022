@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, createRef, useEffect } from 'react'
 import { AppState, Todo } from '../../index'
 import { useAppState } from '@ryotamurakami/react-appstate'
 import { Layout } from './style'
@@ -13,23 +13,30 @@ interface State {
 
 const Item: React.FC<Props> = ({ todo }) => {
   const [appState, setAppState] = useAppState<AppState>()
+  const editInput = createRef<HTMLInputElement>()
   const init: State = { onEdit: false }
   const [state, setState] = useState(init)
 
-  const setOnEditTrue = (): void => {
+  const onStartEdit = (): void => {
     setState({ onEdit: true })
   }
-  const setOnEditFalse = (): void => {
+
+  const setOnFinishEdit = (): void => {
     setState({ onEdit: false })
   }
 
   const submitEditText = (e: React.KeyboardEvent<HTMLInputElement>): void => {
     if (e.key === 'Enter' || e.key === 'Escape') {
       if (e.currentTarget.value.trim().length > 0) {
-        setOnEditFalse()
+        setOnFinishEdit()
       }
     }
   }
+
+  useEffect(() => {
+    if (state.onEdit === true && editInput.current !== null)
+      editInput.current.focus()
+  }, [editInput, state.onEdit])
 
   const SwitchStyle = (t: Todo, onEdit: boolean): string => {
     switch (true) {
@@ -99,7 +106,7 @@ const Item: React.FC<Props> = ({ todo }) => {
             data-testid="todo-item-complete-check"
           />
           <label
-            onDoubleClick={setOnEditTrue}
+            onDoubleClick={onStartEdit}
             data-cy="todo-body-text"
             data-testid="todo-body-text"
           >
@@ -113,9 +120,9 @@ const Item: React.FC<Props> = ({ todo }) => {
           />
         </div>
         <input
-          onBlur={setOnEditFalse}
+          ref={editInput}
+          onBlur={setOnFinishEdit}
           className="edit"
-          autoFocus={state.onEdit ? true : false}
           value={todo.bodyText}
           onChange={e => handleTextInput(e, todo.id)}
           onKeyPress={e => submitEditText(e)}

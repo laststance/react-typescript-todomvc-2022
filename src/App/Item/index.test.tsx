@@ -86,10 +86,11 @@ test('should work edit mode and toggle show/hide', () => {
 
   // by default, edit input form is not visible
   expect(getByTestId('todo-edit-input')).not.toBeVisible()
-  // double click todo text label, then enable todo text edit code
+  // double click todo text label, then focus and enable todo text edit code
   fireEvent.doubleClick(getByTestId('todo-body-text'))
   expect(getByTestId('todo-item')).toHaveClass('editing')
   expect(getByTestId('todo-edit-input')).toBeVisible()
+  expect(getByTestId('todo-edit-input')).toHaveFocus()
   fireEvent.change(getByTestId('todo-edit-input'), {
     target: { value: 'cut tomato plus' }
   })
