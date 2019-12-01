@@ -1,2 +1,3 @@
 build/
 cypress/videos/
+cypress/fixtures/
