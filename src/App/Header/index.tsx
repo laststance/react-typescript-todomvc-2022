@@ -1,5 +1,5 @@
 import React, { createRef } from 'react'
-import { isOnlySpaceCharText, UUID } from '../../functions'
+import { UUID } from '../../functions'
 import { Todo, AppState } from '../../index'
 import { useAppState } from '@ryotamurakami/react-appstate'
 import { Layout } from './style'
@@ -10,11 +10,7 @@ const Header: React.FC = () => {
 
   const addTodo = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (textInput.current === null) return
-    if (
-      e.key === 'Enter' &&
-      textInput.current.value.length > 0 &&
-      !isOnlySpaceCharText(textInput.current.value)
-    ) {
+    if (e.key === 'Enter' && textInput.current.value.trim().length > 0) {
       const todo: Todo = {
         id: UUID(),
         bodyText: textInput.current.value,
