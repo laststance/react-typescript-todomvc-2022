@@ -8,17 +8,20 @@ const Header: React.FC = () => {
   const [appState, setAppState] = useAppState<AppState>()
   const textInput = createRef<HTMLInputElement>()
 
-  const addTodo = (e: React.KeyboardEvent<HTMLInputElement>) => {
+  function addTodo(e: React.KeyboardEvent<HTMLInputElement>): void {
     if (textInput.current === null) return
     if (e.key === 'Enter' && textInput.current.value.trim().length > 0) {
+      // make new TODO object
       const todo: Todo = {
         id: UUID(),
         bodyText: textInput.current.value,
         completed: false
       }
 
+      // add new TODO to entire TodoList
       setAppState({ todoList: [todo, ...appState.todoList] })
 
+      // reset text input UI value
       textInput.current.value = ''
     }
   }
