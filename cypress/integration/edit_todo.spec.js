@@ -8,6 +8,7 @@ context('Edit Todo', () => {
       .find('[data-cy=todo-body-text]')
       .should('contain', 'one')
       .dblclick()
+      // should focus actual input element when dbclick todo text label
       .focused()
       .should('have.value', 'one')
       .should('have.attr', 'data-cy', 'todo-edit-input')
