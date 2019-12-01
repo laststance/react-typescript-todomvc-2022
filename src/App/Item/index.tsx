@@ -35,12 +35,6 @@ const Item: React.FC<Props> = ({ todo }) => {
     }
   }
 
-  useEffect(() => {
-    // For fucus input element when double clicks text label. fix this https://github.com/ryota-murakami/react-typescript-todo-example-2019/issues/50
-    if (state.onEdit === true && editInput.current !== null)
-      editInput.current.focus()
-  }, [editInput, state.onEdit])
-
   const SwitchStyle = (t: Todo, onEdit: boolean): string => {
     switch (true) {
       case onEdit && t.completed:
@@ -95,6 +89,12 @@ const Item: React.FC<Props> = ({ todo }) => {
       )
     })
   }
+
+  useEffect(() => {
+    // For fucus input element when double clicks text label. fix this https://github.com/ryota-murakami/react-typescript-todo-example-2019/issues/50
+    if (state.onEdit === true && editInput.current !== null)
+      editInput.current.focus()
+  }, [editInput, state.onEdit])
 
   return (
     <Layout data-cy="todo-item">
