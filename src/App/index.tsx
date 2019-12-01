@@ -7,8 +7,8 @@ import { Routes, AppState } from '../index'
 import { RouteComponentProps } from '@reach/router'
 import { Layout } from './style'
 
-export const LocalStorageKey = {
-  AppState: 'AppState'
+export enum LocalStorageKey {
+  APP_STATE = 'APP_STATE'
 }
 
 interface Props {
@@ -21,7 +21,7 @@ const App: React.FC<Props & RouteComponentProps> = ({ path }) => {
   // preserve every appState changes.
   useEffect((): void => {
     window.localStorage.setItem(
-      LocalStorageKey.AppState,
+      LocalStorageKey.APP_STATE,
       JSON.stringify(appState)
     )
   }, [appState])

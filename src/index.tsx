@@ -27,7 +27,7 @@ let initialAppState: AppState = {
 }
 
 const preserved: string | null = window.localStorage.getItem(
-  LocalStorageKey.AppState
+  LocalStorageKey.APP_STATE
 )
 if (preserved !== null) {
   const decorded: AppState = JSON.parse(preserved)
