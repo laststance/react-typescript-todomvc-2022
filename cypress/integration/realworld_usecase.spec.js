@@ -2,8 +2,8 @@ context('Real World Usecase', () => {
   beforeEach(() => {
     cy.submitTripleTodos()
   })
-
   it('will try all function in one session', () => {
+    cy.percySnapshot('with no checked 3 todos')
     // remain task counter can display correct number
     cy.get('[data-cy=remaining-uncompleted-todo-count]').should('contain', '3')
     // [state: 3 todo, 0 completed] it doesn't show "Clear cmpleted" button on footer
@@ -84,6 +84,5 @@ context('Real World Usecase', () => {
     // @see https://docs.cypress.io/api/commands/hover.html#Workarounds
 
     cy.get('[data-cy=remaining-uncompleted-todo-count]').should('contain', '2')
-    cy.percySnapshot()
   })
 })
