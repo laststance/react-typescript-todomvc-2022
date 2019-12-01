@@ -24,6 +24,8 @@ const Item: React.FC<Props> = ({ todo }) => {
   const onBlurEdit = (e: React.FocusEvent<HTMLInputElement>): void => {
     if (e.currentTarget.value.trim().length > 0) {
       setState({ onEdit: false })
+    } else {
+      removeItem(todo.id)
     }
   }
 

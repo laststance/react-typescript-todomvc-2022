@@ -54,12 +54,6 @@ context('Edit Todo', () => {
       .find('[data-cy=todo-edit-input]')
       .should('to.be.focused')
 
-    // should still active edit mode against blur action when edit input value is blank
-    cy.get('body').click(100, 100)
-    cy.get('[data-cy=todo-item]:nth-of-type(3)')
-      .find('[data-cy=todo-edit-input]')
-      .should('be.visible')
-
     // don't accept only space charcter input. should behave as same as above blank case.(don't finish edit mode and still typing todo text)
     cy.get('[data-cy=todo-item]:nth-of-type(3)')
       .find('[data-cy=todo-edit-input]')
@@ -69,5 +63,9 @@ context('Edit Todo', () => {
     cy.get('[data-cy=todo-item]:nth-of-type(3)')
       .find('[data-cy=todo-edit-input]')
       .should('to.be.focused')
+
+    // should remove item when doing blur action with blank value
+    cy.get('body').click(100, 100)
+    cy.get('[data-cy=todo-item]:nth-of-type(3)').should('not.exist')
   })
 })
