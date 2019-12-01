@@ -1,3 +1,4 @@
 build/
 cypress/videos/
 cypress/fixtures/
+cypress/screenshots/
