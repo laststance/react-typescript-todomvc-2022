@@ -21,7 +21,7 @@ const Item: React.FC<Props> = ({ todo }) => {
     setState({ onEdit: true })
   }
 
-  const setOnBlurEdit = (e: React.FocusEvent<HTMLInputElement>): void => {
+  const onBlurEdit = (e: React.FocusEvent<HTMLInputElement>): void => {
     if (e.currentTarget.value.trim().length > 0) {
       setState({ onEdit: false })
     }
@@ -124,7 +124,7 @@ const Item: React.FC<Props> = ({ todo }) => {
         </div>
         <input
           ref={editInput}
-          onBlur={e => setOnBlurEdit(e)}
+          onBlur={e => onBlurEdit(e)}
           className="edit"
           value={todo.bodyText}
           onChange={e => handleTextInput(e, todo.id)}
