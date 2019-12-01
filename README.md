@@ -155,9 +155,6 @@ yarn test
 yarn test --silent
 ```
 
-If you run `yarn test`, you'll see console.error message on termianl because `ErrorBoundary.test.js` contain invalid react component on purpose.  
-`--silent` option hide that error.
-
 ## Linting
 [ESLint](https://eslint.org/) is at the top.  
 And setup [TypeScript ESLint](https://github.com/typescript-eslint/typescript-eslint), mixing [Prettier](https://prettier.io/) as a [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier).
