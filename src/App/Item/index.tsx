@@ -21,14 +21,16 @@ const Item: React.FC<Props> = ({ todo }) => {
     setState({ onEdit: true })
   }
 
-  const setOnFinishEdit = (): void => {
-    setState({ onEdit: false })
+  const setOnBlurEdit = (e: React.FocusEvent<HTMLInputElement>): void => {
+    if (e.currentTarget.value.trim().length > 0) {
+      setState({ onEdit: false })
+    }
   }
 
   const submitEditText = (e: React.KeyboardEvent<HTMLInputElement>): void => {
     if (e.key === 'Enter' || e.key === 'Escape') {
       if (e.currentTarget.value.trim().length > 0) {
-        setOnFinishEdit()
+        setState({ onEdit: false })
       }
     }
   }
@@ -122,7 +124,7 @@ const Item: React.FC<Props> = ({ todo }) => {
         </div>
         <input
           ref={editInput}
-          onBlur={setOnFinishEdit}
+          onBlur={e => setOnBlurEdit(e)}
           className="edit"
           value={todo.bodyText}
           onChange={e => handleTextInput(e, todo.id)}
