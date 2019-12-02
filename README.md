@@ -103,8 +103,6 @@ and then you'll got todo app as same as Demo. let's modify under the `src/` code
 
 Official Docs: https://create-react-app.dev/docs/getting-started#npm-start-or-yarn-start
 
-![console](images/launch_dev_server.png)
-
 ## Run Production Build
 
 ```bash
