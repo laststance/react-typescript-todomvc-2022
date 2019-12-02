@@ -11,12 +11,13 @@ interface Props {
 const TodoList: React.FC<Props> = ({ path }) => {
   const [appState, setAppState] = useAppState<AppState>()
 
-  const toggleAllCompletedCheck = (e: React.ChangeEvent<HTMLInputElement>) =>
+  function toggleAllCompletedCheck(e: React.ChangeEvent<HTMLInputElement>): void { /* eslint-disable-line prettier/prettier */
     setAppState({
       todoList: appState.todoList.map((t: Todo) => {
         return { ...t, completed: e.target.checked }
       })
     })
+  }
 
   return (
     <Layout>
