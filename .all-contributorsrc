@@ -29,7 +29,17 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "JunQu",
+      "name": "Peng Fei",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/39846309?v=4",
+      "profile": "https://github.com/JunQu",
+      "contributions": [
+        "bug"
+      ]
     }
   ],
-  "contributorsPerLine": 7
+  "contributorsPerLine": 7,
+  "skipCi": true
 }
