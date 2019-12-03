@@ -33,7 +33,7 @@
   - [Issues](#issues)
   - [Questions](#questions)
   - [LICENSE](#license)
-  - [Contributors ✨](#contributors-)
+  - [Contributors ✨](#contributors)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
