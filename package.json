@@ -2,7 +2,7 @@
   "name": "react-typescript-todo-example-2019",
   "dependencies": {
     "@emotion/core": "^10.0.22",
-    "@emotion/styled": "^10.0.22",
+    "@emotion/styled": "^10.0.23",
     "@reach/router": "^1.2.1",
     "@ryotamurakami/react-appstate": "^1.2.2",
     "@types/reach__router": "^1.2.6",
