@@ -7,7 +7,7 @@
     "@ryotamurakami/react-appstate": "^1.2.2",
     "@types/reach__router": "^1.2.6",
     "@types/react": "16.9.14",
-    "@types/react-dom": "16.9.3",
+    "@types/react-dom": "16.9.4",
     "react": "^16.11.0",
     "react-dom": "^16.11.0"
   },
