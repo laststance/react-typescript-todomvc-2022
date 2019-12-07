@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from '@reach/router'
-import { Routes } from '../../index'
+import { Routes } from '../../../index'
 
 interface Props {
   path: Routes
