@@ -17,7 +17,7 @@ const Item: React.FC<Props> = ({ todo }) => {
   const init: State = { onEdit: false }
   const [state, setState] = useState(init)
 
-  const onStartEdit = (): void => {
+  const onDoubleClick = (): void => {
     setState({ onEdit: true })
   }
 
@@ -111,7 +111,7 @@ const Item: React.FC<Props> = ({ todo }) => {
             data-testid="todo-item-complete-check"
           />
           <label
-            onDoubleClick={onStartEdit}
+            onDoubleClick={onDoubleClick}
             data-cy="todo-body-text"
             data-testid="todo-body-text"
           >
