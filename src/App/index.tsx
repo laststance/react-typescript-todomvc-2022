@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect } from 'react'
+import React, { useEffect } from 'react'
 import { useAppState } from '@ryotamurakami/react-appstate'
 import Header from './Header'
 import TodoList from './TodoList'
@@ -31,10 +31,10 @@ const App: React.FC<Props & RouteComponentProps> = ({ path }) => {
       <section className="todoapp">
         <Header />
         {appState.todoList.length ? (
-          <Fragment>
+          <>
             <TodoList path={path} />
             <Footer path={path} />
-          </Fragment>
+          </>
         ) : null}
       </section>
       <footer className="info">
