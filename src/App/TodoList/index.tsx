@@ -1,5 +1,5 @@
 import React, { ReactElement } from 'react'
-import { Routes, Todo, AppState } from '../../index'
+import { Routes, Todo, AppState, TodoListType } from '../../index'
 import Item from '../Item'
 import { useAppState } from '@ryotamurakami/react-appstate'
 import { Layout } from './style'
@@ -12,10 +12,11 @@ const TodoList: React.FC<Props> = ({ path }) => {
   const [appState, setAppState] = useAppState<AppState>()
 
   function toggleAllCompletedCheck(e: React.ChangeEvent<HTMLInputElement>): void { /* eslint-disable-line prettier/prettier */
+    const appliedCheckBox: TodoListType = appState.todoList.map((t: Todo) => {
+      return { ...t, completed: e.target.checked }
+    })
     setAppState({
-      todoList: appState.todoList.map((t: Todo) => {
-        return { ...t, completed: e.target.checked }
-      })
+      todoList: appliedCheckBox
     })
   }
 
