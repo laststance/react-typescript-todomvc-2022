@@ -13,7 +13,7 @@ const Footer: React.FC<Props> = ({ path }) => {
   const doneCount: number = appState.todoList.filter(t => t.completed === true).length /* eslint-disable-line prettier/prettier */
   const yetCount: number = appState.todoList.filter(t => t.completed === false).length /* eslint-disable-line prettier/prettier */
 
-  const clearCompleted = (): void => {
+  function clearCompleted(): void {
     setAppState({
       todoList: appState.todoList.filter((t: Todo) => !t.completed)
     })
