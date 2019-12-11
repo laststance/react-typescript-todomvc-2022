@@ -2029,10 +2029,10 @@
     react-lifecycles-compat "^3.0.4"
     warning "^3.0.0"
 
-"@ryotamurakami/react-appstate@^1.2.2":
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/@ryotamurakami/react-appstate/-/react-appstate-1.2.2.tgz#4ddf4ff42d344f7a14fd1fff792be4d977a91b20"
-  integrity sha512-MiyRHrK96IcFvJLQgZL1pfPH84XgK+NOl0UkoPmaWjHeQOoJhZIV/Xbvk6L4JJ+OnuwALFCMvBzLwss0SuhG2g==
+"@ryotamurakami/react-appstate@^1.2.3":
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/@ryotamurakami/react-appstate/-/react-appstate-1.2.3.tgz#0f9759e9d312dbaffaf4158a8e47876d9d9ccb99"
+  integrity sha512-wSRy9le6XBC3TTTRoxDiXwofFnN5ZEQwzvRzw9PzrJrvs3W4tc2eYiWvToFU7tqnk/+gIkiyol1rKZGqLrqa+g==
 
 "@sheerun/mutationobserver-shim@^0.3.2":
   version "0.3.2"
