@@ -39,7 +39,7 @@
   "devDependencies": {
     "@percy/cypress": "^2.2.0",
     "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.3",
+    "@testing-library/react": "^9.4.0",
     "@types/jest": "^24.0.23",
     "@types/node": "^12.12.17",
     "all-contributors-cli": "^6.11.2",
