@@ -19,8 +19,8 @@
 - [Stack](#stack)
   - [Motivation](#motivation)
   - [Note 🗒](#note-%F0%9F%97%92)
-- [Prerequisites](#prerequisites)
 - [Installation](#installation)
+  - [Prerequisites](#prerequisites)
 - [Run Webpack Dev Server](#run-webpack-dev-server)
 - [Run Production Build](#run-production-build)
 - [Cypress](#cypress)
@@ -76,12 +76,14 @@ There are tons of effective way to create solid software in JavaScript World, yo
 **I hope this helps you know like that from what I've Published!**
 
 
-## Prerequisites
 
-The app assumed installed Node.js newer than `10.16.3 LTS`.  
-If you have not it yet, follow the official [Node.js Doc](https://nodejs.org/en/) to install it.
 
 ## Installation
+
+### Prerequisites
+
+The app assumed installed Node.js newer than `10.16.3 LTS`.
+If you have not it yet, follow the official [Node.js Doc](https://nodejs.org/en/) to install it.
 
 ```bash
 git clone git@github.com:ryota-murakami/react-typescript-todo-example-2019.git
