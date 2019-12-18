@@ -14,26 +14,25 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
-- [React TypeScript Todo Example 2019](#react-typescript-todo-example-2019)
-  - [Play 👇](#play-)
-  - [What's this?](#whats-this)
-    - [Motivation](#motivation)
-    - [Note 🗒](#note-%F0%9F%97%92)
-  - [Stack](#stack)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-  - [Run Webpack Dev Server](#run-webpack-dev-server)
-  - [Run Production Build](#run-production-build)
-  - [Cypress](#cypress)
-      - [Runs Cypress tests from the CLI without the GUI](#runs-cypress-tests-from-the-cli-without-the-gui)
-      - [Opens Cypress in the interactive GUI](#opens-cypress-in-the-interactive-gui)
-  - [Jest](#jest)
-  - [Linting](#linting)
-  - [Typecheck](#typecheck)
-  - [Issues](#issues)
-  - [Questions](#questions)
-  - [LICENSE](#license)
-  - [Contributors ✨](#contributors)
+- [Play 👇](#play-)
+- [What's this?](#whats-this)
+- [Stack](#stack)
+  - [Motivation](#motivation)
+  - [Note 🗒](#note-%F0%9F%97%92)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Run Webpack Dev Server](#run-webpack-dev-server)
+- [Run Production Build](#run-production-build)
+- [Cypress](#cypress)
+    - [Runs Cypress tests from the CLI without the GUI](#runs-cypress-tests-from-the-cli-without-the-gui)
+    - [Opens Cypress in the interactive GUI](#opens-cypress-in-the-interactive-gui)
+- [Jest](#jest)
+- [Linting](#linting)
+- [Typecheck](#typecheck)
+- [Issues](#issues)
+- [Questions](#questions)
+- [LICENSE](#license)
+- [Contributors](#contributors)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -43,22 +42,6 @@
 ## What's this?
 This is a [Create React App](https://facebook.github.io/create-react-app/) based [React](https://reactjs.org/) + [TypeScript](https://www.typescriptlang.org/) todo app example.  👉 [**DEMO**](https://react-typescript-todo-example.netlify.com)  
 [TypeScript](https://www.typescriptlang.org/) coming from babel, set upped at [Create React App](https://facebook.github.io/create-react-app/) install option. [Adding TypeScript Doc](https://facebook.github.io/create-react-app/docs/adding-typescript#docsNav)📝  
-
-### Motivation
-Aftter React Conf 2018, It comming v16.8.0 with [Hooks](https://reactjs.org/docs/hooks-intro.html) that's apparently brand new way of Code Design contrast with class base 📝
-In addition, TypeScript adopt so much easier into a `babel` + `webpack` build system by [Create React App v2.1 TypeScript support](https://github.com/facebook/create-react-app/releases/tag/v2.1.0) official released.
-
-So I was interested what kind of code design and configuration was built. if I build todo with a Hooks and TypeScript. 😀
-
-### Note 🗒
-
-**This is not a Best Practice introduction.  
-There are tons of effective way to create solid software in JavaScript World, you have a lot of other option based on your preference for approaching where, The Repo is just a style of my favorite.**  
-
-"*How to combining TypeScript with massive Babel or JavaScript tools ecosystem?*"
-
-**I hope this helps you know like that from what I've Published!**
-
 
 ## Stack
 - [TODO-CSS-Template](https://github.com/Klerith/TODO-CSS-Template)(Borrowing HTML & CSS Thanks! 👍 )
@@ -76,6 +59,21 @@ There are tons of effective way to create solid software in JavaScript World, yo
   - [eslint-plugin-react-hooks](https://reactjs.org/)
 - [Netlify](https://www.netlify.com/): Deploy & Hosting
 - [CircleCI](https://circleci.com/): Automation run tests, lint, typecheck, build, deploy
+
+### Motivation
+Aftter React Conf 2018, It comming v16.8.0 with [Hooks](https://reactjs.org/docs/hooks-intro.html) that's apparently brand new way of Code Design contrast with class base 📝
+In addition, TypeScript adopt so much easier into a `babel` + `webpack` build system by [Create React App v2.1 TypeScript support](https://github.com/facebook/create-react-app/releases/tag/v2.1.0) official released.
+
+So I was interested what kind of code design and configuration was built. if I build todo with a Hooks and TypeScript. 😀
+
+### Note 🗒
+
+**This is not a Best Practice introduction.  
+There are tons of effective way to create solid software in JavaScript World, you have a lot of other option based on your preference for approaching where, The Repo is just a style of my favorite.**  
+
+"*How to combining TypeScript with massive Babel or JavaScript tools ecosystem?*"
+
+**I hope this helps you know like that from what I've Published!**
 
 
 ## Prerequisites
