@@ -15,6 +15,9 @@
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 - [What's this?](#whats-this)
+  - [How to the project was bootstrapped?](#how-to-the-project-was-bootstrapped)
+      - [1. Execute command for scaffold Create React App's TypeScript Templete.](#1-execute-command-for-scaffold-create-react-apps-typescript-templete)
+      - [2. Setup, Setting, Programing hard with below stuffs 😆](#2-setup-setting-programing-hard-with-below-stuffs-)
 - [Stack](#stack)
   - [Motivation](#motivation)
   - [Note 🗒](#note-%F0%9F%97%92)
