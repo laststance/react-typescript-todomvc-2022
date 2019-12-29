@@ -43,7 +43,7 @@
     "@types/jest": "^24.0.24",
     "@types/node": "^12.12.21",
     "all-contributors-cli": "^6.11.2",
-    "cypress": "^3.8.0",
+    "cypress": "^3.8.1",
     "eslint-config-prettier": "^6.8.0",
     "eslint-config-typescript": "^3.0.0",
     "eslint-plugin-prettier": "^3.1.2",
