@@ -39,7 +39,7 @@ const Message = styled.div`
 `
 
 const ErrorBoundaryFallbackComponent = () => (
-  <Container data-testid="error-boundary-fallback-component">
+  <Container>
     <Message>
       Something Error Ooccurring
       <span role="img" aria-label="face-emoji">
