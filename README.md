@@ -151,7 +151,7 @@ Percy is awesome visual regression testing service.
 That detect visual diff each page, and then we'll check on web console "is that visual change expected?"   
 
 Cypress and Percy combination is really effective for website/webapp!  
-This projects Percy console is this: https://percy.io/LastStance/React-TypeScript-todo
+This projects Percy console is this: https://percy.io/laststance/react-typescript-todo-example-2019
 
 
 ## Jest
