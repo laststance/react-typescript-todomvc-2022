@@ -67,6 +67,7 @@ npx create-react-app react-typescript-todo-example-2019 --template typescript
   - [eslint-plugin-react-hooks](https://reactjs.org/)
 - [Netlify](https://www.netlify.com/): Deploy & Hosting
 - [CircleCI](https://circleci.com/): Automation run tests, lint, typecheck, build, deploy
+- [Depfu](https://depfu.com/github/ryota-murakami/react-typescript-todo-example-2019?project_id=9618): Keep latest npm packages(React, TypeScript etc) automaticaly
 
 ### Motivation
 Aftter React Conf 2018, It comming v16.8.0 with [Hooks](https://reactjs.org/docs/hooks-intro.html) that's apparently brand new way of Code Design contrast with class base 📝
