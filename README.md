@@ -10,6 +10,15 @@
 
  <a href="https://react-typescript-todo-example.netlify.com/"><img src="https://raw.githubusercontent.com/ryota-murakami/react-typescript-todo-example-2019/master/img.pnghttps://raw.githubusercontent.com/ryota-murakami/react-typescript-todo-example-2019/master/images/todolist.gif" alt="gif"></a>
 
+## Thank you for over 60 stars!✨🤩🎉
+I'm glad to many forks visiting the repo everyday, and I want to continue to implove this as a latest React TypeScript Todo Example.  
+
+So I'm going to rename to react-typescript-todo-example-2020 and invastigate now's react scene and self-reviiew to refactor entire code, document.   
+ 
+React + TypeScript conbination has growing to vast maajolity doday, so I hope to show example tested web app mainly beginner.    
+
+Thank you so much & have a good day! 😀⭐️
+
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
