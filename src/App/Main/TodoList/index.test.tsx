@@ -3,7 +3,7 @@ import { render, fireEvent } from '@testing-library/react'
 import Provider from '@ryotamurakami/react-appstate'
 import '@testing-library/jest-dom/extend-expect'
 import TodoList from './index'
-import { AppState } from '../../index'
+import { AppState } from '../../../index'
 
 const initialAppState: AppState = {
   todoList: [

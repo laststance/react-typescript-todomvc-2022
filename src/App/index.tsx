@@ -1,7 +1,7 @@
 import React, { useEffect, Fragment } from 'react'
 import { useAppState } from '@ryotamurakami/react-appstate'
 import Header from './Header'
-import TodoList from './TodoList'
+import TodoList from './Main/TodoList'
 import Footer from './Footer'
 import { Routes, AppState } from '../index'
 import { RouteComponentProps } from '@reach/router'
