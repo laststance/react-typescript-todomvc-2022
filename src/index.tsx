@@ -26,12 +26,13 @@ let initialAppState: AppState = {
   todoList: []
 }
 
-const preserved: string | null = window.localStorage.getItem(
+// Loading before AppState Data
+const text: string | null = window.localStorage.getItem(
   LocalStorageKey.APP_STATE
 )
-if (typeof preserved === 'string') {
-  const decorded: AppState = JSON.parse(preserved)
-  initialAppState = decorded
+if (typeof text === 'string') {
+  const Object: AppState = JSON.parse(text)
+  initialAppState = Object
 }
 
 ReactDOM.render(

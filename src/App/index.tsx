@@ -18,11 +18,11 @@ interface Props {
 const App: React.FC<Props & RouteComponentProps> = ({ path }) => {
   const [appState] = useAppState<AppState>()
 
-  // preserve every appState changes.
+  // if appState has changes, save it LocalStorage.
   useEffect((): void => {
     window.localStorage.setItem(
       LocalStorageKey.APP_STATE,
-      JSON.stringify(appState)
+      JSON.stringify(appState) // convert JavaScript Object to string
     )
   }, [appState])
 
