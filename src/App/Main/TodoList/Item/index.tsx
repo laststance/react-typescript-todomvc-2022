@@ -1,5 +1,5 @@
 import React, { useState, createRef, useEffect } from 'react'
-import { AppState, Todo } from '../../../../index'
+import { AppState, Todo, TodoListType } from '../../../../index'
 import { useAppState } from '@ryotamurakami/react-appstate'
 import { Layout } from './style'
 
@@ -54,16 +54,19 @@ const Item: React.FC<Props> = ({ todo }) => {
   }
 
   const toggleCompleted = (clicked: Todo['id']): void => {
-    setAppState({
-      todoList: appState.todoList.map(
-        (t: Todo): Todo => {
-          if (t.id === clicked) {
-            return { ...t, completed: !t.completed }
-          } else {
-            return t
-          }
+    const updated: TodoListType = appState.todoList.map(
+      (t: Todo): Todo => {
+        // change complated status for only clicked item
+        if (t.id === clicked) {
+          return { ...t, completed: !t.completed }
+        } else {
+          return t
         }
-      )
+      }
+    )
+
+    setAppState({
+      todoList: updated
     })
   }
 
