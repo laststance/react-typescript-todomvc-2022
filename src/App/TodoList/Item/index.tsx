@@ -1,5 +1,5 @@
 import React, { useState, createRef, useEffect } from 'react'
-import { AppState, Todo, TodoListType } from '../../../../index'
+import { AppState, Todo, TodoListType } from '../../../index'
 import { useAppState } from '@ryotamurakami/react-appstate'
 import { Layout } from './style'
 

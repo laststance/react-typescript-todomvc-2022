@@ -1,5 +1,5 @@
 import React, { ReactElement } from 'react'
-import { Routes, Todo, AppState, TodoListType } from '../../../index'
+import { Routes, Todo, AppState, TodoListType } from '../../index'
 import Item from './Item'
 import { useAppState } from '@ryotamurakami/react-appstate'
 import { Layout } from './style'
