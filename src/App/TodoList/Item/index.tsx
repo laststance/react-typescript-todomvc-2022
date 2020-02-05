@@ -37,6 +37,7 @@ const Item: React.FC<Props> = ({ todo }) => {
     }
   }
 
+  // Control Todo's CSS based on complex user interaction
   const SwitchStyle = (t: Todo, onEdit: boolean): string => {
     switch (true) {
       case onEdit && t.completed:
