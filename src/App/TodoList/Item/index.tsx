@@ -64,16 +64,14 @@ const Item: React.FC<Props> = ({ todo }) => {
         }
       }
     )
-
     setAppState({ todoList: toggled })
   }
 
   const removeItem = (terminate: Todo['id']): void => {
-    setAppState({
-      todoList: appState.todoList.filter(
-        (t: Todo): boolean => t.id !== terminate
-      )
-    })
+    const removed: TodoListType = appState.todoList.filter(
+      (t: Todo): boolean => t.id !== terminate
+    )
+    setAppState({ todoList: removed })
   }
 
   const handleTextInput = (
