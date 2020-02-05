@@ -54,7 +54,7 @@ const Item: React.FC<Props> = ({ todo }) => {
   }
 
   const toggleCompleted = (clicked: Todo['id']): void => {
-    const updated: TodoListType = appState.todoList.map(
+    const toggled: TodoListType = appState.todoList.map(
       (t: Todo): Todo => {
         // change complated status for only clicked item
         if (t.id === clicked) {
@@ -66,7 +66,7 @@ const Item: React.FC<Props> = ({ todo }) => {
     )
 
     setAppState({
-      todoList: updated
+      todoList: toggled
     })
   }
 
