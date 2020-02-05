@@ -37,6 +37,7 @@ const App: React.FC<Props & RouteComponentProps> = ({ path }) => {
           </>
         ) : null}
       </section>
+      {/* @TODO Clearly distinguish between todolist's head/foot and overall app layout */}
       <footer className="info">
         <p>
           Created by{' '}
