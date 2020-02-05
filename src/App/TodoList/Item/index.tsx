@@ -64,6 +64,7 @@ const Item: React.FC<Props> = ({ todo }) => {
         }
       }
     )
+
     setAppState({ todoList: toggled })
   }
 
@@ -71,24 +72,22 @@ const Item: React.FC<Props> = ({ todo }) => {
     const removed: TodoListType = appState.todoList.filter(
       (t: Todo): boolean => t.id !== terminate
     )
+
     setAppState({ todoList: removed })
   }
 
-  const handleTextInput = (
-    e: React.ChangeEvent<HTMLInputElement>,
-    onEdit: Todo['id']
-  ): void => {
-    setAppState({
-      todoList: appState.todoList.map(
-        (t: Todo): Todo => {
-          if (t.id === onEdit) {
-            return { ...t, bodyText: e.target.value }
-          } else {
-            return t
-          }
+  const handleTodoTextEdit = (e: React.ChangeEvent<HTMLInputElement>, onEdit: Todo['id']): void => { /* eslint-disable-line prettier/prettier */
+    const edited = appState.todoList.map(
+      (t: Todo): Todo => {
+        if (t.id === onEdit) {
+          return { ...t, bodyText: e.target.value }
+        } else {
+          return t
         }
-      )
-    })
+      }
+    )
+
+    setAppState({ todoList: edited })
   }
 
   useEffect(() => {
@@ -128,7 +127,7 @@ const Item: React.FC<Props> = ({ todo }) => {
           onBlur={e => onBlurEdit(e)}
           className="edit"
           value={todo.bodyText}
-          onChange={e => handleTextInput(e, todo.id)}
+          onChange={e => handleTodoTextEdit(e, todo.id)}
           onKeyPress={e => submitEditText(e)}
           data-cy="todo-edit-input"
           data-testid="todo-edit-input"
