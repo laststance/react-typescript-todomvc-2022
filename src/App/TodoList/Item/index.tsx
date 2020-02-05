@@ -65,9 +65,7 @@ const Item: React.FC<Props> = ({ todo }) => {
       }
     )
 
-    setAppState({
-      todoList: toggled
-    })
+    setAppState({ todoList: toggled })
   }
 
   const removeItem = (terminate: Todo['id']): void => {
