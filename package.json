@@ -41,7 +41,7 @@
     "@percy/cypress": "^2.3.0",
     "@testing-library/jest-dom": "^5.1.1",
     "@testing-library/react": "^9.4.0",
-    "@types/jest": "^25.1.1",
+    "@types/jest": "^25.1.2",
     "@types/node": "^13.7.0",
     "all-contributors-cli": "^6.13.0",
     "cypress": "^3.8.3",
