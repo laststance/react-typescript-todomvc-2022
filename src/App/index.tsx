@@ -3,6 +3,7 @@ import { useAppState } from '@laststance/use-app-state'
 import Header from './Header'
 import TodoList from './TodoList'
 import Menu from './Menu'
+import Copyright from './Copyright'
 import { Routes, AppState } from '../index'
 import { RouteComponentProps } from '@reach/router'
 import { Layout } from './style'
@@ -37,16 +38,7 @@ const App: React.FC<Props & RouteComponentProps> = ({ path }) => {
           </>
         ) : null}
       </section>
-      {/* @TODO Clearly distinguish between todolist's head/foot and overall app layout */}
-      <footer className="info">
-        <p>
-          Created by{' '}
-          <a href="https://ryota-murakami.github.io/">Ryota Murakamai</a>
-        </p>
-        <p>
-          Part of <a href="http://todomvc.com">TodoMVC</a>
-        </p>
-      </footer>
+      <Copyright />
     </Layout>
   )
 }
