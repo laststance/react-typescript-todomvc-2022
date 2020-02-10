@@ -1,6 +1,6 @@
 # React TypeScript Todo Example 2020 [![Netlify Status](https://api.netlify.com/api/v1/badges/94ad28c3-2ccd-40b2-9b9f-35ab89148f43/deploy-status)](https://app.netlify.com/sites/react-typescript-todo-example/deploys)
 
-[![CircleCI](https://circleci.com/gh/ryota-murakami/react-typescript-todo-example-2020.svg?style=svg)](https://circleci.com/gh/ryota-murakami/react-typescript-todo-example-2020)
+[![CircleCI](https://circleci.com/gh/laststance/react-typescript-todo-example-2020.svg?style=svg)](https://circleci.com/gh/laststance/react-typescript-todo-example-2020)
 [![Cypress.io tests](https://img.shields.io/badge/cypress.io-tests-green.svg?style=flat-square)](https://cypress.io)
 [![This project is using Percy.io for visual regression testing.](https://percy.io/static/images/percy-badge.svg)](https://percy.io/laststance/react-typescript-todo-example-2020)
 [![tested with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://github.com/facebook/jest)
