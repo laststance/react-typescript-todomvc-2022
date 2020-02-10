@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import { useAppState } from '@laststance/use-app-state'
 import Header from './Header'
 import TodoList from './TodoList'
-import Footer from './Footer'
+import Menu from './Menu'
 import { Routes, AppState } from '../index'
 import { RouteComponentProps } from '@reach/router'
 import { Layout } from './style'
@@ -33,7 +33,7 @@ const App: React.FC<Props & RouteComponentProps> = ({ path }) => {
         {appState.todoList.length ? (
           <>
             <TodoList path={path} />
-            <Footer path={path} />
+            <Menu path={path} />
           </>
         ) : null}
       </section>
