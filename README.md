@@ -1,6 +1,6 @@
 # React TypeScript Todo Example 2020 [![Netlify Status](https://api.netlify.com/api/v1/badges/94ad28c3-2ccd-40b2-9b9f-35ab89148f43/deploy-status)](https://app.netlify.com/sites/react-typescript-todo-example/deploys)
 
-[![CircleCI](https://circleci.com/gh/ryota-murakami/react-typescript-todo-example-2020.svg?style=svg)](https://circleci.com/gh/ryota-murakami/react-typescript-todo-example-2020)
+[![CircleCI](https://circleci.com/gh/laststance/react-typescript-todo-example-2020.svg?style=svg)](https://circleci.com/gh/laststance/react-typescript-todo-example-2020)
 [![Cypress.io tests](https://img.shields.io/badge/cypress.io-tests-green.svg?style=flat-square)](https://cypress.io)
 [![This project is using Percy.io for visual regression testing.](https://percy.io/static/images/percy-badge.svg)](https://percy.io/laststance/react-typescript-todo-example-2020)
 [![tested with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://github.com/facebook/jest)
@@ -8,7 +8,7 @@
 [![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors)
 [![Depfu](https://badges.depfu.com/badges/b291947c58892a6d78e4f3374c4a6d01/overview.svg)](https://depfu.com/github/ryota-murakami/react-typescript-todo-example-2020?project_id=9618)
 
- <a href="https://react-typescript-todo-example.netlify.com/"><img src="https://raw.githubusercontent.com/ryota-murakami/react-typescript-todo-example-2020/master/img.pnghttps://raw.githubusercontent.com/ryota-murakami/react-typescript-todo-example-2020/master/images/todolist.gif" alt="gif"></a>
+ <a href="https://react-typescript-todo-example.netlify.com/"><img src="https://raw.githubusercontent.com/laststance/react-typescript-todo-example-2020/master/img.pnghttps://raw.githubusercontent.com/laststance/react-typescript-todo-example-2020/master/images/todolist.gif" alt="gif"></a>
 
 ## Thank you for over 60 stars!✨🤩🎉
 I'm glad to many forks visiting the repo everyday, and I want to continue to implove this as a latest React TypeScript Todo Example.  
