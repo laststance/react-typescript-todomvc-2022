@@ -1,14 +1,14 @@
-# React TypeScript Todo Example 2019 [![Netlify Status](https://api.netlify.com/api/v1/badges/94ad28c3-2ccd-40b2-9b9f-35ab89148f43/deploy-status)](https://app.netlify.com/sites/react-typescript-todo-example/deploys)
+# React TypeScript Todo Example 2020 [![Netlify Status](https://api.netlify.com/api/v1/badges/94ad28c3-2ccd-40b2-9b9f-35ab89148f43/deploy-status)](https://app.netlify.com/sites/react-typescript-todo-example/deploys)
 
-[![CircleCI](https://circleci.com/gh/ryota-murakami/react-typescript-todo-example-2019.svg?style=svg)](https://circleci.com/gh/ryota-murakami/react-typescript-todo-example-2019)
+[![CircleCI](https://circleci.com/gh/ryota-murakami/react-typescript-todo-example-2020.svg?style=svg)](https://circleci.com/gh/ryota-murakami/react-typescript-todo-example-2020)
 [![Cypress.io tests](https://img.shields.io/badge/cypress.io-tests-green.svg?style=flat-square)](https://cypress.io)
-[![This project is using Percy.io for visual regression testing.](https://percy.io/static/images/percy-badge.svg)](https://percy.io/laststance/react-typescript-todo-example-2019)
+[![This project is using Percy.io for visual regression testing.](https://percy.io/static/images/percy-badge.svg)](https://percy.io/laststance/react-typescript-todo-example-2020)
 [![tested with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://github.com/facebook/jest)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 [![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors)
-[![Depfu](https://badges.depfu.com/badges/b291947c58892a6d78e4f3374c4a6d01/overview.svg)](https://depfu.com/github/ryota-murakami/react-typescript-todo-example-2019?project_id=9618)
+[![Depfu](https://badges.depfu.com/badges/b291947c58892a6d78e4f3374c4a6d01/overview.svg)](https://depfu.com/github/ryota-murakami/react-typescript-todo-example-2020?project_id=9618)
 
- <a href="https://react-typescript-todo-example.netlify.com/"><img src="https://raw.githubusercontent.com/ryota-murakami/react-typescript-todo-example-2019/master/img.pnghttps://raw.githubusercontent.com/ryota-murakami/react-typescript-todo-example-2019/master/images/todolist.gif" alt="gif"></a>
+ <a href="https://react-typescript-todo-example.netlify.com/"><img src="https://raw.githubusercontent.com/ryota-murakami/react-typescript-todo-example-2020/master/img.pnghttps://raw.githubusercontent.com/ryota-murakami/react-typescript-todo-example-2020/master/images/todolist.gif" alt="gif"></a>
 
 ## Thank you for over 60 stars!✨🤩🎉
 I'm glad to many forks visiting the repo everyday, and I want to continue to implove this as a latest React TypeScript Todo Example.  
@@ -56,7 +56,7 @@ This is a [Create React App](https://facebook.github.io/create-react-app/) based
 ##### 1. Execute command for scaffold [Create React App's TypeScript Templete](https://create-react-app.dev/docs/getting-started#creating-a-typescript-app).
 
 ```
-npx create-react-app react-typescript-todo-example-2019 --template typescript
+npx create-react-app react-typescript-todo-example-2020 --template typescript
 ```
 ##### 2. Setup, Setting, Programing hard with below stuffs 😆
 
@@ -76,7 +76,7 @@ npx create-react-app react-typescript-todo-example-2019 --template typescript
   - [eslint-plugin-react-hooks](https://reactjs.org/)
 - [Netlify](https://www.netlify.com/): Deploy & Hosting
 - [CircleCI](https://circleci.com/): Automation run tests, lint, typecheck, build, deploy
-- [Depfu](https://depfu.com/github/ryota-murakami/react-typescript-todo-example-2019?project_id=9618): Keep latest npm packages(React, TypeScript etc) automaticaly
+- [Depfu](https://depfu.com/github/ryota-murakami/react-typescript-todo-example-2020?project_id=9618): Keep latest npm packages(React, TypeScript etc) automaticaly
 
 ### Motivation
 Aftter React Conf 2018, It comming v16.8.0 with [Hooks](https://reactjs.org/docs/hooks-intro.html) that's apparently brand new way of Code Design contrast with class base 📝
@@ -104,8 +104,8 @@ The app assumed installed Node.js newer than `10.16.3 LTS`.
 If you have not it yet, follow the official [Node.js Doc](https://nodejs.org/en/) to install it.
 
 ```bash
-git clone git@github.com:ryota-murakami/react-typescript-todo-example-2019.git
-cd react-typescript-todo-example-2019
+git clone git@github.com:laststance/react-typescript-todo-example-2020.git
+cd react-typescript-todo-example-2020
 yarn install # or npm install
 ```
 
@@ -168,7 +168,7 @@ Percy is awesome visual regression testing service.
 That detect visual diff each page, and then we'll check on web console "is that visual change expected?"   
 
 Cypress and Percy combination is really effective for website/webapp!  
-This projects Percy console is this: https://percy.io/laststance/react-typescript-todo-example-2019
+This projects Percy console is this: https://percy.io/laststance/react-typescript-todo-example-2020
 
 
 ## Jest
@@ -204,10 +204,10 @@ yarn typecheck
 ```
 
 ## Issues
-Please feel free to post [New Issue](https://github.com/ryota-murakami/react-typescript-todo-example-2019/issues/new) or Pull Request 🤗
+Please feel free to post [New Issue](https://github.com/ryota-murakami/react-typescript-todo-example-2020/issues/new) or Pull Request 🤗
 
 ## Questions
-Please feel free to post [New Issue](https://github.com/ryota-murakami/react-typescript-todo-example-2019/issues/new) or reply on [Twitter](https://twitter.com/malloc007) 🐦  
+Please feel free to post [New Issue](https://github.com/ryota-murakami/react-typescript-todo-example-2020/issues/new) or reply on [Twitter](https://twitter.com/malloc007) 🐦  
 
 If you want to get more generally answers, these community are might be helpful 🍻
 
@@ -226,9 +226,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="http://ryota-murakami.github.io/"><img src="https://avatars1.githubusercontent.com/u/5501268?s=400&u=7bf6b1580b95930980af2588ef0057f3e9ec1ff8&v=4" width="100px;" alt=""/><br /><sub><b>ryota-murakami</b></sub></a><br /><a href="https://github.com/ryota-murakami/react-typescript-todo-example-2019/commits?author=ryota-murakami" title="Code">💻</a> <a href="https://github.com/ryota-murakami/react-typescript-todo-example-2019/commits?author=ryota-murakami" title="Documentation">📖</a> <a href="https://github.com/ryota-murakami/react-typescript-todo-example-2019/commits?author=ryota-murakami" title="Tests">⚠️</a></td>
-    <td align="center"><a href="http://donkeycar.com"><img src="https://avatars2.githubusercontent.com/u/147582?v=4" width="100px;" alt=""/><br /><sub><b>Will Roscoe</b></sub></a><br /><a href="https://github.com/ryota-murakami/react-typescript-todo-example-2019/commits?author=wroscoe" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/JunQu"><img src="https://avatars2.githubusercontent.com/u/39846309?v=4" width="100px;" alt=""/><br /><sub><b>Peng Fei</b></sub></a><br /><a href="https://github.com/ryota-murakami/react-typescript-todo-example-2019/issues?q=author%3AJunQu" title="Bug reports">🐛</a></td>
+    <td align="center"><a href="http://ryota-murakami.github.io/"><img src="https://avatars1.githubusercontent.com/u/5501268?s=400&u=7bf6b1580b95930980af2588ef0057f3e9ec1ff8&v=4" width="100px;" alt=""/><br /><sub><b>ryota-murakami</b></sub></a><br /><a href="https://github.com/ryota-murakami/react-typescript-todo-example-2020/commits?author=ryota-murakami" title="Code">💻</a> <a href="https://github.com/ryota-murakami/react-typescript-todo-example-2020/commits?author=ryota-murakami" title="Documentation">📖</a> <a href="https://github.com/ryota-murakami/react-typescript-todo-example-2020/commits?author=ryota-murakami" title="Tests">⚠️</a></td>
+    <td align="center"><a href="http://donkeycar.com"><img src="https://avatars2.githubusercontent.com/u/147582?v=4" width="100px;" alt=""/><br /><sub><b>Will Roscoe</b></sub></a><br /><a href="https://github.com/ryota-murakami/react-typescript-todo-example-2020/commits?author=wroscoe" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/JunQu"><img src="https://avatars2.githubusercontent.com/u/39846309?v=4" width="100px;" alt=""/><br /><sub><b>Peng Fei</b></sub></a><br /><a href="https://github.com/ryota-murakami/react-typescript-todo-example-2020/issues?q=author%3AJunQu" title="Bug reports">🐛</a></td>
   </tr>
 </table>
 
