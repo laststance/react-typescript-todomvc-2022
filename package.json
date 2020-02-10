@@ -18,7 +18,7 @@
     "eject": "react-scripts eject",
     "lint": "eslint . --ext .ts,.tsx,.js",
     "lint:fix": "eslint . --ext .ts,.tsx,.js --fix",
-    "cypress:run": "percy exec -- cypress run  --record",
+    "cypress:run": "percy exec -- cypress run --record",
     "cypress:open": "cypress open",
     "typecheck": "tsc --noEmit",
     "percy": "percy",
