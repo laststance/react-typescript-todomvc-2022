@@ -4,7 +4,7 @@ import { Todo, AppState } from '../../index'
 import { useAppState } from '@laststance/use-app-state'
 import { Layout } from './style'
 
-const Header: React.FC = () => {
+const TodoTextInput: React.FC = () => {
   const [appState, setAppState] = useAppState<AppState>()
   const textInput = createRef<HTMLInputElement>()
 
@@ -44,4 +44,4 @@ const Header: React.FC = () => {
   )
 }
 
-export default Header
+export default TodoTextInput
