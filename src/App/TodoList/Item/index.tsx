@@ -1,6 +1,6 @@
 import React, { useState, createRef, useEffect } from 'react'
 import { AppState, Todo, TodoListType } from '../../../index'
-import { useAppState } from '@ryotamurakami/react-appstate'
+import { useAppState } from '@laststance/use-app-state'
 import { Layout } from './style'
 
 interface Props {

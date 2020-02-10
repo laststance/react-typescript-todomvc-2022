@@ -1923,6 +1923,11 @@
     "@types/yargs" "^15.0.0"
     chalk "^3.0.0"
 
+"@laststance/use-app-state@^1.2.4":
+  version "1.2.4"
+  resolved "https://registry.yarnpkg.com/@laststance/use-app-state/-/use-app-state-1.2.4.tgz#88db3d866c5c75e9b216dfba90453b463d74f2a0"
+  integrity sha512-XZIf+BiP4K8hjKxwp6OwYg/5tUW6lYgeHKnG3hduTR0MXplDSr93T1p0vs4QJLVWnAY3EB5DFiL8QlBnDFxqFA==
+
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/@mrmlnc/readdir-enhanced/-/readdir-enhanced-2.2.1.tgz#524af240d1a360527b730475ecfa1344aa540dde"
@@ -2096,11 +2101,6 @@
     invariant "^2.2.3"
     prop-types "^15.6.1"
     react-lifecycles-compat "^3.0.4"
-
-"@ryotamurakami/react-appstate@^1.2.3":
-  version "1.2.3"
-  resolved "https://registry.yarnpkg.com/@ryotamurakami/react-appstate/-/react-appstate-1.2.3.tgz#0f9759e9d312dbaffaf4158a8e47876d9d9ccb99"
-  integrity sha512-wSRy9le6XBC3TTTRoxDiXwofFnN5ZEQwzvRzw9PzrJrvs3W4tc2eYiWvToFU7tqnk/+gIkiyol1rKZGqLrqa+g==
 
 "@samverschueren/stream-to-observable@^0.3.0":
   version "0.3.0"

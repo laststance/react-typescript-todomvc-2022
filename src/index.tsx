@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { Router } from '@reach/router'
-import Provider from '@ryotamurakami/react-appstate'
+import Provider from '@laststance/use-app-state'
 import './index.css'
 import * as serviceWorker from './serviceWorker'
 import App, { LocalStorageKey } from './App'

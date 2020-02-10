@@ -1,6 +1,6 @@
 import React from 'react'
 import { render, fireEvent } from '@testing-library/react'
-import Provider, { useAppState } from '@ryotamurakami/react-appstate'
+import Provider, { useAppState } from '@laststance/use-app-state'
 import '@testing-library/jest-dom/extend-expect'
 import Item from './index'
 import { AppState } from '../../../index'

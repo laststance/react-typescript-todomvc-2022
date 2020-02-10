@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import App from './App'
-import Provider from '@ryotamurakami/react-appstate'
+import Provider from '@laststance/use-app-state'
 
 const initialAppState = {
   todoList: []

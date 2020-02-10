@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { useAppState } from '@ryotamurakami/react-appstate'
+import { useAppState } from '@laststance/use-app-state'
 import Header from './Header'
 import TodoList from './TodoList'
 import Footer from './Footer'

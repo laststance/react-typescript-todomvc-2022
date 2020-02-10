@@ -1,6 +1,6 @@
 import React from 'react'
 import { render, fireEvent } from '@testing-library/react'
-import Provider from '@ryotamurakami/react-appstate'
+import Provider from '@laststance/use-app-state'
 import '@testing-library/jest-dom/extend-expect'
 import TodoList from './index'
 import { AppState } from '../../index'
