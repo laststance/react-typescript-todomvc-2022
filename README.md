@@ -109,6 +109,13 @@ cd react-typescript-todo-example-2019
 yarn install # or npm install
 ```
 
+### 📝 Editor
+If you're going to code reading for learn, I recommend you [VScode](https://code.visualstudio.com/) or [WebStorm](https://www.jetbrains.com/webstorm/).  
+Those editor has buit-in TypeScript supprt so code jumping woring as well.  
+
+But if you using Vim, there is great post for setup [Vim for TypeScript and React in 2020](https://medium.com/@vanuan/vim-for-typescript-and-react-in-2020-9724b9139be2).  
+Written by [Vanya Yani](https://medium.com/@vanuan). 🤗
+
 ## Run Webpack Dev Server
 
 ```bash
