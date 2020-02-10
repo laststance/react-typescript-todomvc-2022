@@ -8,7 +8,7 @@
 [![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors)
 [![Depfu](https://badges.depfu.com/badges/b291947c58892a6d78e4f3374c4a6d01/overview.svg)](https://depfu.com/github/ryota-murakami/react-typescript-todo-example-2020?project_id=9618)
 
- <a href="https://react-typescript-todo-example.netlify.com/"><img src="https://raw.githubusercontent.com/ryota-murakami/react-typescript-todo-example-2020/master/img.pnghttps://raw.githubusercontent.com/ryota-murakami/react-typescript-todo-example-2020/master/images/todolist.gif" alt="gif"></a>
+ <a href="https://react-typescript-todo-example.netlify.com/"><img src="https://raw.githubusercontent.com/laststance/react-typescript-todo-example-2020/master/img.pnghttps://raw.githubusercontent.com/laststance/react-typescript-todo-example-2020/master/images/todolist.gif" alt="gif"></a>
 
 ## Thank you for over 60 stars!✨🤩🎉
 I'm glad to many forks visiting the repo everyday, and I want to continue to implove this as a latest React TypeScript Todo Example.  
