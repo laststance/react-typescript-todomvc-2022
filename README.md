@@ -10,10 +10,8 @@
 
  <a href="https://react-typescript-todo-example.netlify.com/"><img src="https://raw.githubusercontent.com/laststance/react-typescript-todo-example-2020/master/img.pnghttps://raw.githubusercontent.com/laststance/react-typescript-todo-example-2020/master/images/todolist.gif" alt="gif"></a>
 
-## Thank you for over 60 stars!✨🤩🎉
+## Thank you for over 80 stars!✨🤩🎉
 I'm glad to many forks visiting the repo everyday, and I want to continue to implove this as a latest React TypeScript Todo Example.  
-
-So I'm going to rename to react-typescript-todo-example-2020 and invastigate now's react scene and self-reviiew to refactor entire code, document.   
  
 React + TypeScript conbination has growing to vast maajolity doday, so I hope to show example tested web app mainly beginner.    
 
@@ -78,13 +76,13 @@ npx create-react-app react-typescript-todo-example-2020 --template typescript
 - [CircleCI](https://circleci.com/): Automation run tests, lint, typecheck, build, deploy
 - [Depfu](https://depfu.com/github/ryota-murakami/react-typescript-todo-example-2020?project_id=9618): Keep latest npm packages(React, TypeScript etc) automaticaly
 
-### Motivation
+### 😀Motivation
 Aftter React Conf 2018, It comming v16.8.0 with [Hooks](https://reactjs.org/docs/hooks-intro.html) that's apparently brand new way of Code Design contrast with class base 📝
 In addition, TypeScript adopt so much easier into a `babel` + `webpack` build system by [Create React App v2.1 TypeScript support](https://github.com/facebook/create-react-app/releases/tag/v2.1.0) official released.
 
 So I was interested what kind of code design and configuration was built. if I build todo with a Hooks and TypeScript. 😀
 
-### Note 🗒
+### 🗒 Note
 
 **This is not a Best Practice introduction.  
 There are tons of effective way to create solid software in JavaScript World, you have a lot of other option based on your preference for approaching where, The Repo is just a style of my favorite.**  
@@ -98,9 +96,9 @@ There are tons of effective way to create solid software in JavaScript World, yo
 
 ## Installation
 
-### Prerequisites
+### 🔧Prerequisites
 
-The app assumed installed Node.js newer than `10.16.3 LTS`.
+The app assumed installed `Node.js` newer than `10.16.3 LTS`.
 If you have not it yet, follow the official [Node.js Doc](https://nodejs.org/en/) to install it.
 
 ```bash
