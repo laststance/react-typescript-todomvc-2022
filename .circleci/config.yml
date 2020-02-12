@@ -39,7 +39,7 @@ jobs:
             - run: yarn install
             - run: yarn lint
 workflows:
-    automatic:
+    react_todo_all_ci_jobs:
         jobs:
             - typecheck
             - build
