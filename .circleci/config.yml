@@ -5,6 +5,7 @@ jobs:
     typecheck:
         docker:
             - image: circleci/node:10.15.3
+        parallelism: 1
         working_directory: ~/repo
         steps:
             - checkout
@@ -14,6 +15,7 @@ jobs:
         docker:
             - image: circleci/node:10.15.3
         working_directory: ~/repo
+        parallelism: 1
         steps:
             - checkout
             - run: yarn install
@@ -22,6 +24,7 @@ jobs:
         docker:
             - image: circleci/node:10.15.3
         working_directory: ~/repo
+        parallelism: 1
         steps:
             - checkout
             - run: yarn install
@@ -30,6 +33,7 @@ jobs:
         docker:
             - image: circleci/node:10.15.3
         working_directory: ~/repo
+        parallelism: 1
         steps:
             - checkout
             - run: yarn install
