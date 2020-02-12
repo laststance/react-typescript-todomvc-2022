@@ -65,7 +65,7 @@ npx create-react-app react-typescript-todo-example-2020 --template typescript
 - [TypeScript(Babel)](https://babeljs.io/docs/en/babel-plugin-transform-typescript)
 - [ReachRouter](https://github.com/reach/router)
 - [emotion](https://github.com/emotion-js/emotion): CSS-in-JS
-- [React AppState](https://github.com/ryota-murakami/react-appstate): Data Sharing Library
+- [use-app-state](https://github.com/laststance/use-app-state): Simple Context Store
 - [Cypress](https://www.cypress.io/): E2E Testing
 - [Percy](https://percy.io/): Visual Testing
 - [react-testing-library](https://github.com/testing-library/react-testing-library)
