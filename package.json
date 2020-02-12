@@ -21,7 +21,7 @@
     "cypress:run": "percy exec -- cypress run --record",
     "cypress:open": "cypress open",
     "typecheck": "tsc --noEmit",
-    "percy": "percy",
+    "ci:start_server_and_percy": "percy exec -- yarn start",
     "contributors:add": "all-contributors add",
     "contributors:generate": "all-contributors generate"
   },
