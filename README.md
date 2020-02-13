@@ -77,7 +77,7 @@ npx create-react-app react-typescript-todo-example-2020 --template typescript
 - [CircleCI](https://circleci.com/): Automation run tests, lint, typecheck, build, deploy
 - [Depfu](https://depfu.com/github/ryota-murakami/react-typescript-todo-example-2020?project_id=9618): Keep latest npm packages(React, TypeScript etc) automaticaly
 
-### 😀Motivation
+### 😀 Motivation
 Aftter React Conf 2018, It comming v16.8.0 with [Hooks](https://reactjs.org/docs/hooks-intro.html) that's apparently brand new way of Code Design contrast with class base 📝
 In addition, TypeScript adopt so much easier into a `babel` + `webpack` build system by [Create React App v2.1 TypeScript support](https://github.com/facebook/create-react-app/releases/tag/v2.1.0) official released.
 
