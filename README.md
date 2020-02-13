@@ -47,7 +47,7 @@ Thank you so much & have a good day! 😀⭐️
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## What's this?
-This is a [Create React App](https://facebook.github.io/create-react-app/) based [React](https://reactjs.org/) + [TypeScript](https://www.typescriptlang.org/) todo app example.  👉 [**DEMO**](https://react-typescript-todo-example.netlify.com)  
+This is a [Create React App](https://facebook.github.io/create-react-app/) based [React](https://reactjs.org/) + [TypeScript](https://www.typescriptlang.org/) todo app example.  👉 [**Deployed App**](https://react-typescript-todo-example.netlify.com)  
 [TypeScript](https://www.typescriptlang.org/) coming from babel, set upped at [Create React App](https://facebook.github.io/create-react-app/) install option. [Adding TypeScript Doc](https://facebook.github.io/create-react-app/docs/adding-typescript#docsNav) 📝 
 
 ### How to the project was bootstrapped?
@@ -99,14 +99,19 @@ There are tons of effective way to create solid software in JavaScript World, yo
 
 ### 🔧Prerequisites
 
-The app assumed installed `Node.js` newer than `10.16.3 LTS`.
+- The app assumed installed `Node.js` newer than `10.16.3 LTS`.
 If you have not it yet, follow the official [Node.js Doc](https://nodejs.org/en/) to install it.
+
+And then clone repo and install npm dependencies.  
+Intall is complete.
 
 ```bash
 git clone git@github.com:laststance/react-typescript-todo-example-2020.git
 cd react-typescript-todo-example-2020
 yarn install # or npm install
 ```
+
+After that you can lunch App with 'yarn start' command. 😎
 
 ### 📝 Editor
 If you're going to code reading for learn, I recommend you [VScode](https://code.visualstudio.com/) or [WebStorm](https://www.jetbrains.com/webstorm/).  
@@ -115,7 +120,10 @@ Those editor has buit-in TypeScript supprt so code jumping woring as well.
 But if you using Vim, there is great post for setup [Vim for TypeScript and React in 2020](https://medium.com/@vanuan/vim-for-typescript-and-react-in-2020-9724b9139be2).  
 Written by [Vanya Yani](https://medium.com/@vanuan). 🤗
 
-## Run Webpack Dev Server
+
+## CLI commands
+
+### Run Webpack Dev Server
 
 ```bash
 yarn start
@@ -127,7 +135,7 @@ and then you'll got todo app as same as Demo. let's modify under the `src/` code
 
 Official Docs: https://create-react-app.dev/docs/getting-started#npm-start-or-yarn-start
 
-## Run Production Build
+### Run Production Build
 
 ```bash
 yarn build
@@ -143,7 +151,7 @@ serve -s build
 
 Official Docs: https://create-react-app.dev/docs/getting-started#npm-run-build-or-yarn-build
 
-## Cypress
+### Cypress
 [Cypress](https://www.cypress.io/) is all-in-one E2E Testing tool which can deal real browser testing.  
 
 ![cypress_open](images/cypress_open.gif)
@@ -170,7 +178,7 @@ Cypress and Percy combination is really effective for website/webapp!
 This projects Percy console is this: https://percy.io/laststance/react-typescript-todo-example-2020
 
 
-## Jest
+### Jest
 [Jest](https://jestjs.io/) is all-in-one test-runner built in [Create React App](https://facebook.github.io/create-react-app/) and covers function-level unit testing to component-behavior-level integration testing.  
 The Repo use to [react-testing-library](https://github.com/testing-library/react-testing-library) for component integration testing.
 
@@ -181,7 +189,7 @@ yarn test
 yarn test --silent
 ```
 
-## Linting
+### Linting
 [ESLint](https://eslint.org/) is at the top.  
 And setup [TypeScript ESLint](https://github.com/typescript-eslint/typescript-eslint), mixing [Prettier](https://prettier.io/) as a [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier).
 
@@ -193,7 +201,7 @@ yarn lint
 yarn lint:fix
 ```
 
-## Typecheck
+### Typecheck
 While developing and building, Babel stop transpile with TS error messages.  
 I can't find way static typecheck with babel,  
 so I'm using original TypeScript via npm and specified `tsc --noEmit` compile option that doesn't generate compiled code.  
