@@ -40,13 +40,18 @@ function LoadingAppStateFromLocalStorage(BlankAppState: AppState): AppState {
 
 const initialAppState = LoadingAppStateFromLocalStorage(BlankAppState)
 
+interface Props {
+  path: Routes
+}
+const Controller: React.FC<Props> = ({ path }) => <App path={path} />
+
 ReactDOM.render(
   <ErrorBoundary>
     <Provider appState={initialAppState}>
       <Router>
-        <App path="/" />
-        <App path="/active" />
-        <App path="/completed" />
+        <Controller path="/" />
+        <Controller path="/active" />
+        <Controller path="/completed" />
         <NotFound default />
       </Router>
     </Provider>
