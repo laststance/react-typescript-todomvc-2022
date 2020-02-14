@@ -18,10 +18,10 @@
     "eject": "react-scripts eject",
     "lint": "eslint . --ext .ts,.tsx,.js",
     "lint:fix": "eslint . --ext .ts,.tsx,.js --fix",
-    "cypress:run": "cypress run",
-    "cypress:run:percy": "percy exec -- cypress run --record",
-    "cypress:open": "cypress open",
     "typecheck": "tsc --noEmit",
+    "cypress:run": "cypress run",
+    "cypress:open": "cypress open",
+    "cypress:run:percy": "percy exec -- cypress run --record",
     "ci:start_server_and_percy": "percy exec -- yarn start",
     "contributors:add": "all-contributors add",
     "contributors:generate": "all-contributors generate"
