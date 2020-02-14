@@ -1,6 +1,9 @@
 import React, { Component } from 'react'
 import styled from '@emotion/styled'
 
+/**
+ * This file showing "TypeScirpt can use with JavaScript" for beginners
+ */
 class ErrorBoundary extends Component {
   state = {
     error: null,

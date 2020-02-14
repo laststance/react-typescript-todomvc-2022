@@ -1,7 +1,7 @@
 import { UUID } from './functions'
 
 describe('UUID', () => {
-  test('should generate random 12 length of base62', () => {
+  test('should generate random 12 length by base62', () => {
     const results: string[] = []
 
     for (let i = 0; i <= 1000; i++) {

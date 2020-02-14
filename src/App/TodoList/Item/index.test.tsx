@@ -25,7 +25,7 @@ const App = () => {
   )
 }
 
-test('should each todo object value is set to Item element', () => {
+test('should each todo object value is set at Item element', () => {
   const { getByTestId } = render(
     <Provider appState={initialAppState}>
       <Item todo={initialAppState.todoList[0]} />

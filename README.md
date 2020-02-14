@@ -115,7 +115,7 @@ cd react-typescript-todo-example-2020
 yarn install # or npm install
 ```
 
-After that you can lunch App with 'yarn start' command. 😎
+After that you can lunch App with `yarn start` command. 😎
 
 ### 📝 Editor
 If you're going to code reading for learn, I recommend you [VScode](https://code.visualstudio.com/) or [WebStorm](https://www.jetbrains.com/webstorm/).  
