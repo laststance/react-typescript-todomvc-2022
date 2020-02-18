@@ -2,7 +2,7 @@ import React from 'react'
 import { render } from '@testing-library/react'
 import ErrorBoundary from './ErrorBoundary'
 
-import '@testing-library/jest-dom/extend-expect'
+import '@testing-library/jest-dom'
 
 test('should render fallback page Error was thrown', () => {
   const InvalidComponent = () => undefined
