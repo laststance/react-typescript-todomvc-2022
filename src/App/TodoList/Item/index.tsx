@@ -1,18 +1,27 @@
 import React, { useState, createRef, useEffect } from 'react'
-import { AppState, Todo, TodoListType } from '../../../index'
-import { useAppState } from '@laststance/use-app-state'
+import { Todo } from '../../../index'
 import { Layout } from './style'
 
 interface Props {
   todo: Todo
+  toggleCompleted: (id: Todo['id']) => void
+  removeItem: (id: Todo['id']) => void
+  handleTodoTextEdit: (
+    e: React.ChangeEvent<HTMLInputElement>,
+    id: Todo['id']
+  ) => void
 }
 
 interface State {
   onEdit: boolean
 }
 
-const Item: React.FC<Props> = ({ todo }) => {
-  const [appState, setAppState] = useAppState<AppState>()
+const Item: React.FC<Props> = ({
+  todo,
+  toggleCompleted,
+  removeItem,
+  handleTodoTextEdit
+}) => {
   const editInput = createRef<HTMLInputElement>()
   const init: State = { onEdit: false }
   const [state, setState] = useState(init)
@@ -52,43 +61,6 @@ const Item: React.FC<Props> = ({ todo }) => {
       default:
         return ''
     }
-  }
-
-  const toggleCompleted = (clicked: Todo['id']): void => {
-    const toggled: TodoListType = appState.todoList.map(
-      (t: Todo): Todo => {
-        // change complated status for only clicked item
-        if (t.id === clicked) {
-          return { ...t, completed: !t.completed }
-        } else {
-          return t
-        }
-      }
-    )
-
-    setAppState({ todoList: toggled })
-  }
-
-  const removeItem = (terminate: Todo['id']): void => {
-    const removed: TodoListType = appState.todoList.filter(
-      (t: Todo): boolean => t.id !== terminate
-    )
-
-    setAppState({ todoList: removed })
-  }
-
-  const handleTodoTextEdit = (e: React.ChangeEvent<HTMLInputElement>, onEdit: Todo['id']): void => { /* eslint-disable-line prettier/prettier */
-    const edited = appState.todoList.map(
-      (t: Todo): Todo => {
-        if (t.id === onEdit) {
-          return { ...t, bodyText: e.target.value }
-        } else {
-          return t
-        }
-      }
-    )
-
-    setAppState({ todoList: edited })
   }
 
   useEffect(() => {

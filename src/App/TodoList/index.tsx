@@ -20,6 +20,43 @@ const TodoList: React.FC<Props> = ({ path }) => {
     })
   }
 
+  const toggleCompleted = (clicked: Todo['id']): void => {
+    const toggled: TodoListType = appState.todoList.map(
+      (t: Todo): Todo => {
+        // change complated status for only clicked item
+        if (t.id === clicked) {
+          return { ...t, completed: !t.completed }
+        } else {
+          return t
+        }
+      }
+    )
+
+    setAppState({ todoList: toggled })
+  }
+
+  const removeItem = (terminate: Todo['id']): void => {
+    const removed: TodoListType = appState.todoList.filter(
+      (t: Todo): boolean => t.id !== terminate
+    )
+
+    setAppState({ todoList: removed })
+  }
+
+  const handleTodoTextEdit = (e: React.ChangeEvent<HTMLInputElement>, onEdit: Todo['id']): void => { /* eslint-disable-line prettier/prettier */
+    const edited = appState.todoList.map(
+      (t: Todo): Todo => {
+        if (t.id === onEdit) {
+          return { ...t, bodyText: e.target.value }
+        } else {
+          return t
+        }
+      }
+    )
+
+    setAppState({ todoList: edited })
+  }
+
   return (
     <Layout>
       <section className="main">
@@ -48,7 +85,15 @@ const TodoList: React.FC<Props> = ({ path }) => {
             })
             .map(
               (t: Todo): ReactElement => {
-                return <Item key={t.id} todo={t} />
+                return (
+                  <Item
+                    key={t.id}
+                    todo={t}
+                    toggleCompleted={toggleCompleted}
+                    handleTodoTextEdit={handleTodoTextEdit}
+                    removeItem={removeItem}
+                  />
+                )
               }
             )}
         </ul>
