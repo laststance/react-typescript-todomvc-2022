@@ -4,24 +4,43 @@ import '@testing-library/jest-dom'
 import Item from './index'
 import { Todo } from '../../../index'
 
-const todo: Todo = {
-  id: '8btxpD9kDBlo',
-  bodyText: 'cut tomato',
-  completed: false
-}
-const handleCompleteCheckbox: ((id: Todo['id']) => void)  = jest.fn(() => undefined)
-const removeItem:((id: Todo['id']) => void)  = jest.fn(() => undefined)
-const handleTodoTextEdit :((id: Todo['id']) => void) = jest.fn(() => undefined)
+let todo: Todo
+let handleCompleteCheckbox = () => undefined
+let removeItem = () => undefined
+let handleTodoTextEdit = () => undefined
+let TestApp: React.FC
 
-const App = () => {
-  return (
-    <div>
-      <Item todo={todo} removeItem={removeItem} handleTodoTextEdit={handleTodoTextEdit} handleCompleteCheckbox={handleCompleteCheckbox}  />
-    </div>
-  )
-}
+describe('<Item/ > Component Tsesting', () => {
+  beforeEach(() => {
+    todo = {
+      id: '8btxpD9kDBlo',
+      bodyText: 'cut tomato',
+      completed: false
+    }
+    handleCompleteCheckbox = jest.fn()
+    removeItem = jest.fn()
+    handleTodoTextEdit = jest.fn()
 
+    TestApp = () => {
+      return (
+        <div>
+          <Item
+            todo={todo}
+            removeItem={removeItem}
+            handleTodoTextEdit={handleTodoTextEdit}
+            handleCompleteCheckbox={handleCompleteCheckbox}
+          />
+        </div>
+      )
+    }
+  })
 
+  test('shold be edit mode when DoubleClick todo text', () => {
+    const { getByText, getByTestId } = render(<TestApp />)
+    fireEvent.doubleClick(getByText('cut tomato'))
+    expect(getByTestId('todo-item')).toHaveClass('editing')
+  })
+})
 
 // @Todo oldtest
 // test('should each todo object value is set at Item element', () => {
