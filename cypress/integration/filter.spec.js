@@ -7,7 +7,7 @@ context('Filter', () => {
     cy.get('[data-cy=todo-item]').should('have.length', 3)
     // done the todo
     cy.get('[data-cy=todo-item]:first-of-type')
-      .find('[data-cy=todo-item-complete-check]')
+      .find('[data-cy=todo-item-complete-checkbox]')
       .check()
     cy.get('[data-cy=todo-item]').should('have.length', 3)
 
@@ -26,7 +26,7 @@ context('Filter', () => {
     cy.get('[data-cy=todo-item]').should('have.length', 3)
     // done the todo
     cy.get('[data-cy=todo-item]:first-of-type')
-      .find('[data-cy=todo-item-complete-check]')
+      .find('[data-cy=todo-item-complete-checkbox]')
       .check()
     cy.get('[data-cy=todo-item]').should('have.length', 2)
   })
@@ -38,7 +38,7 @@ context('Filter', () => {
     // done the todo
     cy.get('[data-cy=all-filter]').click()
     cy.get('[data-cy=todo-item]:first-of-type')
-      .find('[data-cy=todo-item-complete-check]')
+      .find('[data-cy=todo-item-complete-checkbox]')
       .check()
     cy.get('[data-cy=completed-filter]').click()
     cy.get('[data-cy=todo-item]').should('have.length', 1)

@@ -12,7 +12,7 @@ context('Real World Usecase', () => {
     // can check todo 'three' as comoleted
     cy.get('[data-cy=todo-item]:first-of-type')
       .should('have.text', 'three')
-      .find('[data-cy=todo-item-complete-check]')
+      .find('[data-cy=todo-item-complete-checkbox]')
       .check()
       .should('have.checked')
     cy.get('[data-cy=remaining-uncompleted-todo-count]').should('contain', '2')
@@ -22,7 +22,7 @@ context('Real World Usecase', () => {
     // can check todo 'two' as comoleted
     cy.get('[data-cy=todo-item]:nth-of-type(2)')
       .should('have.text', 'two')
-      .find('[data-cy=todo-item-complete-check]')
+      .find('[data-cy=todo-item-complete-checkbox]')
       .check()
       .should('have.checked')
     // [state: 3 todo, 2 completed] it should show "Clear cmpleted" button on footer
@@ -31,7 +31,7 @@ context('Real World Usecase', () => {
     // can un-check todo 'three' as un-completed
     cy.get('[data-cy=todo-item]:first-of-type')
       .should('have.text', 'three')
-      .find('[data-cy=todo-item-complete-check]')
+      .find('[data-cy=todo-item-complete-checkbox]')
       .click()
       .should('not.have.checked')
 
@@ -62,7 +62,7 @@ context('Real World Usecase', () => {
 
     // can edit completed todo
     cy.get('[data-cy=todo-item]:nth-of-type(3)')
-      .find('[data-cy=todo-item-complete-check]')
+      .find('[data-cy=todo-item-complete-checkbox]')
       .check()
       .should('have.checked')
     cy.get('[data-cy=todo-item]:nth-of-type(3)')

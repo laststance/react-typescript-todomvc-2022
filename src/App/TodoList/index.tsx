@@ -20,7 +20,7 @@ const TodoList: React.FC<Props> = ({ path }) => {
     })
   }
 
-  const toggleCompleted = (clicked: Todo['id']): void => {
+  const handleCompleteCheckbox = (clicked: Todo['id']): void => {
     const toggled: TodoListType = appState.todoList.map(
       (t: Todo): Todo => {
         // change complated status for only clicked item
@@ -89,7 +89,7 @@ const TodoList: React.FC<Props> = ({ path }) => {
                   <Item
                     key={t.id}
                     todo={t}
-                    toggleCompleted={toggleCompleted}
+                    handleCompleteCheckbox={handleCompleteCheckbox}
                     handleTodoTextEdit={handleTodoTextEdit}
                     removeItem={removeItem}
                   />
