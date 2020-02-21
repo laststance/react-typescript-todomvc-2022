@@ -4,7 +4,7 @@ import { Container } from './style'
 
 interface Props {
   todo: Todo
-  handleCompleteCheckbox: (id: Todo['id']) => void
+  toggleCompleted: (id: Todo['id']) => void
   removeItem: (id: Todo['id']) => void
   handleTodoTextEdit: (
     e: React.ChangeEvent<HTMLInputElement>,
@@ -16,7 +16,12 @@ interface State {
   onEdit: boolean
 }
 
-const Item: React.FC<Props> = ({ todo, handleCompleteCheckbox, removeItem, handleTodoTextEdit }) => {  /* eslint-disable-line prettier/prettier */
+const Item: React.FC<Props> = ({
+  todo,
+  toggleCompleted,
+  removeItem,
+  handleTodoTextEdit
+}) => {
   const editInput = createRef<HTMLInputElement>()
   const init: State = { onEdit: false }
   const [state, setState] = useState(init)
@@ -72,11 +77,10 @@ const Item: React.FC<Props> = ({ todo, handleCompleteCheckbox, removeItem, handl
             className="toggle"
             type="checkbox"
             checked={todo.completed}
-            onChange={() => handleCompleteCheckbox(todo.id)}
-            data-cy="todo-item-complete-checkbox"
-            data-testid="todo-item-complete-checkbox"
+            onChange={() => toggleCompleted(todo.id)}
+            data-cy="todo-item-complete-check"
+            data-testid="todo-item-complete-check"
           />
-          {/* Actual user seeing the label text on screen */}
           <label
             onDoubleClick={onDoubleClick}
             data-cy="todo-body-text"

@@ -23,7 +23,7 @@ context('Edit Todo', () => {
 
   it('can edit completed todo', () => {
     cy.get('[data-cy=todo-item]:nth-of-type(3)')
-      .find('[data-cy=todo-item-complete-checkbox]')
+      .find('[data-cy=todo-item-complete-check]')
       .check()
       .should('have.checked')
     cy.get('[data-cy=todo-item]:nth-of-type(3)')
