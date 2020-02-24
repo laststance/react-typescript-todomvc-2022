@@ -178,7 +178,7 @@ When you run or open cypress, also run a [Percy](https://percy.io/).
 Percy is awesome visual regression testing service.   
 That detect visual diff each page, and then we'll check on web console "is that visual change expected?"   
 
-Cypress and Percy combination is really effective for website/webapp!  
+Cypress and Percy combination is really effective for website/app!  
 This projects Percy console is this: https://percy.io/laststance/react-typescript-todo-example-2020
 
 
@@ -189,8 +189,6 @@ The Repo use to [react-testing-library](https://github.com/testing-library/react
 ```bash
 # run jest
 yarn test
-# run jest with hide console message except jest infomation
-yarn test --silent
 ```
 
 ### Linting
