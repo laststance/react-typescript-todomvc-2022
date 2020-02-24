@@ -20,6 +20,7 @@ const TodoList: React.FC<Props> = ({ path }) => {
     })
   }
 
+  // Passing to <Item /> Component
   const handleCompleteCheckbox = (clicked: Todo['id']): void => {
     const toggled: TodoListType = appState.todoList.map(
       (t: Todo): Todo => {
@@ -35,6 +36,7 @@ const TodoList: React.FC<Props> = ({ path }) => {
     setAppState({ todoList: toggled })
   }
 
+  // Passing to <Item /> Componen
   const removeItem = (terminate: Todo['id']): void => {
     const removed: TodoListType = appState.todoList.filter(
       (t: Todo): boolean => t.id !== terminate
@@ -43,6 +45,7 @@ const TodoList: React.FC<Props> = ({ path }) => {
     setAppState({ todoList: removed })
   }
 
+  // Passing to <Item /> Componen
   const handleTodoTextEdit = (e: React.ChangeEvent<HTMLInputElement>, onEdit: Todo['id']): void => { /* eslint-disable-line prettier/prettier */
     const edited = appState.todoList.map(
       (t: Todo): Todo => {
