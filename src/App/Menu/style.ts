@@ -4,7 +4,7 @@
 
 import styled from '@emotion/styled'
 
-export const Layout = styled.div`
+export const Container = styled.div`
   .footer {
     color: #777;
     padding: 10px 15px;

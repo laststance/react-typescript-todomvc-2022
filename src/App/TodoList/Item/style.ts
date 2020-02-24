@@ -5,7 +5,7 @@
 import styled from '@emotion/styled'
 import { base } from '../../style'
 
-export const Layout = styled.div`
+export const Container = styled.div`
   position: relative;
   font-size: 24px;
   border-bottom: 1px solid #ededed;

@@ -2,7 +2,7 @@ import React, { createRef } from 'react'
 import { UUID } from '../../functions'
 import { Todo, AppState } from '../../index'
 import { useAppState } from '@laststance/use-app-state'
-import { Layout } from './style'
+import { Container } from './style'
 
 const TodoTextInput: React.FC = () => {
   const [appState, setAppState] = useAppState<AppState>()
@@ -27,7 +27,7 @@ const TodoTextInput: React.FC = () => {
   }
 
   return (
-    <Layout>
+    <Container>
       <header className="header">
         <h1>todos</h1>
         <input
@@ -40,7 +40,7 @@ const TodoTextInput: React.FC = () => {
           data-cy="new-todo-input-text"
         />
       </header>
-    </Layout>
+    </Container>
   )
 }
 

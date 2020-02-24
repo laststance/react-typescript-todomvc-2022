@@ -5,7 +5,7 @@
 import { css } from '@emotion/core'
 import styled from '@emotion/styled'
 
-export const Layout = styled.div`
+export const Container = styled.div`
   .todoapp {
     background: #fff;
     margin: 130px 0 40px 0;

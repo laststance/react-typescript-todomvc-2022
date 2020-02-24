@@ -5,7 +5,7 @@
 import styled from '@emotion/styled'
 import { base } from '../style'
 
-export const Layout = styled.div`
+export const Container = styled.div`
   .new-todo {
     ${base.textInput};
     padding: 16px 16px 16px 60px;

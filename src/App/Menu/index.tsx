@@ -2,7 +2,7 @@ import React from 'react'
 import FilterLink from './FilterLink'
 import { Routes, Todo, AppState } from '../../index'
 import { useAppState } from '@laststance/use-app-state'
-import { Layout } from './style'
+import { Container } from './style'
 
 interface Props {
   path: Routes
@@ -20,7 +20,7 @@ const Menu: React.FC<Props> = ({ path }) => {
   }
 
   return (
-    <Layout>
+    <Container>
       <footer className="footer">
         <span className="todo-count">
           <strong data-cy="remaining-uncompleted-todo-count">{yetCount}</strong>{' '}
@@ -38,7 +38,7 @@ const Menu: React.FC<Props> = ({ path }) => {
           </button>
         )}
       </footer>
-    </Layout>
+    </Container>
   )
 }
 

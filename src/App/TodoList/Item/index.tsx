@@ -1,6 +1,6 @@
 import React, { useState, createRef, useEffect } from 'react'
 import { Todo } from '../../../index'
-import { Layout } from './style'
+import { Container } from './style'
 
 interface Props {
   todo: Todo
@@ -65,7 +65,7 @@ const Item: React.FC<Props> = ({ todo, handleCompleteCheckbox, removeItem, handl
   }, [editInput, state.onEdit])
 
   return (
-    <Layout data-cy="todo-item">
+    <Container data-cy="todo-item">
       <li className={SwitchStyle(todo, state.onEdit)} data-testid="todo-item">
         <div className="view" data-testid="view">
           <input
@@ -102,7 +102,7 @@ const Item: React.FC<Props> = ({ todo, handleCompleteCheckbox, removeItem, handl
           data-testid="todo-edit-input"
         />
       </li>
-    </Layout>
+    </Container>
   )
 }
 
