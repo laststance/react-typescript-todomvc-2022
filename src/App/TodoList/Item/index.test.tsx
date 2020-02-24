@@ -43,9 +43,17 @@ describe('<Item/ > Component Tsesting', () => {
     expect(getByTestId('todo-item')).not.toHaveClass('editing')
   })
 
-  test('shold be edit mode when DoubleClick todo text', () => {
+  test('should be edit mode when DoubleClick todo text', () => {
     const { getByText, getByTestId } = render(<TestApp />)
+
     fireEvent.doubleClick(getByText('cut tomato'))
     expect(getByTestId('todo-item')).toHaveClass('editing')
+  })
+
+  test('should be call removeItem() when delete button is clicked', () => {
+    const { getByTestId } = render(<TestApp />)
+
+    fireEvent.click(getByTestId('delete-todo-btn'))
+    expect(removeItem).toHaveBeenCalledTimes(1)
   })
 })
