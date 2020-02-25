@@ -10,7 +10,7 @@ let removeItem = () => undefined
 let handleTodoTextEdit = () => undefined
 let TestApp: React.FC
 
-describe('<Item /> Component Tsesting', () => {
+describe('<Item/ > Component Tsesting', () => {
   beforeEach(() => {
     todo = {
       id: '8btxpD9kDBlo',
