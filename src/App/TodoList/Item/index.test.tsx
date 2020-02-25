@@ -50,10 +50,18 @@ describe('<Item /> Component Tsesting', () => {
     expect(getByTestId('todo-item')).toHaveClass('editing')
   })
 
-  test('should be call removeItem() when delete button is clicked', () => {
+  test('should call removeItem() when delete button is clicked', () => {
     const { getByTestId } = render(<TestApp />)
 
     fireEvent.click(getByTestId('delete-todo-btn'))
     expect(removeItem).toHaveBeenCalledTimes(1)
+  })
+
+  test('should call handleCompleteCheckbox(todo.id) when checkbox is clicked', () => {
+    const { getByTestId } = render(<TestApp />)
+
+    fireEvent.click(getByTestId('todo-item-complete-checkbox'))
+    expect(handleCompleteCheckbox).toHaveBeenCalledTimes(1)
+    expect(handleCompleteCheckbox).toHaveBeenCalledWith('8btxpD9kDBlo')
   })
 })
