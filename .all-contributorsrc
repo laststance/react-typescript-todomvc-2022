@@ -1,6 +1,6 @@
 {
   "projectName": "react-typescript-todo-example-2020",
-  "projectOwner": "ryota-murakami",
+  "projectOwner": "laststance",
   "repoType": "github",
   "repoHost": "https://github.com",
   "files": [
@@ -37,6 +37,15 @@
       "profile": "https://github.com/JunQu",
       "contributions": [
         "bug"
+      ]
+    },
+    {
+      "login": "alexpanchuk",
+      "name": "Alex Panchuk",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/26270612?v=4",
+      "profile": "https://github.com/alexpanchuk",
+      "contributions": [
+        "doc"
       ]
     }
   ],
