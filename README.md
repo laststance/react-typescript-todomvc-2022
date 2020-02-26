@@ -16,7 +16,7 @@ I created this repository july 2019 because I can't Create React App + TypeScrip
 Today I'm glad to many forks visiting the repo everyday more than I expected. So I want to continue to implove as a latest React TypeScript Todo Example.  
 Now project was renamed 2019 to **react-typescript-todo-example-2020** 😆🎄✨ (2/11 2020)
  
-React + TypeScript conbination has growing to vast majolity doday, so I hope to show example tested web app mainly beginner developer.    
+React + TypeScript conbination has growing to vast majority today, so I hope to show example tested web app mainly beginner developer.    
 
 Thank you so much visit here & several awesome contributors!  
 have a good day! 😀⭐️
@@ -119,7 +119,7 @@ After that you can lunch App with `yarn start` command. 😎
 
 ### 📝 Editor
 If you're going to code reading for learn, I recommend you [VScode](https://code.visualstudio.com/) or [WebStorm](https://www.jetbrains.com/webstorm/).  
-Those editor has buit-in TypeScript supprt so code jumping woring as well.  
+Those editor has buit-in TypeScript support so code jumping woring as well.  
 
 But if you using Vim, there is great post for setup [Vim for TypeScript and React in 2020](https://medium.com/@vanuan/vim-for-typescript-and-react-in-2020-9724b9139be2).  
 Written by [Vanya Yani](https://medium.com/@vanuan). 🤗
