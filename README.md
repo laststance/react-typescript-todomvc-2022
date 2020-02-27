@@ -10,13 +10,13 @@
 
  <a href="https://react-typescript-todo-example.netlify.com/"><img src="https://raw.githubusercontent.com/laststance/react-typescript-todo-example-2020/master/img.pnghttps://raw.githubusercontent.com/laststance/react-typescript-todo-example-2020/master/images/todolist.gif" alt="gif"></a>
 
-## Thank you for over 80 stars!✨🤩🎉
+## Thank you for over 80 stars! 😀🎉
 I created this repository july 2019 because I can't Create React App + TypeScript + implemented by modern favor React(like hooks.)  
 
 Today I'm glad to many forks visiting the repo everyday more than I expected. So I want to continue to implove as a latest React TypeScript Todo Example.  
-Now project was renamed 2019 to **react-typescript-todo-example-2020** 😆🎄✨ (2/11 2020)
+Now project was renamed 2019 to **react-typescript-todo-example-2020** 🎄✨ (2/11 2020)
  
-React + TypeScript conbination has growing to vast majority today, so I hope to show example tested web app mainly beginner developer.    
+**React + TypeScript** conbination has growing to vast majority today, so I hope to show example tested web app mainly beginner developer.    
 
 Thank you so much visit here & several awesome contributors!  
 have a good day! 😀⭐️
