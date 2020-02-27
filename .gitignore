@@ -1,4 +1,5 @@
 build/
+cypress.env.json
 cypress/videos/
 cypress/fixtures/
 cypress/screenshots/
