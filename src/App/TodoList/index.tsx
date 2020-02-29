@@ -1,5 +1,5 @@
 import React, { ReactElement } from 'react'
-import { Routes, Todo, AppState, TodoListType } from '../../index'
+import { Routes, Todo, AppState } from '../../index'
 import Item from './Item'
 import { useAppState } from '@laststance/use-app-state'
 import { Container } from './style'
@@ -11,13 +11,9 @@ interface Props {
 const TodoList: React.FC<Props> = ({ path }) => {
   const [appState, setAppState] = useAppState<AppState>()
 
-  function toggleAllCompletedCheck(e: React.ChangeEvent<HTMLInputElement>): void { /* eslint-disable-line prettier/prettier */
-    const appliedCheckBox: TodoListType = appState.todoList.map((t: Todo) => {
-      return { ...t, completed: e.target.checked }
-    })
-    setAppState({
-      todoList: appliedCheckBox
-    })
+  function toggleAllCheckbox(e: React.ChangeEvent<HTMLInputElement>): void { /* eslint-disable-line prettier/prettier */
+    // reverse all todo.completed: boolean flag
+    setAppState({ todoList: appState.todoList.map((t: Todo): Todo => ({ ...t, completed: e.target.checked })) }) /* eslint-disable-line prettier/prettier */
   }
 
   return (
@@ -27,7 +23,7 @@ const TodoList: React.FC<Props> = ({ path }) => {
           id="toggle-all"
           className="toggle-all"
           type="checkbox"
-          onChange={toggleAllCompletedCheck}
+          onChange={toggleAllCheckbox}
           data-cy="toggle-all-btn"
           data-testid="toggle-all-btn"
         />
