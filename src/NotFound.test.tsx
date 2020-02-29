@@ -4,5 +4,5 @@ import { NotFound } from './NotFound'
 
 test('<NotFound /> should render Page Not Found message', () => {
   const { getAllByText } = render(<NotFound />)
-  expect(getAllByText('Page Not Found')).toBeTruthy()
+  expect(getAllByText('Page Not Found')).toBeInTheDocument()
 })
