@@ -4,7 +4,7 @@ import ErrorBoundary from './ErrorBoundary'
 
 import '@testing-library/jest-dom'
 
-test('should render fallback page Error was thrown', () => {
+test('should be render fallback page Error was thrown', () => {
   const InvalidComponent = () => undefined
   const { getByText } = render(
     <ErrorBoundary>
