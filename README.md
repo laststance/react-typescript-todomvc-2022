@@ -115,7 +115,9 @@ cd react-typescript-todo-example-2020
 yarn install # or npm install
 ```
 
-After that you can lunch App with `yarn start` command. 😎
+After that you can lunch App with `yarn start` command. 😎  
+
+And Todo source code is putting [src/](https://github.com/laststance/react-typescript-todo-example-2020/tree/master/src) directory.
 
 ### 📝 Editor
 If you're going to code reading for learn, I recommend you [VScode](https://code.visualstudio.com/) or [WebStorm](https://www.jetbrains.com/webstorm/).  
