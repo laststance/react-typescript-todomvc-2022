@@ -18,6 +18,7 @@
     "eject": "react-scripts eject",
     "lint": "eslint . --ext .ts,.tsx,.js",
     "lint:fix": "eslint . --ext .ts,.tsx,.js --fix",
+    "prettier": "prettier --write {src,cypress}/**/*.{js,ts,tsx}",
     "typecheck": "tsc --noEmit",
     "cypress:run": "cypress run",
     "cypress:run:chrome": "cypress run --browser chrome",
