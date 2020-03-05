@@ -54,7 +54,7 @@ workflows:
                   executor: cypress/browsers-chrome69
                   browser: chrome
                   record: true        # record results on Cypress Dashboard
-                  parallel: false      # split all specs across machines
+                  parallel: true      # split all specs across machines
                   parallelism: 1      # use 4 CircleCI machines to finish quickly
                   group: 'all tests'  # name this group "all tests" on the dashboard
                   start: 'yarn ci:start_server_and_percy'  # start server before running tests
