@@ -54,24 +54,13 @@ const Item: React.FC<Props> = ({ todo }) => {
     }
   }
 
-  const toggleCompleted = (clicked: Todo['id']): void => {
-    const toggled: TodoListType = appState.todoList.map(
-      (t: Todo): Todo => {
-        // change complated status for only clicked item
-        if (t.id === clicked) {
-          return { ...t, completed: !t.completed }
-        } else {
-          return t
-        }
-      }
-    )
-
-    setAppState({ todoList: toggled })
+  const reverseAllIsCompleted = (id: Todo['id']): void => {
+    setAppState({ todoList: appState.todoList.filter((t: Todo): boolean => t.id !== id) }) /* eslint-disable-line prettier/prettier */
   }
 
-  const removeItem = (terminate: Todo['id']): void => {
+  const removeItem = (id: Todo['id']): void => {
     const removed: TodoListType = appState.todoList.filter(
-      (t: Todo): boolean => t.id !== terminate
+      (t: Todo): boolean => t.id !== id
     )
 
     setAppState({ todoList: removed })
@@ -105,7 +94,7 @@ const Item: React.FC<Props> = ({ todo }) => {
             className="toggle"
             type="checkbox"
             checked={todo.completed}
-            onChange={() => toggleCompleted(todo.id)}
+            onChange={() => reverseAllIsCompleted(todo.id)}
             data-cy="todo-item-complete-check"
             data-testid="todo-item-complete-check"
           />
