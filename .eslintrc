@@ -6,11 +6,7 @@
     "prettier/@typescript-eslint"
   ],
   "parser": "@typescript-eslint/parser",
-  "plugins": [
-    "react-hooks",
-    "@typescript-eslint",
-    "prettier"
-  ],
+  "plugins": ["react-hooks", "@typescript-eslint", "prettier"],
   "globals": {
     "context": "readonly",
     "cy": "readonly",
@@ -25,9 +21,7 @@
         "semi": false
       }
     ],
-    "no-unused-vars": [
-      "error"
-    ],
+    "no-unused-vars": ["error"],
     "no-console": "warn",
     "no-undef": "off",
     "jsx-a11y/href-no-hash": "off",

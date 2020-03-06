@@ -1,9 +1,7 @@
 .git
 .idea
-.circleci
 images
 .all-contributorsrc
-.env
 .eslintignore
 .gitignore
 LICENSE
