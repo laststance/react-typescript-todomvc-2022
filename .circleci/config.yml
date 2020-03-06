@@ -39,7 +39,7 @@ jobs:
             - run: yarn install
             - run: yarn lint
 workflows:
-    react-typescript-todo-example-2020:
+    create-react-app-typescript-todo-example-2020:
         jobs:
             - typecheck
             - build
