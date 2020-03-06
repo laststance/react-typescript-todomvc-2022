@@ -6,7 +6,7 @@
 [![tested with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://github.com/facebook/jest)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 [![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors)
-[![Depfu](https://badges.depfu.com/badges/b291947c58892a6d78e4f3374c4a6d01/overview.svg)](https://depfu.com/github/ryota-murakami/create-react-app-typescript-todo-example-2020?project_id=9618)
+[![Depfu](https://badges.depfu.com/badges/b291947c58892a6d78e4f3374c4a6d01/overview.svg)](https://depfu.com/github/laststance/create-react-app-typescript-todo-example-2020?project_id=9618)
 
  <a href="https://create-react-app-typescript-todo-example.netlify.com/"><img src="https://raw.githubusercontent.com/laststance/create-react-app-typescript-todo-example-2020/master/img.pnghttps://raw.githubusercontent.com/laststance/create-react-app-typescript-todo-example-2020/master/images/todolist.gif" alt="gif"></a>
 
