@@ -26,21 +26,21 @@ have a good day! 😀⭐️
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 - [What's this?](#whats-this)
-  - [How to the project was bootstrapped?](#how-to-the-project-was-bootstrapped)
 - [Stack](#stack)
-  - [😀Motivation](#motivation)
+- [😀 Motivation](#-motivation)
   - [🗒 Note](#%F0%9F%97%92-note)
 - [Installation](#installation)
-  - [🔧Prerequisites](#prerequisites)
+  - [🔧 Prerequisites](#-prerequisites)
   - [📝 Editor](#-editor)
-- [Run Webpack Dev Server](#run-webpack-dev-server)
-- [Run Production Build](#run-production-build)
-- [Cypress](#cypress)
-    - [Runs Cypress tests from the CLI without the GUI](#runs-cypress-tests-from-the-cli-without-the-gui)
-    - [Opens Cypress in the interactive GUI](#opens-cypress-in-the-interactive-gui)
-- [Jest](#jest)
-- [Linting](#linting)
-- [Typecheck](#typecheck)
+- [👩‍💻 Usage](#%E2%80%8D-usage)
+  - [`yarn start`](#yarn-start)
+  - [`yarn build`](#yarn-build)
+  - [`yarn cypress:open`](#yarn-cypressopen)
+  - [`yarn cypress:run`](#yarn-cypressrun)
+  - [`yarn test`](#yarn-test)
+  - [`yarn lint`](#yarn-lint)
+  - [`yarn lint:fix`](#yarn-lintfix)
+  - [`yarn typecheck`](#yarn-typecheck)
 - [Issues](#issues)
 - [Questions](#questions)
 - [LICENSE](#license)
@@ -52,14 +52,15 @@ have a good day! 😀⭐️
 This is a [Create React App](https://facebook.github.io/create-react-app/) based [React](https://reactjs.org/) + [TypeScript](https://www.typescriptlang.org/) todo app example.  👉 [**Deployed App**](https://create-react-app-typescript-todo-example.netlify.com)  
 [TypeScript](https://www.typescriptlang.org/) coming from babel, set upped at [Create React App](https://facebook.github.io/create-react-app/) install option. [Adding TypeScript Doc](https://facebook.github.io/create-react-app/docs/adding-typescript#docsNav) 📝 
 
-### How to the project was bootstrapped?
+ **・How to the project was bootstrapped?**
 
-##### 1. Execute command for scaffold [Create React App's TypeScript Templete](https://create-react-app.dev/docs/getting-started#creating-a-typescript-app).
+ **1. Execute command for scaffold [Create React App's TypeScript Templete](https://create-react-app.dev/docs/getting-started#creating-a-typescript-app).**
 
 ```
 npx create-react-app create-react-app-typescript-todo-example-2020 --template typescript
 ```
-##### 2. Setup, Setting, Programing hard with below stuffs 😆
+
+**2. Setup, Setting, Programing hard with below stuffs 😆**
 
 ## Stack
 - [TODO-CSS-Template](https://github.com/Klerith/TODO-CSS-Template)(Borrowing HTML & CSS Thanks! 👍 )
@@ -79,7 +80,7 @@ npx create-react-app create-react-app-typescript-todo-example-2020 --template ty
 - [CircleCI](https://circleci.com/): Automation run tests, lint, typecheck, build, deploy
 - [Depfu](https://depfu.com/github/ryota-murakami/create-react-app-typescript-todo-example-2020?project_id=9618): Keep latest npm packages(React, TypeScript etc) automaticaly
 
-### 😀 Motivation
+## 😀 Motivation
 Aftter React Conf 2018, It comming v16.8.0 with [Hooks](https://reactjs.org/docs/hooks-intro.html) that's apparently brand new way of Code Design contrast with class base 📝
 In addition, TypeScript adopt so much easier into a `babel` + `webpack` build system by [Create React App v2.1 TypeScript support](https://github.com/facebook/create-react-app/releases/tag/v2.1.0) official released.
 
@@ -99,7 +100,7 @@ There are tons of effective way to create solid software in JavaScript World, yo
 
 ## Installation
 
-### 🔧Prerequisites
+### 🔧 Prerequisites
 
 - The app assumed installed `Node.js` newer than `10.16.3 LTS`.
 If you have not it yet, follow the official [Node.js Doc](https://nodejs.org/en/) to install it.
@@ -125,13 +126,10 @@ But if you using Vim, there is great post for setup [Vim for TypeScript and Reac
 Written by [Vanya Yani](https://medium.com/@vanuan). 🤗
 
 
-## CLI commands
 
-### Run Webpack Dev Server
+## 👩‍💻 Usage
 
-```bash
-yarn start
-```
+### `yarn start`
 
 After that you'll seen the console which are server processes messages.  
 Let's follow the message and put in URL `http://localhost:3000/` your browsers adressbar,   
@@ -139,11 +137,7 @@ and then you'll got todo app as same as Demo. let's modify under the `src/` code
 
 Official Docs: https://create-react-app.dev/docs/getting-started#npm-start-or-yarn-start
 
-### Run Production Build
-
-```bash
-yarn build
-```
+### `yarn build`
 
 After that You'll get bundled and optimization stuff in `build` directory.  
 Also you can run production build with `serve` local webserver modules.  
@@ -155,62 +149,46 @@ serve -s build
 
 Official Docs: https://create-react-app.dev/docs/getting-started#npm-run-build-or-yarn-build
 
-### Cypress
-[Cypress](https://www.cypress.io/) is all-in-one E2E Testing tool which can deal real browser testing.  
+### `yarn cypress:open`
+[Cypress](https://www.cypress.io/) is all-in-one E2E Testing tool which can deal testing on real browser.  
+This command using [Electron](https://www.electronjs.org/) by Cypress default.  
 
-![cypress_open](images/cypress_open.gif)
-
-#### Runs Cypress tests from the CLI without the GUI
-
-```bash
-yarn start # Launch DevServer
-yarn cypress:run
-```
-
-#### Opens Cypress in the interactive GUI
+`yarn cypress:open` require `yarn start` before.  
 
 ```bash
 yarn start # Launch DevServer
 yarn cypress:open
 ```
 
-When you run or open cypress, also run a [Percy](https://percy.io/).  
-Percy is awesome visual regression testing service.   
-That detect visual diff each page, and then we'll check on web console "is that visual change expected?"   
 
-Cypress and Percy combination is really effective for website/app!  
-This projects Percy console is this: https://percy.io/laststance/create-react-app-typescript-todo-example-2020
+![cypress_open](images/cypress_open.gif)
 
+### `yarn cypress:run`
+Run Cypress with headless [Electron](https://www.electronjs.org/).  
+That mean this command complete all on a terminal without GUI.  
 
-### Jest
+```bash
+yarn start # Launch DevServer
+yarn cypress:run
+```
+
+### `yarn test`
 [Jest](https://jestjs.io/) is all-in-one test-runner built in [Create React App](https://facebook.github.io/create-react-app/) and covers function-level unit testing to component-behavior-level integration testing.  
 The Repo use to [react-testing-library](https://github.com/testing-library/react-testing-library) for component integration testing.
 
-```bash
-# run jest
-yarn test
-```
-
-### Linting
+### `yarn lint`
 [ESLint](https://eslint.org/) is at the top.  
-And setup [TypeScript ESLint](https://github.com/typescript-eslint/typescript-eslint), mixing [Prettier](https://prettier.io/) as a [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier).
+And setup [TypeScript ESLint](https://github.com/typescript-eslint/typescript-eslint), integrating [Prettier](https://prettier.io/) as a [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier).
 
-```bash
-# run lint only
-yarn lint
+### `yarn lint:fix`
+run wtih eslint --fix option.  
 
-# run wtih eslint --fix option
-yarn lint:fix
-```
-
-### Typecheck
+### `yarn typecheck`
 While developing and building, Babel stop transpile with TS error messages.  
 I can't find way static typecheck with babel,  
 so I'm using original TypeScript via npm and specified `tsc --noEmit` compile option that doesn't generate compiled code.  
 
-```bash
-yarn typecheck
-```
+
 
 ## Issues
 Please feel free to post [New Issue](https://github.com/ryota-murakami/create-react-app-typescript-todo-example-2020/issues/new) or Pull Request 🤗
