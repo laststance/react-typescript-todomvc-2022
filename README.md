@@ -35,12 +35,12 @@ have a good day! 😀⭐️
 - [👩‍💻 Usage](#%E2%80%8D-usage)
   - [`yarn start`](#yarn-start)
   - [`yarn build`](#yarn-build)
-  - [`yarn cypress:open`](#yarn-cypressopen)
-  - [`yarn cypress:run`](#yarn-cypressrun)
-  - [`yarn test`](#yarn-test)
   - [`yarn lint`](#yarn-lint)
   - [`yarn lint:fix`](#yarn-lintfix)
   - [`yarn typecheck`](#yarn-typecheck)
+  - [`yarn test`](#yarn-test)
+  - [`yarn cypress:open`](#yarn-cypressopen)
+  - [`yarn cypress:run`](#yarn-cypressrun)
 - [Issues](#issues)
 - [Questions](#questions)
 - [LICENSE](#license)
@@ -149,6 +149,22 @@ serve -s build
 
 Official Docs: https://create-react-app.dev/docs/getting-started#npm-run-build-or-yarn-build
 
+### `yarn lint`
+[ESLint](https://eslint.org/) is at the top.
+And setup [TypeScript ESLint](https://github.com/typescript-eslint/typescript-eslint), integrating [Prettier](https://prettier.io/) as a [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier).
+
+### `yarn lint:fix`
+run wtih eslint --fix option.
+
+### `yarn typecheck`
+While developing and building, Babel stop transpile with TS error messages.
+I can't find way static typecheck with babel,
+so I'm using original TypeScript via npm and specified `tsc --noEmit` compile option that doesn't generate compiled code.
+
+### `yarn test`
+[Jest](https://jestjs.io/) is all-in-one test-runner built in [Create React App](https://facebook.github.io/create-react-app/) and covers function-level unit testing to component-behavior-level integration testing.
+The Repo use to [react-testing-library](https://github.com/testing-library/react-testing-library) for component integration testing.
+
 ### `yarn cypress:open`
 [Cypress](https://www.cypress.io/) is all-in-one E2E Testing tool which can deal testing on real browser.  
 This command using [Electron](https://www.electronjs.org/) by Cypress default.  
@@ -172,26 +188,12 @@ yarn start # Launch DevServer
 yarn cypress:run
 ```
 
-### `yarn test`
-[Jest](https://jestjs.io/) is all-in-one test-runner built in [Create React App](https://facebook.github.io/create-react-app/) and covers function-level unit testing to component-behavior-level integration testing.  
-The Repo use to [react-testing-library](https://github.com/testing-library/react-testing-library) for component integration testing.
-
-### `yarn lint`
-[ESLint](https://eslint.org/) is at the top.  
-And setup [TypeScript ESLint](https://github.com/typescript-eslint/typescript-eslint), integrating [Prettier](https://prettier.io/) as a [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier).
-
-### `yarn lint:fix`
-run wtih eslint --fix option.  
-
-### `yarn typecheck`
-While developing and building, Babel stop transpile with TS error messages.  
-I can't find way static typecheck with babel,  
-so I'm using original TypeScript via npm and specified `tsc --noEmit` compile option that doesn't generate compiled code.  
-
 
 
 ## Issues
 Please feel free to post [New Issue](https://github.com/ryota-murakami/create-react-app-typescript-todo-example-2020/issues/new) or Pull Request 🤗
+
+
 
 ## Questions
 Please feel free to post [New Issue](https://github.com/ryota-murakami/create-react-app-typescript-todo-example-2020/issues/new) or reply on [Twitter](https://twitter.com/malloc007) 🐦
@@ -202,8 +204,12 @@ If you want to get more generally answers, these community are might be helpful 
 - [Reactiflux on Discord](https://www.reactiflux.com/)
 - [Stack Overflow](https://stackoverflow.com/questions/tagged/reactjs)
 
+
+
 ## LICENSE
 MIT
+
+
 
 ## Contributors
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
