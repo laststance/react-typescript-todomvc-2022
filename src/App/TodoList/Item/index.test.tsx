@@ -25,7 +25,7 @@ const App = () => {
   )
 }
 
-test('should each todo object value is set at Item element', () => {
+test('should each initialAppstate todo object value is set to Item element', () => {
   const { getByTestId } = render(
     <Provider appState={initialAppState}>
       <Item todo={initialAppState.todoList[0]} />
@@ -43,7 +43,7 @@ test('should each todo object value is set at Item element', () => {
   )
 })
 
-test('should correct render default class state', () => {
+test('should set css classes correctly', () => {
   const { getByTestId } = render(
     <Provider appState={initialAppState}>
       <App />
@@ -55,7 +55,7 @@ test('should correct render default class state', () => {
   expect(getByTestId('todo-item')).not.toHaveClass('editing')
 })
 
-test('should work "check" complete toggle button', () => {
+test('should work todo completed checkbox', () => {
   const { getByTestId } = render(
     <Provider appState={initialAppState}>
       <App />
