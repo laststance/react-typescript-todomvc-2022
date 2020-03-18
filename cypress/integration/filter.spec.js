@@ -3,7 +3,7 @@ context('Filter', () => {
     cy.submitTripleTodos()
   })
 
-  it('should all filter show all todos', () => {
+  it('should "All" filter show all todos', () => {
     cy.get('[data-cy=todo-item]').should('have.length', 3)
     // done the todo
     cy.get('[data-cy=todo-item]:first-of-type')
@@ -20,7 +20,7 @@ context('Filter', () => {
     cy.get('[data-cy=todo-item]').should('have.length', 3)
   })
 
-  it('should active filter show un-completed todos and effect to url pathname', () => {
+  it('should "Active" filter show un-completed todos and effect to url pathname', () => {
     cy.get('[data-cy=active-filter]').click()
     cy.location().should(loc => expect(loc.pathname).to.eq('/active'))
     cy.get('[data-cy=todo-item]').should('have.length', 3)
@@ -31,7 +31,7 @@ context('Filter', () => {
     cy.get('[data-cy=todo-item]').should('have.length', 2)
   })
 
-  it('should completed filter show completed todos and effect to url pathname', () => {
+  it('should "Completed" filter show completed todos and effect to url pathname', () => {
     cy.get('[data-cy=completed-filter]').click()
     cy.location().should(loc => expect(loc.pathname).to.eq('/completed'))
     cy.get('[data-cy=todo-item]').should('not.exist')
