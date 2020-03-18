@@ -14,6 +14,7 @@ context('Filter', () => {
     // check footer link behavior
     cy.location().should(loc => expect(loc.pathname).to.eq('/'))
     cy.get('[data-cy=active-filter]').click()
+    cy.percySnapshot('Active Filter')
     cy.location().should(loc => expect(loc.pathname).to.eq('/active'))
     cy.get('[data-cy=all-filter]').click()
     cy.location().should(loc => expect(loc.pathname).to.eq('/'))
@@ -33,6 +34,7 @@ context('Filter', () => {
 
   it('should "Completed" filter show completed todos and effect to url pathname', () => {
     cy.get('[data-cy=completed-filter]').click()
+    cy.percySnapshot('Completed Filter')
     cy.location().should(loc => expect(loc.pathname).to.eq('/completed'))
     cy.get('[data-cy=todo-item]').should('not.exist')
     // done the todo
