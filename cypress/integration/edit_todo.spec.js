@@ -8,6 +8,7 @@ context('Edit Todo', () => {
       .find('[data-cy=todo-body-text]')
       .should('contain', 'one')
       .dblclick()
+    cy.percySnapshot('Edit Mode')
       // should focus actual input element when dbclick todo text label
       .focused()
       .should('have.value', 'one')
