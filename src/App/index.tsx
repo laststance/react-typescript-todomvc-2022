@@ -9,7 +9,7 @@ import { RouteComponentProps } from '@reach/router'
 import { Container } from './style'
 
 export enum LocalStorageKey {
-  APP_STATE = 'APP_STATE'
+  APP_STATE = 'APP_STATE',
 }
 
 interface Props {

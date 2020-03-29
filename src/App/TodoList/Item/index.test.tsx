@@ -10,9 +10,9 @@ const initialAppState: AppState = {
     {
       id: '8btxpD9kDBlo',
       bodyText: 'cut tomato',
-      completed: false
-    }
-  ]
+      completed: false,
+    },
+  ],
 }
 
 const App = () => {
@@ -92,12 +92,12 @@ test('should work edit mode and toggle show/hide', () => {
   expect(getByTestId('todo-edit-input')).toBeVisible()
   expect(getByTestId('todo-edit-input')).toHaveFocus()
   fireEvent.change(getByTestId('todo-edit-input'), {
-    target: { value: 'cut tomato plus' }
+    target: { value: 'cut tomato plus' },
   })
   fireEvent.keyPress(getByTestId('todo-edit-input'), {
     key: 'Enter',
     code: 13,
-    charCode: 13 // I had issue that doesn't trigger keyPress event relevant charCode. https://github.com/testing-library/react-testing-library/issues/269
+    charCode: 13, // I had issue that doesn't trigger keyPress event relevant charCode. https://github.com/testing-library/react-testing-library/issues/269
   })
 
   expect(getByTestId('todo-body-text')).toHaveTextContent('cut tomato plus')

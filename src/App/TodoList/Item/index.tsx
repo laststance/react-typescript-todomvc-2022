@@ -55,7 +55,7 @@ const Item: React.FC<Props> = ({ todo }) => {
   }
 
   const reverseCompleted = (id: Todo['id']): void => {
-    const toggled: TodoListType = appState.todoList.map(t => {
+    const toggled: TodoListType = appState.todoList.map((t) => {
       // search clicked item by id...
       if (t.id === id) {
         // change complated status only clicked item
@@ -125,11 +125,11 @@ const Item: React.FC<Props> = ({ todo }) => {
         </div>
         <input
           ref={editInput}
-          onBlur={e => onBlurEdit(e)}
+          onBlur={(e) => onBlurEdit(e)}
           className="edit"
           value={todo.bodyText}
-          onChange={e => handleTodoTextEdit(e, todo.id)}
-          onKeyPress={e => submitEditText(e)}
+          onChange={(e) => handleTodoTextEdit(e, todo.id)}
+          onKeyPress={(e) => submitEditText(e)}
           data-cy="todo-edit-input"
           data-testid="todo-edit-input"
         />

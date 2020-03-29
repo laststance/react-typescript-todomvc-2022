@@ -15,7 +15,7 @@ const Menu: React.FC<Props> = ({ path }) => {
 
   function clearCompleted(): void {
     setAppState({
-      todoList: appState.todoList.filter((t: Todo) => !t.completed)
+      todoList: appState.todoList.filter((t: Todo) => !t.completed),
     })
   }
 

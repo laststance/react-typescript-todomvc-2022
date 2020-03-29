@@ -7,7 +7,7 @@ import styled from '@emotion/styled'
 class ErrorBoundary extends Component {
   state = {
     error: null,
-    info: null
+    info: null,
   }
 
   componentDidCatch(error, info) {

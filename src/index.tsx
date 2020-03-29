@@ -23,7 +23,7 @@ export interface AppState {
 }
 
 const BlankAppState: AppState = {
-  todoList: []
+  todoList: [],
 }
 
 function LoadingAppStateFromLocalStorage(BlankAppState: AppState): AppState {

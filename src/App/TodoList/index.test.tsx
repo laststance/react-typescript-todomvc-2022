@@ -10,19 +10,19 @@ const initialAppState: AppState = {
     {
       id: 'TsHx9eEN5Y4A',
       bodyText: 'monster',
-      completed: false
+      completed: false,
     },
     {
       id: 'ba91OwrK0Dt8',
       bodyText: 'boss black',
-      completed: false
+      completed: false,
     },
     {
       id: 'QwejYipEf5nk',
       bodyText: 'caffe latte',
-      completed: false
-    }
-  ]
+      completed: false,
+    },
+  ],
 }
 
 test('should be render 3 todo items in initialAppState', () => {

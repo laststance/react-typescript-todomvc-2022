@@ -4,7 +4,7 @@ import App from './App'
 import Provider from '@laststance/use-app-state'
 
 const initialAppState = {
-  todoList: []
+  todoList: [],
 }
 
 it('renders without crashing', () => {

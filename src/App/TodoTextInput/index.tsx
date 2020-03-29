@@ -15,7 +15,7 @@ const TodoTextInput: React.FC = () => {
       const todo: Todo = {
         id: UUID(),
         bodyText: textInput.current.value,
-        completed: false
+        completed: false,
       }
 
       // add new TODO to entire TodoList
@@ -35,7 +35,7 @@ const TodoTextInput: React.FC = () => {
           className="new-todo"
           placeholder="What needs to be done?"
           ref={textInput}
-          onKeyPress={e => addTodo(e)}
+          onKeyPress={(e) => addTodo(e)}
           autoFocus
           data-cy="new-todo-input-text"
         />
