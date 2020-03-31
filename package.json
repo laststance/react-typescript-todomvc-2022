@@ -25,7 +25,7 @@
     "cypress:run:chrome": "cypress run --browser chrome",
     "cypress:run:chrome:headless": "cypress run --browser chrome --headless",
     "cypress:open": "cypress open",
-    "cypress:run:percy": "percy exec -- cypress run --record",
+    "cypress:run:percy": "percy exec -- cypress run",
     "ci:start_server_and_percy": "percy exec -- yarn start",
     "contributors:add": "all-contributors add",
     "contributors:generate": "all-contributors generate"
