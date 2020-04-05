@@ -57,4 +57,4 @@ workflows:
                   parallel: true      # split all specs across machines
                   parallelism: 1      # use 4 CircleCI machines to finish quickly
                   group: 'all tests'  # name this group "all tests" on the dashboard
-                  start: 'yarn ci:start_server_and_percy'  # start server before running tests
+                  start: 'yarn start'  # start server before running tests
