@@ -2108,10 +2108,10 @@
     "@types/yargs" "^15.0.0"
     chalk "^3.0.0"
 
-"@laststance/use-app-state@^1.2.4":
-  version "1.2.4"
-  resolved "https://registry.yarnpkg.com/@laststance/use-app-state/-/use-app-state-1.2.4.tgz#88db3d866c5c75e9b216dfba90453b463d74f2a0"
-  integrity sha512-XZIf+BiP4K8hjKxwp6OwYg/5tUW6lYgeHKnG3hduTR0MXplDSr93T1p0vs4QJLVWnAY3EB5DFiL8QlBnDFxqFA==
+"@laststance/use-app-state@^1.2.5":
+  version "1.2.5"
+  resolved "https://registry.yarnpkg.com/@laststance/use-app-state/-/use-app-state-1.2.5.tgz#81113c0906cf73b29510f110cf1d0958c677af18"
+  integrity sha512-wSjLwPeB2HeuyeBm78ZkEYnkxqleoQq+jA8QOSFv79qleytloC87gmPDqat398Rjxcrnvpv5SJ57ktSaX56MiA==
 
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
