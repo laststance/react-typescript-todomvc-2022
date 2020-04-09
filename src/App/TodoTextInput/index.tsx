@@ -11,6 +11,7 @@ const TodoTextInput: React.FC = () => {
   function addTodo(e: React.KeyboardEvent<HTMLInputElement>): void {
     if (textInput.current === null) return
     if (e.key === 'Enter' && textInput.current.value.trim().length > 0) {
+
       // make new TODO object
       const todo: Todo = {
         id: UUID(),
