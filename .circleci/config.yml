@@ -4,7 +4,7 @@ orbs:
 jobs:
     typecheck:
         docker:
-            - image: circleci/node:10.15.3
+            - image: circleci/node:13.14.0
         parallelism: 1
         working_directory: ~/repo
         steps:
@@ -13,7 +13,7 @@ jobs:
             - run: yarn typecheck
     build:
         docker:
-            - image: circleci/node:10.15.3
+            - image: circleci/node:13.14.0
         working_directory: ~/repo
         parallelism: 1
         steps:
@@ -22,7 +22,7 @@ jobs:
             - run: yarn build
     test:
         docker:
-            - image: circleci/node:10.15.3
+            - image: circleci/node:13.14.0
         working_directory: ~/repo
         parallelism: 1
         steps:
@@ -31,7 +31,7 @@ jobs:
             - run: yarn test
     lint:
         docker:
-            - image: circleci/node:10.15.3
+            - image: circleci/node:13.14.0
         working_directory: ~/repo
         parallelism: 1
         steps:
