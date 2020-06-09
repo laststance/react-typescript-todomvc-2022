@@ -3,4 +3,3 @@ cypress/videos/
 cypress/fixtures/
 cypress/screenshots/
 node_modules
-yarn.lock
