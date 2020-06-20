@@ -52,7 +52,7 @@ workflows:
                   requires:
                       - cypress/install
                   yarn: true
-                  executor: cypress/browsers-chrome81-ff75
+                  executor: cypress/browsers-chrome78-ff70
                   browser: chrome
                   record: false     # record results on Cypress Dashboard
                   parallel: true      # split all specs across machines
