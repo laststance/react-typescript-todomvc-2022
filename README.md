@@ -56,7 +56,7 @@ npx create-react-app create-react-app-typescript-todo-example-2020 --template ty
 - [Create React App](https://facebook.github.io/create-react-app/) [v3.4.0](https://github.com/facebook/create-react-app/releases/tag/v3.4.0)
 - [TypeScript(Babel)](https://babeljs.io/docs/en/babel-plugin-transform-typescript)
 - [ReachRouter](https://github.com/reach/router)
-- [emotion](https://github.com/emotion-js/emotion): CSS-in-JS
+- [Styled-Components](https://styled-components.com/): CSS-in-JS
 - [use-app-state](https://github.com/laststance/use-app-state): Simple Context Store
 - [Cypress](https://www.cypress.io/): E2E Testing
 - [Percy](https://percy.io/): Visual Testing

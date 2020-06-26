@@ -29,15 +29,15 @@
     "contributors:generate": "all-contributors generate"
   },
   "dependencies": {
-    "@emotion/core": "^10.0.28",
-    "@emotion/styled": "^10.0.27",
     "@laststance/use-app-state": "^1.2.6",
     "@reach/router": "^1.3.3",
     "@types/reach__router": "^1.3.5",
     "@types/react": "^16.9.41",
     "@types/react-dom": "16.9.8",
+    "@types/styled-components": "^5.1.0",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "styled-components": "^5.1.1"
   },
   "devDependencies": {
     "@percy/cypress": "^2.3.1",
