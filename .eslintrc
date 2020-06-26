@@ -21,9 +21,9 @@
         "semi": false
       }
     ],
-    "no-unused-vars": ["error"],
-    "no-console": "warn",
+    "no-unused-vars": "off",
     "no-undef": "off",
+    "no-console": "warn",
     "jsx-a11y/href-no-hash": "off",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
