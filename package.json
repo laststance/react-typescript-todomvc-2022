@@ -30,7 +30,7 @@
   },
   "dependencies": {
     "@laststance/use-app-state": "^1.2.6",
-    "@reach/router": "^1.3.3",
+    "@reach/router": "^1.3.4",
     "@types/reach__router": "^1.3.5",
     "@types/react": "^16.9.41",
     "@types/react-dom": "16.9.8",
