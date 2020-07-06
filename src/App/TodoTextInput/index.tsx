@@ -39,6 +39,7 @@ const TodoTextInput: React.FC = () => {
           ref={textInput}
           onKeyPress={(e: React.KeyboardEvent<HTMLInputElement>) => addTodo(e)}
           autoFocus
+          data-testid="new-todo-input-text"
           data-cy="new-todo-input-text"
         />
       </header>
