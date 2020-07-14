@@ -49,7 +49,7 @@ This is a [Create React App](https://facebook.github.io/create-react-app/) based
 npx create-react-app create-react-app-typescript-todo-example-2020 --template typescript
 ```
 
-**2. Setup, Setting, Programing hard with below stuffs 😆**
+**2. Setup, Setting, Write Code with below stuffs 😆**
 
 ## Stack
 - [TODO-CSS-Template](https://github.com/Klerith/TODO-CSS-Template)(Borrowing HTML & CSS Thanks! 👍 )
