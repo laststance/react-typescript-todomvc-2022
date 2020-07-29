@@ -44,7 +44,7 @@
     "@testing-library/jest-dom": "^5.11.1",
     "@testing-library/react": "^10.4.7",
     "@types/jest": "^26.0.4",
-    "@types/node": "^14.0.23",
+    "@types/node": "^14.0.26",
     "all-contributors-cli": "^6.16.1",
     "cypress": "^4.11.0",
     "eslint-config-prettier": "^6.11.0",
