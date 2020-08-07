@@ -2,7 +2,6 @@
 
 [![CircleCI](https://circleci.com/gh/laststance/create-react-app-typescript-todo-example-2020.svg?style=svg)](https://circleci.com/gh/laststance/create-react-app-typescript-todo-example-2020)
 [![Cypress.io tests](https://img.shields.io/badge/cypress.io-tests-green.svg?style=flat-square)](https://cypress.io)
-[![This project is using Percy.io for visual regression testing.](https://percy.io/static/images/percy-badge.svg)](https://percy.io/laststance/create-react-app-typescript-todo-example-2020)
 [![tested with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://github.com/facebook/jest)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 [![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors)
@@ -59,7 +58,6 @@ npx create-react-app create-react-app-typescript-todo-example-2020 --template ty
 - [Styled-Components](https://styled-components.com/): CSS-in-JS
 - [use-app-state](https://github.com/laststance/use-app-state): Simple Context Store
 - [Cypress](https://www.cypress.io/): E2E Testing
-- [Percy](https://percy.io/): Visual Testing
 - [react-testing-library](https://github.com/testing-library/react-testing-library)
 - [ESLint](https://eslint.org/)
   - [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier)
