@@ -64,7 +64,7 @@ npx create-react-app create-react-app-typescript-todo-example-2020 --template ty
   - [@typescript-eslint/eslint-plugin](https://github.com/typescript-eslint/typescript-eslint#readme)
   - [eslint-plugin-react-hooks](https://reactjs.org/)
 - [Netlify](https://www.netlify.com/): Deploy & Hosting
-- [CircleCI](https://circleci.com/): Automation run tests, lint, typecheck, build, deploy
+- [Github Actions](https://github.com/features/actions): Automation run tests, lint, typecheck, build
 - [Depfu](https://depfu.com/github/ryota-murakami/create-react-app-typescript-todo-example-2020?project_id=9618): Keep latest npm packages(React, TypeScript etc) automaticaly
 
 ## 😀 Motivation
