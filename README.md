@@ -52,7 +52,7 @@ npx create-react-app create-react-app-typescript-todo-example-2020 --template ty
 
 ## Stack
 - [TODO-CSS-Template](https://github.com/Klerith/TODO-CSS-Template)(Borrowing HTML & CSS Thanks! 👍 )
-- [Create React App](https://facebook.github.io/create-react-app/) [v3.4.0](https://github.com/facebook/create-react-app/releases/tag/v3.4.0)
+- [Create React App](https://facebook.github.io/create-react-app/) [v3.4.2](https://github.com/facebook/create-react-app/releases/tag/v3.4.2)
 - [TypeScript(Babel)](https://babeljs.io/docs/en/babel-plugin-transform-typescript)
 - [ReachRouter](https://github.com/reach/router)
 - [Styled-Components](https://styled-components.com/): CSS-in-JS
@@ -65,7 +65,7 @@ npx create-react-app create-react-app-typescript-todo-example-2020 --template ty
   - [eslint-plugin-react-hooks](https://reactjs.org/)
 - [Netlify](https://www.netlify.com/): Deploy & Hosting
 - [Github Actions](https://github.com/features/actions): Automation run tests, lint, typecheck, build
-- [Depfu](https://depfu.com/github/ryota-murakami/create-react-app-typescript-todo-example-2020?project_id=9618): Keep latest npm packages(React, TypeScript etc) automaticaly
+- [Depfu](https://depfu.com/github/ryota-murakami/create-react-app-typescript-todo-example-2020?project_id=9618): Keep latest npm packages automaticaly
 
 ## 😀 Motivation
 Aftter React Conf 2018, It comming v16.8.0 with [Hooks](https://reactjs.org/docs/hooks-intro.html) that's apparently brand new way of Code Design contrast with class base 📝
