@@ -7,7 +7,7 @@ on:
     branches:
       - master
 jobs:
-  build-test-lint-typecheck:
+  build-test-lint-typecheck-e2e:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2 # If you're using actions/checkout@v2 you must set persist-credentials to false in most cases for the deployment to work correctly.
