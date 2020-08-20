@@ -1,5 +1,5 @@
 import React from 'react'
-import { render, fireEvent, screen } from '@testing-library/react'
+import { render, fireEvent } from '@testing-library/react'
 import Provider from '@laststance/use-app-state'
 import TodoList from './index'
 import { AppState } from '../../index'
@@ -26,7 +26,7 @@ const initialAppState: AppState = {
 }
 
 test('should be render 3 todo items in initialAppState', () => {
-  render(
+  const screen = render(
     <Provider initialState={initialAppState}>
       <TodoList path="/" />
     </Provider>
@@ -41,7 +41,7 @@ test('should be render 3 todo items in initialAppState', () => {
 })
 
 test('should be work delete todo button', () => {
-  render(
+  const screen = render(
     <Provider initialState={initialAppState}>
       <TodoList path="/" />
     </Provider>
@@ -57,7 +57,7 @@ test('should be work delete todo button', () => {
 })
 
 test('should be work correctly all completed:true|false checkbox toggle button', () => {
-  render(
+  const screen = render(
     <Provider initialState={initialAppState}>
       <TodoList path="/" />
     </Provider>

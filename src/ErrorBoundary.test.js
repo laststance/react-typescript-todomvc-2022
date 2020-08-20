@@ -1,12 +1,12 @@
 import React from 'react'
-import { render, screen } from '@testing-library/react'
+import { render } from '@testing-library/react'
 import ErrorBoundary from './ErrorBoundary'
 
 import '@testing-library/jest-dom'
 
 test('should be render fallback page Error was thrown', () => {
   const InvalidComponent = () => undefined
-  render(
+  const screen = render(
     <ErrorBoundary>
       <InvalidComponent />
     </ErrorBoundary>
