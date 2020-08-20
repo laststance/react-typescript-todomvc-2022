@@ -19,5 +19,6 @@ jobs:
       - run: yarn test
       - run: yarn lint
       - run: yarn typecheck
-      - run: yarn start
       - uses: cypress-io/github-action@v2
+        with:
+          start: yarn start
