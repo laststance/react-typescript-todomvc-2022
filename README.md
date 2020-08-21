@@ -15,8 +15,6 @@
 
 - [What's this?](#whats-this)
 - [Stack](#stack)
-- [😀 Motivation](#-motivation)
-  - [🗒 Note](#%F0%9F%97%92-note)
 - [Installation](#installation)
   - [🔧 Prerequisites](#-prerequisites)
   - [📝 Editor](#-editor)
@@ -29,6 +27,8 @@
   - [`yarn test`](#yarn-test)
   - [`yarn cypress:open`](#yarn-cypressopen)
   - [`yarn cypress:run`](#yarn-cypressrun)
+- [🗒 Note](#%F0%9F%97%92-note)
+- [😀 Motivation](#-motivation)
 - [Issues](#issues)
 - [Questions](#questions)
 - [LICENSE](#license)
@@ -67,29 +67,13 @@ npx create-react-app create-react-app-typescript-todo-example-2020 --template ty
 - [Github Actions](https://github.com/features/actions): Automation run tests, lint, typecheck, build
 - [Depfu](https://depfu.com/github/ryota-murakami/create-react-app-typescript-todo-example-2020?project_id=9618): Keep latest npm packages automaticaly
 
-## 😀 Motivation
-Aftter React Conf 2018, It comming v16.8.0 with [Hooks](https://reactjs.org/docs/hooks-intro.html) that's apparently brand new way of Code Design contrast with class base 📝
-In addition, TypeScript adopt so much easier into a `babel` + `webpack` build system by [Create React App v2.1 TypeScript support](https://github.com/facebook/create-react-app/releases/tag/v2.1.0) official released.
-
-So I was interested what kind of code design and configuration was built. if I build todo with a Hooks and TypeScript. 😀
-
-### 🗒 Note
-
-**This is not a Best Practice introduction.  
-There are tons of effective way to create solid software in JavaScript World, you have a lot of other option based on your preference for approaching where, The Repo is just a style of my favorite.**  
-
-"*How to combining TypeScript with massive Babel or JavaScript tools ecosystem?*"
-
-**I hope this helps you know like that from what I've Published!**
-
-
 
 
 ## Installation
 
 ### 🔧 Prerequisites
 
-- The app assumed installed `Node.js` newer than `10.16.3 LTS`.
+- The app assumed installed `Node.js` newer than `10.16.3 LTS`(recommend newer than v14.8.0).
 If you have not it yet, follow the official [Node.js Doc](https://nodejs.org/en/) to install it.
 
 And then clone repo and install npm dependencies.  
@@ -177,13 +161,31 @@ yarn cypress:run
 
 
 
+## 🗒 Note
+**This is not a Best Practice introduction.  
+There are tons of effective way to create solid software in JavaScript World, you have a lot of other option based on your preference for approaching where, The Repo is just a style of my favorite.**  
+
+"*How to combining TypeScript with massive Babel or JavaScript tools ecosystem?*"
+
+**I hope this helps you know like that from what I've Published!**
+
+
+
+
+## 😀 Motivation
+Aftter React Conf 2018, It comming v16.8.0 with [Hooks](https://reactjs.org/docs/hooks-intro.html) that's apparently brand new way of Code Design contrast with class base 📝
+In addition, TypeScript adopt so much easier into a `babel` + `webpack` build system by [Create React App v2.1 TypeScript support](https://github.com/facebook/create-react-app/releases/tag/v2.1.0) official released.
+
+So I was interested what kind of code design and configuration was built. if I build todo with a Hooks and TypeScript. 😀
+
+
 ## Issues
-Please feel free to post [New Issue](https://github.com/ryota-murakami/create-react-app-typescript-todo-example-2020/issues/new) or Pull Request 🤗
+Please feel free to post [New Issue](https://github.com/laststance/create-react-app-typescript-todo-example-2020/issues/new) or Pull Request 🤗
 
 
 
 ## Questions
-Please feel free to post [New Issue](https://github.com/ryota-murakami/create-react-app-typescript-todo-example-2020/issues/new) or reply on [Twitter](https://twitter.com/malloc007) 🐦
+Please feel free to post [New Issue](https://github.com/laststance/create-react-app-typescript-todo-example-2020/issues/new) or reply on [Twitter](https://twitter.com/malloc007) 🐦
 
 If you want to get more generally answers, these community are might be helpful 🍻
 
