@@ -32,7 +32,7 @@
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^10.4.9",
     "@types/jest": "^26.0.10",
-    "@types/node": "^14.6.0",
+    "@types/node": "^14.6.1",
     "all-contributors-cli": "^6.17.2",
     "cypress": "^5.0.0",
     "eslint-config-prettier": "^6.11.0",
