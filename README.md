@@ -212,6 +212,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="http://donkeycar.com"><img src="https://avatars2.githubusercontent.com/u/147582?v=4" width="100px;" alt=""/><br /><sub><b>Will Roscoe</b></sub></a><br /><a href="https://github.com/laststance/create-react-app-typescript-todo-example-2020/commits?author=wroscoe" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/JunQu"><img src="https://avatars2.githubusercontent.com/u/39846309?v=4" width="100px;" alt=""/><br /><sub><b>Peng Fei</b></sub></a><br /><a href="https://github.com/laststance/create-react-app-typescript-todo-example-2020/issues?q=author%3AJunQu" title="Bug reports">🐛</a></td>
     <td align="center"><a href="https://github.com/alexpanchuk"><img src="https://avatars3.githubusercontent.com/u/26270612?v=4" width="100px;" alt=""/><br /><sub><b>Alex Panchuk</b></sub></a><br /><a href="https://github.com/laststance/create-react-app-typescript-todo-example-2020/commits?author=alexpanchuk" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/BurhanMullamitha"><img src="https://avatars1.githubusercontent.com/u/42492054?v=4" width="100px;" alt=""/><br /><sub><b>Burhan Mullamitha</b></sub></a><br /><a href="https://github.com/laststance/create-react-app-typescript-todo-example-2020/commits?author=BurhanMullamitha" title="Documentation">📖</a></td>
   </tr>
 </table>
 
