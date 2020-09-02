@@ -22,3 +22,9 @@ jobs:
       - uses: cypress-io/github-action@v2
         with:
           start: yarn start
+          wait-on: 'http://localhost:3000'
+          # the entire command will automatically be prefixed with "npm"
+          # and we need the second "npm" to execute "cypress run ..." command line
+          command-prefix: 'percy exec -- npx'
+        env:
+          PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
