@@ -24,7 +24,7 @@ context('Check Todo', () => {
       .should('have.checked')
     cy.get('[data-cy=remaining-uncompleted-todo-count]').should('contain', '2')
     // it should show "Clear cmpleted" button on footer
-    cy.get('[data-cy=clear-completed-button]').should('visible')
+    cy.get('[data-cy=clear-completed-button]').should('be.visible')
     cy.percySnapshot('Checked Completed Checkbox')
 
     // can check todo 'two' as comoleted
@@ -34,7 +34,7 @@ context('Check Todo', () => {
       .check()
       .should('have.checked')
     //  it should show "Clear cmpleted" button on footer
-    cy.get('[data-cy=clear-completed-button]').should('visible')
+    cy.get('[data-cy=clear-completed-button]').should('be.visible')
 
     // can un-check todo 'three' as un-completed
     cy.get('[data-cy=todo-item]:first-of-type')

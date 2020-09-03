@@ -17,7 +17,7 @@ context('Real World Usecase', () => {
       .should('have.checked')
     cy.get('[data-cy=remaining-uncompleted-todo-count]').should('contain', '2')
     // [state: 3 todo, 1 completed] it should show "Clear cmpleted" button on footer
-    cy.get('[data-cy=clear-completed-button]').should('visible')
+    cy.get('[data-cy=clear-completed-button]').should('be.visible')
 
     // can check todo 'two' as comoleted
     cy.get('[data-cy=todo-item]:nth-of-type(2)')
@@ -26,7 +26,7 @@ context('Real World Usecase', () => {
       .check()
       .should('have.checked')
     // [state: 3 todo, 2 completed] it should show "Clear cmpleted" button on footer
-    cy.get('[data-cy=clear-completed-button]').should('visible')
+    cy.get('[data-cy=clear-completed-button]').should('be.visible')
 
     // can un-check todo 'three' as un-completed
     cy.get('[data-cy=todo-item]:first-of-type')
