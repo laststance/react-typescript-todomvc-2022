@@ -5,3 +5,4 @@ cypress/screenshots/
 node_modules/
 instrumented/
 .nyc_output/
+coverage/
