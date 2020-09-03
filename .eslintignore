@@ -1,4 +1,8 @@
-node_modules
-build
-images
-.circleci
+node_modules/
+build/
+images/
+instrumented/
+.github/
+.nyc_output/
+coverage/
+

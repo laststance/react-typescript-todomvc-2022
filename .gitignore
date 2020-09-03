@@ -2,4 +2,6 @@ build/
 cypress/videos/
 cypress/fixtures/
 cypress/screenshots/
-node_modules
+node_modules/
+instrumented/
+.nyc_output/
