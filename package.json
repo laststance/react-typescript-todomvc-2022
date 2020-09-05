@@ -7,7 +7,7 @@
     "eject": "react-scripts eject",
     "lint": "eslint . --ext .ts,.tsx,.js",
     "lint:fix": "eslint . --ext .ts,.tsx,.js --fix",
-    "prettier": "prettier --write {src,cypress}/**/*.{js,ts,tsx}",
+    "prettier": "prettier --write {.github,cypress,public,src}/**/*.{html,css,md,json,js,ts,tsx,yml} package.json .prettierrc tsconfig.json cypress.json README.md",
     "typecheck": "tsc --noEmit",
     "cypress:run": "cypress run",
     "cypress:run:chrome": "cypress run --browser chrome",

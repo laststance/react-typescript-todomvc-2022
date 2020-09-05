@@ -1,7 +1,13 @@
 .git
 .idea
 images
-.all-contributorsrc
 .eslintignore
 .gitignore
 LICENSE
+.emv
+.nyc_output
+build
+instrumented
+node_modules
+.gitattributes
+yarn.lock
