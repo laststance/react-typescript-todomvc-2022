@@ -8,7 +8,7 @@ interface Props {
   path: Routes
 }
 
-const Menu: React.FC<Props> = ({ path }) => {
+const UnderBar: React.FC<Props> = ({ path }) => {
   const [appState, setAppState] = useAppState<AppState>()
   const doneCount: number = appState.todoList.filter(t => t.completed === true).length /* eslint-disable-line prettier/prettier */
   const yetCount: number = appState.todoList.filter(t => t.completed === false).length /* eslint-disable-line prettier/prettier */
@@ -42,4 +42,4 @@ const Menu: React.FC<Props> = ({ path }) => {
   )
 }
 
-export default Menu
+export default UnderBar
