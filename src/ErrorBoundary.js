@@ -25,7 +25,7 @@ class ErrorBoundary extends Component {
 
 export default ErrorBoundary
 
-const Container = styled.div`
+const Layout = styled.div`
   width: 100%;
   height: 100%;
   display: flex;
@@ -42,12 +42,12 @@ const Message = styled.div`
 `
 
 const ErrorBoundaryFallbackComponent = () => (
-  <Container>
+  <Layout>
     <Message>
       Something Error Ooccurring
       <span role="img" aria-label="face-emoji">
         😞
       </span>
     </Message>
-  </Container>
+  </Layout>
 )

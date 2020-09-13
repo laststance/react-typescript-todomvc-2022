@@ -5,7 +5,7 @@
 import styled from 'styled-components'
 import { base } from '../../style'
 
-export const Container = styled.div`
+export const Layout = styled.div`
   position: relative;
   font-size: 24px;
   border-bottom: 1px solid #ededed;

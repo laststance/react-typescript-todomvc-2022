@@ -6,7 +6,7 @@ import UnderBar from './UnderBar'
 import Copyright from './Copyright'
 import { Routes, AppState } from '../index'
 import { RouteComponentProps } from '@reach/router'
-import { Container } from './style'
+import { Layout } from './style'
 
 export enum LocalStorageKey {
   APP_STATE = 'APP_STATE',
@@ -28,7 +28,7 @@ const App: React.FC<Props & RouteComponentProps> = ({ path }) => {
   }, [appState])
 
   return (
-    <Container>
+    <Layout>
       <section className="todoapp">
         <NewTodoInput />
         {appState.todoList.length ? (
@@ -39,7 +39,7 @@ const App: React.FC<Props & RouteComponentProps> = ({ path }) => {
         ) : null}
       </section>
       <Copyright />
-    </Container>
+    </Layout>
   )
 }
 

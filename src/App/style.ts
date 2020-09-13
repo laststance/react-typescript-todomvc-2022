@@ -4,7 +4,7 @@
 
 import styled, { css } from 'styled-components'
 
-export const Container = styled.div`
+export const Layout = styled.div`
   .todoapp {
     background: #fff;
     margin: 130px 0 40px 0;

@@ -4,7 +4,7 @@
 
 import styled from 'styled-components'
 
-export const Container = styled.div`
+export const Layout = styled.div`
   .footer {
     color: #777;
     padding: 10px 15px;

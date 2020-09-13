@@ -2,7 +2,7 @@ import React, { ReactElement } from 'react'
 import { Routes, Todo, AppState } from '../../index'
 import Item from './Item'
 import { useAppState } from '@laststance/use-app-state'
-import { Container } from './style'
+import { Layout } from './style'
 
 interface Props {
   path: Routes
@@ -17,7 +17,7 @@ const TodoList: React.FC<Props> = ({ path }) => {
   }
 
   return (
-    <Container>
+    <Layout>
       <section className="main">
         <input
           id="toggle-all"
@@ -49,7 +49,7 @@ const TodoList: React.FC<Props> = ({ path }) => {
             )}
         </ul>
       </section>
-    </Container>
+    </Layout>
   )
 }
 

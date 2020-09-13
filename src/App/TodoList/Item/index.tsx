@@ -1,7 +1,7 @@
 import React, { useState, createRef, useEffect } from 'react'
 import { AppState, Todo, TodoListType } from '../../../index'
 import { useAppState } from '@laststance/use-app-state'
-import { Container } from './style'
+import { Layout } from './style'
 
 interface Props {
   todo: Todo
@@ -98,7 +98,7 @@ const Item: React.FC<Props> = ({ todo }) => {
   }, [editInput, state.onEdit])
 
   return (
-    <Container data-cy="todo-item">
+    <Layout data-cy="todo-item">
       <li className={SwitchStyle(todo, state.onEdit)} data-testid="todo-item">
         <div className="view" data-testid="view">
           <input
@@ -134,7 +134,7 @@ const Item: React.FC<Props> = ({ todo }) => {
           data-testid="todo-edit-input"
         />
       </li>
-    </Container>
+    </Layout>
   )
 }
 
