@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { useAppState } from '@laststance/use-app-state'
-import TodoTextInput from './TodoTextInput'
+import NewTodoInput from './NewTodoInput'
 import TodoList from './TodoList'
 import UnderBar from './UnderBar'
 import Copyright from './Copyright'
@@ -30,7 +30,7 @@ const App: React.FC<Props & RouteComponentProps> = ({ path }) => {
   return (
     <Container>
       <section className="todoapp">
-        <TodoTextInput />
+        <NewTodoInput />
         {appState.todoList.length ? (
           <>
             <TodoList path={path} />
