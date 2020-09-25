@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { Router } from '@reach/router'
-import Provider from '@laststance/use-app-state'
+import { RecoilRoot, atom, RecoilState } from 'recoil'
 import './index.css'
 import * as serviceWorker from './serviceWorker'
 import App, { LocalStorageKey } from './App'
@@ -38,7 +38,10 @@ function LoadingAppStateFromLocalStorage(BlankAppState: AppState): AppState {
   return BlankAppState
 }
 
-const initialAppState = LoadingAppStateFromLocalStorage(BlankAppState)
+export const initialAppState: RecoilState<AppState> = atom({
+  key: 'initialAppState',
+  default: LoadingAppStateFromLocalStorage(BlankAppState),
+})
 
 interface Props {
   path: Routes
@@ -47,14 +50,14 @@ const Controller: React.FC<Props> = ({ path }) => <App path={path} />
 
 ReactDOM.render(
   <ErrorBoundary>
-    <Provider initialState={initialAppState}>
+    <RecoilRoot>
       <Router>
         <Controller path="/" />
         <Controller path="/active" />
         <Controller path="/completed" />
         <NotFound default />
       </Router>
-    </Provider>
+    </RecoilRoot>
   </ErrorBoundary>,
   document.getElementById('root')
 )

@@ -1,6 +1,6 @@
 import React, { useState, createRef, useEffect } from 'react'
-import { AppState, Todo, TodoListType } from '../../../index'
-import { useAppState } from '@laststance/use-app-state'
+import { AppState, Todo, TodoListType, initialAppState } from '../../../index'
+import { useRecoilState } from 'recoil'
 import { Layout } from './style'
 
 interface Props {
@@ -12,7 +12,7 @@ interface State {
 }
 
 const Item: React.FC<Props> = ({ todo }) => {
-  const [appState, setAppState] = useAppState<AppState>()
+  const [appState, setAppState] = useRecoilState<AppState>(initialAppState)
   const editInput = createRef<HTMLInputElement>()
   const init: State = { onEdit: false }
   const [state, setState] = useState(init)

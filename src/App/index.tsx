@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react'
-import { useAppState } from '@laststance/use-app-state'
+import { useRecoilState } from 'recoil'
 import NewTodoInput from './NewTodoInput'
 import TodoList from './TodoList'
 import UnderBar from './UnderBar'
 import Copyright from './Copyright'
-import { Routes, AppState } from '../index'
+import { Routes, AppState, initialAppState } from '../index'
 import { RouteComponentProps } from '@reach/router'
 import { Layout } from './style'
 
@@ -17,7 +17,7 @@ interface Props {
 }
 
 const App: React.FC<Props & RouteComponentProps> = ({ path }) => {
-  const [appState] = useAppState<AppState>()
+  const [appState] = useRecoilState<AppState>(initialAppState)
 
   // if appState has changes, save it LocalStorage.
   useEffect((): void => {
