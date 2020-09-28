@@ -55,7 +55,7 @@ npx create-react-app create-react-app-typescript-todo-example-2020 --template ty
 ## Stack
 
 - [TODO-CSS-Template](https://github.com/Klerith/TODO-CSS-Template)(Borrowing HTML & CSS Thanks! 👍 )
-- [Create React App](https://facebook.github.io/create-react-app/) [v3.4.1](https://github.com/facebook/create-react-app/releases/tag/v3.4.1)
+- [Create React App](https://facebook.github.io/create-react-app/) v3.4.3
 - [TypeScript]()
 - [ReachRouter](https://github.com/reach/router)
 - [Styled-Components](https://styled-components.com/): CSS-in-JS
