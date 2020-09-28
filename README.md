@@ -59,7 +59,7 @@ npx create-react-app create-react-app-typescript-todo-example-2020 --template ty
 - [TypeScript]()
 - [ReachRouter](https://github.com/reach/router)
 - [Styled-Components](https://styled-components.com/): CSS-in-JS
-- [Recoil] (https://recoiljs.org/): A state management library for React
+- [Recoil](https://recoiljs.org/): A state management library for React
 - [Cypress](https://www.cypress.io/): E2E Testing
 - [react-testing-library](https://github.com/testing-library/react-testing-library)
 - [ESLint](https://eslint.org/)
