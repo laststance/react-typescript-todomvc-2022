@@ -4,13 +4,14 @@ import NewTodoInput from './NewTodoInput'
 import TodoList from './TodoList'
 import UnderBar from './UnderBar'
 import Copyright from './Copyright'
-import { Routes, AppState, initialAppState } from '../index'
 import { RouteComponentProps } from '@reach/router'
 import { Layout } from './style'
-
-export enum LocalStorageKey {
-  APP_STATE = 'APP_STATE',
-}
+import {
+  AppState,
+  initialAppState,
+  LocalStorageKey,
+  Routes,
+} from '../dataStructure'
 
 interface Props {
   path: Routes

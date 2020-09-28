@@ -1,8 +1,8 @@
 import React from 'react'
 import FilterLink from './FilterLink'
-import { Routes, Todo, AppState, initialAppState } from '../../index'
 import { useRecoilState } from 'recoil'
 import { Layout } from './style'
+import { AppState, initialAppState, Routes, Todo } from '../../dataStructure'
 
 interface Props {
   path: Routes

@@ -1,19 +1,16 @@
 import React from 'react'
 import { render } from '@testing-library/react'
-import Provider from '@laststance/use-app-state'
+import { RecoilRoot } from 'recoil'
 import TodoTextInput from './index'
-import { AppState } from '../../index'
 import '@testing-library/jest-dom'
-
-const initialState: AppState = {
-  todoList: [],
-}
+import { InjectTestingRecoilState } from '../../testUtils'
 
 test('should be render <TodoTextInput/>', () => {
   const screen = render(
-    <Provider initialState={initialState}>
+    <RecoilRoot>
+      <InjectTestingRecoilState />
       <TodoTextInput />
-    </Provider>
+    </RecoilRoot>
   )
 
   // Header text

@@ -1,8 +1,8 @@
 import React, { ReactElement } from 'react'
-import { Routes, Todo, AppState, initialAppState } from '../../index'
 import Item from './Item'
 import { useRecoilState } from 'recoil'
 import { Layout } from './style'
+import { AppState, initialAppState, Routes, Todo } from '../../dataStructure'
 
 interface Props {
   path: Routes

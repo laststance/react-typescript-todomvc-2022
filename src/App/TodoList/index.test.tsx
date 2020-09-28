@@ -1,9 +1,10 @@
 import React from 'react'
 import { render, fireEvent } from '@testing-library/react'
-import Provider from '@laststance/use-app-state'
 import TodoList from './index'
-import { AppState } from '../../index'
+import { RecoilRoot } from 'recoil'
 import '@testing-library/jest-dom'
+import { AppState } from '../../dataStructure'
+import { InjectTestingRecoilState } from '../../testUtils'
 
 const initialAppState: AppState = {
   todoList: [
@@ -27,9 +28,12 @@ const initialAppState: AppState = {
 
 test('should be render 3 todo items in initialAppState', () => {
   const screen = render(
-    <Provider initialState={initialAppState}>
+    <RecoilRoot>
+      <InjectTestingRecoilState
+        testEnvironmentInitialAppState={initialAppState}
+      />
       <TodoList path="/" />
-    </Provider>
+    </RecoilRoot>
   )
 
   expect(screen.getByTestId('todo-list')).toBeInTheDocument()
@@ -42,9 +46,12 @@ test('should be render 3 todo items in initialAppState', () => {
 
 test('should be work delete todo button', () => {
   const screen = render(
-    <Provider initialState={initialAppState}>
+    <RecoilRoot>
+      <InjectTestingRecoilState
+        testEnvironmentInitialAppState={initialAppState}
+      />
       <TodoList path="/" />
-    </Provider>
+    </RecoilRoot>
   )
 
   // delete first item
@@ -58,9 +65,12 @@ test('should be work delete todo button', () => {
 
 test('should be work correctly all completed:true|false checkbox toggle button', () => {
   const screen = render(
-    <Provider initialState={initialAppState}>
+    <RecoilRoot>
+      <InjectTestingRecoilState
+        testEnvironmentInitialAppState={initialAppState}
+      />
       <TodoList path="/" />
-    </Provider>
+    </RecoilRoot>
   )
 
   // toggle on
