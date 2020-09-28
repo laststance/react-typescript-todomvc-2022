@@ -1578,11 +1578,6 @@
     "@types/yargs" "^15.0.0"
     chalk "^4.0.0"
 
-"@laststance/use-app-state@^1.2.12":
-  version "1.2.12"
-  resolved "https://registry.yarnpkg.com/@laststance/use-app-state/-/use-app-state-1.2.12.tgz#9993ab02b0fa00b59d45b55d07b837062ab942db"
-  integrity sha512-7swwsmtT/o2T2Vll1NxRzV0MMQ8hIkf15FiMvRkd6dKdabO1aI961h9Qy+Q39l7JuMXGGKvP5jNetNy3qeehSA==
-
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/@mrmlnc/readdir-enhanced/-/readdir-enhanced-2.2.1.tgz#524af240d1a360527b730475ecfa1344aa540dde"
@@ -10836,6 +10831,11 @@ realpath-native@^1.1.0:
   integrity sha512-wlgPA6cCIIg9gKz0fgAPjnzh4yR/LnXovwuo9hvyGvx3h8nX4+/iLZplfUWasXpqD8BdnGnP5njOFjkUwPzvjA==
   dependencies:
     util.promisify "^1.0.0"
+
+recoil@^0.0.13:
+  version "0.0.13"
+  resolved "https://registry.yarnpkg.com/recoil/-/recoil-0.0.13.tgz#23e6d63135c07d8defbd91aaa35dca94ec5c15a6"
+  integrity sha512-2OToaQ8GR//KsdKdaEhMi04QKStLGRpk3qjC58iBpZpUtsByZ4dUy2UJtRcYuhnVlltGZ8HNwcEQRdFOS864SQ==
 
 recursive-readdir@2.2.2:
   version "2.2.2"

@@ -1,11 +1,11 @@
 import React, { createRef } from 'react'
 import { UUID } from '../../functions'
-import { Todo, AppState } from '../../index'
-import { useAppState } from '@laststance/use-app-state'
+import { useRecoilState } from 'recoil'
 import { Layout } from './style'
+import { AppState, initialAppState, Todo } from '../../dataStructure'
 
 const TodoTextInput: React.FC = () => {
-  const [appState, setAppState] = useAppState<AppState>()
+  const [appState, setAppState] = useRecoilState<AppState>(initialAppState)
   const textInput = createRef<HTMLInputElement>()
 
   function addTodo(e: React.KeyboardEvent<HTMLInputElement>): void {

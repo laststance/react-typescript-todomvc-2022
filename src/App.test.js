@@ -1,18 +1,16 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import { RecoilRoot } from 'recoil'
+import { InjectTestingRecoilState } from './testUtils'
 import App from './App'
-import Provider from '@laststance/use-app-state'
-
-const initialAppState = {
-  todoList: [],
-}
 
 it('renders without crashing', () => {
   const div = document.createElement('div')
   ReactDOM.render(
-    <Provider initialState={initialAppState}>
+    <RecoilRoot>
+      <InjectTestingRecoilState />
       <App path="/" />
-    </Provider>,
+    </RecoilRoot>,
     div
   )
   ReactDOM.unmountComponentAtNode(div)

@@ -1,15 +1,15 @@
 import React, { ReactElement } from 'react'
-import { Routes, Todo, AppState } from '../../index'
 import Item from './Item'
-import { useAppState } from '@laststance/use-app-state'
+import { useRecoilState } from 'recoil'
 import { Layout } from './style'
+import { AppState, initialAppState, Routes, Todo } from '../../dataStructure'
 
 interface Props {
   path: Routes
 }
 
 const TodoList: React.FC<Props> = ({ path }) => {
-  const [appState, setAppState] = useAppState<AppState>()
+  const [appState, setAppState] = useRecoilState<AppState>(initialAppState)
 
   function toggleAllCheckbox(e: React.ChangeEvent<HTMLInputElement>): void { /* eslint-disable-line prettier/prettier */
     // reverse all todo.completed: boolean flag

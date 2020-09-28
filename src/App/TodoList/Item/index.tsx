@@ -1,7 +1,12 @@
 import React, { useState, createRef, useEffect } from 'react'
-import { AppState, Todo, TodoListType } from '../../../index'
-import { useAppState } from '@laststance/use-app-state'
+import { useRecoilState } from 'recoil'
 import { Layout } from './style'
+import {
+  AppState,
+  initialAppState,
+  Todo,
+  TodoListType,
+} from '../../../dataStructure'
 
 interface Props {
   todo: Todo
@@ -12,7 +17,7 @@ interface State {
 }
 
 const Item: React.FC<Props> = ({ todo }) => {
-  const [appState, setAppState] = useAppState<AppState>()
+  const [appState, setAppState] = useRecoilState<AppState>(initialAppState)
   const editInput = createRef<HTMLInputElement>()
   const init: State = { onEdit: false }
   const [state, setState] = useState(init)
