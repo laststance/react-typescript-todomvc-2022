@@ -3,7 +3,7 @@ import { useRecoilState } from 'recoil'
 import { AppState, initialAppState } from './dataStructure'
 
 interface Props {
-  testEnvironmentInitialAppState: AppState
+  testEnvironmentInitialAppState?: AppState
 }
 
 export const InjectTestingRecoilState: React.FC<Props> = ({
