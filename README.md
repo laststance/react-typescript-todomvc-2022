@@ -30,7 +30,6 @@
   - [`yarn cypress:open`](#yarn-cypressopen)
   - [`yarn cypress:run`](#yarn-cypressrun)
 - [🗒 Note](#%F0%9F%97%92-note)
-- [😀 Motivation](#-motivation)
 - [Issues](#issues)
 - [Questions](#questions)
 - [LICENSE](#license)
@@ -60,7 +59,7 @@ npx create-react-app create-react-app-typescript-todo-example-2020 --template ty
 - [TypeScript]()
 - [ReachRouter](https://github.com/reach/router)
 - [Styled-Components](https://styled-components.com/): CSS-in-JS
-- [use-app-state](https://github.com/laststance/use-app-state): Simple Context Store
+- [Recoil] (https://recoiljs.org/): A state management library for React
 - [Cypress](https://www.cypress.io/): E2E Testing
 - [react-testing-library](https://github.com/testing-library/react-testing-library)
 - [ESLint](https://eslint.org/)
@@ -173,13 +172,6 @@ There are tons of effective way to create solid software in JavaScript World, yo
 "_How to combining TypeScript with massive Babel or JavaScript tools ecosystem?_"
 
 **I hope this helps you know like that from what I've Published!**
-
-## 😀 Motivation
-
-Aftter React Conf 2018, It comming v16.8.0 with [Hooks](https://reactjs.org/docs/hooks-intro.html) that's apparently brand new way of Code Design contrast with class base 📝
-In addition, TypeScript adopt so much easier into a `babel` + `webpack` build system by [Create React App v2.1 TypeScript support](https://github.com/facebook/create-react-app/releases/tag/v2.1.0) official released.
-
-So I was interested what kind of code design and configuration was built. if I build todo with a Hooks and TypeScript. 😀
 
 ## Issues
 
