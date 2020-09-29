@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { useRecoilState } from 'recoil'
+import { useRecoilValue } from 'recoil'
 import NewTodoInput from './NewTodoInput'
 import TodoList from './TodoList'
 import UnderBar from './UnderBar'
@@ -18,7 +18,7 @@ interface Props {
 }
 
 const App: React.FC<Props & RouteComponentProps> = ({ path }) => {
-  const [appState] = useRecoilState<AppState>(initialAppState)
+  const appState = useRecoilValue<AppState>(initialAppState)
 
   // if appState has changes, save it LocalStorage.
   useEffect((): void => {
