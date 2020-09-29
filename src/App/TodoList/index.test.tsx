@@ -2,7 +2,6 @@ import React from 'react'
 import { render, fireEvent } from '@testing-library/react'
 import TodoList from './index'
 import { RecoilRoot } from 'recoil'
-import '@testing-library/jest-dom'
 import { AppState } from '../../dataStructure'
 import { InjectTestingRecoilState } from '../../testUtils'
 

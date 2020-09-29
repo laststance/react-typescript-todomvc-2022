@@ -1,7 +1,6 @@
 import React from 'react'
 import { render, fireEvent, screen } from '@testing-library/react'
 import { RecoilRoot, useRecoilState } from 'recoil'
-import '@testing-library/jest-dom'
 import Item from './index'
 import {
   AppState,
