@@ -130,11 +130,11 @@ const Item: React.FC<Props> = ({ todo }) => {
         </div>
         <input
           ref={editInput}
-          onBlur={(e) => onBlurEdit(e)}
+          onBlur={(e: React.FocusEvent<HTMLInputElement>) => onBlurEdit(e)}
           className="edit"
           value={todo.bodyText}
-          onChange={(e) => handleTodoTextEdit(e, todo.id)}
-          onKeyPress={(e) => submitEditText(e)}
+          onChange={(e: React.ChangeEvent<HTMLInputElement>) => handleTodoTextEdit(e, todo.id)} /* eslint-disable-line prettier/prettier */
+          onKeyPress={(e: React.KeyboardEvent<HTMLInputElement>) => submitEditText(e)} /* eslint-disable-line prettier/prettier */
           data-cy="todo-edit-input"
           data-testid="todo-edit-input"
         />
