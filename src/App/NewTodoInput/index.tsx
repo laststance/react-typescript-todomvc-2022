@@ -4,7 +4,7 @@ import { useRecoilState } from 'recoil'
 import { Layout } from './style'
 import { AppState, initialAppState, Todo } from '../../dataStructure'
 
-const TodoTextInput: React.FC = () => {
+const NewTodoTextInput: React.FC = () => {
   const [appState, setAppState] = useRecoilState<AppState>(initialAppState)
   const textInput = createRef<HTMLInputElement>()
 
@@ -47,4 +47,4 @@ const TodoTextInput: React.FC = () => {
   )
 }
 
-export default TodoTextInput
+export default NewTodoTextInput
