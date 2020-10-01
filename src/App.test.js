@@ -7,7 +7,7 @@ import { recoilState } from './dataStructure'
 it('renders without crashing', () => {
   const div = document.createElement('div')
 
-  const todo: AppState = {
+  const todo = {
     todoList: [
       {
         id: 'TsHx9eEN5Y4A',
