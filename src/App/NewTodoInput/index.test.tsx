@@ -1,9 +1,9 @@
 import React from 'react'
 import NewTodoTextInput from './index'
-import { renderWithReciolRoot } from '../../testUtils'
+import { renderWithRecoilRoot } from '../../testUtils'
 
 test('should be render <TodoTextInput/>', () => {
-  const screen = renderWithReciolRoot(<NewTodoTextInput />)
+  const screen = renderWithRecoilRoot(<NewTodoTextInput />)
 
   // Header text
   expect(screen.getByText('todos')).toBeInTheDocument()

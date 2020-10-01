@@ -2,7 +2,7 @@ import React from 'react'
 import { fireEvent } from '@testing-library/react'
 import TodoList from './index'
 import { AppState } from '../../dataStructure'
-import { renderWithReciolRoot } from '../../testUtils'
+import { renderWithRecoilRoot } from '../../testUtils'
 
 const initialRecoilState: AppState = {
   todoList: [
@@ -25,7 +25,7 @@ const initialRecoilState: AppState = {
 }
 
 test('should be render 3 todo items in initialAppState', () => {
-  const screen = renderWithReciolRoot(<TodoList path="/" />, initialRecoilState)
+  const screen = renderWithRecoilRoot(<TodoList path="/" />, initialRecoilState)
 
   expect(screen.getByTestId('todo-list')).toBeInTheDocument()
   expect(screen.getByTestId('todo-list').children.length).toBe(3)
@@ -36,7 +36,7 @@ test('should be render 3 todo items in initialAppState', () => {
 })
 
 test('should be work delete todo button', () => {
-  const screen = renderWithReciolRoot(<TodoList path="/" />, initialRecoilState)
+  const screen = renderWithRecoilRoot(<TodoList path="/" />, initialRecoilState)
 
   // delete first item
   fireEvent.click(screen.getAllByTestId('delete-todo-btn')[0])
@@ -48,7 +48,7 @@ test('should be work delete todo button', () => {
 })
 
 test('should be work correctly all completed:true|false checkbox toggle button', () => {
-  const screen = renderWithReciolRoot(<TodoList path="/" />, initialRecoilState)
+  const screen = renderWithRecoilRoot(<TodoList path="/" />, initialRecoilState)
 
   // toggle on
   fireEvent.click(screen.getByTestId('toggle-all-btn'))
