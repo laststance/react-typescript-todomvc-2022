@@ -28,7 +28,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "recoil": "^0.0.13",
-    "styled-components": "^5.1.1"
+    "styled-components": "5.1.1"
   },
   "devDependencies": {
     "@cypress/code-coverage": "^3.8.1",
