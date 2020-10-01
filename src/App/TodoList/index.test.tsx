@@ -1,10 +1,10 @@
 import React from 'react'
-import { render, fireEvent } from '@testing-library/react'
+import { fireEvent } from '@testing-library/react'
 import TodoList from './index'
-import { RecoilRoot } from 'recoil'
-import { AppState, recoilState } from '../../dataStructure'
+import { AppState } from '../../dataStructure'
+import { renderWithReciolRoot } from '../../testUtils'
 
-const initialAppState: AppState = {
+const initialRecoilState: AppState = {
   todoList: [
     {
       id: 'TsHx9eEN5Y4A',
@@ -25,15 +25,7 @@ const initialAppState: AppState = {
 }
 
 test('should be render 3 todo items in initialAppState', () => {
-  const screen = render(
-    <RecoilRoot
-      initializeState={({ set }) => {
-        set(recoilState, initialAppState)
-      }}
-    >
-      <TodoList path="/" />
-    </RecoilRoot>
-  )
+  const screen = renderWithReciolRoot(<TodoList path="/" />, initialRecoilState)
 
   expect(screen.getByTestId('todo-list')).toBeInTheDocument()
   expect(screen.getByTestId('todo-list').children.length).toBe(3)
@@ -44,11 +36,7 @@ test('should be render 3 todo items in initialAppState', () => {
 })
 
 test('should be work delete todo button', () => {
-  const screen = render(
-    <RecoilRoot>
-      <TodoList path="/" />
-    </RecoilRoot>
-  )
+  const screen = renderWithReciolRoot(<TodoList path="/" />, initialRecoilState)
 
   // delete first item
   fireEvent.click(screen.getAllByTestId('delete-todo-btn')[0])
@@ -60,11 +48,7 @@ test('should be work delete todo button', () => {
 })
 
 test('should be work correctly all completed:true|false checkbox toggle button', () => {
-  const screen = render(
-    <RecoilRoot>
-      <TodoList path="/" />
-    </RecoilRoot>
-  )
+  const screen = renderWithReciolRoot(<TodoList path="/" />, initialRecoilState)
 
   // toggle on
   fireEvent.click(screen.getByTestId('toggle-all-btn'))

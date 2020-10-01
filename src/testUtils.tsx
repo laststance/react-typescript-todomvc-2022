@@ -1,22 +1,11 @@
-import React, { useEffect } from 'react'
-import { useRecoilState } from 'recoil'
+import React from 'react'
+import { render } from '@testing-library/react'
 import { AppState, recoilState } from './dataStructure'
+import { RenderResult } from '@testing-library/react'
+import { MutableSnapshot, RecoilRoot } from 'recoil'
 
-interface Props {
-  testEnvironmentInitialAppState?: AppState
+const defaultValue: AppState = {
+  todoList: [],
 }
 
-export const InjectTestingRecoilState: React.FC<Props> = ({
-  testEnvironmentInitialAppState = {
-    todoList: [],
-  },
-}) => {
-  const [, setAppState] = useRecoilState<AppState>(recoilState)
-
-  useEffect(() => {
-    setAppState(testEnvironmentInitialAppState)
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [])
-
-  return null
-}
+export const renderWithReciolRoot= (ui: React.ElementType, initialRecoilStateValue: AppState = defaultValue): RenderResult => render(<RecoilRoot initializeState={({ set }: MutableSnapshot): void => set(recoilState, initialRecoilStateValue)}>{ui}</RecoilRoot>) /* eslint-disable-line prettier/prettier */
