@@ -1,14 +1,11 @@
 import React from 'react'
-import { render, fireEvent, screen } from '@testing-library/react'
-import { RecoilRoot, useRecoilState } from 'recoil'
+import { useRecoilState } from 'recoil'
+import { fireEvent, screen } from '@testing-library/react'
 import Item from './index'
-import {
-  AppState,
-  recoilState as recoilState,
-} from '../../../dataStructure'
-import { InjectTestingRecoilState } from '../../../testUtils'
+import { AppState, recoilState } from '../../../dataStructure'
+import { renderWithRecoilRoot } from '../../../testUtils'
 
-const initialAppState: AppState = {
+const initialRecoilState: AppState = {
   todoList: [
     {
       id: '8btxpD9kDBlo',
@@ -29,13 +26,9 @@ const App = () => {
 }
 
 test('should each initialAppstate todo object value is set to Item element', () => {
-  render(
-    <RecoilRoot>
-      <InjectTestingRecoilState
-        testEnvironmentInitialAppState={initialAppState}
-      />
-      <Item todo={initialAppState.todoList[0]} />
-    </RecoilRoot>
+  renderWithRecoilRoot(
+    <Item todo={initialRecoilState.todoList[0]} />,
+    initialRecoilState
   )
 
   expect(screen.getByTestId('todo-item')).toBeInTheDocument()
@@ -50,14 +43,7 @@ test('should each initialAppstate todo object value is set to Item element', () 
 })
 
 test('should set css classes correctly', () => {
-  render(
-    <RecoilRoot>
-      <InjectTestingRecoilState
-        testEnvironmentInitialAppState={initialAppState}
-      />
-      <App />
-    </RecoilRoot>
-  )
+  renderWithRecoilRoot(<App />, initialRecoilState)
 
   // when not.completed & not.onEdit, SwitchStyle doesn't show .completed .editting selectors
   expect(screen.getByTestId('todo-item')).not.toHaveClass('completed')
@@ -65,14 +51,7 @@ test('should set css classes correctly', () => {
 })
 
 test('should work todo completed checkbox', () => {
-  render(
-    <RecoilRoot>
-      <InjectTestingRecoilState
-        testEnvironmentInitialAppState={initialAppState}
-      />
-      <App />
-    </RecoilRoot>
-  )
+  renderWithRecoilRoot(<App />, initialRecoilState)
 
   // click complete checkbox then should appear completed class
   fireEvent.click(screen.getByTestId('todo-item-complete-check'))
@@ -90,14 +69,7 @@ test('should work todo completed checkbox', () => {
 })
 
 test('should work edit mode and toggle show/hide', () => {
-  render(
-    <RecoilRoot>
-      <InjectTestingRecoilState
-        testEnvironmentInitialAppState={initialAppState}
-      />
-      <App />
-    </RecoilRoot>
-  )
+  renderWithRecoilRoot(<App />, initialRecoilState)
 
   // by default, edit input form is not visible
   expect(screen.getByTestId('todo-edit-input')).not.toBeVisible()
@@ -123,14 +95,7 @@ test('should work edit mode and toggle show/hide', () => {
 })
 
 test('delete todo item', () => {
-  render(
-    <RecoilRoot>
-      <InjectTestingRecoilState
-        testEnvironmentInitialAppState={initialAppState}
-      />
-      <App />
-    </RecoilRoot>
-  )
+  renderWithRecoilRoot(<App />, initialRecoilState)
 
   // click delete button, then todo item is removed
   expect(screen.getByTestId('todo-item')).toBeInTheDocument()
