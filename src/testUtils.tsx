@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { useRecoilState } from 'recoil'
-import { AppState, initialAppState } from './dataStructure'
+import { AppState, recoilState } from './dataStructure'
 
 interface Props {
   testEnvironmentInitialAppState?: AppState
@@ -11,7 +11,7 @@ export const InjectTestingRecoilState: React.FC<Props> = ({
     todoList: [],
   },
 }) => {
-  const [, setAppState] = useRecoilState<AppState>(initialAppState)
+  const [, setAppState] = useRecoilState<AppState>(recoilState)
 
   useEffect(() => {
     setAppState(testEnvironmentInitialAppState)

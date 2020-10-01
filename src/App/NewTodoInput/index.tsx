@@ -2,10 +2,10 @@ import React, { createRef } from 'react'
 import { UUID } from '../../functions'
 import { useRecoilState } from 'recoil'
 import { Layout } from './style'
-import { AppState, initialAppState, Todo } from '../../dataStructure'
+import { AppState, recoilState, Todo } from '../../dataStructure'
 
 const NewTodoTextInput: React.FC = () => {
-  const [appState, setAppState] = useRecoilState<AppState>(initialAppState)
+  const [appState, setAppState] = useRecoilState<AppState>(recoilState)
   const textInput: React.RefObject<HTMLInputElement> = createRef<
     HTMLInputElement
   >()

@@ -8,7 +8,7 @@ import { RouteComponentProps } from '@reach/router'
 import { Layout } from './style'
 import {
   AppState,
-  initialAppState,
+  recoilState,
   LocalStorageKey,
   Routes,
 } from '../dataStructure'
@@ -18,7 +18,7 @@ interface Props {
 }
 
 const App: React.FC<Props & RouteComponentProps> = ({ path }) => {
-  const appState = useRecoilValue<AppState>(initialAppState)
+  const appState = useRecoilValue<AppState>(recoilState)
 
   // if appState has changes, save it LocalStorage.
   useEffect((): void => {

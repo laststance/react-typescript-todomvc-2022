@@ -3,7 +3,7 @@ import { useRecoilState } from 'recoil'
 import { Layout } from './style'
 import {
   AppState,
-  initialAppState,
+  recoilState,
   Todo,
   TodoListType,
 } from '../../../dataStructure'
@@ -17,7 +17,7 @@ interface State {
 }
 
 const Item: React.FC<Props> = ({ todo }) => {
-  const [appState, setAppState] = useRecoilState<AppState>(initialAppState)
+  const [appState, setAppState] = useRecoilState<AppState>(recoilState)
   const editInput = createRef<HTMLInputElement>()
   const init: State = { onEdit: false }
   const [state, setState] = useState(init)

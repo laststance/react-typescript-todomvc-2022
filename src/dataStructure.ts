@@ -34,7 +34,7 @@ function LoadAppStateFromLocalStorage(): AppState {
   return BlankAppState
 }
 
-export const initialAppState: RecoilState<AppState> = atom({
+export const recoilState: RecoilState<AppState> = atom({
   key: 'initialAppState',
   default: LoadAppStateFromLocalStorage(),
 })

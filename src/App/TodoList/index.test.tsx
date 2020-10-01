@@ -2,8 +2,7 @@ import React from 'react'
 import { render, fireEvent } from '@testing-library/react'
 import TodoList from './index'
 import { RecoilRoot } from 'recoil'
-import { AppState } from '../../dataStructure'
-import { InjectTestingRecoilState } from '../../testUtils'
+import { AppState, recoilState } from '../../dataStructure'
 
 const initialAppState: AppState = {
   todoList: [
@@ -27,10 +26,11 @@ const initialAppState: AppState = {
 
 test('should be render 3 todo items in initialAppState', () => {
   const screen = render(
-    <RecoilRoot>
-      <InjectTestingRecoilState
-        testEnvironmentInitialAppState={initialAppState}
-      />
+    <RecoilRoot
+      initializeState={({ set }) => {
+        set(recoilState, initialAppState)
+      }}
+    >
       <TodoList path="/" />
     </RecoilRoot>
   )
@@ -46,9 +46,6 @@ test('should be render 3 todo items in initialAppState', () => {
 test('should be work delete todo button', () => {
   const screen = render(
     <RecoilRoot>
-      <InjectTestingRecoilState
-        testEnvironmentInitialAppState={initialAppState}
-      />
       <TodoList path="/" />
     </RecoilRoot>
   )
@@ -65,9 +62,6 @@ test('should be work delete todo button', () => {
 test('should be work correctly all completed:true|false checkbox toggle button', () => {
   const screen = render(
     <RecoilRoot>
-      <InjectTestingRecoilState
-        testEnvironmentInitialAppState={initialAppState}
-      />
       <TodoList path="/" />
     </RecoilRoot>
   )

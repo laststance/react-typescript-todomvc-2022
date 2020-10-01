@@ -4,7 +4,7 @@ import { RecoilRoot, useRecoilState } from 'recoil'
 import Item from './index'
 import {
   AppState,
-  initialAppState as recoilState,
+  recoilState as recoilState,
 } from '../../../dataStructure'
 import { InjectTestingRecoilState } from '../../../testUtils'
 
