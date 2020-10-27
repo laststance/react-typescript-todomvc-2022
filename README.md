@@ -16,16 +16,6 @@
 This is a [Create React App](https://facebook.github.io/create-react-app/) based [React](https://reactjs.org/) + [TypeScript](https://www.typescriptlang.org/) todo app example. 👉 [**Deployed App**](https://create-react-app-typescript-todo-example.netlify.com)  
 [TypeScript](https://www.typescriptlang.org/) coming from babel, set upped at [Create React App](https://facebook.github.io/create-react-app/) install option. [Adding TypeScript Doc](https://facebook.github.io/create-react-app/docs/adding-typescript#docsNav) 📝
 
-### How the project was bootstrapped?
-
-**1. Execute command for scaffold [Create React App's TypeScript Templete](https://create-react-app.dev/docs/getting-started#creating-a-typescript-app).**
-
-```
-npx create-react-app create-react-app-typescript-todo-example-2020 --template typescript
-```
-
-**2. Setup, Setting, Write Code with below stuffs 😆**
-
 ## Stack
 
 - [TODO-CSS-Template](https://github.com/Klerith/TODO-CSS-Template)(Borrowing HTML & CSS Thanks! 👍 )
@@ -63,14 +53,6 @@ yarn install # or npm install
 After that you can lunch App with `yarn start` command. 😎
 
 And Todo source code is putting [src/](https://github.com/laststance/create-react-app-typescript-todo-example-2020/tree/master/src) directory.
-
-### 📝 Editor
-
-If you're going to code reading for learn, I recommend you [VScode](https://code.visualstudio.com/) or [WebStorm](https://www.jetbrains.com/webstorm/).  
-Those editor has buit-in TypeScript support so code jumping woring as well.
-
-But if you using Vim, there is great post for setup [Vim for TypeScript and React in 2020](https://medium.com/@vanuan/vim-for-typescript-and-react-in-2020-9724b9139be2).  
-Written by [Vanya Yani](https://medium.com/@vanuan). 🤗
 
 ## 👩‍💻 Usage
 
@@ -146,6 +128,14 @@ There are tons of effective way to create solid software in JavaScript World, yo
 "_How to combining TypeScript with massive Babel or JavaScript tools ecosystem?_"
 
 **I hope this helps you know like that from what I've Published!**
+
+### How the project was bootstrapped?
+
+**1. Execute command for scaffold [Create React App's TypeScript Templete](https://create-react-app.dev/docs/getting-started#creating-a-typescript-app).**
+
+```
+npx create-react-app create-react-app-typescript-todo-example-2020 --template typescript
+```
 
 ## Issues
 
