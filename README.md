@@ -9,33 +9,7 @@
 [![This project is using Percy.io for visual regression testing.](https://percy.io/static/images/percy-badge.svg)](https://percy.io/laststance/create-react-app-typescript-todo-example-2020)
 
 <a href="https://create-react-app-typescript-todo-example.netlify.com/"><img src="https://raw.githubusercontent.com/laststance/create-react-app-typescript-todo-example-2020/master/images/cypress_open.gif" alt="gif"></a>
-
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-
-**Table of Contents** _generated with [DocToc](https://github.com/thlorenz/doctoc)_
-
-- [What's this?](#whats-this)
-- [Stack](#stack)
-- [Installation](#installation)
-  - [🔧 Prerequisites](#-prerequisites)
-  - [📝 Editor](#-editor)
-- [👩‍💻 Usage](#%E2%80%8D-usage)
-  - [`yarn start`](#yarn-start)
-  - [`yarn build`](#yarn-build)
-  - [`yarn lint`](#yarn-lint)
-  - [`yarn lint:fix`](#yarn-lintfix)
-  - [`yarn typecheck`](#yarn-typecheck)
-  - [`yarn test`](#yarn-test)
-  - [`yarn cypress:open`](#yarn-cypressopen)
-  - [`yarn cypress:run`](#yarn-cypressrun)
-- [🗒 Note](#%F0%9F%97%92-note)
-- [Issues](#issues)
-- [Questions](#questions)
-- [LICENSE](#license)
-- [Contributors](#contributors)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+ 
 
 ## What's this?
 
