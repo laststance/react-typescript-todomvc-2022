@@ -1,7 +1,7 @@
 {
   "name": "create-react-app-typescript-todo-example-2020",
   "scripts": {
-    "start": "react-scripts -r @cypress/instrument-cra start",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",

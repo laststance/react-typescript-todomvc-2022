@@ -1,20 +1,25 @@
-import React, { Component } from 'react'
+import React, { Component, ErrorInfo, ReactNode } from 'react'
 import styled from 'styled-components'
 
-/**
- * This file showing "TypeScirpt can use with JavaScript" for beginners
- */
-class ErrorBoundary extends Component {
+interface Props {
+  children?: ReactNode
+}
+
+interface State {
+  error: Error | null
+  info: ErrorInfo | null
+}
+class ErrorBoundary extends Component<Props, State> {
   state = {
     error: null,
     info: null,
   }
 
-  componentDidCatch(error, info) {
+  componentDidCatch(error: Error, info: ErrorInfo): void {
     this.setState({ error, info })
   }
 
-  render() {
+  render(): ReactNode {
     const { error } = this.state
     if (error) {
       return <ErrorBoundaryFallbackComponent />
