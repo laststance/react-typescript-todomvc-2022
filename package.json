@@ -27,7 +27,7 @@
     "styled-components": "^5.2.0"
   },
   "devDependencies": {
-    "@cypress/code-coverage": "^3.8.2",
+    "@cypress/code-coverage": "^3.8.3",
     "@cypress/instrument-cra": "^1.4.0",
     "@percy/cypress": "^2.3.1",
     "@testing-library/jest-dom": "^5.11.5",
