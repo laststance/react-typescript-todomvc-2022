@@ -1,7 +1,7 @@
 {
   "name": "create-react-app-typescript-todo-example-2020",
   "scripts": {
-    "start": "react-scripts start",
+    "start": "react-scripts -r @cypress/instrument-cra start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
@@ -30,6 +30,7 @@
     "@cypress/code-coverage": "^3.8.3",
     "@cypress/instrument-cra": "^1.4.0",
     "@percy/cypress": "^2.3.1",
+    "@testing-library/cypress": "^7.0.1",
     "@testing-library/jest-dom": "^5.11.5",
     "@testing-library/react": "^11.1.0",
     "@types/jest": "^26.0.15",
@@ -40,6 +41,7 @@
     "@types/styled-components": "^5.1.4",
     "all-contributors-cli": "^6.19.0",
     "cypress": "^5.4.0",
+    "cypress-react-unit-test": "^4.16.9",
     "eslint-config-prettier": "^6.14.0",
     "eslint-config-typescript": "^3.0.0",
     "eslint-plugin-prettier": "^3.1.4",
