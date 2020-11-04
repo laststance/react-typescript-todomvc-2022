@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1604502103811" clover="3.2.0">
+  <project timestamp="1604502103811" name="All files">
+    <metrics statements="119" coveredstatements="110" conditionals="53" coveredconditionals="48" methods="41" coveredmethods="37" elements="213" coveredelements="195" complexity="0" loc="119" ncloc="119" packages="7" files="17" classes="17"/>
+    <package name="src">
+      <metrics statements="30" coveredstatements="25" conditionals="4" coveredconditionals="2" methods="7" coveredmethods="5"/>
+      <file name="ErrorBoundary.tsx" path="/Users/ryota.murakami/laststance/create-react-app-typescript-todo-example-2020/src/ErrorBoundary.tsx">
+        <metrics statements="10" coveredstatements="7" conditionals="2" coveredconditionals="1" methods="3" coveredmethods="1"/>
+        <line num="13" count="44" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="23" count="44" type="stmt"/>
+        <line num="24" count="44" type="cond" truecount="1" falsecount="1"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="27" count="44" type="stmt"/>
+        <line num="33" count="44" type="stmt"/>
+        <line num="41" count="44" type="stmt"/>
+        <line num="49" count="44" type="stmt"/>
+        <line num="50" count="0" type="stmt"/>
+      </file>
+      <file name="NotFound.tsx" path="/Users/ryota.murakami/laststance/create-react-app-typescript-todo-example-2020/src/NotFound.tsx">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="4" count="44" type="stmt"/>
+        <line num="12" count="44" type="stmt"/>
+        <line num="13" count="2" type="stmt"/>
+      </file>
+      <file name="dataStructure.ts" path="/Users/ryota.murakami/laststance/create-react-app-typescript-todo-example-2020/src/dataStructure.ts">
+        <metrics statements="7" coveredstatements="5" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <line num="22" count="44" type="stmt"/>
+        <line num="25" count="44" type="cond" truecount="1" falsecount="1"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="30" count="44" type="stmt"/>
+        <line num="34" count="44" type="stmt"/>
+        <line num="37" count="44" type="stmt"/>
+      </file>
+      <file name="functions.ts" path="/Users/ryota.murakami/laststance/create-react-app-typescript-todo-example-2020/src/functions.ts">
+        <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="44" type="stmt"/>
+        <line num="2" count="120" type="stmt"/>
+        <line num="4" count="120" type="stmt"/>
+        <line num="5" count="120" type="stmt"/>
+        <line num="6" count="120" type="stmt"/>
+        <line num="7" count="1440" type="stmt"/>
+        <line num="9" count="120" type="stmt"/>
+      </file>
+      <file name="index.tsx" path="/Users/ryota.murakami/laststance/create-react-app-typescript-todo-example-2020/src/index.tsx">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="15" count="60" type="stmt"/>
+        <line num="17" count="44" type="stmt"/>
+        <line num="34" count="44" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.App">
+      <metrics statements="9" coveredstatements="9" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
+      <file name="Copyright.tsx" path="/Users/ryota.murakami/laststance/create-react-app-typescript-todo-example-2020/src/App/Copyright.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="3" count="44" type="stmt"/>
+        <line num="4" count="386" type="stmt"/>
+      </file>
+      <file name="index.tsx" path="/Users/ryota.murakami/laststance/create-react-app-typescript-todo-example-2020/src/App/index.tsx">
+        <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
+        <line num="20" count="44" type="stmt"/>
+        <line num="21" count="386" type="stmt"/>
+        <line num="24" count="386" type="stmt"/>
+        <line num="25" count="326" type="stmt"/>
+        <line num="31" count="386" type="stmt"/>
+      </file>
+      <file name="style.ts" path="/Users/ryota.murakami/laststance/create-react-app-typescript-todo-example-2020/src/App/style.ts">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="7" count="44" type="stmt"/>
+        <line num="69" count="44" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.App.NewTodoInput">
+      <metrics statements="11" coveredstatements="11" conditionals="6" coveredconditionals="5" methods="3" coveredmethods="3"/>
+      <file name="index.tsx" path="/Users/ryota.murakami/laststance/create-react-app-typescript-todo-example-2020/src/App/NewTodoInput/index.tsx">
+        <metrics statements="10" coveredstatements="10" conditionals="6" coveredconditionals="5" methods="3" coveredmethods="3"/>
+        <line num="7" count="44" type="stmt"/>
+        <line num="8" count="386" type="stmt"/>
+        <line num="9" count="386" type="stmt"/>
+        <line num="14" count="616" type="cond" truecount="1" falsecount="1"/>
+        <line num="15" count="616" type="cond" truecount="4" falsecount="0"/>
+        <line num="19" count="120" type="stmt"/>
+        <line num="26" count="120" type="stmt"/>
+        <line num="29" count="120" type="stmt"/>
+        <line num="33" count="386" type="stmt"/>
+        <line num="42" count="616" type="stmt"/>
+      </file>
+      <file name="style.ts" path="/Users/ryota.murakami/laststance/create-react-app-typescript-todo-example-2020/src/App/NewTodoInput/style.ts">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="8" count="44" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.App.TodoList">
+      <metrics statements="11" coveredstatements="10" conditionals="4" coveredconditionals="3" methods="5" coveredmethods="5"/>
+      <file name="index.tsx" path="/Users/ryota.murakami/laststance/create-react-app-typescript-todo-example-2020/src/App/TodoList/index.tsx">
+        <metrics statements="10" coveredstatements="9" conditionals="4" coveredconditionals="3" methods="5" coveredmethods="5"/>
+        <line num="11" count="44" type="stmt"/>
+        <line num="12" count="342" type="stmt"/>
+        <line num="16" count="24" type="stmt"/>
+        <line num="19" count="342" type="stmt"/>
+        <line num="34" count="820" type="cond" truecount="3" falsecount="1"/>
+        <line num="36" count="736" type="stmt"/>
+        <line num="38" count="60" type="stmt"/>
+        <line num="40" count="24" type="stmt"/>
+        <line num="42" count="0" type="stmt"/>
+        <line num="47" count="788" type="stmt"/>
+      </file>
+      <file name="style.ts" path="/Users/ryota.murakami/laststance/create-react-app-typescript-todo-example-2020/src/App/TodoList/style.ts">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="7" count="44" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.App.TodoList.Item">
+      <metrics statements="48" coveredstatements="47" conditionals="29" coveredconditionals="28" methods="17" coveredmethods="17"/>
+      <file name="index.tsx" path="/Users/ryota.murakami/laststance/create-react-app-typescript-todo-example-2020/src/App/TodoList/Item/index.tsx">
+        <metrics statements="47" coveredstatements="46" conditionals="29" coveredconditionals="28" methods="17" coveredmethods="17"/>
+        <line num="19" count="44" type="stmt"/>
+        <line num="20" count="906" type="stmt"/>
+        <line num="21" count="906" type="stmt"/>
+        <line num="22" count="906" type="stmt"/>
+        <line num="23" count="906" type="stmt"/>
+        <line num="25" count="906" type="stmt"/>
+        <line num="26" count="14" type="stmt"/>
+        <line num="29" count="906" type="stmt"/>
+        <line num="30" count="14" type="cond" truecount="2" falsecount="0"/>
+        <line num="31" count="12" type="stmt"/>
+        <line num="33" count="2" type="stmt"/>
+        <line num="37" count="906" type="stmt"/>
+        <line num="38" count="108" type="cond" truecount="4" falsecount="0"/>
+        <line num="39" count="16" type="cond" truecount="2" falsecount="0"/>
+        <line num="40" count="12" type="stmt"/>
+        <line num="46" count="906" type="stmt"/>
+        <line num="47" count="906" type="cond" truecount="4" falsecount="1"/>
+        <line num="49" count="36" type="stmt"/>
+        <line num="51" count="76" type="stmt"/>
+        <line num="53" count="72" type="stmt"/>
+        <line num="55" count="722" type="stmt"/>
+        <line num="58" count="0" type="stmt"/>
+        <line num="62" count="906" type="stmt"/>
+        <line num="63" count="34" type="stmt"/>
+        <line num="65" count="102" type="cond" truecount="2" falsecount="0"/>
+        <line num="67" count="34" type="stmt"/>
+        <line num="70" count="68" type="stmt"/>
+        <line num="74" count="34" type="stmt"/>
+        <line num="77" count="906" type="stmt"/>
+        <line num="78" count="6" type="stmt"/>
+        <line num="79" count="18" type="stmt"/>
+        <line num="82" count="6" type="stmt"/>
+        <line num="85" count="906" type="stmt"/>
+        <line num="86" count="98" type="stmt"/>
+        <line num="88" count="294" type="cond" truecount="2" falsecount="0"/>
+        <line num="89" count="98" type="stmt"/>
+        <line num="91" count="196" type="stmt"/>
+        <line num="96" count="98" type="stmt"/>
+        <line num="99" count="906" type="stmt"/>
+        <line num="101" count="906" type="cond" truecount="4" falsecount="0"/>
+        <line num="102" count="112" type="stmt"/>
+        <line num="105" count="906" type="stmt"/>
+        <line num="113" count="34" type="stmt"/>
+        <line num="126" count="4" type="stmt"/>
+        <line num="133" count="14" type="stmt"/>
+        <line num="136" count="98" type="stmt"/>
+        <line num="137" count="108" type="stmt"/>
+      </file>
+      <file name="style.ts" path="/Users/ryota.murakami/laststance/create-react-app-typescript-todo-example-2020/src/App/TodoList/Item/style.ts">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="8" count="44" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.App.UnderBar">
+      <metrics statements="8" coveredstatements="6" conditionals="2" coveredconditionals="2" methods="5" coveredmethods="3"/>
+      <file name="index.tsx" path="/Users/ryota.murakami/laststance/create-react-app-typescript-todo-example-2020/src/App/UnderBar/index.tsx">
+        <metrics statements="7" coveredstatements="5" conditionals="2" coveredconditionals="2" methods="5" coveredmethods="3"/>
+        <line num="11" count="44" type="stmt"/>
+        <line num="12" count="342" type="stmt"/>
+        <line num="13" count="820" type="stmt"/>
+        <line num="14" count="820" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="22" count="342" type="stmt"/>
+      </file>
+      <file name="style.ts" path="/Users/ryota.murakami/laststance/create-react-app-typescript-todo-example-2020/src/App/UnderBar/style.ts">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="7" count="44" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.App.UnderBar.FilterLink">
+      <metrics statements="2" coveredstatements="2" conditionals="6" coveredconditionals="6" methods="1" coveredmethods="1"/>
+      <file name="index.tsx" path="/Users/ryota.murakami/laststance/create-react-app-typescript-todo-example-2020/src/App/UnderBar/FilterLink/index.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="6" coveredconditionals="6" methods="1" coveredmethods="1"/>
+        <line num="9" count="44" type="stmt"/>
+        <line num="10" count="342" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>
