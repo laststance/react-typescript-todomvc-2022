@@ -29,7 +29,6 @@ This is a [Create React App](https://facebook.github.io/create-react-app/) based
 - [ESLint](https://eslint.org/)
   - [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier)
   - [@typescript-eslint/eslint-plugin](https://github.com/typescript-eslint/typescript-eslint#readme)
-  - [eslint-plugin-react-hooks](https://reactjs.org/)
 - [Netlify](https://www.netlify.com/): Deploy & Hosting
 - [Github Actions](https://github.com/features/actions): Automation run tests, lint, typecheck, build
 - [Depfu](https://depfu.com/github/ryota-murakami/create-react-app-typescript-todo-example-2020?project_id=9618): Keep latest npm packages automaticaly
@@ -112,12 +111,22 @@ yarn cypress:open
 
 ### `yarn cypress:run`
 
+Run Cypress with [Electron](https://www.electronjs.org/).  
+That's same as run all test on cypress GUI after run `yarn cypress:open`.
+
+```bash
+yarn start # Launch DevServer
+yarn cypress:run
+```
+
+### `yarn cypress:run:leadless`
+
 Run Cypress with headless [Electron](https://www.electronjs.org/).  
 That mean this command complete all on a terminal without GUI.
 
 ```bash
 yarn start # Launch DevServer
-yarn cypress:run
+yarn cypress:run:headless
 ```
 
 ## 🗒 Note
