@@ -23,10 +23,11 @@ export const renderWithRecoilRoot = (
     </RecoilRoot>
   )
 
+// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 export const mountCypressWithRecoilRoot = (
   ui: React.ReactElement,
   initialRecoilStateValue: AppState = defaultValue
-): void =>
+) /* Chainable<JQuery<any>> output: TS2304: Cannot find name 'Chainable' */ =>
   mount(
     <RecoilRoot
       initializeState={({ set }: MutableSnapshot): void =>

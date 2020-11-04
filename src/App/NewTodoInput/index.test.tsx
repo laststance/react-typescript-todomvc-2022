@@ -5,7 +5,7 @@ import { renderWithRecoilRoot } from '../../testUtil'
 
 test('should be render <TodoTextInput/>', () => {
   const screen = renderWithRecoilRoot(<NewTodoTextInput />)
-  const input = screen.getByTestId('new-todo-input-text')
+  const input = screen.getByTestId('new-todo-input-text') as HTMLInputElement
 
   // Header big text
   expect(screen.getByText('todos')).toBeInTheDocument()
