@@ -16,8 +16,8 @@
     "cypress:run:chrome:headless": "cypress run --browser chrome --headless",
     "cypress:open": "cypress open",
     "cypress:percy": "percy exec -- cypress run",
-    "coverage": "npx nyc report --reporter=text-summary",
-    "watch:coverage:webpage": "serve coverage/lcov-report",
+    "cypress:coverage": "npx nyc report --reporter=text-summary",
+    "cypress:coverage:start:webpage": "serve coverage/lcov-report",
     "contributors:add": "all-contributors add",
     "contributors:generate": "all-contributors generate"
   },
