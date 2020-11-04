@@ -3,6 +3,7 @@
   "scripts": {
     "start": "react-scripts -r @cypress/instrument-cra start",
     "build": "react-scripts build",
+    "start:prod-build": "serve -s build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint . --ext .ts,.tsx,.js",
