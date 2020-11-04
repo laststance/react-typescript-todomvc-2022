@@ -40,18 +40,16 @@ This is a [Create React App](https://facebook.github.io/create-react-app/) based
 - The app assumed installed `Node.js` newer than `10.16.3 LTS`(recommend newer than v14.8.0).
   If you have not it yet, follow the official [Node.js Doc](https://nodejs.org/en/) to install it.
 
-And then clone repo and install npm dependencies.  
-Intall is complete.
+**And then**
 
 ```bash
 git clone git@github.com:laststance/create-react-app-typescript-todo-example-2020.git
 cd create-react-app-typescript-todo-example-2020
 yarn install # or npm install
+yarn start # or npm run start
 ```
 
-After that you can lunch App with `yarn start` command. 😎
-
-And Todo source code is putting [src/](https://github.com/laststance/create-react-app-typescript-todo-example-2020/tree/master/src) directory.
+**Finally Edit Code** 😎
 
 ## 👩‍💻 Usage
 
