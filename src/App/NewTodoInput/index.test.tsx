@@ -9,4 +9,7 @@ test('should be render <TodoTextInput/>', () => {
   expect(screen.getByText('todos')).toBeInTheDocument()
   // Text input
   expect(screen.getByTestId('new-todo-input-text')).toBeInTheDocument()
+  expect(
+    screen.getByPlaceholderText('What needs to be done?')
+  ).toBeInTheDocument()
 })
