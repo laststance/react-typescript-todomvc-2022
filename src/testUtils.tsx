@@ -8,4 +8,16 @@ const defaultValue: AppState = {
   todoList: [],
 }
 
-export const renderWithRecoilRoot = (ui: React.ReactElement, initialRecoilStateValue: AppState = defaultValue): RenderResult => render(<RecoilRoot initializeState={({ set }: MutableSnapshot): void => set(recoilState, initialRecoilStateValue)}>{ui}</RecoilRoot>) /* eslint-disable-line prettier/prettier */
+export const renderWithRecoilRoot = (
+  ui: React.ReactElement,
+  initialRecoilStateValue: AppState = defaultValue
+): RenderResult =>
+  render(
+    <RecoilRoot
+      initializeState={({ set }: MutableSnapshot): void =>
+        set(recoilState, initialRecoilStateValue)
+      }
+    >
+      {ui}
+    </RecoilRoot>
+  )
