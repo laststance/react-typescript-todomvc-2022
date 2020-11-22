@@ -6,9 +6,7 @@ import { AppState, recoilState, Todo } from '../../dataStructure'
 
 const NewTodoTextInput: React.FC = () => {
   const [appState, setAppState] = useRecoilState<AppState>(recoilState)
-  const textInput: React.RefObject<HTMLInputElement> = createRef<
-    HTMLInputElement
-  >()
+  const textInput: React.RefObject<HTMLInputElement> = createRef<HTMLInputElement>()
 
   function addTodo(e: React.KeyboardEvent<HTMLInputElement>): void {
     if (textInput.current === null) return
