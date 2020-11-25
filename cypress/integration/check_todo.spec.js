@@ -11,7 +11,7 @@ context('Check Todo', () => {
       )
     })
     it('does not show "Clear cmpleted" button on footer', () => {
-      cy.get('[data-cy=clear-completed-button]').should('not.visible')
+      cy.get('[data-cy=clear-completed-button]').should('not.exist')
     })
   })
 

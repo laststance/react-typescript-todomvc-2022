@@ -1,196 +1,196 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1605177808179" clover="3.2.0">
-  <project timestamp="1605177808179" name="All files">
+<coverage generated="1606305221947" clover="3.2.0">
+  <project timestamp="1606305221947" name="All files">
     <metrics statements="119" coveredstatements="110" conditionals="53" coveredconditionals="48" methods="41" coveredmethods="37" elements="213" coveredelements="195" complexity="0" loc="119" ncloc="119" packages="7" files="17" classes="17"/>
     <package name="src">
       <metrics statements="30" coveredstatements="25" conditionals="4" coveredconditionals="2" methods="7" coveredmethods="5"/>
       <file name="ErrorBoundary.tsx" path="/Users/ryota.murakami/laststance/create-react-app-typescript-todo-example-2020/src/ErrorBoundary.tsx">
         <metrics statements="10" coveredstatements="7" conditionals="2" coveredconditionals="1" methods="3" coveredmethods="1"/>
-        <line num="13" count="29" type="stmt"/>
+        <line num="13" count="23" type="stmt"/>
         <line num="19" count="0" type="stmt"/>
-        <line num="23" count="29" type="stmt"/>
-        <line num="24" count="29" type="cond" truecount="1" falsecount="1"/>
+        <line num="23" count="23" type="stmt"/>
+        <line num="24" count="23" type="cond" truecount="1" falsecount="1"/>
         <line num="25" count="0" type="stmt"/>
-        <line num="27" count="29" type="stmt"/>
-        <line num="33" count="29" type="stmt"/>
-        <line num="41" count="29" type="stmt"/>
-        <line num="49" count="29" type="stmt"/>
+        <line num="27" count="23" type="stmt"/>
+        <line num="33" count="23" type="stmt"/>
+        <line num="41" count="23" type="stmt"/>
+        <line num="49" count="23" type="stmt"/>
         <line num="50" count="0" type="stmt"/>
       </file>
       <file name="NotFound.tsx" path="/Users/ryota.murakami/laststance/create-react-app-typescript-todo-example-2020/src/NotFound.tsx">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="4" count="29" type="stmt"/>
-        <line num="12" count="29" type="stmt"/>
-        <line num="13" count="2" type="stmt"/>
+        <line num="4" count="23" type="stmt"/>
+        <line num="12" count="23" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
       </file>
       <file name="dataStructure.ts" path="/Users/ryota.murakami/laststance/create-react-app-typescript-todo-example-2020/src/dataStructure.ts">
         <metrics statements="7" coveredstatements="5" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
-        <line num="22" count="29" type="stmt"/>
-        <line num="25" count="29" type="cond" truecount="1" falsecount="1"/>
+        <line num="22" count="23" type="stmt"/>
+        <line num="25" count="23" type="cond" truecount="1" falsecount="1"/>
         <line num="26" count="0" type="stmt"/>
         <line num="27" count="0" type="stmt"/>
-        <line num="30" count="29" type="stmt"/>
-        <line num="34" count="29" type="stmt"/>
-        <line num="37" count="29" type="stmt"/>
+        <line num="30" count="23" type="stmt"/>
+        <line num="34" count="23" type="stmt"/>
+        <line num="37" count="23" type="stmt"/>
       </file>
       <file name="functions.ts" path="/Users/ryota.murakami/laststance/create-react-app-typescript-todo-example-2020/src/functions.ts">
         <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="1" count="29" type="stmt"/>
-        <line num="2" count="75" type="stmt"/>
-        <line num="4" count="75" type="stmt"/>
-        <line num="5" count="75" type="stmt"/>
-        <line num="6" count="75" type="stmt"/>
-        <line num="7" count="900" type="stmt"/>
-        <line num="9" count="75" type="stmt"/>
+        <line num="1" count="23" type="stmt"/>
+        <line num="2" count="63" type="stmt"/>
+        <line num="4" count="63" type="stmt"/>
+        <line num="5" count="63" type="stmt"/>
+        <line num="6" count="63" type="stmt"/>
+        <line num="7" count="756" type="stmt"/>
+        <line num="9" count="63" type="stmt"/>
       </file>
       <file name="index.tsx" path="/Users/ryota.murakami/laststance/create-react-app-typescript-todo-example-2020/src/index.tsx">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="15" count="39" type="stmt"/>
-        <line num="17" count="29" type="stmt"/>
-        <line num="34" count="29" type="stmt"/>
+        <line num="15" count="31" type="stmt"/>
+        <line num="17" count="23" type="stmt"/>
+        <line num="34" count="23" type="stmt"/>
       </file>
     </package>
     <package name="src.App">
       <metrics statements="9" coveredstatements="9" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
       <file name="Copyright.tsx" path="/Users/ryota.murakami/laststance/create-react-app-typescript-todo-example-2020/src/App/Copyright.tsx">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="3" count="29" type="stmt"/>
-        <line num="4" count="259" type="stmt"/>
+        <line num="3" count="23" type="stmt"/>
+        <line num="4" count="200" type="stmt"/>
       </file>
       <file name="index.tsx" path="/Users/ryota.murakami/laststance/create-react-app-typescript-todo-example-2020/src/App/index.tsx">
         <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
-        <line num="20" count="29" type="stmt"/>
-        <line num="21" count="259" type="stmt"/>
-        <line num="24" count="259" type="stmt"/>
-        <line num="25" count="220" type="stmt"/>
-        <line num="31" count="259" type="stmt"/>
+        <line num="20" count="23" type="stmt"/>
+        <line num="21" count="200" type="stmt"/>
+        <line num="24" count="200" type="stmt"/>
+        <line num="25" count="169" type="stmt"/>
+        <line num="31" count="200" type="stmt"/>
       </file>
       <file name="style.ts" path="/Users/ryota.murakami/laststance/create-react-app-typescript-todo-example-2020/src/App/style.ts">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="7" count="29" type="stmt"/>
-        <line num="69" count="29" type="stmt"/>
+        <line num="7" count="23" type="stmt"/>
+        <line num="69" count="23" type="stmt"/>
       </file>
     </package>
     <package name="src.App.NewTodoInput">
       <metrics statements="11" coveredstatements="11" conditionals="6" coveredconditionals="5" methods="3" coveredmethods="3"/>
       <file name="index.tsx" path="/Users/ryota.murakami/laststance/create-react-app-typescript-todo-example-2020/src/App/NewTodoInput/index.tsx">
         <metrics statements="10" coveredstatements="10" conditionals="6" coveredconditionals="5" methods="3" coveredmethods="3"/>
-        <line num="7" count="29" type="stmt"/>
-        <line num="8" count="259" type="stmt"/>
-        <line num="9" count="259" type="stmt"/>
-        <line num="14" count="386" type="cond" truecount="1" falsecount="1"/>
-        <line num="15" count="386" type="cond" truecount="4" falsecount="0"/>
-        <line num="19" count="75" type="stmt"/>
-        <line num="26" count="75" type="stmt"/>
-        <line num="29" count="75" type="stmt"/>
-        <line num="33" count="259" type="stmt"/>
-        <line num="42" count="386" type="stmt"/>
+        <line num="7" count="23" type="stmt"/>
+        <line num="8" count="200" type="stmt"/>
+        <line num="9" count="200" type="stmt"/>
+        <line num="12" count="322" type="cond" truecount="1" falsecount="1"/>
+        <line num="13" count="322" type="cond" truecount="4" falsecount="0"/>
+        <line num="17" count="63" type="stmt"/>
+        <line num="24" count="63" type="stmt"/>
+        <line num="27" count="63" type="stmt"/>
+        <line num="31" count="200" type="stmt"/>
+        <line num="40" count="322" type="stmt"/>
       </file>
       <file name="style.ts" path="/Users/ryota.murakami/laststance/create-react-app-typescript-todo-example-2020/src/App/NewTodoInput/style.ts">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="8" count="29" type="stmt"/>
+        <line num="8" count="23" type="stmt"/>
       </file>
     </package>
     <package name="src.App.TodoList">
       <metrics statements="11" coveredstatements="10" conditionals="4" coveredconditionals="3" methods="5" coveredmethods="5"/>
       <file name="index.tsx" path="/Users/ryota.murakami/laststance/create-react-app-typescript-todo-example-2020/src/App/TodoList/index.tsx">
         <metrics statements="10" coveredstatements="9" conditionals="4" coveredconditionals="3" methods="5" coveredmethods="5"/>
-        <line num="11" count="29" type="stmt"/>
-        <line num="12" count="230" type="stmt"/>
+        <line num="11" count="23" type="stmt"/>
+        <line num="12" count="177" type="stmt"/>
         <line num="16" count="18" type="stmt"/>
-        <line num="19" count="230" type="stmt"/>
-        <line num="34" count="559" type="cond" truecount="3" falsecount="1"/>
-        <line num="36" count="505" type="stmt"/>
+        <line num="19" count="177" type="stmt"/>
+        <line num="34" count="423" type="cond" truecount="3" falsecount="1"/>
+        <line num="36" count="381" type="stmt"/>
         <line num="38" count="30" type="stmt"/>
-        <line num="40" count="24" type="stmt"/>
+        <line num="40" count="12" type="stmt"/>
         <line num="42" count="0" type="stmt"/>
-        <line num="47" count="533" type="stmt"/>
+        <line num="47" count="407" type="stmt"/>
       </file>
       <file name="style.ts" path="/Users/ryota.murakami/laststance/create-react-app-typescript-todo-example-2020/src/App/TodoList/style.ts">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="7" count="29" type="stmt"/>
+        <line num="7" count="23" type="stmt"/>
       </file>
     </package>
     <package name="src.App.TodoList.Item">
       <metrics statements="48" coveredstatements="47" conditionals="29" coveredconditionals="28" methods="17" coveredmethods="17"/>
       <file name="index.tsx" path="/Users/ryota.murakami/laststance/create-react-app-typescript-todo-example-2020/src/App/TodoList/Item/index.tsx">
         <metrics statements="47" coveredstatements="46" conditionals="29" coveredconditionals="28" methods="17" coveredmethods="17"/>
-        <line num="19" count="29" type="stmt"/>
-        <line num="20" count="609" type="stmt"/>
-        <line num="21" count="609" type="stmt"/>
-        <line num="22" count="609" type="stmt"/>
-        <line num="23" count="609" type="stmt"/>
-        <line num="25" count="609" type="stmt"/>
-        <line num="26" count="10" type="stmt"/>
-        <line num="29" count="609" type="stmt"/>
-        <line num="30" count="10" type="cond" truecount="2" falsecount="0"/>
-        <line num="31" count="8" type="stmt"/>
-        <line num="33" count="2" type="stmt"/>
-        <line num="37" count="609" type="stmt"/>
-        <line num="38" count="78" type="cond" truecount="4" falsecount="0"/>
-        <line num="39" count="12" type="cond" truecount="2" falsecount="0"/>
-        <line num="40" count="8" type="stmt"/>
-        <line num="46" count="609" type="stmt"/>
-        <line num="47" count="609" type="cond" truecount="4" falsecount="1"/>
-        <line num="49" count="24" type="stmt"/>
-        <line num="51" count="58" type="stmt"/>
-        <line num="53" count="49" type="stmt"/>
-        <line num="55" count="478" type="stmt"/>
+        <line num="19" count="23" type="stmt"/>
+        <line num="20" count="468" type="stmt"/>
+        <line num="21" count="468" type="stmt"/>
+        <line num="22" count="468" type="stmt"/>
+        <line num="23" count="468" type="stmt"/>
+        <line num="25" count="468" type="stmt"/>
+        <line num="26" count="7" type="stmt"/>
+        <line num="29" count="468" type="stmt"/>
+        <line num="30" count="7" type="cond" truecount="2" falsecount="0"/>
+        <line num="31" count="6" type="stmt"/>
+        <line num="33" count="1" type="stmt"/>
+        <line num="37" count="468" type="stmt"/>
+        <line num="38" count="54" type="cond" truecount="4" falsecount="0"/>
+        <line num="39" count="8" type="cond" truecount="2" falsecount="0"/>
+        <line num="40" count="6" type="stmt"/>
+        <line num="46" count="468" type="stmt"/>
+        <line num="47" count="468" type="cond" truecount="4" falsecount="1"/>
+        <line num="49" count="18" type="stmt"/>
+        <line num="51" count="38" type="stmt"/>
+        <line num="53" count="39" type="stmt"/>
+        <line num="55" count="373" type="stmt"/>
         <line num="58" count="0" type="stmt"/>
-        <line num="62" count="609" type="stmt"/>
-        <line num="63" count="22" type="stmt"/>
-        <line num="65" count="66" type="cond" truecount="2" falsecount="0"/>
-        <line num="67" count="22" type="stmt"/>
-        <line num="70" count="44" type="stmt"/>
-        <line num="74" count="22" type="stmt"/>
-        <line num="77" count="609" type="stmt"/>
-        <line num="78" count="6" type="stmt"/>
-        <line num="79" count="18" type="stmt"/>
-        <line num="82" count="6" type="stmt"/>
-        <line num="85" count="609" type="stmt"/>
-        <line num="86" count="72" type="stmt"/>
-        <line num="88" count="216" type="cond" truecount="2" falsecount="0"/>
-        <line num="89" count="72" type="stmt"/>
-        <line num="91" count="144" type="stmt"/>
-        <line num="96" count="72" type="stmt"/>
-        <line num="99" count="609" type="stmt"/>
-        <line num="101" count="609" type="cond" truecount="4" falsecount="0"/>
-        <line num="102" count="82" type="stmt"/>
-        <line num="105" count="609" type="stmt"/>
-        <line num="113" count="22" type="stmt"/>
-        <line num="126" count="4" type="stmt"/>
-        <line num="133" count="10" type="stmt"/>
-        <line num="136" count="72" type="stmt"/>
-        <line num="137" count="78" type="stmt"/>
+        <line num="62" count="468" type="stmt"/>
+        <line num="63" count="17" type="stmt"/>
+        <line num="65" count="51" type="cond" truecount="2" falsecount="0"/>
+        <line num="67" count="17" type="stmt"/>
+        <line num="70" count="34" type="stmt"/>
+        <line num="74" count="17" type="stmt"/>
+        <line num="77" count="468" type="stmt"/>
+        <line num="78" count="3" type="stmt"/>
+        <line num="79" count="9" type="stmt"/>
+        <line num="82" count="3" type="stmt"/>
+        <line num="85" count="468" type="stmt"/>
+        <line num="86" count="49" type="stmt"/>
+        <line num="88" count="147" type="cond" truecount="2" falsecount="0"/>
+        <line num="89" count="49" type="stmt"/>
+        <line num="91" count="98" type="stmt"/>
+        <line num="96" count="49" type="stmt"/>
+        <line num="99" count="468" type="stmt"/>
+        <line num="101" count="468" type="cond" truecount="4" falsecount="0"/>
+        <line num="102" count="56" type="stmt"/>
+        <line num="105" count="468" type="stmt"/>
+        <line num="113" count="17" type="stmt"/>
+        <line num="126" count="2" type="stmt"/>
+        <line num="133" count="7" type="stmt"/>
+        <line num="136" count="49" type="stmt"/>
+        <line num="137" count="54" type="stmt"/>
       </file>
       <file name="style.ts" path="/Users/ryota.murakami/laststance/create-react-app-typescript-todo-example-2020/src/App/TodoList/Item/style.ts">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="8" count="29" type="stmt"/>
+        <line num="8" count="23" type="stmt"/>
       </file>
     </package>
     <package name="src.App.UnderBar">
       <metrics statements="8" coveredstatements="6" conditionals="2" coveredconditionals="2" methods="5" coveredmethods="3"/>
       <file name="index.tsx" path="/Users/ryota.murakami/laststance/create-react-app-typescript-todo-example-2020/src/App/UnderBar/index.tsx">
         <metrics statements="7" coveredstatements="5" conditionals="2" coveredconditionals="2" methods="5" coveredmethods="3"/>
-        <line num="11" count="29" type="stmt"/>
-        <line num="12" count="230" type="stmt"/>
-        <line num="13" count="559" type="stmt"/>
-        <line num="14" count="559" type="stmt"/>
+        <line num="11" count="23" type="stmt"/>
+        <line num="12" count="177" type="stmt"/>
+        <line num="13" count="423" type="stmt"/>
+        <line num="14" count="423" type="stmt"/>
         <line num="17" count="0" type="stmt"/>
         <line num="18" count="0" type="stmt"/>
-        <line num="22" count="230" type="stmt"/>
+        <line num="22" count="177" type="stmt"/>
       </file>
       <file name="style.ts" path="/Users/ryota.murakami/laststance/create-react-app-typescript-todo-example-2020/src/App/UnderBar/style.ts">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="7" count="29" type="stmt"/>
+        <line num="7" count="23" type="stmt"/>
       </file>
     </package>
     <package name="src.App.UnderBar.FilterLink">
       <metrics statements="2" coveredstatements="2" conditionals="6" coveredconditionals="6" methods="1" coveredmethods="1"/>
       <file name="index.tsx" path="/Users/ryota.murakami/laststance/create-react-app-typescript-todo-example-2020/src/App/UnderBar/FilterLink/index.tsx">
         <metrics statements="2" coveredstatements="2" conditionals="6" coveredconditionals="6" methods="1" coveredmethods="1"/>
-        <line num="9" count="29" type="stmt"/>
-        <line num="10" count="230" type="stmt"/>
+        <line num="9" count="23" type="stmt"/>
+        <line num="10" count="177" type="stmt"/>
       </file>
     </package>
   </project>

@@ -14,6 +14,6 @@ context('Toggle All Button', () => {
     cy.get('[data-cy=toggle-all-btn]').click()
     cy.get('[data-cy=remaining-uncompleted-todo-count]').should('contain', '3')
     // [state: 3 todo, 0 completed] it doesn't "Clear cmpleted" button on footer
-    cy.get('[data-cy=clear-completed-button]').should('not.visible')
+    cy.get('[data-cy=clear-completed-button]').should('not.exist')
   })
 })
