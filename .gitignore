@@ -4,3 +4,4 @@ cypress/fixtures/
 cypress/screenshots/
 node_modules/
 instrumented/
+.eslintcache
