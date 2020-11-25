@@ -1196,20 +1196,7 @@
     through2 "^2.0.0"
     watchify "3.11.1"
 
-"@cypress/code-coverage@3.8.3":
-  version "3.8.3"
-  resolved "https://registry.yarnpkg.com/@cypress/code-coverage/-/code-coverage-3.8.3.tgz#4bda76bbf07a01036ad58a60b6f9f86d6cb8c156"
-  integrity sha512-4R9bDS4CivckXaJudL5lKxXtB99LkO2RWE4a5M/P7VXGrXynQQDYbP07O9Jyjw/VjELWBV+xC3AOfYaU+wCHNQ==
-  dependencies:
-    "@cypress/browserify-preprocessor" "3.0.1"
-    debug "4.2.0"
-    execa "4.1.0"
-    globby "11.0.1"
-    istanbul-lib-coverage "3.0.0"
-    js-yaml "3.14.0"
-    nyc "15.1.0"
-
-"@cypress/code-coverage@^3.8.5":
+"@cypress/code-coverage@3.8.5", "@cypress/code-coverage@^3.8.5":
   version "3.8.5"
   resolved "https://registry.yarnpkg.com/@cypress/code-coverage/-/code-coverage-3.8.5.tgz#4071990abdeca780e30c9d15236aa28d00cbe610"
   integrity sha512-JdMha0XttCmgzT+WegRhQITZpW9yfjwy6yEs1EU7qUws7v9kVPtP/9ZH+021f7kzyqbcPuVC0+pbfBxB5RlwmQ==
@@ -4902,13 +4889,13 @@ cyclist@^1.0.1:
   resolved "https://registry.yarnpkg.com/cyclist/-/cyclist-1.0.1.tgz#596e9698fd0c80e12038c2b82d6eb1b35b6224d9"
   integrity sha1-WW6WmP0MgOEgOMK4LW6xs1tiJNk=
 
-cypress-react-unit-test@^4.17.0:
-  version "4.17.0"
-  resolved "https://registry.yarnpkg.com/cypress-react-unit-test/-/cypress-react-unit-test-4.17.0.tgz#c675613f4ae7ab973fe7d9f30bc70e20362bf592"
-  integrity sha512-2DytgGygVbp4mx2fJgkiPon8q3AYVFcJxlR6keVAJnkGPrUj7sgRtEHCbypeNVyV9IDiuPhzpwyo4ZYbCUl95w==
+cypress-react-unit-test@^4.17.1:
+  version "4.17.1"
+  resolved "https://registry.yarnpkg.com/cypress-react-unit-test/-/cypress-react-unit-test-4.17.1.tgz#999129d79540a1a1233edba9b4d5b1be99e5d3dd"
+  integrity sha512-2hpTonBnASB9S++gaTfiwYHOgNxblpVgglryJhRx9TF25bINcm5bVf98QXwz48QJR1BbF67QCIfB4zyikPCfoA==
   dependencies:
     "@babel/plugin-transform-modules-commonjs" "7.12.1"
-    "@cypress/code-coverage" "3.8.3"
+    "@cypress/code-coverage" "3.8.5"
     "@cypress/webpack-preprocessor" "5.4.11"
     babel-plugin-istanbul "6.0.0"
     chalk "4.1.0"
