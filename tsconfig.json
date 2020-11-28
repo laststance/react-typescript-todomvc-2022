@@ -1,6 +1,9 @@
 {
   "compilerOptions": {
-    "types": ["cypress", "@testing-library/cypress"],
+    "types": [
+      "cypress",
+      "@testing-library/cypress"
+    ],
     "target": "es5",
     "lib": [
       "dom",
@@ -19,7 +22,7 @@
     "isolatedModules": true,
     "noEmit": true,
     "noFallthroughCasesInSwitch": true,
-    "jsx": "react"
+    "jsx": "react-jsx"
   },
   "include": [
     "src",
