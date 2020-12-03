@@ -53,11 +53,6 @@
     "serve": "^11.3.2",
     "typescript": "^4.0.5"
   },
-  "jest": {
-    "moduleNameMapper": {
-      "^styled-components": "<rootDir>/node_modules/styled-components/dist/styled-components.browser.cjs.js"
-    }
-  },
   "browserslist": {
     "production": [
       "last 1 chrome version",
