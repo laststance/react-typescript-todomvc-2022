@@ -1290,7 +1290,7 @@
     through2 "^2.0.0"
     watchify "3.11.1"
 
-"@cypress/code-coverage@3.8.6", "@cypress/code-coverage@^3.8.6":
+"@cypress/code-coverage@3.8.6":
   version "3.8.6"
   resolved "https://registry.yarnpkg.com/@cypress/code-coverage/-/code-coverage-3.8.6.tgz#a210751693ed7cb5ba0eb77774ac268b25cb820b"
   integrity sha512-KXTOEsca64BG/SR/N1HDUwZMe3KazyVcFDhtiHLDklu3v73PUDztIPsGAnBkqOa6vHqrjlPuC3lCVM53/F3pBA==
@@ -1301,6 +1301,19 @@
     globby "11.0.1"
     istanbul-lib-coverage "3.0.0"
     js-yaml "3.14.0"
+    nyc "15.1.0"
+
+"@cypress/code-coverage@^3.8.7":
+  version "3.8.7"
+  resolved "https://registry.yarnpkg.com/@cypress/code-coverage/-/code-coverage-3.8.7.tgz#c98decc8253a99cb808c99e70f5c857b76dd1e74"
+  integrity sha512-+kBKM5SGHe6KlsbKN4I9FebCK7CtylUUQJTQGerfEAKYK7tguEOETxfB+tWT8MxWMgxiR/Ovc0rWsp1ND+KBKQ==
+  dependencies:
+    "@cypress/browserify-preprocessor" "3.0.1"
+    debug "4.3.1"
+    execa "4.1.0"
+    globby "11.0.1"
+    istanbul-lib-coverage "3.0.0"
+    js-yaml "3.14.1"
     nyc "15.1.0"
 
 "@cypress/instrument-cra@^1.4.0":
@@ -8377,7 +8390,7 @@ js-yaml@3.14.0:
     argparse "^1.0.7"
     esprima "^4.0.0"
 
-js-yaml@^3.13.1:
+js-yaml@3.14.1, js-yaml@^3.13.1:
   version "3.14.1"
   resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.14.1.tgz#dae812fdb3825fa306609a8717383c50c36a0537"
   integrity sha512-okMH7OXXJ7YrN9Ok3/SXrnu4iX9yOk+25nqX4imS2npuvTYDmo/QEZoqwZkYaIDk3jVvBOTOIEgEhaLOynBS9g==
