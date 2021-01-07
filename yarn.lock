@@ -1307,10 +1307,10 @@
     js-yaml "3.14.0"
     nyc "15.1.0"
 
-"@cypress/code-coverage@^3.8.8":
-  version "3.8.8"
-  resolved "https://registry.yarnpkg.com/@cypress/code-coverage/-/code-coverage-3.8.8.tgz#3e82e89dd8ff9eeddefb5c50e63d7a3c09332458"
-  integrity sha512-QgO7mcy39dhoin1yzHF6YT+gC4u4+/3+xd0aJiWfNWElrQ+DVk3TKLC06Sk1c8BwhCXP/GYXs+CRFZH2lQpMzA==
+"@cypress/code-coverage@^3.9.0":
+  version "3.9.0"
+  resolved "https://registry.yarnpkg.com/@cypress/code-coverage/-/code-coverage-3.9.0.tgz#a687245e7b0b635fd780f381aad80fef268d2b6f"
+  integrity sha512-rwMoHZVZum8ACNxVM5PmfUT4RxN1HCeT0mmhMdM2XqFL3FB6yvPag0vVOupZtYj5xPdYML2q3G+6OyBtCIHAlw==
   dependencies:
     "@cypress/browserify-preprocessor" "3.0.1"
     debug "4.3.1"
