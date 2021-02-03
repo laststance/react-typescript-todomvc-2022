@@ -1,6 +1,6 @@
 import React from 'react'
 import { render } from '@testing-library/react'
-import { mount } from 'cypress-react-unit-test'
+import { mount } from '@cypress/react'
 import { AppState, recoilState } from './dataStructure'
 import { RenderResult } from '@testing-library/react'
 import { MutableSnapshot, RecoilRoot } from 'recoil'
