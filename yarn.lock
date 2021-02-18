@@ -1344,18 +1344,18 @@
     date-fns "^1.27.2"
     figures "^1.7.0"
 
-"@cypress/react@^4.16.4":
-  version "4.16.4"
-  resolved "https://registry.yarnpkg.com/@cypress/react/-/react-4.16.4.tgz#6a0d163e8668123633c12e7038d28f1354db19fa"
-  integrity sha512-VsipMv7uyNdIcXk70VrFpkGoll4MQ7uH7/zulHHQIi/EoEx9EkGwG4lyJRFpCLa+fiogZWTqFN5A2tsQ9zJgvg==
+"@cypress/react@^5.0.1":
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/@cypress/react/-/react-5.0.1.tgz#88399a1d348d175a11ae7bb9bd63799cef461259"
+  integrity sha512-UdcxmB7qVJJz4qIPkE2NFqKryCZ1ivQJK+UqaU3zFWWcnVUsUOcD+Oo1Zr/7rJivfSr/0c/Ll4reulJq3t1F8A==
   dependencies:
     "@babel/plugin-transform-modules-commonjs" "7.12.1"
     "@cypress/code-coverage" "3.8.6"
-    "@cypress/webpack-preprocessor" "5.5.0"
+    "@cypress/webpack-preprocessor" "5.6.0"
     babel-plugin-istanbul "6.0.0"
-    debug "4.3.1"
+    debug "4.3.2"
     find-up "5.0.0"
-    find-webpack "2.2.0"
+    find-webpack "2.2.1"
     mime-types "2.1.26"
     semver "7.3.2"
     unfetch "4.1.0"
@@ -1386,13 +1386,13 @@
     tunnel-agent "^0.6.0"
     uuid "^3.3.2"
 
-"@cypress/webpack-preprocessor@5.5.0":
-  version "5.5.0"
-  resolved "https://registry.yarnpkg.com/@cypress/webpack-preprocessor/-/webpack-preprocessor-5.5.0.tgz#e7010b2ee7449691cc16a9d5d1956af17ea175fd"
-  integrity sha512-iqwPygSNZ1u6bM3r5QRVv6qYngkcgI2xCzi9Jmo4mrkcofwX08UaItJq7xlB2/dHbB2aryQYOsfe4xNKtQIm3A==
+"@cypress/webpack-preprocessor@5.6.0":
+  version "5.6.0"
+  resolved "https://registry.yarnpkg.com/@cypress/webpack-preprocessor/-/webpack-preprocessor-5.6.0.tgz#9648ae22d2e52f17a604e2a493af27a9c96568bd"
+  integrity sha512-kSelTDe6gs3Skp4vPP2vfTvAl+Ua+9rR/AMTir7bgJihDvzFESqnjWtF6N1TrPo+vCFVGx0VUA6JUvDkhvpwhA==
   dependencies:
     bluebird "^3.7.1"
-    debug "^4.1.1"
+    debug "4.3.2"
     lodash "^4.17.20"
 
 "@cypress/xvfb@^1.2.4":
@@ -5147,6 +5147,13 @@ debug@4.2.0:
   dependencies:
     ms "2.1.2"
 
+debug@4.3.2:
+  version "4.3.2"
+  resolved "https://registry.yarnpkg.com/debug/-/debug-4.3.2.tgz#f0a49c18ac8779e31d4a0c6029dfb76873c7428b"
+  integrity sha512-mOp8wKcvj7XxC78zLgw/ZA+6TSgkoE2C/ienthhRD298T7UNwAg9diBpLRxC0mOezLl4B0xV7M0cCO6P/O0Xhw==
+  dependencies:
+    ms "2.1.2"
+
 debug@^3.1.0, debug@^3.1.1, debug@^3.2.5:
   version "3.2.7"
   resolved "https://registry.yarnpkg.com/debug/-/debug-3.2.7.tgz#72580b7e9145fb39b6676f9c5e5fb100b934179a"
@@ -6508,10 +6515,10 @@ find-up@^3.0.0:
   dependencies:
     locate-path "^3.0.0"
 
-find-webpack@2.2.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/find-webpack/-/find-webpack-2.2.0.tgz#c67638517bf5966ebbeef25857020afd341197c0"
-  integrity sha512-eWdunKuIRRuyL141m0Jaz+RoSOT0jSLfxH3FXnjPTLaMUwjXhbAg82UaCjUZTiYTJ+knSLFGNlxAuVAI6JweDA==
+find-webpack@2.2.1:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/find-webpack/-/find-webpack-2.2.1.tgz#96e7b701a2d37c3500cae30d4dc59e14923ba460"
+  integrity sha512-OdDtn2AzQvu3l9U1TS5ALc7uTVcLK/yv3fhjo+Pz7yuv4hG3ANKnbkKnPIPZ5ofd9mpYe6wRf5g5H4X9Lx48vQ==
   dependencies:
     debug "4.1.1"
     find-yarn-workspace-root "1.2.1"
