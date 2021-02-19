@@ -45,7 +45,7 @@
     "@types/styled-components": "^5.1.7",
     "all-contributors-cli": "^6.19.0",
     "check-code-coverage": "^1.10.0",
-    "cypress": "^6.4.0",
+    "cypress": "^6.5.0",
     "eslint-config-prettier": "^7.2.0",
     "eslint-config-typescript": "^3.0.0",
     "eslint-plugin-prettier": "^3.3.1",
