@@ -46,7 +46,7 @@
     "all-contributors-cli": "^6.20.0",
     "check-code-coverage": "^1.10.0",
     "cypress": "^6.6.0",
-    "eslint-config-prettier": "^7.2.0",
+    "eslint-config-prettier": "^8.1.0",
     "eslint-config-typescript": "^3.0.0",
     "eslint-plugin-prettier": "^3.3.1",
     "prettier": "^2.2.1",
