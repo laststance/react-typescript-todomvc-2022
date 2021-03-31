@@ -1312,12 +1312,13 @@
     js-yaml "3.14.0"
     nyc "15.1.0"
 
-"@cypress/code-coverage@^3.9.3":
-  version "3.9.3"
-  resolved "https://registry.yarnpkg.com/@cypress/code-coverage/-/code-coverage-3.9.3.tgz#c01f6b5d81709fb66e8a70e2c5bed3087936afae"
-  integrity sha512-PkqAYwwsAbH0azek5yUflPPyqNfJ38QPk0hvEOptJvBzQ/oheDpQgF+3mezYEHIzYnk4ko186Dc7BB9API+Hzg==
+"@cypress/code-coverage@^3.9.4":
+  version "3.9.4"
+  resolved "https://registry.yarnpkg.com/@cypress/code-coverage/-/code-coverage-3.9.4.tgz#1e82b7061d7b136a99b464e2730d4cf40167bac9"
+  integrity sha512-mFUl1MmfqeQe08eONKnAv9uWXRVW2RprqaYf3lJkI5tEhEAP+I9zB+cmjQWKe15vfmadKxqaLStVNYLM0rpYGA==
   dependencies:
     "@cypress/browserify-preprocessor" "3.0.1"
+    dayjs "1.10.4"
     debug "4.3.1"
     execa "4.1.0"
     globby "11.0.3"
@@ -5192,7 +5193,7 @@ date-fns@^1.27.2:
   resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-1.30.1.tgz#2e71bf0b119153dbb4cc4e88d9ea5acfb50dc05c"
   integrity sha512-hBSVCvSmWC+QypYObzwGOd9wqdDpOt+0wl0KbU+R+uuZBS1jN8VsD1ss3irQDknRj5NvxiTF6oj/nDRnN/UQNw==
 
-dayjs@^1.9.3:
+dayjs@1.10.4, dayjs@^1.9.3:
   version "1.10.4"
   resolved "https://registry.yarnpkg.com/dayjs/-/dayjs-1.10.4.tgz#8e544a9b8683f61783f570980a8a80eaf54ab1e2"
   integrity sha512-RI/Hh4kqRc1UKLOAf/T5zdMMX5DQIlDxwUe3wSyMMnEbGunnpENCdbUgM+dW7kXidZqCttBrmw7BhN4TMddkCw==
