@@ -33,7 +33,7 @@
     "@cypress/instrument-cra": "^1.4.0",
     "@cypress/react": "^4.16.4",
     "@percy/cypress": "^2.3.4",
-    "@testing-library/cypress": "^7.0.3",
+    "@testing-library/cypress": "^7.0.5",
     "@testing-library/jest-dom": "^5.11.10",
     "@testing-library/react": "^11.2.5",
     "@types/cypress": "^1.1.3",
