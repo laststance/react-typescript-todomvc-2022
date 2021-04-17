@@ -81,14 +81,25 @@ test('should work edit mode and toggle show/hide', () => {
   fireEvent.change(screen.getByTestId('todo-edit-input'), {
     target: { value: 'cut tomato plus' },
   })
-  fireEvent.keyPress(screen.getByTestId('todo-edit-input'), {
-    key: 'Enter',
-    code: 13,
-    charCode: 13, // I had issue that doesn't trigger keyPress event relevant charCode. https://github.com/testing-library/react-testing-library/issues/269
-  })
+  fireEvent.keyDown(screen.getByTestId('todo-edit-input'), { key: 'Enter' })
 
   expect(screen.getByTestId('todo-body-text')).toHaveTextContent(
     'cut tomato plus'
+  )
+  expect(screen.getByTestId('todo-item')).not.toHaveClass('editing')
+  expect(screen.getByTestId('todo-edit-input')).not.toBeVisible()
+
+  // double click todo text label, then focus and enable todo text edit code
+  fireEvent.doubleClick(screen.getByTestId('todo-body-text'))
+  expect(screen.getByTestId('todo-item')).toHaveClass('editing')
+  expect(screen.getByTestId('todo-edit-input')).toBeVisible()
+  expect(screen.getByTestId('todo-edit-input')).toHaveFocus()
+  fireEvent.change(screen.getByTestId('todo-edit-input'), {
+    target: { value: 'cut tomato plus plus' },
+  })
+  fireEvent.keyDown(screen.getByTestId('todo-edit-input'), { key: 'Escape' })
+  expect(screen.getByTestId('todo-body-text')).toHaveTextContent(
+    'cut tomato plus plus'
   )
   expect(screen.getByTestId('todo-item')).not.toHaveClass('editing')
   expect(screen.getByTestId('todo-edit-input')).not.toBeVisible()
