@@ -134,7 +134,7 @@ const Item: React.FC<Props> = ({ todo }) => {
           className="edit"
           value={todo.bodyText}
           onChange={(e: React.ChangeEvent<HTMLInputElement>) => handleTodoTextEdit(e, todo.id)} /* eslint-disable-line prettier/prettier */
-          onKeyPress={(e: React.KeyboardEvent<HTMLInputElement>) => submitEditText(e)} /* eslint-disable-line prettier/prettier */
+          onKeyDown={(e: React.KeyboardEvent<HTMLInputElement>) => submitEditText(e)} /* eslint-disable-line prettier/prettier */
           data-cy="todo-edit-input"
           data-testid="todo-edit-input"
         />
