@@ -56,6 +56,16 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "hefengxian",
+      "name": "hefengxian",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4338497?v=4",
+      "profile": "https://github.com/hefengxian",
+      "contributions": [
+        "code",
+        "test"
+      ]
     }
   ],
   "contributorsPerLine": 7,
