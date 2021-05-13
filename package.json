@@ -31,7 +31,7 @@
   "devDependencies": {
     "@cypress/code-coverage": "^3.9.5",
     "@cypress/instrument-cra": "^1.4.0",
-    "@cypress/react": "^4.16.4",
+    "@cypress/react": "^5.7.0",
     "@percy/cypress": "^2.3.4",
     "@testing-library/cypress": "^7.0.6",
     "@testing-library/jest-dom": "^5.12.0",
