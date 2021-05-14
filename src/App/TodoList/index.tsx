@@ -42,11 +42,9 @@ const TodoList: React.FC<Props> = ({ path }) => {
                   return true
               }
             })
-            .map(
-              (t: Todo): ReactElement => {
-                return <Item key={t.id} todo={t} />
-              }
-            )}
+            .map((t: Todo): ReactElement => {
+              return <Item key={t.id} todo={t} />
+            })}
         </ul>
       </section>
     </Layout>

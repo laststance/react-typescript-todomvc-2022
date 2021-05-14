@@ -83,21 +83,19 @@ const Item: React.FC<Props> = ({ todo }) => {
   }
 
   const handleTodoTextEdit = (e: React.ChangeEvent<HTMLInputElement>, onEdit: Todo['id']): void => { /* eslint-disable-line prettier/prettier */
-    const edited = appState.todoList.map(
-      (t: Todo): Todo => {
-        if (t.id === onEdit) {
-          return { ...t, bodyText: e.target.value }
-        } else {
-          return t
-        }
+    const edited = appState.todoList.map((t: Todo): Todo => {
+      if (t.id === onEdit) {
+        return { ...t, bodyText: e.target.value }
+      } else {
+        return t
       }
-    )
+    })
 
     setAppState({ todoList: edited })
   }
 
   useEffect(() => {
-    // For fucus input element when double clicks text label. fix this https://github.com/laststance/create-react-app-typescript-todo-example-2020/issues/50
+    // For fucus input element when double clicks text label. fix this https://github.com/laststance/create-react-app-typescript-todo-example-2021/issues/50
     if (state.onEdit === true && editInput.current !== null)
       editInput.current.focus()
   }, [editInput, state.onEdit])
