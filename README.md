@@ -158,7 +158,6 @@ Please feel free to post [New Issue](https://github.com/laststance/create-react-
 
 If you want to get more generally answers, these community are might be helpful 🍻
 
-- [Spectrum](https://spectrum.chat/react?tab=posts)
 - [Reactiflux on Discord](https://www.reactiflux.com/)
 - [Stack Overflow](https://stackoverflow.com/questions/tagged/reactjs)
 
