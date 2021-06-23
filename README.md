@@ -23,7 +23,7 @@ This is a [Create React App](https://facebook.github.io/create-react-app/) based
 ## Stack
 
 - [TODO-CSS-Template](https://github.com/Klerith/TODO-CSS-Template)(Borrowing HTML & CSS Thanks! 👍 )
-- [Create React App](https://facebook.github.io/create-react-app/) [v4.0.1](https://github.com/facebook/create-react-app/releases/tag/v4.0.1) (**Without eject**)
+- [Create React App](https://github.com/facebook/create-react-app/releases/tag/v4.0.3) [v4.0.3](https://github.com/facebook/create-react-app/releases/tag/v4.0.3) (**Without eject**)
 - [TypeScript](https://www.typescriptlang.org/) [v4.0.5](https://github.com/microsoft/TypeScript/releases/tag/v4.0.5)
 - [ReachRouter](https://github.com/reach/router)
 - [Styled-Components](https://styled-components.com/): CSS-in-JS
