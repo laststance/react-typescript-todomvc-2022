@@ -31,7 +31,7 @@ At that time, I thought there is a demand to keep updating and publishing with a
 
 ## Stack
 
-- [TODO-CSS-Template](https://github.com/Klerith/TODO-CSS-Template)(Borrowing HTML & CSS Thanks! 👍 )
+- [TODO-CSS-Template](https://github.com/Klerith/TODO-CSS-Template) (Borrowing HTML & CSS Thanks! 👍 )
 - [Create React App](https://github.com/facebook/create-react-app/releases/tag/v4.0.3) [v4.0.3](https://github.com/facebook/create-react-app/releases/tag/v4.0.3) (**Without eject**)
 - [TypeScript](https://www.typescriptlang.org/) [v4.2.4](https://github.com/microsoft/TypeScript/releases/tag/v4.2.4)
 - [ReachRouter](https://github.com/reach/router)
