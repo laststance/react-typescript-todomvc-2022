@@ -52,16 +52,25 @@ At that time, I thought there is a demand to keep updating and publishing with a
 
 - The app assumed installed `Node.js` newer than `10.16.3 LTS`(recommend newer than v14.8.0).
   If you have not it yet, follow the official [Node.js Doc](https://nodejs.org/en/) to install it.
-
-**And then**
+  
 
 ```bash
 git clone git@github.com:laststance/create-react-app-typescript-todo-example-2021.git
-cd create-react-app-typescript-todo-example-2021
-yarn install # or npm install
-yarn start # or npm run start
-# Will auto launch todo app on your default browser and code edit ready 
 ```
+
+```bash
+cd create-react-app-typescript-todo-example-2021
+```
+
+```bash
+yarn install
+```
+
+```bash
+yarn start
+```
+
+after that auto launch todo app on your default browser and code edit ready.
 
 ## 👩‍💻 Usage
 
