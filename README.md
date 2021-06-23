@@ -13,7 +13,7 @@
 <a href="https://create-react-app-typescript-todo-example.netlify.com/"><img src="https://raw.githubusercontent.com/laststance/create-react-app-typescript-todo-example-2021/master/images/cypress_open.gif" alt="gif"></a>
  
 
-## A Modern Code Style Todo Example
+## A Modern Code Style Todo Example 📝
 
 This project was started with the goal of continuing to publish Todo Example Apps in the latest React writing style.  
 
