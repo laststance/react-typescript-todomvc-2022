@@ -13,12 +13,21 @@
 <a href="https://create-react-app-typescript-todo-example.netlify.com/"><img src="https://raw.githubusercontent.com/laststance/create-react-app-typescript-todo-example-2021/master/images/cypress_open.gif" alt="gif"></a>
  
 
-## What's this?
+## A Modern Code Style Todo Example
 
-This is a [Create React App](https://facebook.github.io/create-react-app/) based [React](https://reactjs.org/) + [TypeScript](https://www.typescriptlang.org/) todo app example. 👉 [**Deployed App**](https://create-react-app-typescript-todo-example.netlify.com)  
-[TypeScript](https://www.typescriptlang.org/) coming from babel, set upped at [Create React App](https://facebook.github.io/create-react-app/) install option. [Adding TypeScript Doc](https://facebook.github.io/create-react-app/docs/adding-typescript#docsNav) 📝
+This project was started with the goal of continuing to publish Todo Example Apps in the latest React writing style.  
+
+When React Hooks came out in autumn 2018, I was looking for todo apps that written by new style Function Component and Hooks to learn how to use them in real applications but I couldn't find any at that time.
+
+Not only that, many of the results were written in ES5 (using React.createClass() API), which was an older JavaScript generation in autumn 2018.
+At that time, I thought there is a demand to keep updating and publishing with a modern code style even it is simple example like Todo App.
+  
+  
+　  
 
 [![Edit create-react-app-typescript-todo-example-2021](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/quizzical-blackwell-bvfc5?fontsize=14&hidenavigation=1&theme=dark)
+
+---------------
 
 ## Stack
 
@@ -51,9 +60,8 @@ git clone git@github.com:laststance/create-react-app-typescript-todo-example-202
 cd create-react-app-typescript-todo-example-2021
 yarn install # or npm install
 yarn start # or npm run start
+# Will auto launch todo app on your default browser and code edit ready 
 ```
-
-**Finally Edit Code** 😎
 
 ## 👩‍💻 Usage
 
@@ -139,10 +147,6 @@ There are tons of effective way to create solid software in JavaScript World, yo
 "_How to combining TypeScript with massive Babel or JavaScript tools ecosystem?_"
 
 **I hope this helps you know like that from what I've Published!**
-
-### How the project was bootstrapped?
-
-**1. Execute command for scaffold [Create React App's TypeScript Templete](https://create-react-app.dev/docs/getting-started#creating-a-typescript-app).**
 
 ```
 npx create-react-app create-react-app-typescript-todo-example-2021 --template typescript
