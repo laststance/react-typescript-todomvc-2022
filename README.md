@@ -15,16 +15,19 @@
 
 ## A Modern Code Style Todo Example 📝
 
-This project was started with the goal of continuing to publish Todo Example Apps in the latest React writing style.  
+This project was started with the goal of continuing to publish Todo Example Apps in the latest [React](https://reactjs.org/) writing style.  
 
-When React Hooks came out in autumn 2018, I was looking for todo apps that written by new style Function Component and Hooks to learn how to use them in real applications but I couldn't find any at that time.
+When [React Hooks unveiled in autumn 2018](https://reactjs.org/blog/2018/11/13/react-conf-recap.html), I was looking for todo apps that written by new style [Function Component](https://reactjs.org/docs/components-and-props.html#function-and-class-components) and [Hooks](https://reactjs.org/docs/hooks-intro.html) to learn how to use them in real applications but I couldn't find any at that time.
 
-Not only that, many of the results were written in ES5 (using React.createClass() API), which was an older JavaScript generation in autumn 2018.
-At that time, I thought there is a demand to keep updating and publishing with a modern code style even it is simple example like Todo App.
-  
-  
+Not only that, many of the results were written in [ES5](https://en.wikipedia.org/wiki/ECMAScript#5th_Edition) (using React.createClass() API), which was an older JavaScript generation in autumn 2018.
+At that time, I thought there is a demand to keep updating and publishing with a modern code style even it is simple example like Todo App.  
+
+The project is targeting for who have completed a basic JavaScript programming course and new to React, peaople who migrating to React from another JavaScript Framework, and you have used to React in the past and want to catch up on the modern way for write back again.  
+
+I'm glad to even the repo could be useful for your learning. 🤗
 　  
-
+　  
+  
 [![Edit create-react-app-typescript-todo-example-2021](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/quizzical-blackwell-bvfc5?fontsize=14&hidenavigation=1&theme=dark)
 
 ---------------
