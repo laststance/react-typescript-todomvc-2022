@@ -11,18 +11,11 @@
 // This function is called when a project is opened or re-opened (e.g. due to
 // the project's config changing)
 
-// eslint-disable-next-line @typescript-eslint/no-var-requires
-const percyHealthCheck = require('@percy/cypress/task')
-
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 module.exports = (on, config) => {
   // eslint-disable-next-line @typescript-eslint/no-var-requires
-  require('@cypress/code-coverage/task')(on, config)
-  // eslint-disable-next-line @typescript-eslint/no-var-requires
   require('@cypress/react/plugins/react-scripts')(on, config)
-  // `on` is used to hook into various events Cypress emits
-  // `config` is the resolved Cypress config
-  on('task', percyHealthCheck)
-
+  // IMPORTANT to return the config object
+  // with the any changed environment variables
   return config
 }
