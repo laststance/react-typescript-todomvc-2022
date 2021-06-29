@@ -31,7 +31,7 @@
     "@cypress/instrument-cra": "^1.4.0",
     "@cypress/react": "^5.9.1",
     "@cypress/webpack-dev-server": "^1.4.0",
-    "@percy/cli": "^1.0.0-beta.56",
+    "@percy/cli": "^1.0.0-beta.57",
     "@percy/cypress": "^3.1.0",
     "@testing-library/cypress": "^7.0.6",
     "@testing-library/jest-dom": "^5.14.1",
