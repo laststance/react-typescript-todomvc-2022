@@ -27,7 +27,7 @@
     "styled-components": "^5.3.0"
   },
   "devDependencies": {
-    "@cypress/code-coverage": "^3.9.7",
+    "@cypress/code-coverage": "^3.9.8",
     "@cypress/instrument-cra": "^1.4.0",
     "@cypress/react": "^5.9.1",
     "@cypress/webpack-dev-server": "^1.4.0",
