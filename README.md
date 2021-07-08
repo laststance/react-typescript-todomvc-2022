@@ -141,7 +141,7 @@ yarn start # Launch DevServer
 yarn cypress:run
 ```
 
-### `yarn cypress:run:leadless`
+### `yarn cypress:run:headless`
 
 Run Cypress with headless [Electron](https://www.electronjs.org/).  
 That mean this command complete all on a terminal without GUI.
