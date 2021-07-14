@@ -160,10 +160,6 @@ There are tons of effective way to create solid software in JavaScript World, yo
 
 **I hope this helps you know like that from what I've Published!**
 
-```
-npx create-react-app create-react-app-typescript-todo-example-2021 --template typescript
-```
-
 ## Issues
 
 Please feel free to post [New Issue](https://github.com/laststance/create-react-app-typescript-todo-example-2021/issues/new) or Pull Request 🤗
