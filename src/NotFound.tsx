@@ -9,7 +9,7 @@ const css: React.CSSProperties = {
   alignItems: 'center',
 }
 
-export const NotFound: React.FC<RouteComponentProps> = (props) => (
+export const NotFound: React.FC<RouteComponentProps> = () => (
   <div data-cy="not-found-page" style={css}>
     <h1>Page Not Found</h1>
   </div>

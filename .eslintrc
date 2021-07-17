@@ -1,20 +1,41 @@
 {
+  "root": true,
   "extends": [
-    "react-app",
-    "plugin:@typescript-eslint/recommended",
-    "prettier",
+    'eslint:recommended',
+    'plugin:@typescript-eslint/recommended',
+    "plugin:jsx-a11y/recommended",
+    "plugin:react-hooks/recommended"
   ],
   "parser": "@typescript-eslint/parser",
   "plugins": [
+    "jsx-a11y",
+    "import",
     "react-hooks",
     "@typescript-eslint",
-    "prettier"
+    "prettier",
+    "cypress"
   ],
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true,
+    "jest": true,
+    "cypress/globals": true
+  },
   "globals": {
-    "context": "readonly",
-    "cy": "readonly",
-    "assert": "readonly",
-    "Cypress": "readonly"
+    "JSX": "readonly"
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [
+          ".js",
+          ".jsx",
+          ".ts",
+          ".tsx"
+        ]
+      }
+    }
   },
   "rules": {
     "prettier/prettier": [
@@ -24,18 +45,15 @@
         "semi": false
       }
     ],
-    "no-unused-vars": "off",
-    "no-undef": "off",
-    "no-console": "warn",
-    "no-use-before-define": "off",
-    "jsx-a11y/href-no-hash": "off",
-    "react-hooks/rules-of-hooks": "error",
-    "react-hooks/exhaustive-deps": "warn",
-    "@typescript-eslint/no-unused-vars": "error",
-    "@typescript-eslint/no-use-before-define": "off",
-    "@typescript-eslint/explicit-function-return-type": "off",
-    "@typescript-eslint/camelcase": "off",
-    "@typescript-eslint/explicit-member-accessibility": "off",
-    "@typescript-eslint/ban-ts-ignore": "off"
+    "import/no-unresolved": "error",
+    "import/named": "error",
+    "import/namespace": "error",
+    "import/default": "error",
+    "import/export": "error",
+    "import/no-named-as-default": "warn",
+    "import/no-named-as-default-member": "warn",
+    "import/no-duplicates": "warn",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/ban-ts-comment": "off"
   }
 }
