@@ -55,5 +55,17 @@
     "import/no-duplicates": "warn",
     "@typescript-eslint/no-explicit-any": "off",
     "@typescript-eslint/ban-ts-comment": "off"
-  }
+  },
+  "overrides": [
+    {
+      "files": [
+        "*.js"
+      ],
+      "rules": {
+        "@typescript-eslint/explicit-module-boundary-types": [
+          "off"
+        ]
+      }
+    }
+  ]
 }
