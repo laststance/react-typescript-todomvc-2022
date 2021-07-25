@@ -32,6 +32,32 @@ I'm glad to even the repo could be useful for your learning. 🤗
 
 ---------------
 
+## Getting Started
+
+### 🔧 prerequisites
+
+- The app assumed installed `Node.js` newer than `10.16.3 LTS`(recommend newer than v14.8.0).
+  If you have not it yet, follow the official [Node.js Doc](https://nodejs.org/en/) to install it.
+  
+
+```bash
+npx degit laststance/create-react-app-typescript-todo-example-2021 create-react-app-typescript-todo-example-2021
+```
+
+```bash
+cd create-react-app-typescript-todo-example-2021
+```
+
+```bash
+yarn install
+```
+
+```bash
+yarn start
+```
+
+after that auto launch todo app on your default browser and code edit ready.
+
 ## Stack
 
 - [TODO-CSS-Template](https://github.com/Klerith/TODO-CSS-Template) (Borrowing HTML & CSS Thanks! 👍 )
@@ -48,32 +74,6 @@ I'm glad to even the repo could be useful for your learning. 🤗
 - [Netlify](https://www.netlify.com/): Deploy & Hosting
 - [Github Actions](https://github.com/features/actions): Automation run tests, lint, typecheck, build
 - [Depfu](https://depfu.com/github/ryota-murakami/create-react-app-typescript-todo-example-2021?project_id=9618): Keep latest npm packages automaticaly
-
-## Installation
-
-### 🔧 Prerequisites
-
-- The app assumed installed `Node.js` newer than `10.16.3 LTS`(recommend newer than v14.8.0).
-  If you have not it yet, follow the official [Node.js Doc](https://nodejs.org/en/) to install it.
-  
-
-```bash
-git clone git@github.com:laststance/create-react-app-typescript-todo-example-2021.git
-```
-
-```bash
-cd create-react-app-typescript-todo-example-2021
-```
-
-```bash
-yarn install
-```
-
-```bash
-yarn start
-```
-
-after that auto launch todo app on your default browser and code edit ready.
 
 ## 👩‍💻 Usage
 
