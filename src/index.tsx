@@ -15,16 +15,18 @@ interface Props {
 const Controller: React.FC<Props> = ({ path }) => <App path={path} />
 
 ReactDOM.render(
-  <ErrorBoundary>
-    <RecoilRoot>
-      <Router>
-        <Controller path="/" />
-        <Controller path="/active" />
-        <Controller path="/completed" />
-        <NotFound default />
-      </Router>
-    </RecoilRoot>
-  </ErrorBoundary>,
+  <React.StrictMode>
+    <ErrorBoundary>
+      <RecoilRoot>
+        <Router>
+          <Controller path="/" />
+          <Controller path="/active" />
+          <Controller path="/completed" />
+          <NotFound default />
+        </Router>
+      </RecoilRoot>
+    </ErrorBoundary>
+  </React.StrictMode>,
   document.getElementById('root')
 )
 
