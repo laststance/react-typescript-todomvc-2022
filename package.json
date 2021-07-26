@@ -29,7 +29,7 @@
   "devDependencies": {
     "@cypress/code-coverage": "^3.9.8",
     "@cypress/instrument-cra": "^1.4.0",
-    "@cypress/react": "^5.9.1",
+    "@cypress/react": "^5.9.2",
     "@cypress/webpack-dev-server": "^1.4.0",
     "@percy/cli": "^1.0.0-beta.57",
     "@percy/cypress": "^3.1.0",
