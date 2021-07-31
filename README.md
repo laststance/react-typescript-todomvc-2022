@@ -34,8 +34,6 @@ I'm glad to even the repo could be useful for your learning. 🤗
 
 ## Getting Started
 
-### 🔧 prerequisites
-
 - The app assumed installed `Node.js` newer than `10.16.3 LTS`(recommend newer than v14.8.0).
   If you have not it yet, follow the official [Node.js Doc](https://nodejs.org/en/) to install it.
   
