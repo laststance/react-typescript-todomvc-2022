@@ -1275,10 +1275,10 @@
   dependencies:
     regenerator-runtime "^0.12.0"
 
-"@babel/runtime@^7.10.2", "@babel/runtime@^7.11.2", "@babel/runtime@^7.12.5", "@babel/runtime@^7.14.5", "@babel/runtime@^7.5.5", "@babel/runtime@^7.7.2", "@babel/runtime@^7.7.6", "@babel/runtime@^7.8.4", "@babel/runtime@^7.9.2":
-  version "7.14.6"
-  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.14.6.tgz#535203bc0892efc7dec60bdc27b2ecf6e409062d"
-  integrity sha512-/PCB2uJ7oM44tz8YhC4Z/6PeOKXp4K588f+5M3clr1M4zbqztlo0XEfJ2LEzj/FgwfgGcIdl8n7YYjTCI0BYwg==
+"@babel/runtime@^7.10.2", "@babel/runtime@^7.11.2", "@babel/runtime@^7.12.5", "@babel/runtime@^7.14.5", "@babel/runtime@^7.14.6", "@babel/runtime@^7.5.5", "@babel/runtime@^7.7.2", "@babel/runtime@^7.7.6", "@babel/runtime@^7.8.4", "@babel/runtime@^7.9.2":
+  version "7.14.8"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.14.8.tgz#7119a56f421018852694290b9f9148097391b446"
+  integrity sha512-twj3L8Og5SaCRCErB4x4ajbvBIVV77CGeFglHpeg5WC5FF8TZzBWXtTJ4MqaD9QszLYTtr+IsaAL2rEUevb+eg==
   dependencies:
     regenerator-runtime "^0.13.4"
 
@@ -1390,10 +1390,10 @@
   resolved "https://registry.yarnpkg.com/@cypress/mount-utils/-/mount-utils-1.0.2.tgz#afbc4f8c350b7cd86edc5ad0db0cbe1e0181edc8"
   integrity sha512-Fn3fdTiyayHoy8Ol0RSu4MlBH2maQ2ZEXeEVKl/zHHXEQpld5HX3vdNLhK5YLij8cLynA4DxOT/nO9iEnIiOXw==
 
-"@cypress/react@^5.9.1":
-  version "5.9.1"
-  resolved "https://registry.yarnpkg.com/@cypress/react/-/react-5.9.1.tgz#aadc077eee4e55b802c35f9b9f75114cda2d677c"
-  integrity sha512-VZb61ejlcYnOGUj5Ju5kyBvUSpOckkaSJoiQjYgtWJfWZ4nnbv74aMoSSWutoj7YKgaLEBkD0iAMYN1eoTygRA==
+"@cypress/react@^5.9.2":
+  version "5.9.2"
+  resolved "https://registry.yarnpkg.com/@cypress/react/-/react-5.9.2.tgz#edd0cd62efcfa1ce08d1754d48e9ea0299e6dfc7"
+  integrity sha512-0LPuHgxKlK99T6haxPxZcH233D4ffiVx4NIjoOuFRowLCKA7DOcGavbMVwour1vYLbL/yHRy1SwsuuVoSsSwJA==
   dependencies:
     "@cypress/mount-utils" "1.0.2"
     debug "4.3.2"
@@ -1931,10 +1931,10 @@
     rimraf "^3.0.2"
     ws "^7.4.1"
 
-"@percy/cypress@^3.1.0":
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/@percy/cypress/-/cypress-3.1.0.tgz#19533772739b35759c30e3edd3070922f6ea6b6d"
-  integrity sha512-x4RPo7vMEGA6hmLbQIFwawZZlmiZknhSqPyzckxXgj8VyoW17QQOINxZo/DZTfV0UoUVOzNoHNrJcV3XJnN4FQ==
+"@percy/cypress@^3.1.1":
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/@percy/cypress/-/cypress-3.1.1.tgz#4e7c5bdeccf1240b2150fc9d608df72c2f213d4b"
+  integrity sha512-khvWmCOJW7pxwDZPB5ovvbSe11FfNtH8Iyq8PHRYLD9ibAkiAWHZVs07bLK5wju1Q9X8s7zg5uj2yWxIlB1yjA==
   dependencies:
     "@percy/sdk-utils" "^1.0.0-beta.44"
 
@@ -2137,29 +2137,15 @@
     "@svgr/plugin-svgo" "^5.5.0"
     loader-utils "^2.0.0"
 
-"@testing-library/cypress@^7.0.6":
-  version "7.0.6"
-  resolved "https://registry.yarnpkg.com/@testing-library/cypress/-/cypress-7.0.6.tgz#5445dac4f4852c26901c356e9d3a69371bd20ccf"
-  integrity sha512-atnjqlkEt6spU4Mv7evvpA8fMXeRw7AN2uTKOR1dP6WBvBixVwAYMZY+1fMOaZULWAj9vGLCXXvmw++u3TxuCQ==
+"@testing-library/cypress@^8.0.0":
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/@testing-library/cypress/-/cypress-8.0.0.tgz#290d9bd7d60a3398e9fd965cb45764023f8fcc05"
+  integrity sha512-hx1YYzS6oqQTMiQcTCqoEpB/sYOZWXDDyPw1Akr+LVLDFLRbvOG/lLVI4wpb12dJ2AzPm5dYjLGh5w3hbx/mGQ==
   dependencies:
-    "@babel/runtime" "^7.12.5"
-    "@testing-library/dom" "^7.28.1"
+    "@babel/runtime" "^7.14.6"
+    "@testing-library/dom" "^8.1.0"
 
-"@testing-library/dom@^7.28.1":
-  version "7.31.2"
-  resolved "https://registry.yarnpkg.com/@testing-library/dom/-/dom-7.31.2.tgz#df361db38f5212b88555068ab8119f5d841a8c4a"
-  integrity sha512-3UqjCpey6HiTZT92vODYLPxTBWlM8ZOOjr3LX5F37/VRipW2M1kX6I/Cm4VXzteZqfGfagg8yXywpcOgQBlNsQ==
-  dependencies:
-    "@babel/code-frame" "^7.10.4"
-    "@babel/runtime" "^7.12.5"
-    "@types/aria-query" "^4.2.0"
-    aria-query "^4.2.2"
-    chalk "^4.1.0"
-    dom-accessibility-api "^0.5.6"
-    lz-string "^1.4.4"
-    pretty-format "^26.6.2"
-
-"@testing-library/dom@^8.0.0":
+"@testing-library/dom@^8.0.0", "@testing-library/dom@^8.1.0":
   version "8.1.0"
   resolved "https://registry.yarnpkg.com/@testing-library/dom/-/dom-8.1.0.tgz#f8358b1883844ea569ba76b7e94582168df5370d"
   integrity sha512-kmW9alndr19qd6DABzQ978zKQ+J65gU2Rzkl8hriIetPnwpesRaK4//jEQyYh8fEALmGhomD/LBQqt+o+DL95Q==
@@ -2329,10 +2315,10 @@
   resolved "https://registry.yarnpkg.com/@types/minimatch/-/minimatch-3.0.5.tgz#1001cc5e6a3704b83c236027e77f2f58ea010f40"
   integrity sha512-Klz949h02Gz2uZCMGwDUSDS1YBlTdDDgbWHi+81l29tQALUtvz4rAYi5uoVhE5Lagoq6DeqAUlbrHvW/mXDgdQ==
 
-"@types/node@*", "@types/node@^16.0.1":
-  version "16.3.1"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-16.3.1.tgz#24691fa2b0c3ec8c0d34bfcfd495edac5593ebb4"
-  integrity sha512-N87VuQi7HEeRJkhzovao/JviiqKjDKMVKxKMfUvSKw+MbkbW8R0nA3fi/MQhhlxV2fQ+2ReM+/Nt4efdrJx3zA==
+"@types/node@*", "@types/node@^16.4.6":
+  version "16.4.6"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-16.4.6.tgz#1734d119dfa8fede5606d35ae10f9fc9c84d889b"
+  integrity sha512-FKyawK3o5KL16AwbeFajen8G4K3mmqUrQsehn5wNKs8IzlKHE8TfnSmILXVMVziAEcnB23u1RCFU1NT6hSyr7Q==
 
 "@types/node@^14.14.31":
   version "14.17.5"
@@ -2378,10 +2364,10 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react@*", "@types/react@^17.0.14":
-  version "17.0.14"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.14.tgz#f0629761ca02945c4e8fea99b8177f4c5c61fb0f"
-  integrity sha512-0WwKHUbWuQWOce61UexYuWTGuGY/8JvtUe/dtQ6lR4sZ3UiylHotJeWpf3ArP9+DSGUoLY3wbU59VyMrJps5VQ==
+"@types/react@*", "@types/react@^17.0.15":
+  version "17.0.15"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.15.tgz#c7533dc38025677e312606502df7656a6ea626d0"
+  integrity sha512-uTKHDK9STXFHLaKv6IMnwp52fm0hwU+N89w/p9grdUqcFA6WuqDyPhaWopbNyE1k/VhgzmHl8pu1L4wITtmlLw==
   dependencies:
     "@types/prop-types" "*"
     "@types/scheduler" "*"
@@ -5004,57 +4990,10 @@ cyclist@^1.0.1:
   resolved "https://registry.yarnpkg.com/cyclist/-/cyclist-1.0.1.tgz#596e9698fd0c80e12038c2b82d6eb1b35b6224d9"
   integrity sha1-WW6WmP0MgOEgOMK4LW6xs1tiJNk=
 
-cypress@*:
-  version "7.7.0"
-  resolved "https://registry.yarnpkg.com/cypress/-/cypress-7.7.0.tgz#0839ae28e5520536f9667d6c9ae81496b3836e64"
-  integrity sha512-uYBYXNoI5ym0UxROwhQXWTi8JbUEjpC6l/bzoGZNxoKGsLrC1SDPgIDJMgLX/MeEdPL0UInXLDUWN/rSyZUCjQ==
-  dependencies:
-    "@cypress/request" "^2.88.5"
-    "@cypress/xvfb" "^1.2.4"
-    "@types/node" "^14.14.31"
-    "@types/sinonjs__fake-timers" "^6.0.2"
-    "@types/sizzle" "^2.3.2"
-    arch "^2.2.0"
-    blob-util "^2.0.2"
-    bluebird "^3.7.2"
-    cachedir "^2.3.0"
-    chalk "^4.1.0"
-    check-more-types "^2.24.0"
-    cli-cursor "^3.1.0"
-    cli-table3 "~0.6.0"
-    commander "^5.1.0"
-    common-tags "^1.8.0"
-    dayjs "^1.10.4"
-    debug "^4.3.2"
-    enquirer "^2.3.6"
-    eventemitter2 "^6.4.3"
-    execa "4.1.0"
-    executable "^4.1.1"
-    extract-zip "2.0.1"
-    figures "^3.2.0"
-    fs-extra "^9.1.0"
-    getos "^3.2.1"
-    is-ci "^3.0.0"
-    is-installed-globally "~0.4.0"
-    lazy-ass "^1.6.0"
-    listr2 "^3.8.3"
-    lodash "^4.17.21"
-    log-symbols "^4.0.0"
-    minimist "^1.2.5"
-    ospath "^1.2.2"
-    pretty-bytes "^5.6.0"
-    ramda "~0.27.1"
-    request-progress "^3.0.0"
-    supports-color "^8.1.1"
-    tmp "~0.2.1"
-    untildify "^4.0.0"
-    url "^0.11.0"
-    yauzl "^2.10.0"
-
-cypress@7.6.0:
-  version "7.6.0"
-  resolved "https://registry.yarnpkg.com/cypress/-/cypress-7.6.0.tgz#80fe7496cd4165a0fa06e25fc11413dda4544463"
-  integrity sha512-tTwQExY28CKt6cY85/2V1uLExcMfpBEBWXt/EcE2ht/Onl9k4lxUS7ul1UnUO5MrYwMIHMdGVh13DxdzXj4Z5w==
+cypress@*, cypress@8.1.0:
+  version "8.1.0"
+  resolved "https://registry.yarnpkg.com/cypress/-/cypress-8.1.0.tgz#9aaed7fb2a4d1876528b72d437f97bc824db0735"
+  integrity sha512-GXjlqPjY/6HPbQwAp3AvlA1Mk/NoJTAmqVSUhQsuM/1xDpd/FQHkxVuq5h6O6RrAoCXSgpZPXFsVtdqE+FwEJw==
   dependencies:
     "@cypress/request" "^2.88.5"
     "@cypress/xvfb" "^1.2.4"
@@ -11202,10 +11141,10 @@ readdirp@~3.6.0:
   dependencies:
     picomatch "^2.2.1"
 
-recoil@^0.3.1:
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/recoil/-/recoil-0.3.1.tgz#40ef544160d19d76e25de8929d7e512eace13b90"
-  integrity sha512-KNA3DRqgxX4rRC8E7fc6uIw7BACmMPuraIYy+ejhE8tsw7w32CetMm8w7AMZa34wzanKKkev3vl3H7Z4s0QSiA==
+recoil@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/recoil/-/recoil-0.4.0.tgz#2a933ba7c043cbf6f50f52da0828a879c7cd7d69"
+  integrity sha512-FZ2ljI4ldZU820V0APbKOtS4bPwPJHvpDBQEl+Cf47DMaM35wuLXl2u37E0TSgdvKAZBOUsIwcBnzE+ncODRxQ==
   dependencies:
     hamt_plus "1.0.2"
 
