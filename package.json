@@ -1,23 +1,16 @@
 {
   "name": "create-react-app-typescript-todo-example-2021",
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "start:prod-build": "serve -s build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "lint": "eslint . --ext .ts,.tsx,.js",
-    "lint:fix": "eslint . --ext .ts,.tsx,.js --fix",
-    "prettier": "prettier --write {.github,cypress,public,src}/**/*.{html,css,md,json,js,ts,tsx,yml} package.json .prettierrc tsconfig.json cypress.json README.md",
-    "typecheck": "tsc --noEmit",
-    "cypress:run": "cypress run --headed",
-    "cypress:headless": "cypress run --headless",
-    "cypress:run:chrome": "cypress run --browser chrome",
-    "cypress:run:chrome:headless": "cypress run --browser chrome --headless",
-    "cypress:open": "cypress open",
-    "cypress:percy": "percy exec -- cypress run",
-    "contributors:add": "all-contributors add",
-    "contributors:generate": "all-contributors generate"
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   },
   "dependencies": {
     "@reach/router": "^1.3.4",
@@ -55,16 +48,23 @@
     "serve": "^12.0.0",
     "typescript": "^4.3.4"
   },
-  "browserslist": {
-    "production": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "start:prod-build": "serve -s build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "lint": "eslint . --ext .ts,.tsx,.js",
+    "lint:fix": "eslint . --ext .ts,.tsx,.js --fix",
+    "prettier": "prettier --write {.github,cypress,public,src}/**/*.{html,css,md,json,js,ts,tsx,yml} package.json .prettierrc tsconfig.json cypress.json README.md",
+    "typecheck": "tsc --noEmit",
+    "cypress:run": "cypress run --headed",
+    "cypress:headless": "cypress run --headless",
+    "cypress:run:chrome": "cypress run --browser chrome",
+    "cypress:run:chrome:headless": "cypress run --browser chrome --headless",
+    "cypress:open": "cypress open",
+    "cypress:percy": "percy exec -- cypress run",
+    "contributors:add": "all-contributors add",
+    "contributors:generate": "all-contributors generate"
   }
 }
