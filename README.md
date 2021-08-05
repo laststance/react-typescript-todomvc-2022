@@ -32,6 +32,8 @@ I'm glad to even the repo could be useful for your learning. 🤗
 
 ---------------
 
+![Visualization of the codebase](./diagram.svg)
+
 ## Getting Started
 
 - The app assumed installed `Node.js` newer than `10.16.3 LTS`(recommend newer than v14.8.0).
