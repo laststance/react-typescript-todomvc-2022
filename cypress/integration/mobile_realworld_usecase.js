@@ -52,7 +52,7 @@ context('Mobile Real World Usecase', () => {
     cy.get('[data-cy=todo-item]:nth-of-type(3)')
       .find('[data-cy=todo-body-text]')
       .should('contain', 'one')
-      .dblclick()
+      .click()
     cy.get('[data-cy=todo-item]:nth-of-type(3)')
       .find('[data-cy=todo-edit-input]')
       .type(' of kind')

@@ -22,7 +22,7 @@ const Item: React.FC<Props> = ({ todo }) => {
   const init: State = { onEdit: false }
   const [state, setState] = useState(init)
 
-  const onDoubleClick = (): void => {
+  const onClick = (): void => {
     setState({ onEdit: true })
   }
 
@@ -112,11 +112,15 @@ const Item: React.FC<Props> = ({ todo }) => {
             data-cy="todo-item-complete-check"
             data-testid="todo-item-complete-check"
           />
+
+          {/* eslint-disable-line-start jsx-a11y/click-events-have-key-events */}
+          {/* eslint-disable-next-line jsx-a11y/click-events-have-key-events */}
           <label
-            onDoubleClick={onDoubleClick}
+            onClick={onClick}
             data-cy="todo-body-text"
             data-testid="todo-body-text"
           >
+            {/* eslint-disable-line-end jsx-a11y/click-events-have-key-events */}
             {todo.bodyText}
           </label>
           <button

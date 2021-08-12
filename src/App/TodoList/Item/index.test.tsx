@@ -73,8 +73,8 @@ test('should work edit mode and toggle show/hide', () => {
 
   // by default, edit input form is not visible
   expect(screen.getByTestId('todo-edit-input')).not.toBeVisible()
-  // double click todo text label, then focus and enable todo text edit code
-  fireEvent.doubleClick(screen.getByTestId('todo-body-text'))
+  // click todo text label, then focus and enable todo text edit code
+  fireEvent.click(screen.getByTestId('todo-body-text'))
   expect(screen.getByTestId('todo-item')).toHaveClass('editing')
   expect(screen.getByTestId('todo-edit-input')).toBeVisible()
   expect(screen.getByTestId('todo-edit-input')).toHaveFocus()
@@ -89,8 +89,8 @@ test('should work edit mode and toggle show/hide', () => {
   expect(screen.getByTestId('todo-item')).not.toHaveClass('editing')
   expect(screen.getByTestId('todo-edit-input')).not.toBeVisible()
 
-  // double click todo text label, then focus and enable todo text edit code
-  fireEvent.doubleClick(screen.getByTestId('todo-body-text'))
+  // click todo text label, then focus and enable todo text edit code
+  fireEvent.click(screen.getByTestId('todo-body-text'))
   expect(screen.getByTestId('todo-item')).toHaveClass('editing')
   expect(screen.getByTestId('todo-edit-input')).toBeVisible()
   expect(screen.getByTestId('todo-edit-input')).toHaveFocus()
