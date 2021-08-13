@@ -113,16 +113,15 @@ const Item: React.FC<Props> = ({ todo }) => {
             data-testid="todo-item-complete-check"
           />
 
-          {/* eslint-disable-line-start jsx-a11y/click-events-have-key-events */}
-          {/* eslint-disable-next-line jsx-a11y/click-events-have-key-events */}
+          {/* eslint-disable jsx-a11y/no-noninteractive-element-interactions, jsx-a11y/click-events-have-key-events */}
           <label
             onClick={onClick}
             data-cy="todo-body-text"
             data-testid="todo-body-text"
           >
-            {/* eslint-disable-line-end jsx-a11y/click-events-have-key-events */}
             {todo.bodyText}
           </label>
+          {/* eslint-enable jsx-a11y/no-noninteractive-element-interactions, jsx-a11y/click-events-have-key-events */}
           <button
             className="destroy"
             onClick={() => removeItem(todo.id)}
