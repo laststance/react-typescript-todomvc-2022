@@ -7,21 +7,15 @@ import * as serviceWorker from './serviceWorkerRegistration'
 import App from './App'
 import ErrorBoundary from './ErrorBoundary'
 import { NotFound } from './NotFound'
-import { Routes } from './dataStructure'
-
-interface Props {
-  path: Routes
-}
-const Controller: React.FC<Props> = ({ path }) => <App path={path} />
 
 ReactDOM.render(
   <React.StrictMode>
     <ErrorBoundary>
       <RecoilRoot>
         <Router>
-          <Controller path="/" />
-          <Controller path="/active" />
-          <Controller path="/completed" />
+          <App path="/" />
+          <App path="/active" />
+          <App path="/completed" />
           <NotFound default />
         </Router>
       </RecoilRoot>
