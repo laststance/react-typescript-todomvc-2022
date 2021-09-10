@@ -1,5 +1,5 @@
+import type { RouteComponentProps } from '@reach/router'
 import React from 'react'
-import { RouteComponentProps } from '@reach/router'
 
 const css: React.CSSProperties = {
   width: '100%',

@@ -26,6 +26,7 @@
     "JSX": "readonly"
   },
   "settings": {
+    react: { version: 'detect' },
     "import/resolver": {
       "node": {
         "extensions": [
@@ -34,16 +35,27 @@
           ".ts",
           ".tsx"
         ]
-      }
+      },
+      typescript: {}
     }
   },
   "rules": {
+    "no-alert": "error",
+    "no-console": "error",
     "prettier/prettier": [
       "warn",
       {
         "singleQuote": true,
         "semi": false
       }
+    ],
+    'import/order': [
+      'warn',
+      {
+        groups: ['builtin', 'external', 'internal', 'parent', 'sibling', 'index', 'object'],
+        'newlines-between': 'always',
+        alphabetize: { order: 'asc', caseInsensitive: true },
+      },
     ],
     "import/no-unresolved": "error",
     "import/named": "error",
@@ -53,8 +65,9 @@
     "import/no-named-as-default": "warn",
     "import/no-named-as-default-member": "warn",
     "import/no-duplicates": "warn",
+    "@typescript-eslint/consistent-type-imports": "warn",
     "@typescript-eslint/no-explicit-any": "off",
-    "@typescript-eslint/ban-ts-comment": "off"
+    "@typescript-eslint/ban-ts-comment": "off",
   },
   "overrides": [
     {
@@ -64,7 +77,18 @@
       "rules": {
         "@typescript-eslint/explicit-module-boundary-types": [
           "off"
+        ],
+        "@typescript-eslint/no-var-requires": [
+          "off"
         ]
+      }
+    },
+    {
+      "files": [
+        "**/*.stories.*"
+      ],
+      "rules": {
+        "import/no-anonymous-default-export": "off"
       }
     }
   ]

@@ -1,12 +1,13 @@
+import { Router } from '@reach/router'
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { Router } from '@reach/router'
 import { RecoilRoot } from 'recoil'
+
 import './index.css'
-import * as serviceWorker from './serviceWorkerRegistration'
 import App from './App'
 import ErrorBoundary from './ErrorBoundary'
 import { NotFound } from './NotFound'
+import * as serviceWorker from './serviceWorkerRegistration'
 
 ReactDOM.render(
   <React.StrictMode>

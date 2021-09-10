@@ -1,17 +1,15 @@
+import type { RouteComponentProps } from '@reach/router'
 import React, { useEffect } from 'react'
 import { useRecoilValue } from 'recoil'
+
+import type { AppState, Routes } from '../dataStructure'
+import { recoilState, LocalStorageKey } from '../dataStructure'
+
+import Copyright from './Copyright'
 import NewTodoInput from './NewTodoInput'
+import { Layout } from './style'
 import TodoList from './TodoList'
 import UnderBar from './UnderBar'
-import Copyright from './Copyright'
-import { RouteComponentProps } from '@reach/router'
-import { Layout } from './style'
-import {
-  AppState,
-  recoilState,
-  LocalStorageKey,
-  Routes,
-} from '../dataStructure'
 
 interface Props {
   path: Routes

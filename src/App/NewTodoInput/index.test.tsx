@@ -1,7 +1,9 @@
-import React from 'react'
-import NewTodoTextInput from './index'
 import { fireEvent } from '@testing-library/react'
+import React from 'react'
+
 import { renderWithRecoilRoot } from '../../testUtil'
+
+import NewTodoTextInput from './index'
 
 test('should be render <TodoTextInput/>', () => {
   const screen = renderWithRecoilRoot(<NewTodoTextInput />)

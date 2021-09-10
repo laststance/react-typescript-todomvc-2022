@@ -1,6 +1,7 @@
-import React from 'react'
 import { Link } from '@reach/router'
-import { Routes } from '../../../dataStructure'
+import React from 'react'
+
+import type { Routes } from '../../../dataStructure'
 
 interface Props {
   path: Routes

@@ -1,5 +1,6 @@
-import { RecoilRoot } from 'recoil'
 import ReactDOM from 'react-dom'
+import { RecoilRoot } from 'recoil'
+
 import App from './App'
 import { recoilState } from './dataStructure'
 

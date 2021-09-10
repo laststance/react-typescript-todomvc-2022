@@ -1,4 +1,5 @@
 import { render } from '@testing-library/react'
+
 import ErrorBoundary from './ErrorBoundary'
 
 test('should be render fallback page Error was thrown', () => {

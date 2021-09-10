@@ -1,4 +1,5 @@
-import { atom, RecoilState } from 'recoil'
+import type { RecoilState } from 'recoil'
+import { atom } from 'recoil'
 
 export type Routes = '/' | '/active' | '/completed'
 

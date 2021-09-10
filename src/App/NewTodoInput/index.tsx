@@ -1,8 +1,11 @@
 import React, { createRef } from 'react'
-import { UUID } from '../../functions'
 import { useRecoilState } from 'recoil'
+
+import type { AppState, Todo } from '../../dataStructure'
+import { recoilState } from '../../dataStructure'
+import { UUID } from '../../functions'
+
 import { Layout } from './style'
-import { AppState, recoilState, Todo } from '../../dataStructure'
 
 const NewTodoTextInput: React.FC = () => {
   const [appState, setAppState] = useRecoilState<AppState>(recoilState)
