@@ -58,8 +58,6 @@ after that auto launch todo app on your default browser and code edit ready.
 
 ----------------------------------------------------------
 
-![Visualization of the codebase](./diagram.svg)
-
 ## Stack
 
 - [TODO-CSS-Template](https://github.com/Klerith/TODO-CSS-Template) (Borrowing HTML & CSS Thanks! 👍 )
