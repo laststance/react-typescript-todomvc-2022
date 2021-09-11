@@ -27,6 +27,28 @@
 import '@percy/cypress'
 import '@testing-library/cypress/add-commands'
 
+const COMMAND_DELAY = 550
+
+for (const command of [
+  'visit',
+  'click',
+  'trigger',
+  'type',
+  'clear',
+  'reload',
+  'contains',
+]) {
+  Cypress.Commands.overwrite(command, (originalFn, ...args) => {
+    const origVal = originalFn(...args)
+
+    return new Promise((resolve) => {
+      setTimeout(() => {
+        resolve(origVal)
+      }, COMMAND_DELAY)
+    })
+  })
+}
+
 Cypress.Commands.add('submitTripleTodos', () => {
   cy.visit('http://localhost:3000/')
   cy.get('[data-cy=new-todo-input-text]')
