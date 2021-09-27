@@ -1,8 +1,8 @@
 {
   "root": true,
   "extends": [
-    'eslint:recommended',
-    'plugin:@typescript-eslint/recommended',
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
     "plugin:jsx-a11y/recommended",
     "plugin:react-hooks/recommended"
   ],
@@ -26,7 +26,9 @@
     "JSX": "readonly"
   },
   "settings": {
-    react: { version: 'detect' },
+    "react": {
+      "version": "detect"
+    },
     "import/resolver": {
       "node": {
         "extensions": [
@@ -36,7 +38,7 @@
           ".tsx"
         ]
       },
-      typescript: {}
+      "typescript": {}
     }
   },
   "rules": {
@@ -45,17 +47,29 @@
     "prettier/prettier": [
       "warn",
       {
-        "singleQuote": true,
-        "semi": false
+      },
+      {
+        "usePrettierrc": true
       }
     ],
-    'import/order': [
-      'warn',
+    "import/order": [
+      "warn",
       {
-        groups: ['builtin', 'external', 'internal', 'parent', 'sibling', 'index', 'object'],
-        'newlines-between': 'always',
-        alphabetize: { order: 'asc', caseInsensitive: true },
-      },
+        "groups": [
+          "builtin",
+          "external",
+          "internal",
+          "parent",
+          "sibling",
+          "index",
+          "object"
+        ],
+        "newlines-between": "always",
+        "alphabetize": {
+          "order": "asc",
+          "caseInsensitive": true
+        }
+      }
     ],
     "import/no-unresolved": "error",
     "import/named": "error",
@@ -67,7 +81,7 @@
     "import/no-duplicates": "warn",
     "@typescript-eslint/consistent-type-imports": "warn",
     "@typescript-eslint/no-explicit-any": "off",
-    "@typescript-eslint/ban-ts-comment": "off",
+    "@typescript-eslint/ban-ts-comment": "off"
   },
   "overrides": [
     {
