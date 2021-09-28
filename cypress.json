@@ -1,4 +1,5 @@
 {
   "video": false,
-  "experimentalFetchPolyfill": true
+  "testFiles": "**/*.ct.{tsx,js}",
+  "componentFolder": "cypress/component"
 }

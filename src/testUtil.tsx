@@ -1,3 +1,5 @@
+import type { MountReturn } from '@cypress/react'
+import { mount } from '@cypress/react'
 import type { RenderResult } from '@testing-library/react'
 import { render } from '@testing-library/react'
 import React from 'react'
@@ -16,6 +18,20 @@ export const renderWithRecoilRoot = (
   initialRecoilStateValue: AppState = defaultValue
 ): RenderResult =>
   render(
+    <RecoilRoot
+      initializeState={({ set }: MutableSnapshot): void =>
+        set(recoilState, initialRecoilStateValue)
+      }
+    >
+      {ui}
+    </RecoilRoot>
+  )
+
+export const mountCypressWithRecoilRoot = (
+  ui: React.ReactElement,
+  initialRecoilStateValue: AppState = defaultValue
+): Cypress.Chainable<MountReturn> =>
+  mount(
     <RecoilRoot
       initializeState={({ set }: MutableSnapshot): void =>
         set(recoilState, initialRecoilStateValue)
