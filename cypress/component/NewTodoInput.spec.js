@@ -2,7 +2,8 @@ import React from 'react'
 
 import NewTodoTextInput from '../../src/App/NewTodoInput'
 import { Layout } from '../../src/App/style'
-import { mountCypressWithRecoilRoot } from '../../src/testUtil'
+
+import { mountCypressWithRecoilRoot } from './mountCypressWithRecoilRoot'
 
 it('Translate react-testing-library from src/App/NewTodoInput/index.test.tsx', () => {
   mountCypressWithRecoilRoot(

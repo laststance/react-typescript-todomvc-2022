@@ -56,6 +56,7 @@
     "typecheck": "tsc --noEmit",
     "cypress:run": "cypress run ",
     "cypress:run:component": "cypress run-ct",
+    "cypress:run:component:headed": "cypress run-ct --headed",
     "cypress:headed": "cypress run ---headed",
     "cypress:run:chrome": "cypress run --browser chrome",
     "cypress:run:chrome:headless": "cypress run --browser chrome --headless",
@@ -63,5 +64,18 @@
     "cypress:percy": "percy exec -- cypress run",
     "contributors:add": "all-contributors add",
     "contributors:generate": "all-contributors generate"
+  },
+  "jest": {
+    "testMatch": [
+      "<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}",
+      "<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"
+    ],
+    "transform": {
+      "^.+\\.[jt]sx?$": "babel-jest"
+    },
+    "transformIgnorePatterns": [
+      "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|mjs|cjs|ts|tsx)$",
+      "^.+\\.module\\.(css|sass|scss)$"
+    ]
   }
 }

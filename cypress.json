@@ -1,5 +1,4 @@
 {
   "video": false,
-  "testFiles": "**/*.ct.{tsx,js}",
   "componentFolder": "cypress/component"
 }
