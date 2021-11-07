@@ -10412,10 +10412,10 @@ readdirp@~3.6.0:
   dependencies:
     picomatch "^2.2.1"
 
-recoil@^0.5.0:
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/recoil/-/recoil-0.5.0.tgz#d8e3bdefc70aa0f0e74554c90ecda1b3f3718b23"
-  integrity sha512-xXGV0bpmi7NV2r6twNaZ35lP5lLeE0r+zR6tnZ3b4hD/sQS39S982Gq5xfrlIS0dvIiNlp2jkubmuUm1hvTaPQ==
+recoil@^0.5.1:
+  version "0.5.1"
+  resolved "https://registry.yarnpkg.com/recoil/-/recoil-0.5.1.tgz#af572e3a56ebf6d38ac743b6711205bae3e3e158"
+  integrity sha512-nq2MqvGHnYUqWXQOr1igmYOHWUZNphrQWsBziz23iZ04CvWA2ezoZbnXjywkvC1GSefNpAYZMcojEYQ0KOUBPg==
   dependencies:
     hamt_plus "1.0.2"
 
