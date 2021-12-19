@@ -1069,13 +1069,13 @@
   resolved "https://registry.yarnpkg.com/@cypress/mount-utils/-/mount-utils-1.0.2.tgz#afbc4f8c350b7cd86edc5ad0db0cbe1e0181edc8"
   integrity sha512-Fn3fdTiyayHoy8Ol0RSu4MlBH2maQ2ZEXeEVKl/zHHXEQpld5HX3vdNLhK5YLij8cLynA4DxOT/nO9iEnIiOXw==
 
-"@cypress/react@^5.10.3":
-  version "5.10.3"
-  resolved "https://registry.yarnpkg.com/@cypress/react/-/react-5.10.3.tgz#7e459cb70d0287d2137305b79772164681b988d3"
-  integrity sha512-E68ws4P6CPFbtIqr98rWimf47E5nY6plWwKpHt98GKadSq/MN+57qego+Z5SA1CaDLk7Pvfdk98oYNzkmj20jA==
+"@cypress/react@^5.11.0":
+  version "5.11.0"
+  resolved "https://registry.yarnpkg.com/@cypress/react/-/react-5.11.0.tgz#793148d84a0ace6b77a4b22cb3b8e044df1a9ac9"
+  integrity sha512-fQBUjuiTbzIunuCIpWVJzpA8eRfBr+1G4YRtKOQ66Y1uti3E+n0LXko9mkwgbdCSQkeL0whvydq7r+JBUxlF5Q==
   dependencies:
     "@cypress/mount-utils" "1.0.2"
-    debug "4.3.2"
+    debug "^4.3.2"
     find-webpack "2.2.1"
     find-yarn-workspace-root "2.0.0"
 
