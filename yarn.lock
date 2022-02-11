@@ -1069,10 +1069,10 @@
   resolved "https://registry.yarnpkg.com/@cypress/mount-utils/-/mount-utils-1.0.2.tgz#afbc4f8c350b7cd86edc5ad0db0cbe1e0181edc8"
   integrity sha512-Fn3fdTiyayHoy8Ol0RSu4MlBH2maQ2ZEXeEVKl/zHHXEQpld5HX3vdNLhK5YLij8cLynA4DxOT/nO9iEnIiOXw==
 
-"@cypress/react@^5.12.2":
-  version "5.12.2"
-  resolved "https://registry.yarnpkg.com/@cypress/react/-/react-5.12.2.tgz#6833ec84850be82bfddf45dc904db4ba215a1ee6"
-  integrity sha512-2ye7+vgnWdG+g+ZUP6fm4zRjLvYr4v1R8pzuIavwpdSyxzWSMOQvFhSvpdhgxJ8ZS5ch6k2QlzESeHKlcyHAQg==
+"@cypress/react@^5.12.3":
+  version "5.12.3"
+  resolved "https://registry.yarnpkg.com/@cypress/react/-/react-5.12.3.tgz#45b1c1f21b2a4c0c4e9989e091c4ff5a6debdaf2"
+  integrity sha512-PQV8BC1R1CHWZiB0z+06JXZqCTro3W//YLlFP1UJ+M+KNdf2Hj5h2yVzz2Ns2Xhc2tkg6kxMF4n13W68yotcOw==
   dependencies:
     "@cypress/mount-utils" "1.0.2"
     debug "^4.3.2"
