@@ -1,16 +1,16 @@
-# Create React App TypeScript Todo Example 2021
+# Create React App TypeScript Todo Example 2022
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/94ad28c3-2ccd-40b2-9b9f-35ab89148f43/deploy-status)](https://app.netlify.com/sites/create-react-app-typescript-todo-example/deploys)
-![CI](https://github.com/laststance/create-react-app-typescript-todo-example-2021/workflows/CI/badge.svg)
+![CI](https://github.com/laststance/create-react-app-typescript-todo-example-2022/workflows/CI/badge.svg)
 [![Cypress.io](https://img.shields.io/badge/tested%20with-Cypress-04C38E.svg)](https://www.cypress.io/)
 ![check-code-coverage](https://img.shields.io/badge/code--coverage-92%25-brightgreen)
 [![tested with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://github.com/facebook/jest)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 [![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors)
-[![Depfu](https://badges.depfu.com/badges/b291947c58892a6d78e4f3374c4a6d01/overview.svg)](https://depfu.com/github/laststance/create-react-app-typescript-todo-example-2021?project_id=9618)
-[![This project is using Percy.io for visual regression testing.](https://percy.io/static/images/percy-badge.svg)](https://percy.io/laststance/create-react-app-typescript-todo-example-2021)
+[![Depfu](https://badges.depfu.com/badges/b291947c58892a6d78e4f3374c4a6d01/overview.svg)](https://depfu.com/github/laststance/create-react-app-typescript-todo-example-2022?project_id=9618)
+[![This project is using Percy.io for visual regression testing.](https://percy.io/static/images/percy-badge.svg)](https://percy.io/laststance/create-react-app-typescript-todo-example-2022)
 
-<a href="https://create-react-app-typescript-todo-example.netlify.com/"><img src="https://raw.githubusercontent.com/laststance/create-react-app-typescript-todo-example-2021/master/images/cypress_open.gif" alt="gif"></a>
+<a href="https://create-react-app-typescript-todo-example.netlify.com/"><img src="https://raw.githubusercontent.com/laststance/create-react-app-typescript-todo-example-2022/master/images/cypress_open.gif" alt="gif"></a>
  
 
 ## A Modern Code Style Todo Example 📝
@@ -28,7 +28,7 @@ I'm glad to even the repo could be useful for your learning. 🤗
 　  
 　  
   
-[![Edit create-react-app-typescript-todo-example-2021](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/quizzical-blackwell-bvfc5?fontsize=14&hidenavigation=1&theme=dark)
+[![Edit create-react-app-typescript-todo-example-2022](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/quizzical-blackwell-bvfc5?fontsize=14&hidenavigation=1&theme=dark)
 
 ---------------
 
@@ -39,11 +39,11 @@ I'm glad to even the repo could be useful for your learning. 🤗
   
 
 ```bash
-npx degit laststance/create-react-app-typescript-todo-example-2021 create-react-app-typescript-todo-example-2021
+npx degit laststance/create-react-app-typescript-todo-example-2022 create-react-app-typescript-todo-example-2022
 ```
 
 ```bash
-cd create-react-app-typescript-todo-example-2021
+cd create-react-app-typescript-todo-example-2022
 ```
 
 ```bash
@@ -73,7 +73,7 @@ after that auto launch todo app on your default browser and code edit ready.
   - [@typescript-eslint/eslint-plugin](https://github.com/typescript-eslint/typescript-eslint#readme)
 - [Netlify](https://www.netlify.com/): Deploy & Hosting
 - [Github Actions](https://github.com/features/actions): Automation run tests, lint, typecheck, build
-- [Depfu](https://depfu.com/github/ryota-murakami/create-react-app-typescript-todo-example-2021?project_id=9618): Keep latest npm packages automaticaly
+- [Depfu](https://depfu.com/github/ryota-murakami/create-react-app-typescript-todo-example-2022?project_id=9618): Keep latest npm packages automaticaly
 
 ## 👩‍💻 Usage
 
@@ -162,11 +162,11 @@ There are tons of effective way to create solid software in JavaScript World, yo
 
 ## Issues
 
-Please feel free to post [New Issue](https://github.com/laststance/create-react-app-typescript-todo-example-2021/issues/new) or Pull Request 🤗
+Please feel free to post [New Issue](https://github.com/laststance/create-react-app-typescript-todo-example-2022/issues/new) or Pull Request 🤗
 
 ## Questions
 
-Please feel free to post [New Issue](https://github.com/laststance/create-react-app-typescript-todo-example-2021/issues/new) or reply on [Twitter](https://twitter.com/malloc007) 🐦
+Please feel free to post [New Issue](https://github.com/laststance/create-react-app-typescript-todo-example-2022/issues/new) or reply on [Twitter](https://twitter.com/malloc007) 🐦
 
 If you want to get more generally answers, these community are might be helpful 🍻
 
@@ -186,13 +186,13 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="http://ryota-murakami.github.io/"><img src="https://avatars1.githubusercontent.com/u/5501268?s=400&u=7bf6b1580b95930980af2588ef0057f3e9ec1ff8&v=4?s=100" width="100px;" alt=""/><br /><sub><b>ryota-murakami</b></sub></a><br /><a href="https://github.com/laststance/create-react-app-typescript-todo-example-2021/commits?author=ryota-murakami" title="Code">💻</a> <a href="https://github.com/laststance/create-react-app-typescript-todo-example-2021/commits?author=ryota-murakami" title="Documentation">📖</a> <a href="https://github.com/laststance/create-react-app-typescript-todo-example-2021/commits?author=ryota-murakami" title="Tests">⚠️</a></td>
-    <td align="center"><a href="http://donkeycar.com"><img src="https://avatars2.githubusercontent.com/u/147582?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Will Roscoe</b></sub></a><br /><a href="https://github.com/laststance/create-react-app-typescript-todo-example-2021/commits?author=wroscoe" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/JunQu"><img src="https://avatars2.githubusercontent.com/u/39846309?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Peng Fei</b></sub></a><br /><a href="https://github.com/laststance/create-react-app-typescript-todo-example-2021/issues?q=author%3AJunQu" title="Bug reports">🐛</a></td>
-    <td align="center"><a href="https://github.com/alexpanchuk"><img src="https://avatars3.githubusercontent.com/u/26270612?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Alex Panchuk</b></sub></a><br /><a href="https://github.com/laststance/create-react-app-typescript-todo-example-2021/commits?author=alexpanchuk" title="Documentation">📖</a></td>
-    <td align="center"><a href="https://github.com/BurhanMullamitha"><img src="https://avatars1.githubusercontent.com/u/42492054?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Burhan Mullamitha</b></sub></a><br /><a href="https://github.com/laststance/create-react-app-typescript-todo-example-2021/commits?author=BurhanMullamitha" title="Documentation">📖</a></td>
-    <td align="center"><a href="https://github.com/hefengxian"><img src="https://avatars.githubusercontent.com/u/4338497?v=4?s=100" width="100px;" alt=""/><br /><sub><b>hefengxian</b></sub></a><br /><a href="https://github.com/laststance/create-react-app-typescript-todo-example-2021/commits?author=hefengxian" title="Code">💻</a> <a href="https://github.com/laststance/create-react-app-typescript-todo-example-2021/commits?author=hefengxian" title="Tests">⚠️</a></td>
-    <td align="center"><a href="http://ethansetnik.com"><img src="https://avatars.githubusercontent.com/u/664434?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Ethan Setnik</b></sub></a><br /><a href="https://github.com/laststance/create-react-app-typescript-todo-example-2021/commits?author=esetnik" title="Documentation">📖</a></td>
+    <td align="center"><a href="http://ryota-murakami.github.io/"><img src="https://avatars1.githubusercontent.com/u/5501268?s=400&u=7bf6b1580b95930980af2588ef0057f3e9ec1ff8&v=4?s=100" width="100px;" alt=""/><br /><sub><b>ryota-murakami</b></sub></a><br /><a href="https://github.com/laststance/create-react-app-typescript-todo-example-2022/commits?author=ryota-murakami" title="Code">💻</a> <a href="https://github.com/laststance/create-react-app-typescript-todo-example-2022/commits?author=ryota-murakami" title="Documentation">📖</a> <a href="https://github.com/laststance/create-react-app-typescript-todo-example-2022/commits?author=ryota-murakami" title="Tests">⚠️</a></td>
+    <td align="center"><a href="http://donkeycar.com"><img src="https://avatars2.githubusercontent.com/u/147582?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Will Roscoe</b></sub></a><br /><a href="https://github.com/laststance/create-react-app-typescript-todo-example-2022/commits?author=wroscoe" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/JunQu"><img src="https://avatars2.githubusercontent.com/u/39846309?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Peng Fei</b></sub></a><br /><a href="https://github.com/laststance/create-react-app-typescript-todo-example-2022/issues?q=author%3AJunQu" title="Bug reports">🐛</a></td>
+    <td align="center"><a href="https://github.com/alexpanchuk"><img src="https://avatars3.githubusercontent.com/u/26270612?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Alex Panchuk</b></sub></a><br /><a href="https://github.com/laststance/create-react-app-typescript-todo-example-2022/commits?author=alexpanchuk" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/BurhanMullamitha"><img src="https://avatars1.githubusercontent.com/u/42492054?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Burhan Mullamitha</b></sub></a><br /><a href="https://github.com/laststance/create-react-app-typescript-todo-example-2022/commits?author=BurhanMullamitha" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/hefengxian"><img src="https://avatars.githubusercontent.com/u/4338497?v=4?s=100" width="100px;" alt=""/><br /><sub><b>hefengxian</b></sub></a><br /><a href="https://github.com/laststance/create-react-app-typescript-todo-example-2022/commits?author=hefengxian" title="Code">💻</a> <a href="https://github.com/laststance/create-react-app-typescript-todo-example-2022/commits?author=hefengxian" title="Tests">⚠️</a></td>
+    <td align="center"><a href="http://ethansetnik.com"><img src="https://avatars.githubusercontent.com/u/664434?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Ethan Setnik</b></sub></a><br /><a href="https://github.com/laststance/create-react-app-typescript-todo-example-2022/commits?author=esetnik" title="Documentation">📖</a></td>
   </tr>
 </table>
 
