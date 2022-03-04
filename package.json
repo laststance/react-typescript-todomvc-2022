@@ -21,7 +21,7 @@
   },
   "devDependencies": {
     "@cypress/react": "^5.12.3",
-    "@cypress/webpack-dev-server": "^1.8.1",
+    "@cypress/webpack-dev-server": "^1.8.2",
     "@percy/cli": "^1.0.0-beta.64",
     "@percy/cypress": "^3.1.1",
     "@testing-library/cypress": "^8.0.2",
