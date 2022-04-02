@@ -35,7 +35,7 @@
     "@types/react-dom": "^17.0.14",
     "@types/styled-components": "^5.1.24",
     "all-contributors-cli": "^6.19.0",
-    "cypress": "9.5.2",
+    "cypress": "9.5.3",
     "eslint-config-prettier": "^8.5.0",
     "eslint-config-typescript": "^3.0.0",
     "eslint-plugin-cypress": "^2.12.1",
