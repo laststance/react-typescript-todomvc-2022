@@ -7,3 +7,4 @@ instrumented/
 .eslintcache
 coverage/
 .nyc_output/
+storybook-static
