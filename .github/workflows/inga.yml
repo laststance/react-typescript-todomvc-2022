@@ -19,7 +19,7 @@ jobs:
         fetch-depth: 0
     - run: npm install -g yarn
     - run: yarn
-    - run: /inga/roswell/inga.ros "$(pwd)/" 9469e89 1025ab0
+    - run: /inga/roswell/inga.ros "$(pwd)/" master
     - run: yarn build-storybook
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
