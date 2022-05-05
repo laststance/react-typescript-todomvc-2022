@@ -1,3 +1,6 @@
+import { RecoilRoot } from "recoil"
+import '../src/index.css'
+
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
   controls: {
@@ -6,4 +9,17 @@ export const parameters = {
       date: /Date$/,
     },
   },
+  options: {
+    storySort: {
+      order: ['Pages', 'Components'],
+    },
+  },
 }
+
+export const decorators = [
+  (Story) => (
+    <RecoilRoot>
+      <Story />
+    </RecoilRoot>
+  )
+]

@@ -1,34 +1,13 @@
 import { ComponentMeta, ComponentStory } from "@storybook/react"
-import { RecoilRoot } from "recoil"
-
-import '../index.css'
 import App from "."
 
 export default {
-  title: 'Todo/App',
+  title: 'Pages/App',
   component: App,
-}  as ComponentMeta<typeof App>;
+}  as ComponentMeta<typeof App>
 
-export const All: ComponentStory<typeof App> = () => {
-  return (
-    <RecoilRoot>
-      <App path={"/"}></App>
-    </RecoilRoot>
-  )
-}
+export const All: ComponentStory<typeof App> = () => <App path={"/"} />
 
-export const Active: ComponentStory<typeof App> = () => {
-  return (
-    <RecoilRoot>
-      <App path={"/active"}></App>
-    </RecoilRoot>
-  )
-}
+export const Active: ComponentStory<typeof App> = () => <App path={"/active"} />
 
-export const Completed: ComponentStory<typeof App> = () => {
-  return (
-    <RecoilRoot>
-      <App path={"/completed"}></App>
-    </RecoilRoot>
-  )
-}
+export const Completed: ComponentStory<typeof App> = () => <App path={"/completed"} />
