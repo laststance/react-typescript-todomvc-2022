@@ -14799,10 +14799,10 @@ store2@^2.12.0:
   resolved "https://registry.yarnpkg.com/store2/-/store2-2.13.2.tgz#01ad8802ca5b445b9c316b55e72645c13a3cd7e3"
   integrity sha512-CMtO2Uneg3SAz/d6fZ/6qbqqQHi2ynq6/KzMD/26gTkiEShCcpqFfTHgOxsE0egAq6SX3FmN4CeSqn8BzXQkJg==
 
-storybook-inga@^0.1.1:
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/storybook-inga/-/storybook-inga-0.1.1.tgz#0d9a19f18817abbb626b013530bb390029832436"
-  integrity sha512-iubSg/PsEBZbZ/HqJtQX54U9zIyEflTxwTgQg1Xy3pX9mUcXi8NNrDrKoGyrXsVc1+WtGJHE9sTalomd+v2qNg==
+storybook-inga@0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/storybook-inga/-/storybook-inga-0.1.2.tgz#5eac87ef5fd3f19287bc6367431a16d14f565c34"
+  integrity sha512-YHUly0gewnoTh9MixVbS+UnOegXNm+5cIhHCdzrPa3DhYCfqKeCZyRHDFVZeZbVYoV8xOsxPO6PoQlAaFjbbPg==
 
 stream-browserify@^2.0.1:
   version "2.0.2"
