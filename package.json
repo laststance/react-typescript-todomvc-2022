@@ -20,7 +20,7 @@
     "styled-components": "^5.3.5"
   },
   "devDependencies": {
-    "@cypress/react": "^5.12.4",
+    "@cypress/react": "^5.12.5",
     "@cypress/webpack-dev-server": "^1.8.4",
     "@percy/cli": "^1.0.0-beta.64",
     "@percy/cypress": "^3.1.1",
