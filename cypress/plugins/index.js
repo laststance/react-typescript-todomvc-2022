@@ -13,8 +13,6 @@
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 module.exports = (on, config) => {
-  // eslint-disable-next-line @typescript-eslint/no-var-requires
-  require('@cypress/react/plugins/react-scripts')(on, config)
   // IMPORTANT to return the config object
   // with the any changed environment variables
   return config

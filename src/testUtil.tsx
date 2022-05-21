@@ -24,4 +24,3 @@ export const renderWithRecoilRoot = (
       {ui}
     </RecoilRoot>
   )
-

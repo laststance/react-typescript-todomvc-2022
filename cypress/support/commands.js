@@ -25,7 +25,6 @@
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
 // for adding cy.percySnapshot() command. https://docs.percy.io/docs/cypress
 import '@percy/cypress'
-import '@testing-library/cypress/add-commands'
 
 const COMMAND_DELAY = 550
 
