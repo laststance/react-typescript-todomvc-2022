@@ -26,7 +26,7 @@
 // for adding cy.percySnapshot() command. https://docs.percy.io/docs/cypress
 import '@percy/cypress'
 
-const COMMAND_DELAY = 550
+const COMMAND_DELAY = 0
 
 for (const command of [
   'visit',
