@@ -1,12 +1,10 @@
-import ReactDOM from 'react-dom'
+import ReactDOM from 'react-dom/client'
 import { RecoilRoot } from 'recoil'
 
 import App from './App'
 import { recoilState } from './dataStructure'
 
 it('renders without crashing', () => {
-  const div = document.createElement('div')
-
   const todo = {
     todoList: [
       {
@@ -26,17 +24,18 @@ it('renders without crashing', () => {
       },
     ],
   }
+  const div = document.createElement('div')
 
-  ReactDOM.render(
+  const root = ReactDOM.createRoot(div)
+  root.render(
     <RecoilRoot
       initializeState={({ set }) => {
         set(recoilState, todo)
       }}
     >
       <App path="/" />
-    </RecoilRoot>,
-    div
+    </RecoilRoot>
   )
 
-  ReactDOM.unmountComponentAtNode(div)
+  root.unmount()
 })
