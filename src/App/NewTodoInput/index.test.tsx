@@ -27,9 +27,9 @@ test('should be render <TodoTextInput/>', () => {
 
   // submit
   fireEvent.keyPress(input, {
-    key: 'Enter',
+    charCode: 13,
     code: 13,
-    charCode: 13, // I had issue that doesn't trigger keyPress event relevant charCode. https://github.com/testing-library/react-testing-library/issues/269
+    key: 'Enter', // I had issue that doesn't trigger keyPress event relevant charCode. https://github.com/testing-library/react-testing-library/issues/269
   })
 
   // text cleard

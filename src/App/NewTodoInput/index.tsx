@@ -17,9 +17,9 @@ const NewTodoTextInput: React.FC = () => {
     if (e.key === 'Enter' && textInput.current.value.trim().length > 0) {
       // make new TODO object
       const todo: Todo = {
-        id: UUID(),
         bodyText: textInput.current.value,
         completed: false,
+        id: UUID(),
       }
 
       // add new TODO to entire TodoList

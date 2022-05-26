@@ -2,11 +2,11 @@ import type { RouteComponentProps } from '@reach/router'
 import React from 'react'
 
 const css: React.CSSProperties = {
-  width: '100%',
-  height: '100%',
-  display: 'flex',
-  justifyContent: 'center',
   alignItems: 'center',
+  display: 'flex',
+  height: '100%',
+  justifyContent: 'center',
+  width: '100%',
 }
 
 export const NotFound: React.FC<RouteComponentProps> = () => (

@@ -1,15 +1,14 @@
 {
   "root": true,
   "extends": [
-    "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
-    "plugin:jsx-a11y/recommended",
-    "plugin:react-hooks/recommended"
+    "plugin:jsx-a11y/recommended"
   ],
   "parser": "@typescript-eslint/parser",
   "plugins": [
     "jsx-a11y",
     "import",
+    "sort-keys-fix",
     "react-hooks",
     "@typescript-eslint",
     "prettier",
@@ -29,27 +28,31 @@
     "react": {
       "version": "detect"
     },
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx"]
+    },
     "import/resolver": {
       "node": {
-        "extensions": [
-          ".js",
-          ".jsx",
-          ".ts",
-          ".tsx"
-        ]
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
       },
-      "typescript": {}
+      "typescript": {
+        "alwaysTryTypes": true,
+        // always try to resolve types under `<root>@types` directory even it doesn't contain any source code, like `@types/unist`
+        "project": ["tsconfig.json"]
+      }
     }
   },
   "rules": {
     "no-alert": "error",
     "no-console": "error",
+    "react-hooks/rules-of-hooks": "error",
     "prettier/prettier": [
       "warn",
+      {},
       {
-      },
-      {
-        "usePrettierrc": true
+        "properties": {
+          "usePrettierrc": true
+        }
       }
     ],
     "import/order": [
@@ -71,38 +74,27 @@
         }
       }
     ],
-    "import/no-unresolved": "error",
     "import/named": "error",
-    "import/namespace": "error",
     "import/default": "error",
     "import/export": "error",
     "import/no-named-as-default": "warn",
-    "import/no-named-as-default-member": "warn",
-    "import/no-duplicates": "warn",
+    "import/no-named-as-default-member": "off",
+    "import/no-duplicates": "error",
+    "import/no-unresolved": "error",
+    "sort-keys-fix/sort-keys-fix": "warn",
+    "@typescript-eslint/no-non-null-assertion": "off",
     "@typescript-eslint/consistent-type-imports": "warn",
     "@typescript-eslint/no-explicit-any": "off",
-    "@typescript-eslint/ban-ts-comment": "off"
+    "@typescript-eslint/ban-types": "off",
+    "@typescript-eslint/ban-ts-comment": "off",
+    "@typescript-eslint/no-empty-function": "off"
   },
   "overrides": [
     {
-      "files": [
-        "*.js"
-      ],
+      "files": ["*.js"],
       "rules": {
-        "@typescript-eslint/explicit-module-boundary-types": [
-          "off"
-        ],
-        "@typescript-eslint/no-var-requires": [
-          "off"
-        ]
-      }
-    },
-    {
-      "files": [
-        "**/*.stories.*"
-      ],
-      "rules": {
-        "import/no-anonymous-default-export": "off"
+        "@typescript-eslint/explicit-module-boundary-types": ["off"],
+        "@typescript-eslint/no-var-requires": ["off"]
       }
     }
   ]
