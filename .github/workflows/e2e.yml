@@ -1,4 +1,4 @@
-name: CI
+name: Cypress E2E
 on:
   push:
     branches:
@@ -13,11 +13,8 @@ jobs:
       - uses: actions/checkout@v2 # If you're using actions/checkout@v2 you must set persist-credentials to false in most cases for the deployment to work correctly.
       - uses: actions/setup-node@v2-beta
         with:
-          node-version: '16.8'
+          node-version: '16.13.1'
       - run: yarn install
-      - run: yarn build
-      - run: yarn test
-      - run: yarn lint
       - run: yarn typecheck
       - uses: cypress-io/github-action@v2
         with:
