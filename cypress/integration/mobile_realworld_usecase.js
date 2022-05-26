@@ -37,7 +37,7 @@ context('Mobile Real World Usecase', () => {
       .should('not.have.checked')
 
     // can all task checked as completed by click toggle all button
-    cy.get('[data-cy=toggle-all-btn]').click({ force: true }) // { force: true } reason @see https://github.com/laststance/create-react-app-typescript-todo-example-2021/issues/288
+    cy.get('[data-cy=toggle-all-btn]').click({ force: true }) // { force: true } reason @see https://github.com/laststance/react-app-typescript-todo-example-2021/issues/288
     cy.get('[data-cy=remaining-uncompleted-todo-count]').should('contain', '0')
     // there is no side-effect to todo items value by toggle all button
     cy.get('[data-cy=todo-item]:first-of-type').should('have.text', 'three')
