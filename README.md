@@ -1,6 +1,7 @@
 # React App TypeScript Todo Example 2022
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/94ad28c3-2ccd-40b2-9b9f-35ab89148f43/deploy-status)](https://app.netlify.com/sites/react-app-typescript-todo-example/deploys)
+![CI](https://github.com/laststance/react-app-typescript-todo-example-2022/workflows/CI/badge.svg)
 [![Cypress.io](https://img.shields.io/badge/tested%20with-Cypress-04C38E.svg)](https://www.cypress.io/)
 ![check-code-coverage](https://img.shields.io/badge/code--coverage-92%25-brightgreen)
 [![tested with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://github.com/facebook/jest)
