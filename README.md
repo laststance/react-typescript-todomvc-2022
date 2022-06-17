@@ -194,6 +194,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/hefengxian"><img src="https://avatars.githubusercontent.com/u/4338497?v=4?s=100" width="100px;" alt=""/><br /><sub><b>hefengxian</b></sub></a><br /><a href="https://github.com/laststance/react-app-typescript-todo-example-2022/commits?author=hefengxian" title="Code">💻</a> <a href="https://github.com/laststance/react-app-typescript-todo-example-2022/commits?author=hefengxian" title="Tests">⚠️</a></td>
     <td align="center"><a href="http://ethansetnik.com"><img src="https://avatars.githubusercontent.com/u/664434?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Ethan Setnik</b></sub></a><br /><a href="https://github.com/laststance/react-app-typescript-todo-example-2022/commits?author=esetnik" title="Documentation">📖</a></td>
   </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/PaoloJN"><img src="https://avatars.githubusercontent.com/u/87121008?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Paolo Nessim</b></sub></a><br /><a href="https://github.com/laststance/react-app-typescript-todo-example-2022/commits?author=PaoloJN" title="Code">💻</a></td>
+  </tr>
 </table>
 
 <!-- markdownlint-restore -->
