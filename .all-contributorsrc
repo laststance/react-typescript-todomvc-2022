@@ -1,5 +1,5 @@
 {
-  "projectName": "react-app-typescript-todo-example-2021",
+  "projectName": "react-app-typescript-todo-example-2022",
   "projectOwner": "laststance",
   "repoType": "github",
   "repoHost": "https://github.com",
@@ -74,6 +74,15 @@
       "profile": "http://ethansetnik.com",
       "contributions": [
         "doc"
+      ]
+    },
+    {
+      "login": "PaoloJN",
+      "name": "Paolo Nessim",
+      "avatar_url": "https://avatars.githubusercontent.com/u/87121008?v=4",
+      "profile": "https://github.com/PaoloJN",
+      "contributions": [
+        "code"
       ]
     }
   ],
