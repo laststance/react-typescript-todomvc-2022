@@ -29,11 +29,6 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-yarn-
     - run: yarn
+    - run: gh pr view
     - run: git branch --track master origin/master
     - run: /inga/roswell/inga.ros "$(pwd)/" master
-    - run: yarn build-storybook
-    - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./storybook-static
