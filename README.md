@@ -196,6 +196,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   </tr>
   <tr>
     <td align="center"><a href="https://github.com/PaoloJN"><img src="https://avatars.githubusercontent.com/u/87121008?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Paolo Nessim</b></sub></a><br /><a href="https://github.com/laststance/react-app-typescript-todo-example-2022/commits?author=PaoloJN" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/likui628"><img src="https://avatars.githubusercontent.com/u/90845831?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Li Kui</b></sub></a><br /><a href="https://github.com/laststance/react-app-typescript-todo-example-2022/commits?author=likui628" title="Code">💻</a></td>
   </tr>
 </table>
 
