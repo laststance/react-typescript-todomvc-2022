@@ -1,6 +1,6 @@
 # React TypeScript TodoMVC 2022
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/94ad28c3-2ccd-40b2-9b9f-35ab89148f43/deploy-status)](https://app.netlify.com/sites/react-app-typescript-todo-example/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/877a9a48-c7e1-498c-b56b-81fa8f4d4d8a/deploy-status)](https://app.netlify.com/sites/react-typescript-todomvc/deploys)
 [![Build](https://github.com/laststance/react-typescript-todomvc-2022/actions/workflows/build.yml/badge.svg)](https://github.com/laststance/react-typescript-todomvc-2022/actions/workflows/build.yml)
 [![Cypress E2E](https://github.com/laststance/react-typescript-todomvc-2022/actions/workflows/e2e.yml/badge.svg)](https://github.com/laststance/react-typescript-todomvc-2022/actions/workflows/e2e.yml)
 [![Lint](https://github.com/laststance/react-typescript-todomvc-2022/actions/workflows/lint.yml/badge.svg)](https://github.com/laststance/react-typescript-todomvc-2022/actions/workflows/lint.yml)
