@@ -7,11 +7,7 @@
       "@types/jest"
     ],
     "target": "es2020",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -26,9 +22,5 @@
     "noFallthroughCasesInSwitch": true,
     "jsx": "react-jsx"
   },
-  "include": [
-    "src",
-    "cypress",
-    "vite.config.ts"
-  ]
+  "include": ["src", "cypress", "vite.config.ts"]
 }

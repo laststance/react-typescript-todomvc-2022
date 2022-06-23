@@ -1,63 +1,62 @@
-# React App TypeScript Todo Example 2022
+# React TypeScript TodoMVC 2022
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/94ad28c3-2ccd-40b2-9b9f-35ab89148f43/deploy-status)](https://app.netlify.com/sites/react-app-typescript-todo-example/deploys)
-[![Build](https://github.com/laststance/react-app-typescript-todo-example-2022/actions/workflows/build.yml/badge.svg)](https://github.com/laststance/react-app-typescript-todo-example-2022/actions/workflows/build.yml)
-[![Cypress E2E](https://github.com/laststance/react-app-typescript-todo-example-2022/actions/workflows/e2e.yml/badge.svg)](https://github.com/laststance/react-app-typescript-todo-example-2022/actions/workflows/e2e.yml)
-[![Lint](https://github.com/laststance/react-app-typescript-todo-example-2022/actions/workflows/lint.yml/badge.svg)](https://github.com/laststance/react-app-typescript-todo-example-2022/actions/workflows/lint.yml)
-[![Test](https://github.com/laststance/react-app-typescript-todo-example-2022/actions/workflows/test.yml/badge.svg)](https://github.com/laststance/react-app-typescript-todo-example-2022/actions/workflows/test.yml)
+[![Build](https://github.com/laststance/react-typescript-todomvc-2022/actions/workflows/build.yml/badge.svg)](https://github.com/laststance/react-typescript-todomvc-2022/actions/workflows/build.yml)
+[![Cypress E2E](https://github.com/laststance/react-typescript-todomvc-2022/actions/workflows/e2e.yml/badge.svg)](https://github.com/laststance/react-typescript-todomvc-2022/actions/workflows/e2e.yml)
+[![Lint](https://github.com/laststance/react-typescript-todomvc-2022/actions/workflows/lint.yml/badge.svg)](https://github.com/laststance/react-typescript-todomvc-2022/actions/workflows/lint.yml)
+[![Test](https://github.com/laststance/react-typescript-todomvc-2022/actions/workflows/test.yml/badge.svg)](https://github.com/laststance/react-typescript-todomvc-2022/actions/workflows/test.yml)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
-[![Typecheck](https://github.com/laststance/react-app-typescript-todo-example-2022/actions/workflows/typecheck.yml/badge.svg)](https://github.com/laststance/react-app-typescript-todo-example-2022/actions/workflows/typecheck.yml)
+[![Typecheck](https://github.com/laststance/react-typescript-todomvc-2022/actions/workflows/typecheck.yml/badge.svg)](https://github.com/laststance/react-typescript-todomvc-2022/actions/workflows/typecheck.yml)
 [![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors)
-[![Depfu](https://badges.depfu.com/badges/b291947c58892a6d78e4f3374c4a6d01/overview.svg)](https://depfu.com/github/laststance/react-app-typescript-todo-example-2022?project_id=9618)
-[![This project is using Percy.io for visual regression testing.](https://percy.io/static/images/percy-badge.svg)](https://percy.io/laststance/react-app-typescript-todo-example-2022)
+[![Depfu](https://badges.depfu.com/badges/b291947c58892a6d78e4f3374c4a6d01/overview.svg)](https://depfu.com/github/laststance/react-typescript-todomvc-2022?project_id=9618)
+[![This project is using Percy.io for visual regression testing.](https://percy.io/static/images/percy-badge.svg)](https://percy.io/laststance/react-typescript-todomvc-2022)
 
-<a href="https://react-app-typescript-todo-example.netlify.com/"><img src="https://raw.githubusercontent.com/laststance/react-app-typescript-todo-example-2022/master/images/cypress_open.gif" alt="gif"></a>
- 
+<a href="https://react-app-typescript-todo-example.netlify.com/"><img src="https://raw.githubusercontent.com/laststance/react-typescript-todomvc-2022/master/images/cypress_open.gif" alt="gif"></a>
 
 ## A Modern Code Style Todo Example 📝
 
-This project was started with the goal of continuing to publish Todo Example Apps in the latest [React](https://reactjs.org/) writing style.  
+This project was started with the goal of continue to publish TodoMVC Apps in the latest [React](https://reactjs.org/) writing style.
 
-When [React Hooks unveiled in autumn 2018](https://reactjs.org/blog/2018/11/13/react-conf-recap.html), I was looking for todo apps that written by new style [Function Component](https://reactjs.org/docs/components-and-props.html#function-and-class-components) and [Hooks](https://reactjs.org/docs/hooks-intro.html) to learn how to use them in real applications but I couldn't find any at that time.
+When you found [React.js](https://reactjs.org/) on [TodoMVC](https://todomvc.com/) top page, you might seen classic style `React.createClass()` based source at first.  
+I don't complaining about it because old style codebase React app works all over the world and helps people.  
+Almost cases, there is no value that spending time for rerwite new syntax sugar of huge codebase.
 
-Not only that, many of the results were written in [ES5](https://en.wikipedia.org/wiki/ECMAScript#5th_Edition) (using React.createClass() API), which was an older JavaScript generation in autumn 2018.
-At that time, I thought there is a demand to keep updating and publishing with a modern code style even it is simple example like Todo App.  
+So this project aming new React learner and who have not written React for a long time and provide handy resource for lerning latest React.js. o
 
-The project is targeting for who have completed a basic JavaScript programming course and new to React, peaople who migrating to React from another JavaScript Framework, and you have used to React in the past and want to catch up on the modern way for write back again.  
+I'm glad to even the repo could be useful for your learning. 🤗3
 
-I'm glad to even the repo could be useful for your learning. 🤗
-　  
-　  
-  
-[![Edit react-app-typescript-todo-example-2022](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/quizzical-blackwell-bvfc5?fontsize=14&hidenavigation=1&theme=dark)
 
----------------
+
+
+
+[![Edit react-typescript-todomvc-2022](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/quizzical-blackwell-bvfc5?fontsize=14&hidenavigation=1&theme=dark)
+
+---
 
 ## Getting Started
 
-- The app assumed installed `Node.js` newer than `10.16.3 LTS`(recommend newer than v14.8.0).
+- The app assumed installed `Node.js` newer than [v16.15.1 LTS](https://nodejs.org/en/).
   If you have not it yet, follow the official [Node.js Doc](https://nodejs.org/en/) to install it.
-  
 
 ```bash
-npx degit laststance/react-app-typescript-todo-example-2022 react-app-typescript-todo-example-2022
+npx degit laststance/react-typescript-todomvc-2022 react-typescript-todomvc-2022
 ```
 
 ```bash
-cd react-app-typescript-todo-example-2022
+cd react-typescript-todomvc-2022
 ```
 
 ```bash
-yarn install
+yarn install # or npm install
 ```
 
 ```bash
-yarn start
+yarn start # or npm start
 ```
 
 after that auto launch todo app on your default browser and code edit ready.
 
-----------------------------------------------------------
+---
 
 ## Stack
 
@@ -74,7 +73,7 @@ after that auto launch todo app on your default browser and code edit ready.
   - [@typescript-eslint/eslint-plugin](https://github.com/typescript-eslint/typescript-eslint#readme)
 - [Netlify](https://www.netlify.com/): Deploy & Hosting
 - [Github Actions](https://github.com/features/actions): Automation run tests, lint, typecheck, build
-- [Depfu](https://depfu.com/github/ryota-murakami/react-app-typescript-todo-example-2022?project_id=9618): Keep latest npm packages automaticaly
+- [Depfu](https://depfu.com/github/ryota-murakami/react-typescript-todomvc-2022?project_id=9618): Keep latest npm packages automaticaly
 
 ## 👩‍💻 Usage
 
@@ -83,8 +82,6 @@ after that auto launch todo app on your default browser and code edit ready.
 After that you'll seen the console which are server processes messages.  
 Let's follow the message and put in URL `http://localhost:3000/` your browsers adressbar,  
 and then you'll got todo app as same as Demo. let's modify under the `src/` code feel free!!
-
-Official Docs: https://create-react-app.dev/docs/getting-started#npm-start-or-yarn-start
 
 ### `yarn build`
 
@@ -163,11 +160,11 @@ There are tons of effective way to create solid software in JavaScript World, yo
 
 ## Issues
 
-Please feel free to post [New Issue](https://github.com/laststance/react-app-typescript-todo-example-2022/issues/new) or Pull Request 🤗
+Please feel free to post [New Issue](https://github.com/laststance/react-typescript-todomvc-2022/issues/new) or Pull Request 🤗
 
 ## Questions
 
-Please feel free to post [New Issue](https://github.com/laststance/react-app-typescript-todo-example-2022/issues/new) or reply on [Twitter](https://twitter.com/malloc007) 🐦
+Please feel free to post [New Issue](https://github.com/laststance/react-typescript-todomvc-2022/issues/new) or reply on [Twitter](https://twitter.com/malloc007) 🐦
 
 If you want to get more generally answers, these community are might be helpful 🍻
 
@@ -187,17 +184,17 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="http://ryota-murakami.github.io/"><img src="https://avatars1.githubusercontent.com/u/5501268?s=400&u=7bf6b1580b95930980af2588ef0057f3e9ec1ff8&v=4?s=100" width="100px;" alt=""/><br /><sub><b>ryota-murakami</b></sub></a><br /><a href="https://github.com/laststance/react-app-typescript-todo-example-2022/commits?author=ryota-murakami" title="Code">💻</a> <a href="https://github.com/laststance/react-app-typescript-todo-example-2022/commits?author=ryota-murakami" title="Documentation">📖</a> <a href="https://github.com/laststance/react-app-typescript-todo-example-2022/commits?author=ryota-murakami" title="Tests">⚠️</a></td>
-    <td align="center"><a href="http://donkeycar.com"><img src="https://avatars2.githubusercontent.com/u/147582?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Will Roscoe</b></sub></a><br /><a href="https://github.com/laststance/react-app-typescript-todo-example-2022/commits?author=wroscoe" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/JunQu"><img src="https://avatars2.githubusercontent.com/u/39846309?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Peng Fei</b></sub></a><br /><a href="https://github.com/laststance/react-app-typescript-todo-example-2022/issues?q=author%3AJunQu" title="Bug reports">🐛</a></td>
-    <td align="center"><a href="https://github.com/alexpanchuk"><img src="https://avatars3.githubusercontent.com/u/26270612?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Alex Panchuk</b></sub></a><br /><a href="https://github.com/laststance/react-app-typescript-todo-example-2022/commits?author=alexpanchuk" title="Documentation">📖</a></td>
-    <td align="center"><a href="https://github.com/BurhanMullamitha"><img src="https://avatars1.githubusercontent.com/u/42492054?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Burhan Mullamitha</b></sub></a><br /><a href="https://github.com/laststance/react-app-typescript-todo-example-2022/commits?author=BurhanMullamitha" title="Documentation">📖</a></td>
-    <td align="center"><a href="https://github.com/hefengxian"><img src="https://avatars.githubusercontent.com/u/4338497?v=4?s=100" width="100px;" alt=""/><br /><sub><b>hefengxian</b></sub></a><br /><a href="https://github.com/laststance/react-app-typescript-todo-example-2022/commits?author=hefengxian" title="Code">💻</a> <a href="https://github.com/laststance/react-app-typescript-todo-example-2022/commits?author=hefengxian" title="Tests">⚠️</a></td>
-    <td align="center"><a href="http://ethansetnik.com"><img src="https://avatars.githubusercontent.com/u/664434?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Ethan Setnik</b></sub></a><br /><a href="https://github.com/laststance/react-app-typescript-todo-example-2022/commits?author=esetnik" title="Documentation">📖</a></td>
+    <td align="center"><a href="http://ryota-murakami.github.io/"><img src="https://avatars1.githubusercontent.com/u/5501268?s=400&u=7bf6b1580b95930980af2588ef0057f3e9ec1ff8&v=4?s=100" width="100px;" alt=""/><br /><sub><b>ryota-murakami</b></sub></a><br /><a href="https://github.com/laststance/react-typescript-todomvc-2022/commits?author=ryota-murakami" title="Code">💻</a> <a href="https://github.com/laststance/react-typescript-todomvc-2022/commits?author=ryota-murakami" title="Documentation">📖</a> <a href="https://github.com/laststance/react-typescript-todomvc-2022/commits?author=ryota-murakami" title="Tests">⚠️</a></td>
+    <td align="center"><a href="http://donkeycar.com"><img src="https://avatars2.githubusercontent.com/u/147582?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Will Roscoe</b></sub></a><br /><a href="https://github.com/laststance/react-typescript-todomvc-2022/commits?author=wroscoe" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/JunQu"><img src="https://avatars2.githubusercontent.com/u/39846309?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Peng Fei</b></sub></a><br /><a href="https://github.com/laststance/react-typescript-todomvc-2022/issues?q=author%3AJunQu" title="Bug reports">🐛</a></td>
+    <td align="center"><a href="https://github.com/alexpanchuk"><img src="https://avatars3.githubusercontent.com/u/26270612?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Alex Panchuk</b></sub></a><br /><a href="https://github.com/laststance/react-typescript-todomvc-2022/commits?author=alexpanchuk" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/BurhanMullamitha"><img src="https://avatars1.githubusercontent.com/u/42492054?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Burhan Mullamitha</b></sub></a><br /><a href="https://github.com/laststance/react-typescript-todomvc-2022/commits?author=BurhanMullamitha" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/hefengxian"><img src="https://avatars.githubusercontent.com/u/4338497?v=4?s=100" width="100px;" alt=""/><br /><sub><b>hefengxian</b></sub></a><br /><a href="https://github.com/laststance/react-typescript-todomvc-2022/commits?author=hefengxian" title="Code">💻</a> <a href="https://github.com/laststance/react-typescript-todomvc-2022/commits?author=hefengxian" title="Tests">⚠️</a></td>
+    <td align="center"><a href="http://ethansetnik.com"><img src="https://avatars.githubusercontent.com/u/664434?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Ethan Setnik</b></sub></a><br /><a href="https://github.com/laststance/react-typescript-todomvc-2022/commits?author=esetnik" title="Documentation">📖</a></td>
   </tr>
   <tr>
-    <td align="center"><a href="https://github.com/PaoloJN"><img src="https://avatars.githubusercontent.com/u/87121008?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Paolo Nessim</b></sub></a><br /><a href="https://github.com/laststance/react-app-typescript-todo-example-2022/commits?author=PaoloJN" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/likui628"><img src="https://avatars.githubusercontent.com/u/90845831?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Li Kui</b></sub></a><br /><a href="https://github.com/laststance/react-app-typescript-todo-example-2022/commits?author=likui628" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/PaoloJN"><img src="https://avatars.githubusercontent.com/u/87121008?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Paolo Nessim</b></sub></a><br /><a href="https://github.com/laststance/react-typescript-todomvc-2022/commits?author=PaoloJN" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/likui628"><img src="https://avatars.githubusercontent.com/u/90845831?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Li Kui</b></sub></a><br /><a href="https://github.com/laststance/react-typescript-todomvc-2022/commits?author=likui628" title="Code">💻</a></td>
   </tr>
 </table>
 
