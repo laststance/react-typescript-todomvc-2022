@@ -61,7 +61,7 @@ after that auto launch todo app on your default browser and code edit ready.
 ## Stack
 
 - [TODO-CSS-Template](https://github.com/Klerith/TODO-CSS-Template) (Borrowing HTML & CSS Thanks! 👍 )
-- [React App](https://github.com/facebook/react-app/releases/tag/v4.0.3) [v4.0.3](https://github.com/facebook/react-app/releases/tag/v4.0.3) (**Without eject**)
+- [Vite](https://vitejs.dev/)
 - [TypeScript](https://www.typescriptlang.org/) [v4.2.4](https://github.com/microsoft/TypeScript/releases/tag/v4.2.4)
 - [ReachRouter](https://github.com/reach/router)
 - [Styled-Components](https://styled-components.com/): CSS-in-JS
