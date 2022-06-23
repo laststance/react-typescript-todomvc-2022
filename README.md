@@ -7,7 +7,7 @@
 [![Test](https://github.com/laststance/react-typescript-todomvc-2022/actions/workflows/test.yml/badge.svg)](https://github.com/laststance/react-typescript-todomvc-2022/actions/workflows/test.yml)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 [![Typecheck](https://github.com/laststance/react-typescript-todomvc-2022/actions/workflows/typecheck.yml/badge.svg)](https://github.com/laststance/react-typescript-todomvc-2022/actions/workflows/typecheck.yml)
-[![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-9-orange.svg?style=flat-square)](#contributors)
 [![Depfu](https://badges.depfu.com/badges/b291947c58892a6d78e4f3374c4a6d01/overview.svg)](https://depfu.com/github/laststance/react-typescript-todomvc-2022?project_id=9618)
 [![This project is using Percy.io for visual regression testing.](https://percy.io/static/images/percy-badge.svg)](https://percy.io/laststance/react-typescript-todomvc-2022)
 
