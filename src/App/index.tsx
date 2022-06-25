@@ -12,6 +12,8 @@ const App: React.FC = () => (
       <RecoilRoot>
         <Routes>
           <Route path="/" element={<TodoMVC />} />
+          <Route path="/active" element={<TodoMVC />} />
+          <Route path="/completed" element={<TodoMVC />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </RecoilRoot>
