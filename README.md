@@ -25,10 +25,6 @@ So this project aming new React learner and who have not written React for a lon
 
 I'm glad to even the repo could be useful for your learning. 🤗3
 
-
-
-
-
 [![Edit react-typescript-todomvc-2022](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/quizzical-blackwell-bvfc5?fontsize=14&hidenavigation=1&theme=dark)
 
 ---

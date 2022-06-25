@@ -9,10 +9,6 @@ import NewTodoInput from './NewTodoInput'
 import { Layout } from './style'
 import TodoList from './TodoList'
 import UnderBar from './UnderBar'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import { RecoilRoot } from 'recoil'
-import { NotFound } from '../NotFound'
-
 
 const TodoMVC: React.FC = () => {
   const appState = useRecoilValue<AppState>(recoilState)
@@ -31,8 +27,8 @@ const TodoMVC: React.FC = () => {
         <NewTodoInput />
         {appState.todoList.length ? (
           <>
-            <TodoList  />
-            <UnderBar  />
+            <TodoList />
+            <UnderBar />
           </>
         ) : null}
       </section>
