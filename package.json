@@ -1,6 +1,6 @@
 {
   "name": "react-typescript-todomvc-2022",
-  "version": "0.0.0", 
+  "version": "1.0.0",
   "license": "MIT",
   "author": "Ryota Murakami <dojce1048@gmail.com> (https://ryota-murakami.github.io/)",
   "browserslist": {
