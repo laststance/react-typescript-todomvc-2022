@@ -23,7 +23,7 @@ Almost cases, there is no value that spending time for rerwite new syntax sugar 
 
 So this project aming new React learner and who have not written React for a long time and provide handy resource for lerning latest React.js. o
 
-I'm glad to even the repo could be useful for your learning. 🤗3
+I'm glad to even the repo could be useful for your learning. 🤗
 
 [![Edit react-typescript-todomvc-2022](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/quizzical-blackwell-bvfc5?fontsize=14&hidenavigation=1&theme=dark)
 
@@ -59,14 +59,13 @@ after that auto launch todo app on your default browser and code edit ready.
 - [TODO-CSS-Template](https://github.com/Klerith/TODO-CSS-Template) (Borrowing HTML & CSS Thanks! 👍 )
 - [Vite](https://vitejs.dev/)
 - [TypeScript](https://www.typescriptlang.org/) [v4.2.4](https://github.com/microsoft/TypeScript/releases/tag/v4.2.4)
-- [ReachRouter](https://github.com/reach/router)
+- [Reacct Router](https://reactrouter.com/)
 - [Styled-Components](https://styled-components.com/): CSS-in-JS
 - [Recoil](https://recoiljs.org/): A state management library for React
 - [Cypress](https://www.cypress.io/): E2E Testing
 - [react-testing-library](https://github.com/testing-library/react-testing-library)
 - [ESLint](https://eslint.org/)
-  - [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier)
-  - [@typescript-eslint/eslint-plugin](https://github.com/typescript-eslint/typescript-eslint#readme)
+  - [eslint-config-typescript-react-pro 🌈](https://github.com/laststance/eslint-config-typescript-react-pro)
 - [Netlify](https://www.netlify.com/): Deploy & Hosting
 - [Github Actions](https://github.com/features/actions): Automation run tests, lint, typecheck, build
 - [Depfu](https://depfu.com/github/ryota-murakami/react-typescript-todomvc-2022?project_id=9618): Keep latest npm packages automaticaly
@@ -81,35 +80,28 @@ and then you'll got todo app as same as Demo. let's modify under the `src/` code
 
 ### `yarn build`
 
-After that You'll get bundled and optimization stuff in `build` directory.  
-Also you can run production build with `serve` local webserver modules.
+ Production build that bundled optimization stuff in `build` directory.
 
-```bash
-yarn global add serve
-serve -s build
-```
-
-Official Docs: https://create-react-app.dev/docs/getting-started#npm-run-build-or-yarn-build
 
 ### `yarn lint`
 
 [ESLint](https://eslint.org/) is at the top.
-And setup [TypeScript ESLint](https://github.com/typescript-eslint/typescript-eslint), integrating [Prettier](https://prettier.io/) as a [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier).
+And setup [TypeScript ESLint](https://github.com/typescript-eslint/typescript-eslint), integrating [Prettier](https://prettier.io/) as a [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier).  
+Here is [final config list](https://github.com/laststance/eslint-config-typescript-react-pro#explicit-all-rule-set-).
 
 ### `yarn lint:fix`
 
-run wtih eslint --fix option.
+Run wtih eslint --fix option.  
+Actually frequently use for perform [Prettier](https://prettier.io/) formatting.  
 
 ### `yarn typecheck`
 
-While developing and building, Babel stop transpile with TS error messages.
-I can't find way static typecheck with babel,
-so I'm using original TypeScript via npm and specified `tsc --noEmit` compile option that doesn't generate compiled code.
+Check TypeScript error whole porject.
 
 ### `yarn test`
 
-[Jest](https://jestjs.io/) is all-in-one test-runner built in [React App](https://facebook.github.io/create-react-app/) and covers function-level unit testing to component-behavior-level integration testing.
-The Repo use to [react-testing-library](https://github.com/testing-library/react-testing-library) for component integration testing.
+Run [Jest](https://jestjs.io/).  
+Using [react-testing-library](https://github.com/testing-library/react-testing-library) for component integration testing.
 
 ### `yarn cypress:open`
 
