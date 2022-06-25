@@ -1,18 +1,16 @@
 import type { ReactElement } from 'react'
 import React from 'react'
+import { useLocation } from 'react-router-dom'
 import { useRecoilState } from 'recoil'
 
-import type { AppState, Routes, Todo } from '../../dataStructure'
+import type { AppState, Todo } from '../../dataStructure'
 import { recoilState } from '../../dataStructure'
 
 import Item from './Item'
 import { Layout } from './style'
 
-interface Props {
-  path: Routes
-}
-
-const TodoList: React.FC<Props> = ({ path }) => {
+const TodoList: React.FC = () => {
+  const { pathname } = useLocation()
   const [appState, setAppState] = useRecoilState<AppState>(recoilState)
 
   function toggleAllCheckbox(e: React.ChangeEvent<HTMLInputElement>): void { /* eslint-disable-line prettier/prettier */
@@ -35,7 +33,7 @@ const TodoList: React.FC<Props> = ({ path }) => {
         <ul className="todo-list" data-testid="todo-list">
           {appState.todoList
             .filter((t: Todo): boolean => {
-              switch (path) {
+              switch (pathname) {
                 case '/':
                   return true
                 case '/active':

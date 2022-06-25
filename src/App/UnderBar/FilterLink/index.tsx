@@ -1,19 +1,14 @@
-import { Link } from '@reach/router'
 import React from 'react'
+import { Link, useLocation } from 'react-router-dom'
 
-import type { Routes } from '../../../dataStructure'
-
-interface Props {
-  path: Routes
-}
-
-const FilterLink: React.FC<Props> = ({ path }) => {
+const FilterLink: React.FC = () => {
+  const { pathname } = useLocation()
   return (
     <ul className="filters">
       <li>
         <Link
           data-cy="all-filter"
-          className={path === '/' ? 'selected' : ''}
+          className={pathname === '/' ? 'selected' : ''}
           to="/"
         >
           All
@@ -22,7 +17,7 @@ const FilterLink: React.FC<Props> = ({ path }) => {
       <li>
         <Link
           data-cy="active-filter"
-          className={path === '/active' ? 'selected' : ''}
+          className={pathname === '/active' ? 'selected' : ''}
           to="/active"
         >
           Active
@@ -31,7 +26,7 @@ const FilterLink: React.FC<Props> = ({ path }) => {
       <li>
         <Link
           data-cy="completed-filter"
-          className={path === '/completed' ? 'selected' : ''}
+          className={pathname === '/completed' ? 'selected' : ''}
           to="/completed"
         >
           Completed
