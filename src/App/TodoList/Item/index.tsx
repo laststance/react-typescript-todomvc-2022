@@ -82,6 +82,7 @@ const Item: React.FC<Props> = ({ todo }) => {
 
   const handleTodoTextEdit = (e: React.ChangeEvent<HTMLInputElement>, onEdit: Todo['id']): void => { /* eslint-disable-line prettier/prettier */
     const edited = appState.todoList.map((t: Todo): Todo => {
+
       if (t.id === onEdit) {
         return { ...t, bodyText: e.target.value }
       } else {
