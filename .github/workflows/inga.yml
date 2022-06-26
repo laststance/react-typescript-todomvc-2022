@@ -1,20 +1,19 @@
 name: Inga analysis
 
 on:
-  push:
-    branches: [ '*' ]
   pull_request:
-    branches: [ main ]
 
 jobs:
   inga-analysis:
 
     runs-on: ubuntu-latest
-    container: ghcr.io/seachicken/inga:latest
+    container: ghcr.io/seachicken/inga:0.1.1
 
     steps:
     - run: git config --global --add safe.directory "$GITHUB_WORKSPACE"
     - uses: actions/checkout@v3
       with:
         fetch-depth: 0
-    - run: inga --exlclude "*.test.tsx, *.spec.tsx" --github-token ${{ secrets.GITHUB_TOKEN }}
+        # https://github.com/actions/checkout/issues/124
+        ref: ${{ github.event.pull_request.head.ref }}
+    - run: inga --exclude "*.test.tsx, *.spec.tsx" --github-token ${{ secrets.GITHUB_TOKEN }}
