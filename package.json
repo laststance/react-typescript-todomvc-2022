@@ -33,7 +33,7 @@
   "devDependencies": {
     "@percy/cli": "^1.0.0-beta.64",
     "@percy/cypress": "^3.1.2",
-    "@swc/core": "^1.2.246",
+    "@swc/core": "^1.2.247",
     "@swc/jest": "^0.2.22",
     "@testing-library/cypress": "^8.0.3",
     "@testing-library/jest-dom": "^5.16.5",
