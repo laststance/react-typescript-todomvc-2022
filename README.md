@@ -59,7 +59,7 @@ after that auto launch todo app on your default browser and code edit ready.
 - [TODO-CSS-Template](https://github.com/Klerith/TODO-CSS-Template) (Borrowing HTML & CSS Thanks! 👍 )
 - [Vite](https://vitejs.dev/)
 - [TypeScript](https://www.typescriptlang.org/) [v4.2.4](https://github.com/microsoft/TypeScript/releases/tag/v4.2.4)
-- [Reacct Router](https://reactrouter.com/)
+- [React Router](https://reactrouter.com/)
 - [Styled-Components](https://styled-components.com/): CSS-in-JS
 - [Recoil](https://recoiljs.org/): A state management library for React
 - [Cypress](https://www.cypress.io/): E2E Testing
