@@ -1284,7 +1284,7 @@
   dependencies:
     "@types/node" "*"
 
-"@typescript-eslint/eslint-plugin@^5.39.0":
+"@typescript-eslint/eslint-plugin@^5.40.0":
   version "5.40.0"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/eslint-plugin/-/eslint-plugin-5.40.0.tgz#0159bb71410eec563968288a17bd4478cdb685bd"
   integrity sha512-FIBZgS3DVJgqPwJzvZTuH4HNsZhHMa9SjxTKAZTlMsPw/UzpEjcf9f4dfgDJEHjK+HboUJo123Eshl6niwEm/Q==
@@ -1298,7 +1298,7 @@
     semver "^7.3.7"
     tsutils "^3.21.0"
 
-"@typescript-eslint/parser@^5.39.0":
+"@typescript-eslint/parser@^5.40.0":
   version "5.40.0"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/parser/-/parser-5.40.0.tgz#432bddc1fe9154945660f67c1ba6d44de5014840"
   integrity sha512-Ah5gqyX2ySkiuYeOIDg7ap51/b63QgWZA7w6AHtFrag7aH0lRQPbLzUjk0c9o5/KZ6JRkTTDKShL4AUrQa6/hw==
@@ -2600,13 +2600,13 @@ eslint-config-prettier@^8.5.0:
   resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-8.5.0.tgz#5a81680ec934beca02c7b1a61cf8ca34b66feab1"
   integrity sha512-obmWKLUNCnhtQRKc+tmnYuQl0pFU1ibYJQ5BGhTVB08bHe9wC8qUeG7c08dj9XX+AuPj1YSGSQIHl1pnDHZR0Q==
 
-eslint-config-typescript-react-pro@^1.5.0:
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-typescript-react-pro/-/eslint-config-typescript-react-pro-1.5.0.tgz#66e0aed2bc2a57d456e20bb31bdb023dbd43f79f"
-  integrity sha512-pYj6h9DPY15VwaoihK1W4RMr62DHIKTBtBUZGsuIpCt8isaZdmbpvyLtsDEc0DWUZsP3t/QoHqM/9RB23SAQkw==
+eslint-config-typescript-react-pro@^1.7.0:
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-typescript-react-pro/-/eslint-config-typescript-react-pro-1.7.0.tgz#1d744c9713804b1b4deb7eacd22235d2e8a1b448"
+  integrity sha512-YvkhnxYw+NPdnNA4fBveosIXMvKxcMFRibISKjA+UbR6wy9Objjhv4mBnzziJZ3SN9ntd9kQJOLNGxM5Z+Rv6g==
   dependencies:
-    "@typescript-eslint/eslint-plugin" "^5.39.0"
-    "@typescript-eslint/parser" "^5.39.0"
+    "@typescript-eslint/eslint-plugin" "^5.40.0"
+    "@typescript-eslint/parser" "^5.40.0"
     eslint "^8.25.0"
     eslint-config-prettier "^8.5.0"
     eslint-import-resolver-typescript "^2.7.1"
