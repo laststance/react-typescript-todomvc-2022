@@ -17,10 +17,19 @@ const FilterLink: React.FC = () => {
       <li>
         <Link
           data-cy="active-filter"
-          className={pathname === '/active' ? 'selected' : ''}
-          to="/active"
+          className={pathname === '/backlog' ? 'selected' : ''}
+          to="/backlog"
         >
-          Active
+          Backlog
+        </Link>
+      </li>
+      <li>
+        <Link
+          data-cy="active-filter"
+          className={pathname === '/in-progress' ? 'selected' : ''}
+          to="/in-progress"
+        >
+          In progress
         </Link>
       </li>
       <li>

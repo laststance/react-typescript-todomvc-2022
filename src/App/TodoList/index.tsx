@@ -1,4 +1,4 @@
-import type { ReactElement } from 'react'
+import { ReactElement, useEffect } from 'react'
 import React from 'react'
 import { useLocation } from 'react-router-dom'
 import { useRecoilState } from 'recoil'
@@ -13,10 +13,19 @@ const TodoList: React.FC = () => {
   const { pathname } = useLocation()
   const [appState, setAppState] = useRecoilState<AppState>(recoilState)
 
-  function toggleAllCheckbox(e: React.ChangeEvent<HTMLInputElement>): void { /* eslint-disable-line prettier/prettier */
+  function toggleAllCheckbox(e: React.ChangeEvent<HTMLInputElement>): void {
+    /* eslint-disable-line prettier/prettier */
     // reverse all todo.completed: boolean flag
-    setAppState({ todoList: appState.todoList.map((t: Todo): Todo => ({ ...t, completed: e.target.checked })) }) /* eslint-disable-line prettier/prettier */
+    setAppState({
+      todoList: appState.todoList.map(
+        (t: Todo): Todo => ({ ...t, completed: e.target.checked })
+      ),
+    }) /* eslint-disable-line prettier/prettier */
   }
+
+  useEffect(() => {
+    console.log('appState', appState)
+  }, [appState])
 
   return (
     <Layout>
@@ -36,7 +45,7 @@ const TodoList: React.FC = () => {
               switch (pathname) {
                 case '/':
                   return true
-                case '/active':
+                case '/backlog':
                   return t.completed === false
                 case '/completed':
                   return t.completed === true

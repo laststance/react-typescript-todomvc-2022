@@ -7,6 +7,7 @@ export interface Todo {
   id: string
   bodyText: string
   completed: boolean
+  inProgress: boolean
 }
 
 export type TodoListType = Todo[]
