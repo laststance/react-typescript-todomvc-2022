@@ -144,12 +144,7 @@ const Item: React.FC<Props> = ({ todo }) => {
             </span>
           )}
           {todo.completed && !todo.inProgress && (
-            <span
-              className="completedBadeg"
-              onClick={() => setInprogress(todo.id)}
-            >
-              Completed
-            </span>
+            <span className="completedBadeg">Completed</span>
           )}
           {/* eslint-enable jsx-a11y/no-noninteractive-element-interactions, jsx-a11y/click-events-have-key-events */}
           <button
