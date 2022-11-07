@@ -23,10 +23,6 @@ const TodoList: React.FC = () => {
     }) /* eslint-disable-line prettier/prettier */
   }
 
-  useEffect(() => {
-    console.log('appState', appState)
-  }, [appState])
-
   return (
     <Layout>
       <section className="main">
