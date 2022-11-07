@@ -62,7 +62,7 @@ const Item: React.FC<Props> = ({ todo }) => {
       // search clicked item by id...
       if (t.id === id) {
         // change complated status only clicked item
-        return { ...t, completed: !t.completed }
+        return { ...t, completed: !t.completed, inProgress: false }
         // return other item without any changes
       } else {
         return t
@@ -140,7 +140,15 @@ const Item: React.FC<Props> = ({ todo }) => {
               className="inProgressBadeg"
               onClick={() => setInprogress(todo.id)}
             >
-              In Progress
+              Backlog
+            </span>
+          )}
+          {todo.completed && !todo.inProgress && (
+            <span
+              className="completedBadeg"
+              onClick={() => setInprogress(todo.id)}
+            >
+              Completed
             </span>
           )}
           {/* eslint-enable jsx-a11y/no-noninteractive-element-interactions, jsx-a11y/click-events-have-key-events */}

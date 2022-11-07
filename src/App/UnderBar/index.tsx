@@ -9,8 +9,12 @@ import { Layout } from './style'
 
 const UnderBar: React.FC = () => {
   const [appState, setAppState] = useRecoilState<AppState>(recoilState)
-  const completed: number = appState.todoList.filter(t => t.completed === true).length /* eslint-disable-line prettier/prettier */
-  const backlog: number = appState.todoList.filter(t => t.completed === false).length /* eslint-disable-line prettier/prettier */
+  const completed: number = appState.todoList.filter(
+    (t) => t.completed
+  ).length /* eslint-disable-line prettier/prettier */
+  const backlog: number = appState.todoList.filter(
+    (t) => t.completed === false
+  ).length /* eslint-disable-line prettier/prettier */
 
   function clearCompleted(): void {
     setAppState({

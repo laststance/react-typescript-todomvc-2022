@@ -46,7 +46,9 @@ const TodoList: React.FC = () => {
                 case '/':
                   return true
                 case '/backlog':
-                  return t.completed === false
+                  return t.completed === false && t.inProgress === false
+                case '/in-progress':
+                  return t.inProgress === true
                 case '/completed':
                   return t.completed === true
                 default:

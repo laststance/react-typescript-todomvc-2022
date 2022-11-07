@@ -139,4 +139,15 @@ export const Layout = styled.div`
     margin-right: 70px;
     cursor: pointer;
   }
+
+  .completedBadeg {
+    padding: 3px 5px;
+    border-radius: 3px;
+    font-size: 0.5em;
+    background-color: #2ecc71;
+    color: white;
+    font-weight: 600;
+    margin-right: 70px;
+    cursor: pointer;
+  }
 `
