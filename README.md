@@ -11,7 +11,7 @@
 [![Depfu](https://badges.depfu.com/badges/b291947c58892a6d78e4f3374c4a6d01/overview.svg)](https://depfu.com/github/laststance/react-typescript-todomvc-2022?project_id=9618)
 [![This project is using Percy.io for visual regression testing.](https://percy.io/static/images/percy-badge.svg)](https://percy.io/laststance/react-typescript-todomvc-2022)
 
-<a href="https://react-app-typescript-todo-example.netlify.com/"><img src="https://raw.githubusercontent.com/laststance/react-typescript-todomvc-2022/master/images/cypress_open.gif" alt="gif"></a>
+<a href="https://react-typescript-todomvc.netlify.app/"><img src="https://raw.githubusercontent.com/laststance/react-typescript-todomvc-2022/master/images/cypress_open.gif" alt="gif"></a>
 
 ## A Modern Code Style Todo Example 📝
 
