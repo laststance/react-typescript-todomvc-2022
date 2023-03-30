@@ -1,5 +1,5 @@
 {
-  "extends": "typescript-react-pro",
+  "extends": "ts-prefixer",
   "plugins": ["cypress"],
   "env": {
     "cypress/globals": true

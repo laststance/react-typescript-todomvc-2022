@@ -14,5 +14,5 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: '18.1.0'
-      - run: yarn install
-      - run: yarn build
+      - run: npm ci
+      - run: npm build
