@@ -1,6 +1,6 @@
 {
-  "extends": "ts-prefixer",
-  "plugins": ["cypress"],
+  "extends": ["plugin:jsx-a11y/recommended","ts-prefixer"],
+  "plugins": ["cypress", "jsx-a11y"],
   "env": {
     "cypress/globals": true
   }
