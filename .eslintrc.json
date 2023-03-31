@@ -1,7 +1,10 @@
 {
   "extends": ["plugin:jsx-a11y/recommended","ts-prefixer"],
-  "plugins": ["cypress", "jsx-a11y"],
+  "plugins": ["cypress", "jsx-a11y", "react-hooks"],
   "env": {
     "cypress/globals": true
+  },
+  "rules": {
+    "react-hooks/rules-of-hooks": "error"
   }
 }
