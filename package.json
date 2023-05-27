@@ -28,7 +28,7 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.11.2",
     "recoil": "^0.7.7",
-    "styled-components": "^5.3.10"
+    "styled-components": "^5.3.11"
   },
   "devDependencies": {
     "@percy/cli": "^1.0.0-beta.64",
