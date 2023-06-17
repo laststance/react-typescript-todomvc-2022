@@ -17,11 +17,9 @@
 This project was started with the goal of continue to publish TodoMVC Apps in the latest [React](https://reactjs.org/) writing style.
 
 When you found [React.js](https://reactjs.org/) on [TodoMVC](https://todomvc.com/) top page, you might seen classic style `React.createClass()` based source at first.  
-I don't complaining about it because old style codebase React app works all over the world and helps people.  
-Almost cases, there is no value that spending time for rerwite new syntax sugar of huge codebase.
+I don't complain about it because the old-style codebase React app works all over the world and helps peopleAlmost cases, there is no value that spending time for rerwite new syntax sugar of huge codebase.
 
-So this project aming new React learner and who have not written React for a long time and provide handy resource for lerning latest React.js. o
-
+This project aims to assist new React learners and those who have not written React for a long time by providing a handy resource for learning the latest React.js.
 I'm glad to even the repo could be useful for your learning. 🤗
 
 [![Edit react-typescript-todomvc-2022](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/quizzical-blackwell-bvfc5?fontsize=14&hidenavigation=1&theme=dark)
@@ -30,8 +28,8 @@ I'm glad to even the repo could be useful for your learning. 🤗
 
 ## Getting Started
 
-- The app assumed installed `Node.js` newer than [v16.15.1 LTS](https://nodejs.org/en/).
-  If you have not it yet, follow the official [Node.js Doc](https://nodejs.org/en/) to install it.
+- The app assumes that you have installed `Node.js` newer than [v16.15.1 LTS](https://nodejs.org/en/).
+  If you don't have it yet, follow the official [Node.js Doc](https://nodejs.org/en/) to install it.
 
 ```bash
 npx degit laststance/react-typescript-todomvc-2022 react-typescript-todomvc-2022
