@@ -93,8 +93,18 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "adarsh-gupta101",
+      "name": "Adarsh Gupta",
+      "avatar_url": "https://avatars.githubusercontent.com/u/73733229?v=4",
+      "profile": "https://adarshgupta.live/",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7,
-  "skipCi": true
+  "skipCi": true,
+  "commitType": "docs"
 }
