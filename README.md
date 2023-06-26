@@ -40,11 +40,11 @@ cd react-typescript-todomvc-2022
 ```
 
 ```bash
-yarn install # or npm install
+npm i
 ```
 
 ```bash
-yarn start # or npm start
+npm start
 ```
 
 after that auto launch todo app on your default browser and code edit ready.
