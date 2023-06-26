@@ -28,7 +28,7 @@ I'm glad to even the repo could be useful for your learning. 🤗
 
 ## Getting Started
 
-- The app assumes that you have installed `Node.js` newer than [v16.15.1 LTS](https://nodejs.org/en/).
+- The app assumes that you have installed `Node.js` newer than [v18.16.1 LTS](https://nodejs.org/en/).
   If you don't have it yet, follow the official [Node.js Doc](https://nodejs.org/en/) to install it.
 
 ```bash
