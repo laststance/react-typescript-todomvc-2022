@@ -1,3 +1,14 @@
+## Project Status from the Author (@ryota-murakami, Aug 16 2023):
+I'm considering continue update as a Client Side SPA or Rewrite this app with Server Components.  
+But Server Components doen't meant obsolete Client Side SPA, both archtecture is great option depends on application type, 
+dev team type, each dev's skillset type.  
+
+Might be keep update both archtecture TODO is ideal vision for me unless there are planty rest time.  
+Anyway, I thnik was [TODO MVC](https://todomvc.com/) outdated for current JS frameworks.  
+I want to renew this project about this winter.
+
+***
+
 # React TypeScript TodoMVC 2022
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/877a9a48-c7e1-498c-b56b-81fa8f4d4d8a/deploy-status)](https://app.netlify.com/sites/react-typescript-todomvc/deploys)
