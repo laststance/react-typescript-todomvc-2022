@@ -1,5 +1,5 @@
 {
-  "extends": ["plugin:jsx-a11y/recommended","ts-prefixer"],
+  "extends": ["plugin:jsx-a11y/recommended", "ts-prefixer"],
   "plugins": ["cypress", "jsx-a11y", "react-hooks"],
   "env": {
     "cypress/globals": true

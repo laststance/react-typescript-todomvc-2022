@@ -5,3 +5,5 @@ instrumented/
 .github/
 .nyc_output/
 coverage/
+cypress
+cypress.config.ts

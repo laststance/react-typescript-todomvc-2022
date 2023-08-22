@@ -26,27 +26,27 @@
 // for adding cy.percySnapshot() command. https://docs.percy.io/docs/cypress
 import '@percy/cypress'
 
-const COMMAND_DELAY = 0
-
-for (const command of [
-  'visit',
-  'click',
-  'trigger',
-  'type',
-  'clear',
-  'reload',
-  'contains',
-]) {
-  Cypress.Commands.overwrite(command, (originalFn, ...args) => {
-    const origVal = originalFn(...args)
-
-    return new Promise((resolve) => {
-      setTimeout(() => {
-        resolve(origVal)
-      }, COMMAND_DELAY)
-    })
-  })
-}
+// const COMMAND_DELAY = 0
+//
+// for (const command of [
+//   'visit',
+//   'click',
+//   'trigger',
+//   'type',
+//   'clear',
+//   'reload',
+//   'contains',
+// ]) {
+//   Cypress.Commands.overwrite(command, async (originalFn, ...args) => {
+//     const origVal = originalFn(...args)
+//
+//     return new Promise((resolve) => {
+//       setTimeout(() => {
+//         resolve(origVal)
+//       }, COMMAND_DELAY)
+//     })
+//   })
+// }
 
 Cypress.Commands.add('submitTripleTodos', () => {
   cy.visit('http://localhost:3000/')

@@ -22,5 +22,11 @@
     "noFallthroughCasesInSwitch": true,
     "jsx": "react-jsx"
   },
-  "include": ["src", "cypress", "vite.config.ts"]
+  "include": [
+    "src",
+    "cypress",
+    "vite.config.ts",
+    "jest.config.js",
+    "jest/fileTransformer.js"
+  ]
 }

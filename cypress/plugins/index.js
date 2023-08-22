@@ -11,7 +11,6 @@
 // This function is called when a project is opened or re-opened (e.g. due to
 // the project's config changing)
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 module.exports = (on, config) => {
   // IMPORTANT to return the config object
   // with the any changed environment variables

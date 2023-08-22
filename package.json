@@ -78,7 +78,7 @@
     "typecheck": "tsc --noEmit",
     "clean": "rimraf yarn.lock package-lock.json node_modules build",
     "cypress:run": "cypress run",
-    "cypress:headed": "cypress run ---headed",
+    "cypress:headed": "cypress run --headed",
     "cypress:run:chrome": "cypress run --browser chrome",
     "cypress:run:chrome:headless": "cypress run --browser chrome --headless",
     "cypress:open": "cypress open",

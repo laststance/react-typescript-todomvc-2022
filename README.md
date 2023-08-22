@@ -1,13 +1,14 @@
 ## Project Status from the Author (@ryota-murakami, Aug 16 2023):
+
 I'm considering continue update as a Client Side SPA or Rewrite this app with Server Components.  
-But Server Components doen't meant obsolete Client Side SPA, both archtecture is great option depends on application type, 
-dev team type, each dev's skillset type.  
+But Server Components doen't meant obsolete Client Side SPA, both archtecture is great option depends on application type,
+dev team type, each dev's skillset type.
 
 Might be keep update both archtecture TODO is ideal vision for me unless there are planty rest time.  
 Anyway, I thnik was [TODO MVC](https://todomvc.com/) outdated for current JS frameworks.  
 I want to renew this project about this winter.
 
-***
+---
 
 # React TypeScript TodoMVC 2022
 
@@ -83,6 +84,7 @@ after that auto launch todo app on your default browser and code edit ready.
 You can do exact same command with npm, or [install yarn](https://classic.yarnpkg.com/en/docs/install#mac-stable) easily if you have interest.
 
 ### `yarn` or `yarn install`
+
 Install all Node Package Modules that depending this project.
 
 ### `yarn start`
@@ -93,7 +95,7 @@ and then you'll got todo app as same as Demo. let's modify under the `src/` code
 
 ### `yarn build`
 
- Production build that bundled optimization stuff in `build` directory.
+Production build that bundled optimization stuff in `build` directory.
 
 ### `yarn serve`
 
@@ -108,7 +110,7 @@ Here is [final config list](https://github.com/laststance/eslint-config-typescri
 ### `yarn lint:fix`
 
 Run wtih eslint --fix option.  
-Actually frequently use for perform [Prettier](https://prettier.io/) formatting.  
+Actually frequently use for perform [Prettier](https://prettier.io/) formatting.
 
 ### `yarn typecheck`
 
