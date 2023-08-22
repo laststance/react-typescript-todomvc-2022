@@ -1,3 +1,14 @@
+## Project Status from the Author (@ryota-murakami, Aug 16 2023):
+I'm considering continue update as a Client Side SPA or Rewrite this app with Server Components.  
+But Server Components doen't meant obsolete Client Side SPA, both archtecture is great option depends on application type, 
+dev team type, each dev's skillset type.  
+
+Might be keep update both archtecture TODO is ideal vision for me unless there are planty rest time.  
+Anyway, I thnik was [TODO MVC](https://todomvc.com/) outdated for current JS frameworks.  
+I want to renew this project about this winter.
+
+***
+
 # React TypeScript TodoMVC 2022
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/877a9a48-c7e1-498c-b56b-81fa8f4d4d8a/deploy-status)](https://app.netlify.com/sites/react-typescript-todomvc/deploys)
@@ -28,7 +39,7 @@ I'm glad to even the repo could be useful for your learning. 🤗
 
 ## Getting Started
 
-- The app assumes that you have installed `Node.js` newer than [v16.15.1 LTS](https://nodejs.org/en/).
+- The app assumes that you have installed `Node.js` newer than [v18.16.1 LTS](https://nodejs.org/en/).
   If you don't have it yet, follow the official [Node.js Doc](https://nodejs.org/en/) to install it.
 
 ```bash
@@ -40,11 +51,11 @@ cd react-typescript-todomvc-2022
 ```
 
 ```bash
-yarn install # or npm install
+npm i
 ```
 
 ```bash
-yarn start # or npm start
+npm start
 ```
 
 after that auto launch todo app on your default browser and code edit ready.
@@ -184,19 +195,22 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
 <table>
-  <tr>
-    <td align="center"><a href="http://ryota-murakami.github.io/"><img src="https://avatars1.githubusercontent.com/u/5501268?s=400&u=7bf6b1580b95930980af2588ef0057f3e9ec1ff8&v=4?s=100" width="100px;" alt=""/><br /><sub><b>ryota-murakami</b></sub></a><br /><a href="https://github.com/laststance/react-typescript-todomvc-2022/commits?author=ryota-murakami" title="Code">💻</a> <a href="https://github.com/laststance/react-typescript-todomvc-2022/commits?author=ryota-murakami" title="Documentation">📖</a> <a href="https://github.com/laststance/react-typescript-todomvc-2022/commits?author=ryota-murakami" title="Tests">⚠️</a></td>
-    <td align="center"><a href="http://donkeycar.com"><img src="https://avatars2.githubusercontent.com/u/147582?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Will Roscoe</b></sub></a><br /><a href="https://github.com/laststance/react-typescript-todomvc-2022/commits?author=wroscoe" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/JunQu"><img src="https://avatars2.githubusercontent.com/u/39846309?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Peng Fei</b></sub></a><br /><a href="https://github.com/laststance/react-typescript-todomvc-2022/issues?q=author%3AJunQu" title="Bug reports">🐛</a></td>
-    <td align="center"><a href="https://github.com/alexpanchuk"><img src="https://avatars3.githubusercontent.com/u/26270612?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Alex Panchuk</b></sub></a><br /><a href="https://github.com/laststance/react-typescript-todomvc-2022/commits?author=alexpanchuk" title="Documentation">📖</a></td>
-    <td align="center"><a href="https://github.com/BurhanMullamitha"><img src="https://avatars1.githubusercontent.com/u/42492054?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Burhan Mullamitha</b></sub></a><br /><a href="https://github.com/laststance/react-typescript-todomvc-2022/commits?author=BurhanMullamitha" title="Documentation">📖</a></td>
-    <td align="center"><a href="https://github.com/hefengxian"><img src="https://avatars.githubusercontent.com/u/4338497?v=4?s=100" width="100px;" alt=""/><br /><sub><b>hefengxian</b></sub></a><br /><a href="https://github.com/laststance/react-typescript-todomvc-2022/commits?author=hefengxian" title="Code">💻</a> <a href="https://github.com/laststance/react-typescript-todomvc-2022/commits?author=hefengxian" title="Tests">⚠️</a></td>
-    <td align="center"><a href="http://ethansetnik.com"><img src="https://avatars.githubusercontent.com/u/664434?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Ethan Setnik</b></sub></a><br /><a href="https://github.com/laststance/react-typescript-todomvc-2022/commits?author=esetnik" title="Documentation">📖</a></td>
-  </tr>
-  <tr>
-    <td align="center"><a href="https://github.com/PaoloJN"><img src="https://avatars.githubusercontent.com/u/87121008?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Paolo Nessim</b></sub></a><br /><a href="https://github.com/laststance/react-typescript-todomvc-2022/commits?author=PaoloJN" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/likui628"><img src="https://avatars.githubusercontent.com/u/90845831?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Li Kui</b></sub></a><br /><a href="https://github.com/laststance/react-typescript-todomvc-2022/commits?author=likui628" title="Code">💻</a></td>
-  </tr>
+  <tbody>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="http://ryota-murakami.github.io/"><img src="https://avatars1.githubusercontent.com/u/5501268?s=400&u=7bf6b1580b95930980af2588ef0057f3e9ec1ff8&v=4?s=100" width="100px;" alt="ryota-murakami"/><br /><sub><b>ryota-murakami</b></sub></a><br /><a href="https://github.com/laststance/react-typescript-todomvc-2022/commits?author=ryota-murakami" title="Code">💻</a> <a href="https://github.com/laststance/react-typescript-todomvc-2022/commits?author=ryota-murakami" title="Documentation">📖</a> <a href="https://github.com/laststance/react-typescript-todomvc-2022/commits?author=ryota-murakami" title="Tests">⚠️</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="http://donkeycar.com"><img src="https://avatars2.githubusercontent.com/u/147582?v=4?s=100" width="100px;" alt="Will Roscoe"/><br /><sub><b>Will Roscoe</b></sub></a><br /><a href="https://github.com/laststance/react-typescript-todomvc-2022/commits?author=wroscoe" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/JunQu"><img src="https://avatars2.githubusercontent.com/u/39846309?v=4?s=100" width="100px;" alt="Peng Fei"/><br /><sub><b>Peng Fei</b></sub></a><br /><a href="https://github.com/laststance/react-typescript-todomvc-2022/issues?q=author%3AJunQu" title="Bug reports">🐛</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/alexpanchuk"><img src="https://avatars3.githubusercontent.com/u/26270612?v=4?s=100" width="100px;" alt="Alex Panchuk"/><br /><sub><b>Alex Panchuk</b></sub></a><br /><a href="https://github.com/laststance/react-typescript-todomvc-2022/commits?author=alexpanchuk" title="Documentation">📖</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/BurhanMullamitha"><img src="https://avatars1.githubusercontent.com/u/42492054?v=4?s=100" width="100px;" alt="Burhan Mullamitha"/><br /><sub><b>Burhan Mullamitha</b></sub></a><br /><a href="https://github.com/laststance/react-typescript-todomvc-2022/commits?author=BurhanMullamitha" title="Documentation">📖</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/hefengxian"><img src="https://avatars.githubusercontent.com/u/4338497?v=4?s=100" width="100px;" alt="hefengxian"/><br /><sub><b>hefengxian</b></sub></a><br /><a href="https://github.com/laststance/react-typescript-todomvc-2022/commits?author=hefengxian" title="Code">💻</a> <a href="https://github.com/laststance/react-typescript-todomvc-2022/commits?author=hefengxian" title="Tests">⚠️</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="http://ethansetnik.com"><img src="https://avatars.githubusercontent.com/u/664434?v=4?s=100" width="100px;" alt="Ethan Setnik"/><br /><sub><b>Ethan Setnik</b></sub></a><br /><a href="https://github.com/laststance/react-typescript-todomvc-2022/commits?author=esetnik" title="Documentation">📖</a></td>
+    </tr>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/PaoloJN"><img src="https://avatars.githubusercontent.com/u/87121008?v=4?s=100" width="100px;" alt="Paolo Nessim"/><br /><sub><b>Paolo Nessim</b></sub></a><br /><a href="https://github.com/laststance/react-typescript-todomvc-2022/commits?author=PaoloJN" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/likui628"><img src="https://avatars.githubusercontent.com/u/90845831?v=4?s=100" width="100px;" alt="Li Kui"/><br /><sub><b>Li Kui</b></sub></a><br /><a href="https://github.com/laststance/react-typescript-todomvc-2022/commits?author=likui628" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://adarshgupta.live/"><img src="https://avatars.githubusercontent.com/u/73733229?v=4?s=100" width="100px;" alt="Adarsh Gupta"/><br /><sub><b>Adarsh Gupta</b></sub></a><br /><a href="https://github.com/laststance/react-typescript-todomvc-2022/commits?author=adarsh-gupta101" title="Documentation">📖</a></td>
+    </tr>
+  </tbody>
 </table>
 
 <!-- markdownlint-restore -->
