@@ -1,6 +1,6 @@
 import type { ErrorInfo, ReactNode } from 'react'
 import React, { Component } from 'react'
-import styled from 'styled-components'
+import { styled } from 'styled-components'
 
 interface Props {
   children?: ReactNode
