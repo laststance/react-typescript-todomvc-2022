@@ -34,7 +34,7 @@ it('renders without crashing', () => {
       }}
     >
       <App path="/" />
-    </RecoilRoot>
+    </RecoilRoot>,
   )
 
   root.unmount()

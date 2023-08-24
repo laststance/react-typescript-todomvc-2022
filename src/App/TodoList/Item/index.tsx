@@ -74,7 +74,7 @@ const Item: React.FC<Props> = ({ todo }) => {
 
   const removeItem = (terminate: Todo['id']): void => {
     const removed: TodoListType = appState.todoList.filter(
-      (t: Todo): boolean => t.id !== terminate
+      (t: Todo): boolean => t.id !== terminate,
     )
 
     setAppState({ todoList: removed })

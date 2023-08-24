@@ -7,7 +7,7 @@ test('should be render fallback page Error was thrown', () => {
   const screen = render(
     <ErrorBoundary>
       <InvalidComponent />
-    </ErrorBoundary>
+    </ErrorBoundary>,
   )
   expect(screen.getByText('Something Error Ooccurring')).toBeInTheDocument()
 })

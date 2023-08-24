@@ -17,7 +17,7 @@ const TodoMVC: React.FC = () => {
   useEffect((): void => {
     window.localStorage.setItem(
       LocalStorageKey.APP_STATE,
-      JSON.stringify(appState) // convert JavaScript Object to string
+      JSON.stringify(appState), // convert JavaScript Object to string
     )
   }, [appState])
 

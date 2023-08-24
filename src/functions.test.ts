@@ -11,8 +11,8 @@ describe('UUID', () => {
 
     results.forEach((uuid) =>
       expect(uuid).toMatch(
-        /^[ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789]{12}$/
-      )
+        /^[ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789]{12}$/,
+      ),
     )
   })
 })

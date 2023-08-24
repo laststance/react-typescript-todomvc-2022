@@ -12,7 +12,7 @@ const Copyright: React.FC = memo(
       </p>
     </footer>
   ),
-  () => true
+  () => true,
 )
 
 export default Copyright

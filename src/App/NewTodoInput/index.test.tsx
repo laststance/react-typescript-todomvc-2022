@@ -14,7 +14,7 @@ test('should be render <TodoTextInput/>', () => {
 
   // Placeholder
   expect(
-    screen.getByPlaceholderText('What needs to be done?')
+    screen.getByPlaceholderText('What needs to be done?'),
   ).toBeInTheDocument()
 
   // type 'tidying my room'

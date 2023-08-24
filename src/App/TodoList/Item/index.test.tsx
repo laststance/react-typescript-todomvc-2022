@@ -1,4 +1,4 @@
-import { cleanup, fireEvent, screen } from '@testing-library/react'
+import { fireEvent, screen } from '@testing-library/react'
 import React from 'react'
 import { useRecoilState } from 'recoil'
 
@@ -31,17 +31,18 @@ const App = () => {
 test('should each initialAppstate todo object value is set to Item element', () => {
   TestRenderer(
     <Item todo={initialRecoilState.todoList[0]} />,
-    initialRecoilState
+    initialRecoilState,
   )
 
   expect(screen.getByTestId('todo-item')).toBeInTheDocument()
 
   expect(
-    (screen.getByTestId('todo-item-complete-check') as HTMLInputElement).checked
+    (screen.getByTestId('todo-item-complete-check') as HTMLInputElement)
+      .checked,
   ).toBe(false)
   expect(screen.getByTestId('todo-body-text')).toHaveTextContent('cut tomato')
   expect(
-    (screen.getByTestId('todo-edit-input') as HTMLInputElement).value
+    (screen.getByTestId('todo-edit-input') as HTMLInputElement).value,
   ).toBe('cut tomato')
 })
 
@@ -59,20 +60,21 @@ test('should work todo completed checkbox', () => {
   // click complete checkbox then should appear completed class
   fireEvent.click(screen.getByTestId('todo-item-complete-check'))
   expect(
-    (screen.getByTestId('todo-item-complete-check') as HTMLInputElement).checked
+    (screen.getByTestId('todo-item-complete-check') as HTMLInputElement)
+      .checked,
   ).toBe(true)
   expect(screen.getByTestId('todo-item')).toHaveClass('completed')
 
   // should working as toggle
   fireEvent.click(screen.getByTestId('todo-item-complete-check'))
   expect(
-    (screen.getByTestId('todo-item-complete-check') as HTMLInputElement).checked
+    (screen.getByTestId('todo-item-complete-check') as HTMLInputElement)
+      .checked,
   ).toBe(false)
   expect(screen.getByTestId('todo-item')).not.toHaveClass('completed')
 })
 
 test('should work edit mode and toggle show/hide', () => {
-
   TestRenderer(<App />, initialRecoilState)
   // by default, edit input form is not visible
   // expect(screen.getByTestId('todo-edit-input')).not.toBeVisible() this is styled-component@v6 specifc bug, doesn't apply "display:none" property
@@ -87,7 +89,7 @@ test('should work edit mode and toggle show/hide', () => {
   fireEvent.keyDown(screen.getByTestId('todo-edit-input'), { key: 'Enter' })
 
   expect(screen.getByTestId('todo-body-text')).toHaveTextContent(
-    'cut tomato plus'
+    'cut tomato plus',
   )
   expect(screen.getByTestId('todo-item')).not.toHaveClass('editing')
   // expect(screen.getByTestId('todo-edit-input')).not.toBeVisible() this is styled-component@v6 specifc bug, doesn't apply "display:none" property
@@ -102,7 +104,7 @@ test('should work edit mode and toggle show/hide', () => {
   })
   fireEvent.keyDown(screen.getByTestId('todo-edit-input'), { key: 'Escape' })
   expect(screen.getByTestId('todo-body-text')).toHaveTextContent(
-    'cut tomato plus plus'
+    'cut tomato plus plus',
   )
   expect(screen.getByTestId('todo-item')).not.toHaveClass('editing')
   // expect(screen.getByTestId('todo-edit-input')).not.toBeVisible() this is styled-component@v6 specifc bug, doesn't apply "display:none" property

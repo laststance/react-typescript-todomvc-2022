@@ -14,7 +14,7 @@ const defaultValue: AppState = {
 
 export const TestRenderer = (
   ui: React.ReactElement,
-  initialRecoilStateValue: AppState = defaultValue
+  initialRecoilStateValue: AppState = defaultValue,
 ): RenderResult =>
   render(
     <BrowserRouter>
@@ -25,5 +25,5 @@ export const TestRenderer = (
       >
         {ui}
       </RecoilRoot>
-    </BrowserRouter>
+    </BrowserRouter>,
   )
