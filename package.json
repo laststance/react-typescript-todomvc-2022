@@ -50,7 +50,7 @@
     "cypress": "^12.17.4",
     "eslint": "^8.47.0",
     "eslint-config-prettier": "^9.0.0",
-    "eslint-config-ts-prefixer": "^1.0.2",
+    "eslint-config-ts-prefixer": "^1.2.0",
     "eslint-import-resolver-typescript": "^3.6.0",
     "eslint-plugin-cypress": "^2.14.0",
     "eslint-plugin-import": "^2.28.1",
