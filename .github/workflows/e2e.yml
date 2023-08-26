@@ -14,10 +14,13 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: '18.1.0'
-      - run: npm ci
-      - uses: cypress-io/github-action@v2
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
         with:
-          start: npm start
+          version: 8
+      - uses: cypress-io/github-action@v5
+        with:
+          start: pnpm start
           wait-on: 'http://localhost:3000'
           # the entire command will automatically be prefixed with "npm"
           # and we need the second "npm" to execute "cypress run ..." command line

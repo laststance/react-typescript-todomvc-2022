@@ -1,0 +1,21 @@
+name: Dependabot auto-approve
+on:
+  pull_request_target:
+    types:
+      - opened
+
+jobs:
+  dependabot:
+    if: github.actor == 'dependabot[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v2
+      - name: Fetch Dependabot metadata
+        id: dependabot-metadata
+        uses: dependabot/fetch-metadata@v1.1.1h
+        with:
+          github-token: "${{ secrets.GITHUB_TOKEN }}"
+      - name: Auto approve
+        if: steps.dependabot-metadata.outputs.update-type == 'version-update:semver-patch' || steps.dependabot-metadata.outputs.update-type == 'version-update:semver-minor' || steps.dependabot-metadata.outputs.update-type == 'version-update:semver-patch' || steps.dependabot-metadata.outputs.update-type == 'version-update:semver-major'
+        run: gh pr review --approve
