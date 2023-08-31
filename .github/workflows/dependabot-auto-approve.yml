@@ -9,11 +9,11 @@ jobs:
     runs-on: ubuntu-latest
     if: ${{ github.actor == 'dependabot[bot]' }}
     steps:
-      - name: Check all jobs
+      - name: Check all CI jobs
         id: check
         run: |
           commit_sha=$(git rev-parse HEAD)
-          repo_url="https://api.github.com/repos/${{ github.repository }}"
+          repo_url="https://github.com/laststance/${{ github.repository }}"
           checks_url="${repo_url}/commits/${commit_sha}/check-runs"
           
           # Fetch all check runs for the commit
@@ -36,7 +36,7 @@ jobs:
         with:
           github-token: "${{ secrets.GITHUB_TOKEN }}"
       - name: Approve a PR
-        if: env.ALL_CHECKS_PASSED == 'true'  
+        if: env.ALL_CHECKS_PASSED == 'true'
         run: gh pr review --approve "$PR_URL"
         env:
           PR_URL: ${{github.event.pull_request.html_url}}
