@@ -62,7 +62,7 @@
     "jest-environment-jsdom": "^29.7.0",
     "jest-watch-typeahead": "^2.2.2",
     "prettier": "^3.0.3",
-    "rimraf": "^5.0.1",
+    "rimraf": "^5.0.2",
     "serve": "^14.2.0",
     "typescript": "^5.2.2",
     "vite": "^4.4.9"
