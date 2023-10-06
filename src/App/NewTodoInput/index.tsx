@@ -19,11 +19,14 @@ const NewTodoTextInput: React.FC = () => {
       const todo: Todo = {
         bodyText: textInput.current.value,
         completed: false,
+        inProgress: false,
         id: UUID(),
       }
 
       // add new TODO to entire TodoList
-      setAppState({ todoList: [todo, ...appState.todoList] })
+      setAppState({
+        todoList: [todo, ...appState.todoList],
+      })
 
       // reset text input UI value
       textInput.current.value = ''

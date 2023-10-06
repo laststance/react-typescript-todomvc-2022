@@ -35,6 +35,12 @@ export const Layout = styled.div`
     margin: 0 0 0 43px;
   }
 
+  .view {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
   .editing .view {
     display: none;
   }
@@ -110,5 +116,38 @@ export const Layout = styled.div`
 
   .editing:last-child {
     margin-bottom: -1px;
+  }
+
+  .inProgressActiveBadeg {
+    padding: 3px 5px;
+    border-radius: 3px;
+    font-size: 0.5em;
+    background-color: #f39c12;
+    color: white;
+    font-weight: 600;
+    margin-right: 70px;
+    cursor: pointer;
+  }
+
+  .inProgressBadeg {
+    padding: 3px 5px;
+    border-radius: 3px;
+    font-size: 0.5em;
+    background-color: #bdc3c7;
+    color: white;
+    font-weight: 600;
+    margin-right: 70px;
+    cursor: pointer;
+  }
+
+  .completedBadeg {
+    padding: 3px 5px;
+    border-radius: 3px;
+    font-size: 0.5em;
+    background-color: #2ecc71;
+    color: white;
+    font-weight: 600;
+    margin-right: 70px;
+    cursor: pointer;
   }
 `

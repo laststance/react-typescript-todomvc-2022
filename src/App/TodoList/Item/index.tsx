@@ -62,7 +62,7 @@ const Item: React.FC<Props> = ({ todo }) => {
       // search clicked item by id...
       if (t.id === id) {
         // change complated status only clicked item
-        return { ...t, completed: !t.completed }
+        return { ...t, completed: !t.completed, inProgress: false }
         // return other item without any changes
       } else {
         return t
@@ -80,7 +80,19 @@ const Item: React.FC<Props> = ({ todo }) => {
     setAppState({ todoList: removed })
   }
 
-  const handleTodoTextEdit = (e: React.ChangeEvent<HTMLInputElement>, onEdit: Todo['id']): void => { /* eslint-disable-line prettier/prettier */
+  const setInprogress = (id: Todo['id']) => {
+    let temp: TodoListType = appState.todoList.map((t) =>
+      t.inProgress ? { ...t, inProgress: false } : t
+    )
+    temp = temp.map((t) => (t.id === id ? { ...t, inProgress: true } : t))
+    setAppState({ todoList: temp })
+  }
+
+  const handleTodoTextEdit = (
+    e: React.ChangeEvent<HTMLInputElement>,
+    onEdit: Todo['id']
+  ): void => {
+    /* eslint-disable-line prettier/prettier */
     const edited = appState.todoList.map((t: Todo): Todo => {
       if (t.id === onEdit) {
         return { ...t, bodyText: e.target.value }
@@ -112,6 +124,7 @@ const Item: React.FC<Props> = ({ todo }) => {
           />
 
           {/* eslint-disable jsx-a11y/no-noninteractive-element-interactions, jsx-a11y/click-events-have-key-events */}
+
           <label
             onClick={onClick}
             data-cy="todo-body-text"
@@ -119,6 +132,20 @@ const Item: React.FC<Props> = ({ todo }) => {
           >
             {todo.bodyText}
           </label>
+          {!todo.completed && todo.inProgress && (
+            <span className="inProgressActiveBadeg">In Progress</span>
+          )}
+          {!todo.completed && !todo.inProgress && (
+            <span
+              className="inProgressBadeg"
+              onClick={() => setInprogress(todo.id)}
+            >
+              Backlog
+            </span>
+          )}
+          {todo.completed && !todo.inProgress && (
+            <span className="completedBadeg">Completed</span>
+          )}
           {/* eslint-enable jsx-a11y/no-noninteractive-element-interactions, jsx-a11y/click-events-have-key-events */}
           <button
             className="destroy"
@@ -132,8 +159,12 @@ const Item: React.FC<Props> = ({ todo }) => {
           onBlur={(e: React.FocusEvent<HTMLInputElement>) => onBlurEdit(e)}
           className="edit"
           value={todo.bodyText}
-          onChange={(e: React.ChangeEvent<HTMLInputElement>) => handleTodoTextEdit(e, todo.id)} /* eslint-disable-line prettier/prettier */
-          onKeyDown={(e: React.KeyboardEvent<HTMLInputElement>) => submitEditText(e)} /* eslint-disable-line prettier/prettier */
+          onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
+            handleTodoTextEdit(e, todo.id)
+          } /* eslint-disable-line prettier/prettier */
+          onKeyDown={(e: React.KeyboardEvent<HTMLInputElement>) =>
+            submitEditText(e)
+          } /* eslint-disable-line prettier/prettier */
           data-cy="todo-edit-input"
           data-testid="todo-edit-input"
         />
