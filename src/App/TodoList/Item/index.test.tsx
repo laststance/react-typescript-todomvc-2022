@@ -11,9 +11,9 @@ import Item from './index'
 const initialRecoilState: AppState = {
   todoList: [
     {
+      id: '8btxpD9kDBlo',
       bodyText: 'cut tomato',
       completed: false,
-      id: '8btxpD9kDBlo',
     },
   ],
 }

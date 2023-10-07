@@ -8,19 +8,19 @@ it('renders without crashing', () => {
   const todo = {
     todoList: [
       {
+        id: 'TsHx9eEN5Y4A',
         bodyText: 'monster',
         completed: false,
-        id: 'TsHx9eEN5Y4A',
       },
       {
+        id: 'ba91OwrK0Dt8',
         bodyText: 'boss black',
         completed: false,
-        id: 'ba91OwrK0Dt8',
       },
       {
+        id: 'QwejYipEf5nk',
         bodyText: 'caffe latte',
         completed: false,
-        id: 'QwejYipEf5nk',
       },
     ],
   }
