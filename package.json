@@ -28,7 +28,7 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.16.0",
     "recoil": "^0.7.7",
-    "styled-components": "^6.0.9",
+    "styled-components": "^6.1.0",
     "stylis": "^4.3.0"
   },
   "devDependencies": {
