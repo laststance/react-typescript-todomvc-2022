@@ -80,8 +80,8 @@ devDependencies:
     specifier: ^9.0.0
     version: 9.0.0(eslint@8.52.0)
   eslint-config-ts-prefixer:
-    specifier: ^1.9.3
-    version: 1.9.3(@typescript-eslint/eslint-plugin@6.9.0)(@typescript-eslint/parser@6.9.0)(eslint-config-prettier@9.0.0)(eslint-import-resolver-typescript@3.6.1)(eslint-plugin-import@2.29.0)(eslint-plugin-prettier@5.0.1)(eslint-plugin-sort-keys-custom-order@1.0.5)(eslint@8.52.0)(prettier@3.0.3)(typescript@5.2.2)
+    specifier: ^1.11.3
+    version: 1.11.3(@typescript-eslint/eslint-plugin@6.9.0)(@typescript-eslint/parser@6.9.0)(eslint-config-prettier@9.0.0)(eslint-import-resolver-typescript@3.6.1)(eslint-plugin-import@2.29.0)(eslint-plugin-prettier@5.0.1)(eslint@8.52.0)(prettier@3.0.3)(typescript@5.2.2)
   eslint-import-resolver-typescript:
     specifier: ^3.6.1
     version: 3.6.1(@typescript-eslint/parser@6.9.0)(eslint-plugin-import@2.29.0)(eslint@8.52.0)
@@ -3364,8 +3364,8 @@ packages:
       eslint: 8.52.0
     dev: true
 
-  /eslint-config-ts-prefixer@1.9.3(@typescript-eslint/eslint-plugin@6.9.0)(@typescript-eslint/parser@6.9.0)(eslint-config-prettier@9.0.0)(eslint-import-resolver-typescript@3.6.1)(eslint-plugin-import@2.29.0)(eslint-plugin-prettier@5.0.1)(eslint-plugin-sort-keys-custom-order@1.0.5)(eslint@8.52.0)(prettier@3.0.3)(typescript@5.2.2):
-    resolution: {integrity: sha512-clE1uWGam16XiE8XB5eWSnc/1dEpzUx7zReHvQVBtlXhD4EMX2F1p2PoeiOwJpzTlmTxn07ILImGlRbvF7w+8g==}
+  /eslint-config-ts-prefixer@1.11.3(@typescript-eslint/eslint-plugin@6.9.0)(@typescript-eslint/parser@6.9.0)(eslint-config-prettier@9.0.0)(eslint-import-resolver-typescript@3.6.1)(eslint-plugin-import@2.29.0)(eslint-plugin-prettier@5.0.1)(eslint@8.52.0)(prettier@3.0.3)(typescript@5.2.2):
+    resolution: {integrity: sha512-Z5S1JhpuMpbosiINDcygDuSlA+jENTgPCytB2c1RPKCtg9sPC2X1fytY4eVuZJ5wv/UsDK/tvXybcoSSGF3cjg==}
     hasBin: true
     peerDependencies:
       '@typescript-eslint/eslint-plugin': ^6.7.0
@@ -3375,7 +3375,6 @@ packages:
       eslint-import-resolver-typescript: ^3.6.0
       eslint-plugin-import: ^2.28.1
       eslint-plugin-prettier: ^5.0.0
-      eslint-plugin-sort-keys-custom-order: ^1.0.5
       prettier: ^3.0.3
       typescript: ^5.1.6
     dependencies:
@@ -3388,7 +3387,6 @@ packages:
       eslint-import-resolver-typescript: 3.6.1(@typescript-eslint/parser@6.9.0)(eslint-plugin-import@2.29.0)(eslint@8.52.0)
       eslint-plugin-import: 2.29.0(@typescript-eslint/parser@6.9.0)(eslint-import-resolver-typescript@3.6.1)(eslint@8.52.0)
       eslint-plugin-prettier: 5.0.1(eslint-config-prettier@9.0.0)(eslint@8.52.0)(prettier@3.0.3)
-      eslint-plugin-sort-keys-custom-order: 1.0.5(eslint@8.52.0)
       inquirer: 9.2.11
       prettier: 3.0.3
       typescript: 5.2.2
