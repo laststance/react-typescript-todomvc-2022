@@ -42,7 +42,7 @@ devDependencies:
     version: 10.0.1(cypress@13.4.0)
   '@testing-library/jest-dom':
     specifier: ^6.1.4
-    version: 6.1.4(@types/jest@29.5.6)(jest@29.7.0)
+    version: 6.1.4(@types/jest@29.5.7)(jest@29.7.0)
   '@testing-library/react':
     specifier: ^14.0.0
     version: 14.0.0(react-dom@18.2.0)(react@18.2.0)
@@ -50,8 +50,8 @@ devDependencies:
     specifier: ^14.5.1
     version: 14.5.1(@testing-library/dom@9.3.3)
   '@types/jest':
-    specifier: ^29.5.6
-    version: 29.5.6
+    specifier: ^29.5.7
+    version: 29.5.7
   '@types/node':
     specifier: ^20.8.10
     version: 20.8.10
@@ -1646,7 +1646,7 @@ packages:
       pretty-format: 27.5.1
     dev: true
 
-  /@testing-library/jest-dom@6.1.4(@types/jest@29.5.6)(jest@29.7.0):
+  /@testing-library/jest-dom@6.1.4(@types/jest@29.5.7)(jest@29.7.0):
     resolution: {integrity: sha512-wpoYrCYwSZ5/AxcrjLxJmCU6I5QAJXslEeSiMQqaWmP2Kzpd1LvF/qxmAIW2qposULGWq2gw30GgVNFLSc2Jnw==}
     engines: {node: '>=14', npm: '>=6', yarn: '>=1'}
     peerDependencies:
@@ -1666,7 +1666,7 @@ packages:
     dependencies:
       '@adobe/css-tools': 4.3.1
       '@babel/runtime': 7.23.1
-      '@types/jest': 29.5.6
+      '@types/jest': 29.5.7
       aria-query: 5.3.0
       chalk: 3.0.0
       css.escape: 1.5.1
@@ -1759,8 +1759,8 @@ packages:
       '@types/istanbul-lib-report': 3.0.1
     dev: true
 
-  /@types/jest@29.5.6:
-    resolution: {integrity: sha512-/t9NnzkOpXb4Nfvg17ieHE6EeSjDS2SGSpNYfoLbUAeL/EOueU/RSdOWFpfQTXBEM7BguYW1XQ0EbM+6RlIh6w==}
+  /@types/jest@29.5.7:
+    resolution: {integrity: sha512-HLyetab6KVPSiF+7pFcUyMeLsx25LDNDemw9mGsJBkai/oouwrjTycocSDYopMEwFhN2Y4s9oPyOCZNofgSt2g==}
     dependencies:
       expect: 29.7.0
       pretty-format: 29.7.0
