@@ -65,7 +65,7 @@
     "rimraf": "^5.0.5",
     "serve": "^14.2.0",
     "typescript": "^5.2.2",
-    "vite": "^4.5.2"
+    "vite": "^4.5.3"
   },
   "scripts": {
     "start": "vite",
