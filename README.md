@@ -52,11 +52,15 @@ cd react-typescript-todomvc-2022
 ```
 
 ```bash
-npm i
+npm -g pnpm
 ```
 
 ```bash
-npm start
+pnpm i
+```
+
+```bash
+pnpm start
 ```
 
 after that auto launch todo app on your default browser and code edit ready.
