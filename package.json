@@ -26,6 +26,7 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-error-boundary": "^5.0.0",
     "react-router-dom": "^6.18.0",
     "recoil": "^0.7.7",
     "styled-components": "^6.1.1",
