@@ -121,7 +121,7 @@ importers:
         specifier: ^5.0.5
         version: 5.0.5
       serve:
-        specifier: ^14.2.1
+        specifier: ^14.2.0
         version: 14.2.1
       typescript:
         specifier: ^5.2.2
